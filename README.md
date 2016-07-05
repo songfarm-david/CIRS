@@ -9,5 +9,6 @@
 * Smooth out Design
 * Improve User Experience and User Interface
 * Update HTML Structure and Semantics
+* Add Page Tracking and Analytics
 
 [1]: http://www.infloorheat.ca/	"infloorheat.ca"
