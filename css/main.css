@@ -1,0 +1,3 @@
+/* NOTE: consider implementing Normalize.css */
+
+main { display: block; } /* ensure <main> displays as block element in all browsers */
