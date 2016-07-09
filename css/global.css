@@ -1,0 +1,112 @@
+/***
+Global Styles for infloorheat.ca
+==============================
+Author: David Gaskin
+July, 2016
+***/
+
+
+/**
+TODO: Fix Overflowing Content in Second Dropdown (Primary Nav)
+TODO: Style Primary Nav for IE7 (check what global user statistics are)
+**/
+
+/* Basic Reset */
+* {
+	margin: 0;	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+	display: block;
+}
+
+/*
+
+Color Palette
+==============
+	Base Grey: 				#f5f5f5
+	Light Grey:				#e7e7e7
+	Dark Grey:				#545456
+	----------
+	Accent Colors:
+	Tangerine Orange: #f5911f
+
+
+																*/
+body {
+	background-color: #f5f5f5;
+	overflow: hidden; /* temporarily hide the scroll-bar */
+}
+
+/* Logo Banner*/
+header#main-header {
+	height: 350px; /* NOTE: header height is currently variable! */
+	background: #f5f5f5 url(../images/cirsLogo_lowRes_white.jpg) center 50% no-repeat;
+	background-size: contain;
+	background-blend-mode: multiply; /* IE does not support // NOTE: do not rely on this property in production */
+}
+
+/* Primary Nav */
+nav#nav-primary {
+	background-color: #e7e7e7;
+	border-top: 4px solid #fff; border-bottom: 4px solid #fff;
+	font-size: 1.6em;
+	height: 58px;
+}
+nav#nav-primary ul {
+	width: 100%;
+	text-align: center;
+}
+nav#nav-primary ul > li {
+	float: none;
+	display: inline-block;
+	*display: inline; /* for <=IE7 */
+}
+#nav-primary li > a {
+	display: inline-block;
+	color: #545456;
+	/* for <=IE7 */
+	*display: inline;
+}
+
+/* Secondary Nav */
+nav#nav-secondary {
+	background-color: #f5911f;
+	color: #fff;
+	margin-bottom: 0; /* remove default bottom margin */
+	min-height: 0; /* remove minimum height */
+	border-radius: 0;
+	border: none;
+	height: 36px;
+	/* to maintain document outline */
+	position: absolute;
+	top: 0; width: 100%;
+}
+#nav-secondary ul {
+	margin-right: 0;
+	/* ie7
+	margin-top: 0;
+	overflow: hidden;*/
+}
+#nav-secondary ul > li {
+	display: inline;
+	line-height: 36px;
+	/* ie7
+	float: right; */
+}
+#nav-secondary a {
+	color: #fff; /* make links white */
+	display: inline; /* fix link height issues */
+	/*border: 1px solid black;*/
+	padding: 10px 15px;
+}
+
+/** Enabling Dropdown on Hover **/
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
