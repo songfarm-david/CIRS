@@ -1,14 +1,28 @@
-# Canadian In-Floor Radiant Solutions
-## Website Make-Over
-[infloorheat.ca][1]
+#Branch: MultiNav
 
-## Goals of Project
-* Streamline Navigation
-* Add Accessibility Features (ARIA)
-* Add Responsive Layout for Tablet and Mobile
-* Smooth out Design
-* Improve User Experience and User Interface
-* Update HTML Structure and Semantics
-* Add Page Tracking and Analytics
+##To test the layout and functional possibilities of incorporating multiple navigations, namely a *primary* and *secondary* nav.
 
-[1]: http://www.infloorheat.ca/	"infloorheat.ca"
+####Primary Navigation
+The primary navigation will incorporate:
+* In-Floor Heat (w/ dropdown)
+* Thermal Mass
+* Fire Safety Systems
+* Pool Heating
+* What Does It Cost?
+
+####Secondary Navigation
+The secondary navigation will incorporate
+* Home (implied by Logo)
+* About Us
+* Contact
+* Examples (optional)
+
+####Tertiary Navigation
+A third navigation will be housed in the footer. This nav will incorporate a:
+* Site Map
+* A 'Careers' section
+* Top
+* Home
+* About Us
+* Contact
+* Legal & Disclaimer (optional)
