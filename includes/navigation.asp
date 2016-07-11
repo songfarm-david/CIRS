@@ -40,11 +40,17 @@
 	<div class="row">
 		<nav class="navbar" id="nav-secondary">
 			<h2 class="sr-only">Secondary Navigation</h2>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="default.asp">Home</a></li>
-				<li><a href="about_us.asp">About Us</a></li>
-				<li><a href="contact.asp">Contact</a></li>
-			</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-xm-12">
+						<ul class="container nav navbar-nav navbar-right">
+							<li><a href="default.asp">Home</a></li>
+							<li><a href="about_us.asp">About Us</a></li>
+							<li><a href="contact.asp">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
 	</div>
 </div>
