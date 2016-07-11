@@ -2,47 +2,27 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<!-- IE Edge Meta tag -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario." />
-		<title>In-Floor Heating systems designed, installed by expert infloor heat contractor in Ontario</title>
-		<link rel="stylesheet" href="css/main.css">
-		<!-- TODO: Implement a Normalizr for legacy browsers not supporting HTML5 -->
+		<title>In-Floor Radiant Solutions - In-Floor Heat</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Author CSS -->
+		<!--<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">-->
+		<!-- Legacy browser support -->
+			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!--[if lt IE 9]>
+				<link rel="stylesheet" href="css/global_ie7.css" media="screen" title="Global Styles for IE7" charset="utf-8">
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
 	</head>
 	<body>
-		<header>
-			<h1>Canadian In-Floor Radiant Solutions</h1>
-		</header>
-		<nav>
-			<h2>Navigation</h2>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="">About Us</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="infloor_heat.html">In Floor Heat</a>
-					<ul>
-						<li><a href="infloor_heat.html#design">Design</a></li>
-						<li><a href="infloor_heat.html#system_components">System Components</a></li>
-						<li><a href="infloor_heat.html#installation">Installation</a></li>
-						<li><a href="infloor_heat.html#costs">Costs</a></li>
-						<li><a href="infloor_heat.html#maintenance_and_repairs">Maintenance &amp; Repairs</a></li>
-						<li><a href="infloor_heat.html#lifespan_and_warranty">Lifespan &amp; Warranty</a></li>
-						<li><a href="infloor_heat.html#benefits">Benefits</a></li>
-						<li><a href="infloor_heat.html#cautions_and_solutions">Cautions and Solutions</a></li>
-					</ul>
-				</li>
-				<li><a href="">Thermal Mass</a></li>
-				<li><a href="">Snow Melt &amp; Heated Driveways</a></li>
-				<li><a href="">Fire Safety Systems</a></li>
-				<li><a href="">Pool Heating</a></li>
-				<li><a href="">What Does It Cost?</a>
-					<ul>
-						<li><a>Concrete Basement Floor of Existing Home</a></li>
-						<li><a>Full Basement During New Home Construction (1500 sq/ft)</a></li>
-						<li><a>Entire New Home Including Basement (4000 sq/ft)</a></li>
-						<li><a>Underfloor Heating on Main Floor of Existing Home</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
+
+    <!--#include file="includes/navigation.asp"-->
+         
 		<main role="main">
 			<section>
 				<header>
@@ -248,12 +228,4 @@
 				</section>
 			</section>
 		</main>
-		<footer>
-			<h2>Footer</h2>
-			<!-- NOTE: How to include a second navigation in footer SEMANTICALLY?? -->
-			<p>
-				&copy; 2016 Canadian In-Floor Radiant Solutions
-			</p>
-		</footer>
-	</body>
-</html>
+<!--#include file="includes/footer.asp"-->
