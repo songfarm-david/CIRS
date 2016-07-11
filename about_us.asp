@@ -1,4 +1,9 @@
-<article>
+@{
+    Layout = "~/_Layout.cshtml";
+}
+
+<div class="container" style="margin: 2em auto;">
+    <article>
 	<h3>About Us</h3>
 	<h4>Canadian In-Floor Radiant Solutions</h4>
 	<dl>
@@ -77,3 +82,4 @@
 		Please <a href="tel:9055381661">call today</a> for a no obligation assessment.
 	</footer>
 </article>
+</div>

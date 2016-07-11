@@ -72,7 +72,7 @@
 					<h2 class="sr-only">Secondary Navigation</h2>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="about_us.html">About Us</a></li>
+						<li><a href="about_us.aspx">About Us</a></li>
 						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</nav>
@@ -89,6 +89,7 @@
 								<div class="col-md-6 col-sm-8">
 									<div class="panel panel-default">
 										<section class="panel-body">
+                                            @RenderPage("include.cshtml");
 											<h2>Radiant Heating Systems for Your Home</h2>
 											<p class="lead">
 												An Allergy-Free Way to Stay Warm

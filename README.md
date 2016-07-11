@@ -1,28 +1,7 @@
-#Branch: MultiNav
+#ASPBuild
 
-##To test the layout and functional possibilities of incorporating multiple navigations, namely a *primary* and *secondary* nav.
+This branch implements the *.asp* extension.
 
-####Primary Navigation
-The primary navigation will incorporate:
-* In-Floor Heat (w/ dropdown)
-* Thermal Mass
-* Fire Safety Systems
-* Pool Heating
-* What Does It Cost?
+The maintains consistency against the original website and allows for server-side includes that will be implemented for including common layout elements.
 
-####Secondary Navigation
-The secondary navigation will incorporate
-* Home (implied by Logo)
-* About Us
-* Contact
-* Examples (optional)
-
-####Tertiary Navigation
-A third navigation will be housed in the footer. This nav will incorporate a:
-* Site Map
-* A 'Careers' section
-* Top
-* Home
-* About Us
-* Contact
-* Legal & Disclaimer (optional)
+Lastly, the choice to develop with the classic *.asp* extension instead of the new *.aspx* extension was made consciously, again to maintain consistency with the original version of the website.

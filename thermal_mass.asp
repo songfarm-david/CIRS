@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Thermal Mass</title>
-	</head>
+<div class="container">
 	<section>
 		<h3>Thermal Mass</h3>
 		<p>
@@ -25,4 +20,4 @@
 			</p>
 		</footer>
 	</section>
-</html>
+</div>
