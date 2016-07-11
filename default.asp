@@ -35,29 +35,29 @@
 					<h2 class="sr-only">Primary Navigation</h2>
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
-							<a href="infloor_heat.html" class="dropdown-toggle">In Floor Heat <span class="caret"></span></a>
+							<a href="infloor_heat.asp" class="dropdown-toggle">In Floor Heat <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="infloor_heat.html#design">Design</a></li>
-								<li><a href="infloor_heat.html#system_components">System Components</a></li>
-								<li><a href="infloor_heat.html#installation">Installation</a></li>
-								<li><a href="infloor_heat.html#costs">Costs</a></li>
-								<li><a href="infloor_heat.html#maintenance_and_repairs">Maintenance &amp; Repairs</a></li>
-								<li><a href="infloor_heat.html#lifespan_and_warranty">Lifespan &amp; Warranty</a></li>
-								<li><a href="infloor_heat.html#benefits">Benefits</a></li>
-								<li><a href="infloor_heat.html#cautions_and_solutions">Cautions and Solutions</a></li>
+								<li><a href="infloor_heat.asp#design">Design</a></li>
+								<li><a href="infloor_heat.asp#system_components">System Components</a></li>
+								<li><a href="infloor_heat.asp#installation">Installation</a></li>
+								<li><a href="infloor_heat.asp#costs">Costs</a></li>
+								<li><a href="infloor_heat.asp#maintenance_and_repairs">Maintenance &amp; Repairs</a></li>
+								<li><a href="infloor_heat.asp#lifespan_and_warranty">Lifespan &amp; Warranty</a></li>
+								<li><a href="infloor_heat.asp#benefits">Benefits</a></li>
+								<li><a href="infloor_heat.asp#cautions_and_solutions">Cautions and Solutions</a></li>
 							</ul>
 						</li>
-						<li><a href="thermal_mass.html">Thermal Mass</a></li>
-						<li><a href="snow_melt_heated_driveways.html">Snow Melt &amp; Heated Driveways</a></li>
-						<li><a href="fire_safety_systems.html">Fire Safety Systems</a></li>
-						<li><a href="pool_heating.html">Pool Heating</a></li>
+						<li><a href="thermal_mass.asp">Thermal Mass</a></li>
+						<li><a href="snow_melt_heated_driveways.asp">Snow Melt &amp; Heated Driveways</a></li>
+						<li><a href="fire_safety_systems.asp">Fire Safety Systems</a></li>
+						<li><a href="pool_heating.asp">Pool Heating</a></li>
 						<li class="dropdown">
-							<a href="cost_examples.html" class="dropdown-toggle">What Does It Cost? <span class="caret"></span></a>
+							<a href="cost_examples.asp" class="dropdown-toggle">What Does It Cost? <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="cost_examples.html#example1">Concrete Basement Floor of Existing Home</a></li>
-								<li><a href="cost_examples.html#example3">Full Basement During New Home Construction (1500 sq/ft)</a></li>
-								<li><a href="cost_examples.html#example4">Entire New Home Including Basement (4000 sq/ft)</a></li>
-								<li><a href="cost_examples.html#example5">Underfloor Heating on Main Floor of Existing Home</a></li>
+								<li><a href="cost_examples.asp#example1">Concrete Basement Floor of Existing Home</a></li>
+								<li><a href="cost_examples.asp#example3">Full Basement During New Home Construction (1500 sq/ft)</a></li>
+								<li><a href="cost_examples.asp#example4">Entire New Home Including Basement (4000 sq/ft)</a></li>
+								<li><a href="cost_examples.asp#example5">Underfloor Heating on Main Floor of Existing Home</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -71,9 +71,9 @@
 				<nav class="navbar" id="nav-secondary">
 					<h2 class="sr-only">Secondary Navigation</h2>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">Home</a></li>
+						<li><a href="index.asp">Home</a></li>
 						<li><a href="about_us.aspx">About Us</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="contact.asp">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -89,7 +89,6 @@
 								<div class="col-md-6 col-sm-8">
 									<div class="panel panel-default">
 										<section class="panel-body">
-                                            @RenderPage("include.cshtml");
 											<h2>Radiant Heating Systems for Your Home</h2>
 											<p class="lead">
 												An Allergy-Free Way to Stay Warm
