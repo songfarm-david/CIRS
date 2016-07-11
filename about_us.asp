@@ -10,7 +10,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
-		<!--<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">-->
+		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">
 		<!-- Legacy browser support -->
 			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -21,12 +21,12 @@
 	</head>
 	<body>
 
-    <!--#include file="includes/navigation.asp"--> 
+    <!--#include file="includes/navigation.asp"-->
 
     <div class="container">
         <article>
-	    <h3>About Us</h3>
-	    <h4>Canadian In-Floor Radiant Solutions</h4>
+	    <h1>About Us</h1>
+	    <h2>Canadian In-Floor Radiant Solutions</h2>
 	    <dl>
 		    <dt>
 			    Who we are

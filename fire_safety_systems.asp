@@ -10,7 +10,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
-		<!--<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">-->
+		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">
 		<!-- Legacy browser support -->
 			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -25,7 +25,7 @@
 
     <div class="container">
 	    <section>
-		    <h3>Fire Safety Systems</h3>
+		    <h1>Fire Safety Systems</h1>
 		    <p>
 			    In-home sprinklers are becoming more popular than ever. Small pot light-looking ceiling fixtures are mounted throughout the home to monitor heat and disperse water to put out the fire threat.
 		    </p>

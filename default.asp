@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">
-		<link rel="stylesheet" href="css/main.css" media="screen" title="Main Page" charset="utf-8">
+		<link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
         <!-- Legacy browser support -->
 			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -32,19 +32,22 @@
         <!--#include file="includes/navigation.asp"-->
 
 		<!-- Main Content -->
-		<main><!-- Confirm Accessibility Standards for this Element -->
+		<main><!-- TODO: Confirm Accessibility Standards for this Element -->
+
+			<!-- Jumbotron -->
+			<!-- NOTE: Jumbotron employs different styles from Main Pages -->
 			<div class="container-fluid">
 				<div class="row">
 					<div class="jumbotron">
 						<div class="container">
 							<div class="row">
-								<div class="col-md-6 col-sm-8">
-									<div class="panel panel-default">
+								<div class="col-sm-7">
+									<div class="panel">
 										<section class="panel-body">
-											<h2>Radiant Heating Systems for Your Home</h2>
-											<p class="lead">
+											<h1>Radiant Heating Systems for Your Home</h1>
+											<h2>
 												An Allergy-Free Way to Stay Warm
-											</p>
+											</h2>
 											<p>
 												Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:1234567896">talk to us</a> about the possibility of installing a radiant heating system.
 												<!-- NOTE: verify proper usage of phone link -->
@@ -64,7 +67,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 main-content-header">
-								<h3 class="h1">In-Floor Heat</h3>
+								<h1>In-Floor Heat</h1>
 							</div>
 						</div>
 					</div>
@@ -73,19 +76,19 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<h4>What is Radiant In-Floor Heating?</h4>
+							<h2>What is Radiant In-Floor Heating?</h2>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-8">
-							<p class="main-text">
+							<p>
 								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="">In Floor Heating Page</a> for a brief overview.
 							</p>
-							<p class="main-text">
+							<p>
 								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="">Heated Driveways</a>.
 							</p>
 							<footer>
-								<h4 class="sr-only">Partners</h4>
+								<h2 class="sr-only">Partners</h2>
 								<div>
 									<a href="http://www.ultimatecomfort.ca/" rel="external"><img src="images/logo-canadianhydronics.gif" alt="Logo: Canadian Hydronics Council" title="Canadian Hydronics Council"></a>
 									<a href="http://www.burlingtonchamber.com/" rel="external"><img src="images/logo-burlingtonchamber.gif" alt="Logo: Burlington Chamber of Commerce" title="Burlington Chamber of Commerce"></a>
@@ -113,6 +116,7 @@
 			</section>
 			<!-- Testimonials Section -->
 			<section>
+				<h1 class="sr-only">Testimonials</h1>
 				<article>
 					<div class="container">
 						<div class="row">
