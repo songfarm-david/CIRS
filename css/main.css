@@ -1,0 +1,132 @@
+/* Logo Banner*/
+header#main-header {
+	/* NOTE: header height is currently variable! */
+	height: 330px;
+	background: #f1f1f1 url(../images/cirsLogo_lowRes_white.jpg) center 50% no-repeat;
+	background-size: contain;
+	/* IE does not support // NOTE: do not rely on this property in production */
+	background-blend-mode: multiply;
+}
+
+/* Primary Nav */
+nav#nav-primary {
+	/*font-size: 2em;*/
+	/*height: 58px;*/
+	margin-bottom: 0;
+}
+nav#nav-primary ul {
+	width: 100%;
+	text-align: center;
+}
+nav#nav-primary ul > li {
+	float: none;
+	display: inline-block;
+	*display: inline; /* for <=IE7 */
+	padding: 10px 0;
+}
+#nav-primary li > a {
+	display: inline-block;
+	color: #545456;
+	/* for <=IE7 */
+	*display: inline;
+}
+
+/* Jumbotron */
+.container-fluid .jumbotron { border-radius: 0; }
+.jumbotron {
+	border: none;
+	border-radius: 0;
+	margin-bottom: 0; /* remove Bootstrap bottom margin */
+	background-color: rgba(255, 152, 0, 0.5);
+	background-color: #c7c6c6;
+}
+.jumbotron .panel {
+	/* make panel transparent */
+	background: #fff;
+
+}
+.jumbotron h2 {
+	color: #f5911f;
+	/*font-size: 4.5em;*/
+}
+.jumbotron section.panel-body {
+	padding: 15px 35px;
+}
+
+.jumbotron section.panel-body > p:first-of-type {
+	/*font-weight: bold;*/
+}
+
+
+
+/* Main Content Section */
+#main-content {
+	margin-bottom: 60px; /* increase space between main content and testimonials */
+}
+#main-content .full-width-custom-container {
+	background: #fff;
+	margin-bottom: 20px;
+}
+.full-width-custom-container h3 {
+	padding: 10px 0 20px;
+	color: #f5911f;
+	/*font-size: 4em;*/
+}
+#main-content h4 {
+	/*font-size: 2.5em;*/
+	padding: 6px 0 16px;
+	font-family: 'Dynalight';
+}
+#main-content p.main-text {
+	/*font-size: 1.5em;*/
+	/*line-height: 1.5;*/
+}
+#main-content footer {
+	position: relative;
+	bottom: -30px;
+}
+
+/* could re-use */
+.full-width-custom-container {
+	width: 100%;
+}
+
+
+/* Aside */
+#aside {
+	border: 5px solid #ddd;
+	padding: 20px 1.5em;
+}
+#aside img {
+	padding: 15px 0;
+}
+
+
+/* Testimonials */
+blockquote {
+
+	/*font-size: 1.75em;*/
+	line-height: 1.5;
+}
+blockquote > footer {
+	/*font-weight: bold;*/
+}
+section > article {
+	background: #fff;
+	height: 480px; /* create a fixed height for section */
+	margin-bottom: 120px;
+	border-bottom: 	10px solid #f5911f;
+
+}
+section > article div {
+	height: 100%;
+}
+.carousel-inner .item blockquote {
+	height: 200px;
+	margin-top: 55px;
+	/*font-size: 1.5em;*/
+	border-left: none;
+}
+.carousel .carousel-control { background: none; }
+.carousel-control.left { left: -150px; }
+.carousel-control.right { right: -150px; }

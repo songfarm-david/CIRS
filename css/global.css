@@ -10,12 +10,13 @@ TODO: Fix Overflowing Content in Second Dropdown (Primary Nav)
 TODO: Style Primary Nav & footer for IE7 (check what global user statistics are)
 **/
 
+/* Cursive font for Headers*/
+@import 'https://fonts.googleapis.com/css?family=Exo+2|Playball|Italianno|Dynalight';
 /* Basic Reset */
+
 * {
 	margin: 0;	padding: 0;
 	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 }
 
 /* HTML5 display reset for older browsers */
@@ -31,55 +32,59 @@ Color Palette
 	Base Grey: 				#f1f1f1
 	Light Grey:				#e7e7e7
 	Dark Grey:				#545456
-	Slate: 						#343436
-	Silver: 					#5c5d5f
+	Slate: 					#343436
+	Silver: 				#5c5d5f
 	----------
 	Accent Colors:
-	Tangerine Orange: #f5911f
+	Tangerine Orange:       #f5911f
 
 
 																*/
+
+
+
 body {
 	background-color: #f1f1f1;
 }
-
-/* Logo Banner*/
-header#main-header {
-	height: 350px; /* NOTE: header height is currently variable! */
-	background: #f1f1f1 url(../images/cirsLogo_lowRes_white.jpg) center 50% no-repeat;
-	background-size: contain;
-	background-blend-mode: multiply; /* IE does not support // NOTE: do not rely on this property in production */
+h1, h2, h3, h4 {
+	font-family: 'Playball', cursive;
+}
+h1 {
+	font-size: 4em;
+}
+h2 {
+	font-size: 2.8em;
 }
 
-/* Primary Nav */
-nav#nav-primary {
-	background-color: #e7e7e7;
-	border-top: 4px solid #fff; border-bottom: 4px solid #fff;
-	font-size: 1.5em;
-	height: 58px;
-	margin-bottom: 0;
+/* main navigation styles */
+nav {
+ font-family: 'Dynalight';
+ font-size: 2.25em;
 }
-nav#nav-primary ul {
-	width: 100%;
-	text-align: center;
+p {
+	font-size: 1.4em;
+	line-height: 1.65;
 }
-nav#nav-primary ul > li {
-	float: none;
-	display: inline-block;
-	*display: inline; /* for <=IE7 */
+p, footer, nav#nav-secondary {
+	font-family: 'Exo 2', sans-serif;
 }
-#nav-primary li > a {
-	display: inline-block;
-	color: #545456;
-	/* for <=IE7 */
-	*display: inline;
+/* targets only the first descendant footer */
+body > footer p {
+	font-size: inherit;
+}
+
+/* testimonials section */
+.testimonial p {
+	font-family: 'Italianno', cursive;
+	font-size: 2.5em;
+	line-height: 1.4;
 }
 
 /* Secondary Nav */
 nav#nav-secondary {
 	background-color: #f5911f;
 	color: #fff;
-	font-size: 1.15em;
+	font-size: 1em;
 	margin-bottom: 0; /* remove default bottom margin */
 	min-height: 0; /* remove minimum height */
 	border-radius: 0;
@@ -91,6 +96,7 @@ nav#nav-secondary {
 }
 #nav-secondary ul {
 	margin-right: 0;
+	text-align: right;
 	/* ie7
 	margin-top: 0;
 	overflow: hidden;*/
@@ -98,6 +104,7 @@ nav#nav-secondary {
 #nav-secondary ul > li {
 	display: inline;
 	line-height: 35px;
+	float: none;
 	/* ie7
 	float: right; */
 }
@@ -114,75 +121,7 @@ nav#nav-secondary {
 }
 
 
-/* Jumbotron */
-.container-fluid .jumbotron { border-radius: 0; }
-.jumbotron {
-	border: none;
-	border-radius: 0;
-	margin-bottom: 0; /* remove Bootstrap bottom margin */
-	background-color: rgba(255, 152, 0, 0.5);
-}
 
-
-/* Main Content Section */
-#main-content {
-	margin-bottom: 60px; /* increase space between main content and testimonials */
-}
-#main-content .full-width-custom-container {
-	background: #fff;
-	margin-bottom: 20px;
-}
-.full-width-custom-container h3 {
-	padding: 10px 0 20px;
-	color: #f5911f;
-	font-size: 4em;
-}
-#main-content h4 {
-	font-size: 2.5em;
-	padding: 6px 0 16px;
-}
-#main-content p.main-text {
-	font-size: 1.5em;
-	line-height: 1.5;
-}
-#main-content footer {
-	position: relative;
-	bottom: -30px;
-}
-
-/* could re-use */
-.full-width-custom-container {
-	width: 100%;
-}
-
-
-/* Aside */
-#aside {
-	border: 5px solid #ddd;
-	padding: 20px 1.5em;
-}
-#aside img {
-	padding: 15px 0;
-}
-
-
-/* Testimonials */
-section > article {
-	background: #fff;
-	height: 280px; /* create a fixed height for section */
-}
-section > article div {
-	height: 100%;
-}
-.carousel-inner .item blockquote {
-	height: 150px;
-	margin-top: 55px;
-	font-size: 1.5em;
-	border-left: none;
-}
-.carousel .carousel-control { background: none; }
-.carousel-control.left { left: -150px; }
-.carousel-control.right { right: -150px; }
 
 
 /* Footer */
