@@ -1,9 +1,0 @@
-/* Navigation */
-nav#nav-primary ul,
-#nav-secondary ul {
-	margin-top: 0;
-	overflow: hidden;
-}
-#nav-secondary ul > li {
-	float: right;
-}
