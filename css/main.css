@@ -1,3 +1,10 @@
+/***
+Main Styles for default.asp
+==============================
+Author: David Gaskin
+July, 2016
+***/
+
 /* Logo Banner*/
 header#main-header {
 	/* NOTE: header height is currently variable! */
@@ -8,6 +15,7 @@ header#main-header {
 	background-blend-mode: multiply;
 }
 
+/*** TODO: make sure these styles are solid ***/
 /* Primary Nav */
 nav#nav-primary {
 	/*font-size: 2em;*/
@@ -18,18 +26,45 @@ nav#nav-primary ul {
 	width: 100%;
 	text-align: center;
 }
-nav#nav-primary ul > li {
+#nav-primary ul li {
 	float: none;
 	display: inline-block;
-	*display: inline; /* for <=IE7 */
 	padding: 10px 0;
+	text-align: center;
+	*display: inline; /* for <=IE7 */
 }
 #nav-primary li > a {
+	width: 100%;
 	display: inline-block;
 	color: #545456;
 	/* for <=IE7 */
 	*display: inline;
 }
+
+/* dropdown menu & sub-menu rules */
+nav#nav-primary li.dropdown > ul[class*="dropdown"] {
+	text-align: left;
+	width: auto; /* allow ul to span full width of text */
+	padding: 1em 0; /* remove excess space around ul */
+}
+nav#nav-primary ul[class*="dropdown"] > li {
+	width: 100%; /* make li full width of ul */
+}
+#nav-primary ul.dropdown-menu > li { padding: 0; }
+#nav-primary ul.dropdown-menu > li a{
+	text-align: left;
+	padding: 3px .75em;
+	padding-left: 1.75em;	/* to allow room for content before */
+	transition: color 250ms;
+}
+#nav-primary li.dropdown-submenu > ul.dropdown-menu {
+	top: 0; left: 100%;
+}
+#nav-primary  ul.dropdown-menu > li > a:hover {
+	color: orange;
+	background: none;
+}
+
 
 /* Jumbotron */
 .container-fluid .jumbotron { border-radius: 0; }
@@ -103,30 +138,30 @@ nav#nav-primary ul > li {
 
 
 /* Testimonials */
-blockquote {
-
-	/*font-size: 1.75em;*/
-	line-height: 1.5;
-}
-blockquote > footer {
-	/*font-weight: bold;*/
-}
 section > article {
 	background: #fff;
 	height: 480px; /* create a fixed height for section */
 	margin-bottom: 120px;
 	border-bottom: 	10px solid #f5911f;
-
 }
 section > article div {
 	height: 100%;
 }
-.carousel-inner .item blockquote {
-	height: 200px;
-	margin-top: 55px;
-	/*font-size: 1.5em;*/
-	border-left: none;
+blockquote { line-height: 1.5; }
+
+.testimonial p {
+	font-family: 'Italianno', 'Aramisi', cursive;
+	font-size: 2.5em;
+	line-height: 1.4;
 }
+
+.carousel-inner .item blockquote {
+	height: 200px; /* height of blockquote */
+	margin-top: 55px;
+	border-left: none; /* remove Bootstrap default left border */
+}
+/* remove default background */
 .carousel .carousel-control { background: none; }
+/* position chevrons futher outside */
 .carousel-control.left { left: -150px; }
 .carousel-control.right { right: -150px; }

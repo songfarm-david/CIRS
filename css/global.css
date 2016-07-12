@@ -6,14 +6,33 @@ July, 2016
 ***/
 
 /**
-TODO: Fix Overflowing Content in Second Dropdown (Primary Nav)
-TODO: Style Primary Nav & footer for IE7 (check what global user statistics are)
+TODO: Look into usage statistics for IE7 and below -- if necesary, created styles for IE7
 **/
 
 /* Cursive font for Headers*/
 @import 'https://fonts.googleapis.com/css?family=Exo+2|Playball|Italianno|Dynalight';
-/* Basic Reset */
 
+@font-face {
+	font-family: 'Aramisi';
+	src: url('../fonts/aramisi.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*
+Color Palette
+==============
+	Base Grey: 				#f1f1f1
+	Light Grey:				#e7e7e7
+	Dark Grey:				#545456
+	Slate: 					#343436
+	Silver: 				#5c5d5f
+	----------
+	Accent Colors:
+	Tangerine Orange:       #f5911f
+																*/
+
+/* Simple Reset */
 * {
 	margin: 0;	padding: 0;
 	font-size: 100%;
@@ -25,107 +44,35 @@ footer, header, menu, nav, section {
 	display: block;
 }
 
-/*
 
-Color Palette
-==============
-	Base Grey: 				#f1f1f1
-	Light Grey:				#e7e7e7
-	Dark Grey:				#545456
-	Slate: 					#343436
-	Silver: 				#5c5d5f
-	----------
-	Accent Colors:
-	Tangerine Orange:       #f5911f
-
-
-																*/
-
-
-
+/* Global Styles */
 body {
 	background-color: #f1f1f1;
-}
-h1, h2, h3, h4 {
-	font-family: 'Playball', cursive;
-}
-h1 {
-	font-size: 4em;
-}
-h2 {
-	font-size: 2.8em;
+	font-family: 'Aramisi', cursive;
 }
 
-/* main navigation styles */
-nav {
- font-family: 'Dynalight';
- font-size: 2.25em;
-}
-p {
-	font-size: 1.4em;
-	line-height: 1.65;
-}
-p, footer, nav#nav-secondary {
-	font-family: 'Exo 2', sans-serif;
-}
-/* targets only the first descendant footer */
-body > footer p {
-	font-size: inherit;
-}
+h1 { font-size: 4em; }
+h2 { font-size: 2.8em; }
 
-/* testimonials section */
-.testimonial p {
-	font-family: 'Italianno', cursive;
-	font-size: 2.5em;
-	line-height: 1.4;
+/* Nav */
+nav { font-size: 2.25em; }
+nav ul > li.dropdown ul > li {
+	font-size: 2.25em;
 }
-
-/* Secondary Nav */
-nav#nav-secondary {
-	background-color: #f5911f;
-	color: #fff;
-	font-size: 1em;
-	margin-bottom: 0; /* remove default bottom margin */
-	min-height: 0; /* remove minimum height */
-	border-radius: 0;
-	border: none;
-	height: 35px;
-	/* to maintain document outline */
-	position: absolute;
-	top: 0; width: 100%;
-}
-#nav-secondary ul {
-	margin-right: 0;
-	text-align: right;
-	/* ie7
-	margin-top: 0;
-	overflow: hidden;*/
-}
-#nav-secondary ul > li {
-	display: inline;
-	line-height: 35px;
-	float: none;
-	/* ie7
-	float: right; */
-}
-#nav-secondary a {
-	color: #fff; /* make links white */
-	display: inline; /* fix link height issues */
-	/*border: 1px solid black;*/
-	padding: 10px 15px;
-}
-
-/** Enable Nav Dropdown on Hover **/
-.dropdown:hover .dropdown-menu {
+/* enable dropdown on hover */
+.dropdown:hover > .dropdown-menu,
+.dropdown-submenu:hover > .dropdown-menu {
 	display: block;
 }
 
-
-
-
+body > footer p { /* targets only first-level footer */
+	font-size: inherit;
+}
+p, footer { font-family: sans-serif; }
+p { font-size: 1.4em; line-height: 1.65; }
 
 /* Footer */
-#footer {
+body > footer {
 	background-color: #343436;
 	color: #838385;
 	font-size: 1.25em;
@@ -139,10 +86,18 @@ nav#nav-secondary {
 #footer ul > li {
 	float: none;
 	display: inline-block;
+	/*border: 2px solid #ddd;*/
+	/*height: 100%;*/
+	line-height: 146px;
 	*display: inline; /* for <=IE7 */
 }
-#footer p {
+#footer ul > li:hover { background: none;}
+body > footer p {
 	line-height: 146px;
 	margin-bottom: 0;
 }
-#footer a { color: #838385; }
+#footer a { color: #838385; transition: color 250ms; }
+#footer a:hover {
+	color: #ddd;
+	background: none;
+}
