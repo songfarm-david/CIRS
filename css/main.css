@@ -15,12 +15,15 @@ header#main-header {
 	background-blend-mode: multiply;
 }
 
-/*** TODO: make sure these styles are solid ***/
 /* Primary Nav */
 nav#nav-primary {
-	/*font-size: 2em;*/
-	/*height: 58px;*/
 	margin-bottom: 0;
+	background: none;
+	padding: 0;
+}
+/* remove home icon */
+#nav-primary div.navbar-header {
+	display: none;
 }
 nav#nav-primary ul {
 	width: 100%;
@@ -29,8 +32,6 @@ nav#nav-primary ul {
 #nav-primary ul li {
 	float: none;
 	display: inline-block;
-	padding: 10px 0;
-	text-align: center;
 	*display: inline; /* for <=IE7 */
 }
 #nav-primary li > a {
@@ -41,29 +42,11 @@ nav#nav-primary ul {
 	*display: inline;
 }
 
-/* dropdown menu & sub-menu rules */
-nav#nav-primary li.dropdown > ul[class*="dropdown"] {
-	text-align: left;
-	width: auto; /* allow ul to span full width of text */
-	padding: 1em 0; /* remove excess space around ul */
+/* reset to default position: target only 'cost examples' li dropdown menu */
+nav#nav-primary li.dropdown > a[href^="cost_examples"] + ul.dropdown-menu {
+	left: 0; right: auto;
 }
-nav#nav-primary ul[class*="dropdown"] > li {
-	width: 100%; /* make li full width of ul */
-}
-#nav-primary ul.dropdown-menu > li { padding: 0; }
-#nav-primary ul.dropdown-menu > li a{
-	text-align: left;
-	padding: 3px .75em;
-	padding-left: 1.75em;	/* to allow room for content before */
-	transition: color 250ms;
-}
-#nav-primary li.dropdown-submenu > ul.dropdown-menu {
-	top: 0; left: 100%;
-}
-#nav-primary  ul.dropdown-menu > li > a:hover {
-	color: orange;
-	background: none;
-}
+
 
 
 /* Jumbotron */

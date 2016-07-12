@@ -55,15 +55,16 @@ h1 { font-size: 4em; }
 h2 { font-size: 2.8em; }
 
 /* Nav */
-nav { font-size: 2.25em; }
+nav { font-size: 1.75em; }
 nav ul > li.dropdown ul > li {
-	font-size: 2.25em;
+	font-size: 1.5em;
 }
 /* enable dropdown on hover */
 .dropdown:hover > .dropdown-menu,
 .dropdown-submenu:hover > .dropdown-menu {
 	display: block;
 }
+
 
 body > footer p { /* targets only first-level footer */
 	font-size: inherit;
@@ -100,4 +101,64 @@ body > footer p {
 #footer a:hover {
 	color: #ddd;
 	background: none;
+}
+
+
+/* Navigation styles (general) */
+/*** TODO: Add a 250ms transition to dropdown block ***/
+
+nav#nav-primary {
+	background: white;
+	padding-top: 16px;
+	/*margin-top: .5em;*/
+}
+#nav-primary div.navbar-header {
+	height: 185%;
+	position: absolute;
+	top: -8px;
+}
+#nav-primary .navbar-header a {
+	padding: 0;
+	height: 100%;
+}
+#nav-primary > ul {
+	margin-right: 0; /* remove Bootstrap default margin */
+}
+
+/* hover styles */
+#nav-primary a,
+#nav-primary ul.dropdown-menu > li a {
+	transition: color 250ms;
+}
+#nav-primary  a:hover {
+	color: orange;
+	background: none;
+}
+
+/** dropdown menu & sub-menu rules **/
+/* left align dropdown menu */
+.navbar-right > li.dropdown > .dropdown-menu {
+	right: auto; left: 0;
+}
+nav#nav-primary li.dropdown > ul[class*="dropdown"] {
+	text-align: left;
+	width: auto; /* allow ul to span full width of text */
+	padding: 1em 0;
+}
+nav#nav-primary ul[class*="dropdown"] > li {
+	width: 100%; /* make li full width of ul */
+}
+#nav-primary ul.dropdown-menu > li { padding: 0; }
+#nav-primary ul.dropdown-menu > li a{
+	text-align: left;
+	padding: 3px 1em;
+	padding-left: 1.75em;	/* to allow room for content before */
+}
+#nav-primary li.dropdown-submenu > ul.dropdown-menu {
+	top: 0;	right: -83%; left: 99%; /* finnicky style for submenu */
+}
+
+/* target only cost examples li dropdown menu */
+nav#nav-primary li.dropdown > a[href^="cost_examples"] + ul.dropdown-menu {
+	right: -51%; left: auto;
 }
