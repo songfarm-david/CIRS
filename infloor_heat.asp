@@ -1,72 +1,102 @@
 <!--#include file="includes/header.asp"-->
 
     <!--#include file="includes/navigation.asp"-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="jumbotron hero">
 
-		<main role="main">
+				</div>
+			</div>
+		</div>
+		<main role="main" class="container-fluid">
 			<section>
-				<header>
-					<h1>Hydronic Radiant Floor Heating</h1>
-					<p>
-						Long ago, the Romans used radiant floor heating in their bathhouses. For centuries, the Koreans heated their royal palaces and traditional homes in this manner. Today, radiant heating technology has been improved and can be used in all or part of our homes.
-					</p>
-				</header>
-				<h2>What is Radiant Floor Heating?</h2>
-				<p>
-					Radiant floor heating is a method of heating your home by applying heat underneath or within the floor. Comparable to warming yourself in the sun, this type of heating warms objects as opposed to raising the temperature of the air.
-				</p>
-				<p>
-					There are three types of radiant floor heating: hydronic, electric and air. This document focuses on hydronic (water) radiant floor heating.
-				</p>
-				<!-- figure 1. -->
-				<figure>
-					<img src="images/construction_site.jpg" alt="Figure 1."><!-- How to best support accessibility here? -->
-					<figcaption>
-						Figure 1. Hydronic radiant floor heating tubing laid out in specific heating pattern prior to concrete pour. Photo courtesy of Ready Mixed Concrete Association of Ontario.
-					</figcaption>
-				</figure>
-				<p>
-					Hydronic radiant floor heating is a system of plastic pipes laid within a floor that carries hot water into specific rooms or "zones", dispersing the heat through the floor surface (see Figure 1).
-				</p>
-				<p>
-					The cooler water returns to the heat source where it is reheated and sent out again in what is known as a "closed-loop system". The pipes can be encased in a concrete slab, a concrete or gypsum cement overpour, laid into thin grooved panels that nail on top of a subfloor, or suspended below a wooden subfloor under the floor surface (see Figure 2). The heat output is determined by pipe spacing, water temperature, flow rate and floor covering. The heat output must be calculated to meet the heat loss demands of the home.
-				</p>
-				<figure>
-					<img src="images/floor_cross_section.jpg" alt="Figure 2."><!-- alt tags need more description -->
-					<figcaption>
-						Figure 2. Suspended in subfloor. Image courtesy of Wirsbo Co.
-					</figcaption>
-				</figure>
-				<p>
-					Canadian In-floor uses only a leak-resistant, non-toxic, high temperature, flexible piping called cross-linked polyethylene (PEX). PEX is a durable tubing that doesn’t become brittle over time and isn’t affected by aggressive concrete additives or water conditions. PEX has been used in Europe since the 1970s and was introduced to North America in the early 1980s.
-				</p>
-				<h2>Is this type of heating available in both new and existing homes?</h2>
-				<p>
-					Yes. While the system can be easily designed and installed in new construction, homeowners wishing to renovate may incorporate hydronic radiant floor heating throughout the home, given certain conditions exist:
-				</p>
-				<ul>
-					<!-- TODO: Add list bullets here -->
-					<li>
-						<p>The building structure can support the additional weight of the concrete/cement overpour, or</p>
-					</li>
-					<li>
-						<p>the underside of the subfloor is accessible, or</p>
-					</li>
-					<li>
-						<p>if being added to the basement, there is enough height for a concrete overpour above the insulation (if the concrete floor is already insulated below, additional insulation is not necessary).</p>
-					</li>
-				</ul>
+				<div class="container-fluid header">
+					<header>
+						<h1>Hydronic Radiant Floor Heating</h1>
+						<p>
+							Long ago, the Romans used radiant floor heating in their bathhouses. For centuries, the Koreans heated their royal palaces and traditional homes in this manner. Today, radiant heating technology has been improved and can be used in all or part of our homes.
+						</p>
+					</header>
+				</div>
+				<div class="container">
+					<h2>What is Radiant Floor Heating?</h2>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12">
+							<figure class="pull-right float-right-figure">
+								<!-- NOTE: image should be clickable -->
+								<!-- NOTE: How to best support accessibility here? -->
+								<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="Figure 1.">
+								<figcaption>
+									Figure 1. Write a better description here!
+								</figcaption>
+							</figure>
+							<p>
+								Radiant floor heating is a method of heating your home by applying heat underneath or within the floor. Comparable to warming yourself in the sun, this type of heating warms objects as opposed to raising the temperature of the air.
+							</p>
+							<p>
+								There are three types of radiant floor heating: hydronic, electric and air. This document focuses on hydronic (water) radiant floor heating.
+							</p>
+							<p>
+								Hydronic radiant floor heating is a system of plastic pipes laid within a floor that carries hot water into specific rooms or "zones", dispersing the heat through the floor surface (see Figure 1).
+							</p>
+							<p>
+								The cooler water returns to the heat source where it is reheated and sent out again in what is known as a "closed-loop system". The pipes can be encased in a concrete slab, a concrete or gypsum cement overpour, laid into thin grooved panels that nail on top of a subfloor, or suspended below a wooden subfloor under the floor surface (see Figure 2). The heat output is determined by pipe spacing, water temperature, flow rate and floor covering. The heat output must be calculated to meet the heat loss demands of the home.
+							</p>
+							<p>
+								Canadian In-floor uses only a leak-resistant, non-toxic, high temperature, flexible piping called cross-linked polyethylene (PEX). PEX is a durable tubing that doesn’t become brittle over time and isn’t affected by aggressive concrete additives or water conditions. PEX has been used in Europe since the 1970s and was introduced to North America in the early 1980s.
+							</p>
+						<!-- </div>
+							<div class="col-sm-4"> -->
+								<!-- figure 1. -->
+
+							<!-- </div> -->
+
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-5">
+							<figure>
+								<img src="images/demos/residential_house_demo.jpg" alt="Figure 2."><!-- alt tags need more description -->
+								<!-- <figcaption>
+									Figure 2. Suspended in subfloor. Image courtesy of Wirsbo Co.
+								</figcaption> -->
+							</figure>
+						</div>
+						<div class="col-sm-7">
+							<h2>Is this type of heating available in both new and existing homes?</h2>
+							<p>
+								Yes. While the system can be easily designed and installed in new construction, homeowners wishing to renovate may incorporate hydronic radiant floor heating throughout the home, given certain conditions exist:
+							</p>
+							<ul>
+								<!-- TODO: Add list bullets here -->
+								<li>
+									<p>The building structure can support the additional weight of the concrete/cement overpour, or</p>
+								</li>
+								<li>
+									<p>the underside of the subfloor is accessible, or</p>
+								</li>
+								<li>
+									<p>if being added to the basement, there is enough height for a concrete overpour above the insulation (if the concrete floor is already insulated below, additional insulation is not necessary).</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 				<!-- NOTE: Aside here -->
 				<aside>
-					<h2>Entire House Versus Selected Rooms</h2>
-					<p>
-						Homeowners can chose to install hydronic radiant floor heating throughout the house, or in selected rooms (see Figure 3). The most popular rooms with this type of heating are the bathroom, kitchen and living room–rooms where the most time is spent. If only selected rooms have this type of heating, then a separate heating and ventilation system is required to heat the remainder of the home. The system can also be "zoned" so that there are temperature controls for each area.
-					</p>
-					<figure>
-						<img src="images/home_cross_section.jpg" alt="Figure 3.">
+					<figure class="pull-right float-right-figure">
+						<img src="images/demos/radiantheat_house.jpg" alt="Figure 3.">
 						<figcaption>
 							Figure 3: Hydronic radiant floor heating throughout a home. Note: Pipes are not visible when installation is completed.
 						</figcaption>
 					</figure>
+					<h2>Entire House Versus Selected Rooms</h2>
+					<p>
+						Homeowners can chose to install hydronic radiant floor heating throughout the house, or in selected rooms (see Figure 3). The most popular rooms with this type of heating are the bathroom, kitchen and living room–rooms where the most time is spent. If only selected rooms have this type of heating, then a separate heating and ventilation system is required to heat the remainder of the home. The system can also be "zoned" so that there are temperature controls for each area.
+					</p>
 				</aside>
 				<section>
 					<h2 id="design">Design</h2>
@@ -82,6 +112,11 @@
 				</section>
 				<section>
 					<h2 id="system_components">System Components</h2>
+					<figure class="pull-right float-right-figure">
+						<img src="images/demos/components.jpg" alt="Figure 3.">
+						<figcaption>
+						</figcaption>
+					</figure>
 					<p>
 						There are three components to this heating system: a heat source, a distribution piping system and controls. The heat source in hydronic radiant floor heating is usually a boiler or a hot water heater, but other heat sources can be used too. The energy used to heat the hot water can be natural gas, oil, electricity, propane, wood or solar hot water collection.
 					</p>
@@ -93,7 +128,8 @@
 					</p>
 				</section>
 				<section>
-					<h2 id="installation">Installation</h2>
+					<!--NOTE: style this differently -->
+					<div class="panel panel-body"><h2 id="installation">Installation</h2>
 					<p>
 						There are three choices of installation:
 					</p>
@@ -116,13 +152,15 @@
 						<li>
 							<p>Dry or "Plate" system: Tubing is attached to the underside of the subfloor, also known as a belowdeck or joist space dry system. In cold weather climates, tubing should be attached with aluminum transfer plates and both well insulated for improved performance. Without the insulation, the warmth will disperse into the basement. It is also possible to have an abovedeck dry system, where heat transfer plates are supported by sleepers.</p>
 						</li>
-					</ol>
+					</ol></div>
 				</section>
 				<section>
 					<h2 id="costs">Costs</h2>
 					<p>
-						An approximate cost of an installed hydronic radiant floor heating system can range from $1000 per approximately 100 square feet. This cost can be more or less depending on specific heating requirements and energy efficiency results. In addition to the heating system, a mechanical ventilation system is required in the house.
+						An approximate cost of an installed hydronic radiant floor heating system can range from $1000 per approximately 100 square feet. This cost can be more or less depending on specific heating requirements and energy efficiency results. In addition to the heating system, a mechanical ventilation system is required in the house. <em>Please see our <a href="cost_examples.asp">Cost Examples</a> page for more info.</em>
 					</p>
+				</section>
+				<section>
 					<h2 id="maintenance_and_repairs">Maintenance and Repairs</h2>
 					<p>
 						It is recommended that annual maintenance be done on mechanical equipment such as the pumps, hot water heater, controls etc. If there was a problem or failure, it is commonly found in these mechanical parts. Annual contracts are available through Canadian In-floor.
@@ -131,11 +169,15 @@
 						To avoid unnecessary repair work, all equipment must be used and maintained in the manner in which it was designed and installed. Homeowners disconnecting controls or moving pumps can find themselves requiring repairs and possibly voiding their warranty.
 					</p>
 				</section>
-
 				<section>
 					<h2 id="lifespan_and_warranty">Lifespan &amp; Warranty</h2>
+					<figure class="pull-right float-right-figure">
+						<img src="images/demos/pex.jpg" alt="Figure 3.">
+						<figcaption>
+						</figcaption>
+					</figure>
 					<p>
-						Canadian In-Floors’ installations are covered by a manufacturers warranty of 25 years though PEX pipes set in the floor are expected to last more than 50 years (some test results indicate life expectancies of 200-300 years).
+						Canadian In-Floors’ installations are <em>covered by a manufacturers warranty of <strong>25 years</strong></em> though PEX pipes set in the floor are expected to last more than 50 years (some test results indicate life expectancies of 200-300 years).
 					</p>
 					<p>
 						There are two types of warranties: a Manufacturer’s Warranty and an Installation Warranty.
@@ -145,51 +187,35 @@
 					</p>
 				</section>
 				<section>
-					<h2 id="benefits">Benefits</h2>
-					<ul>
-						<li>
-							<h3>Comfort</h3>
-							<p>
-								Radiant floor heating provides even, comfortable, warmth as there is less air movement with this type of system. There are no drafts with this type of heating, unless it is through the building envelope. The thermal mass (concrete floor) evens out the temperature fluctuations. The floor is warm to the touch.
-							</p>
-						</li>
-						<li>
-							<h3>Energy-Efficiency</h3>
-							<p>
-								Many manufacturers claim that radiant floor heating is more economical to operate because the temperature setting may be set to 20&deg;C (68&deg;F) rather than the usual 21-22&deg;C (70-72&deg;F) as required by other types of systems. The warmest air is at the floor where it is desired (and not at the ceiling) and there is reduced heat loss through the ceiling and walls.
-							</p>
-							<p>
-								Zoning a variety of rooms with the options for different temperatures has the potential to reduce energy consumption.
-							</p>
-						</li>
-						<li>
-							<h3>Energy Source Compatibility</h3>
-							<p>
-								Since radiant floor heating has a low operating temperature, a wide range of sources can be used to heat the water–a ground-source heat pump, a condensing or non-condensing boiler, solar or even district heating.
-							</p>
-						</li>
-						<li>
-							<h3>Quietness</h3>
-							<p>
-								The system is quiet because a properly-sized circulator pump, used to slowly move the water, is almost inaudible. The loudest sound in the system is usually the gas or oil burner.
-							</p>
-						</li>
-						<li>
-							<h3>Cleanliness</h3>
-							<p>
-								Unlike conventional forced-air furnaces, radiant floor heating has no ducts or radiators to contribute to dust collection or movement. Note: duct work is required for the mechanical ventilation system or air conditioning.
-							</p>
-							<p>
-								For residents with allergies, the reduction in dust movement may be beneficial.
-							</p>
-						</li>
-						<li>
-							<h3>Room Function</h3>
-							<p>
-								Hydronic radiant floor heating is virtually an invisible system. Without baseboard heaters, forced air registers etc, furniture layout is not restricted by the heating system. Bathrooms or special use areas with hard floor finishes are well suited to this type of heating.
-							</p>
-						</li>
-					</ul>
+					<div class="panel panel-body"><h2 id="benefits">Benefits</h2>
+					<dl>
+						<dt>Comfort</dt>
+						<dd>
+							Radiant floor heating provides even, comfortable, warmth as there is less air movement with this type of system. There are no drafts with this type of heating, unless it is through the building envelope. The thermal mass (concrete floor) evens out the temperature fluctuations. The floor is warm to the touch.
+						</dd>
+						<dt>Energy-Efficiency</dt>
+						<dd>
+							Many manufacturers claim that radiant floor heating is more economical to operate because the temperature setting may be set to 20&deg;C (68&deg;F) rather than the usual 21-22&deg;C (70-72&deg;F) as required by other types of systems. The warmest air is at the floor where it is desired (and not at the ceiling) and there is reduced heat loss through the ceiling and walls.
+							Zoning a variety of rooms with the options for different temperatures has the potential to reduce energy consumption.
+						</dd>
+						<dt>Energy Source Compatibility</dt>
+						<dd>
+							Since radiant floor heating has a low operating temperature, a wide range of sources can be used to heat the water–a ground-source heat pump, a condensing or non-condensing boiler, solar or even district heating.
+						</dd>
+						<dt>Quietness</dt>
+						<dd>
+							The system is quiet because a properly-sized circulator pump, used to slowly move the water, is almost inaudible. The loudest sound in the system is usually the gas or oil burner.
+						</dd>
+						<dt>Cleanliness</dt>
+						<dd>
+							Unlike conventional forced-air furnaces, radiant floor heating has no ducts or radiators to contribute to dust collection or movement. Note: duct work is required for the mechanical ventilation system or air conditioning.
+							For residents with allergies, the reduction in dust movement may be beneficial.
+						</dd>
+						<dt>Room Function</dt>
+						<dd>
+							Hydronic radiant floor heating is virtually an invisible system. Without baseboard heaters, forced air registers etc, furniture layout is not restricted by the heating system. Bathrooms or special use areas with hard floor finishes are well suited to this type of heating.
+						</dd>
+					</dl></div>
 				</section>
 				<section>
 					<h2 id="cautions_and_solutions">Cautions and Solutions</h2>

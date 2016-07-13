@@ -1,5 +1,5 @@
-<div class="container-fluid">
-	<div class="row">
+<!-- <div class="container-fluid"> -->
+	<!-- <div class="row"> -->
 		<nav class="navbar" id="nav-primary">
 			<div class="navbar-header">
 				<h1 class="sr-only">Navigation</h1>
@@ -44,5 +44,5 @@
 				<!-- <li><a href="contact.asp">Contact</a></li> -->
 			</ul><!-- end of main nav -->
 		</nav>
-	</div>
-</div>
+	<!-- </div> -->
+<!-- </div> -->
