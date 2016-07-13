@@ -145,8 +145,8 @@ body > footer {
 }
 /* target copyright text */
 #footer .container div.row:last-child p {
-	margin: 20px 0;
-	font-size: .85em;
+	margin: 0 0 15px;
+	font-size: .9em;
 }
 #footer a { color: #838385; transition: color 250ms; }
 #footer a:hover {

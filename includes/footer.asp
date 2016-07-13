@@ -1,7 +1,7 @@
 ﻿    <footer id="footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-6 text-center">
+					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
 						<ul role="navigation" class="nav navbar-nav">
 							<li><a href="#">Home</a></li>
@@ -10,11 +10,6 @@
 							<li><a href="#">Careers</a></li>
 							<li><a href="#">Site Map</a></li>
 						</ul>
-					</div>
-					<div class="col-sm-6 text-center">
-						<p>
-							Social Links
-						</p>
 					</div>
 				</div>
 				<div class="row">
