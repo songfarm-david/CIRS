@@ -1,6 +1,7 @@
 <!-- <div class="container-fluid"> -->
 	<!-- <div class="row"> -->
 		<nav class="navbar" id="nav-primary">
+			<span>Call Us: <button type="button">9055922141</button></span>
 			<div class="navbar-header">
 				<h1 class="sr-only">Navigation</h1>
 				<a href="default.asp" class="navbar-brand">

@@ -173,15 +173,34 @@ main > section > div.container-fluid.header > header h1 {
 /*** TODO: Add a 250ms transition to dropdown block ***/
 
 nav#nav-primary {
-	/*background: white;*/
-	padding-top: 16px;
-	/*margin-top: .5em;*/
+	padding-top: 65px;
+	box-shadow: 0px 1px 15px -5px rgba(0, 0, 0, 0.5)
 }
 #nav-primary div.navbar-header {
-	height: 185%;
+	height: 100%;
 	position: absolute;
-	top: -8px;
+	top: 0;
 }
+/* call button */
+#nav-primary > span{
+	position: absolute;
+	right: 15px;
+	top: 0;
+	padding: 0 12px;
+line-height: 1.4;
+	margin-top: 15px;
+	border-radius: 25px;
+	font-size: 1.25em;
+	border: 2px solid #5b5b5b;
+	color: #5b5b5b;
+}
+#nav-primary > span > button {
+	background: none;
+	border: none;
+	font-size: 1em;
+	padding: 0 12px;
+}
+
 #nav-primary .navbar-header a {
 	padding: 0;
 	height: 100%;
