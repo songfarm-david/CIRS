@@ -99,39 +99,36 @@ aside > p:only-of-type,
 section > p:only-of-type {
 	margin-bottom: 20px;
 }
-/* list styles */
 
+/* list styles */
 div[class*="col"] > ul, ol {
 	margin-left: 20px;
 }
+ol > li > ol { list-style: lower-roman; }
 ol, dl { font-family: sans-serif; }
-ol > li > ol {
-	list-style: lower-roman;
-}
 dl {
 	font-size: 1.4em;
 }
 dt, dd {
 	margin-bottom: 15px;
 }
+
 /* Footer */
 body > footer p { /* targets only first-level footer */
 	font-size: inherit;
 }
 p, footer { font-family: sans-serif; }
 p { font-size: 1.4em; line-height: 1.65; }
-
-
 body > footer {
 	background-color: #343436;
 	color: #838385;
 	font-size: 1.25em;
-	height: 146px;
+	padding-top: 30px;
 }
 #footer ul {
 	text-align: center;
 	width: 100%;
-	margin-top: 48px;
+	margin: 0;
 }
 #footer ul > li {
 	float: none;
@@ -142,9 +139,14 @@ body > footer {
 	*display: inline; /* for <=IE7 */
 }
 #footer ul > li:hover { background: none;}
-body > footer p {
-	line-height: 146px;
-	margin-bottom: 0;
+#footer p {
+	line-height: 50px; /* same height as ul links */
+	margin-bottom: 0; /* turn off default bottom-margin */
+}
+/* target copyright text */
+#footer .container div.row:last-child p {
+	margin: 20px 0;
+	font-size: .85em;
 }
 #footer a { color: #838385; transition: color 250ms; }
 #footer a:hover {
@@ -200,7 +202,6 @@ line-height: 1.4;
 	font-size: 1em;
 	padding: 0 12px;
 }
-
 #nav-primary .navbar-header a {
 	padding: 0;
 	height: 100%;

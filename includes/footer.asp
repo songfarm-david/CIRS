@@ -1,12 +1,7 @@
-﻿        <footer id="footer">
-			<div class="container-fluid">
+﻿    <footer id="footer">
+			<div class="container">
 				<div class="row">
-					<div class="col-xs-4 text-center">
-						<p>
-							&copy; 2016 Canadian In-Floor Radiant Solutions
-						</p>
-					</div>
-					<div class="col-xs-4">
+					<div class="col-sm-6 text-center">
 						<!-- Secondary Site Nav -->
 						<ul role="navigation" class="nav navbar-nav">
 							<li><a href="#">Home</a></li>
@@ -16,16 +11,20 @@
 							<li><a href="#">Site Map</a></li>
 						</ul>
 					</div>
-					<div class="col-xs-4 text-center">
+					<div class="col-sm-6 text-center">
 						<p>
 							Social Links
 						</p>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<p>
+							&copy; 2016 Canadian In-Floor Radiant Solutions
+						</p>
+					</div>
+				</div>
 			</div>
-
-			<!-- TODO: Add a careers page -->
-			<!-- TODO: Consider applying ASP.net server scripting for includes -->
 		</footer>
 		<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
