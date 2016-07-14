@@ -2,12 +2,29 @@
 
     <!--#include file="includes/navigation.asp"-->
 
-    <div class="container">
-	    <section>
-		    <h1>Pool Heating Systems</h1>
-		    <p>
-			    When a radiant system is installed in your home, the boiler works very little in the summer. Through heat exchangers (now available for salt water), the pool can be heated with your existing high efficiency boiler. We can eliminate the need for large unsightly heaters, venting and gas piping issues.
-		    </p>
-	    </section>
+    <!-- Jumbotron -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="jumbotron"
+        style="background-image: url(../images/display_images/family_pool.jpg); background-position: 0 10%; height:500px;">
+        </div>
+      </div>
     </div>
+
+    <!-- Main content -->
+    <div class="container">
+      <section>
+        <h1>Pool Heating Systems</h1>
+        <figure class="pull-left figure-float-left">
+          <img src="images/demos/radiantfloor_pool.jpg" alt="Figure 3.">
+          <figcaption>
+          </figcaption>
+        </figure>
+        <h2>Header here</h2>
+        <p>
+          When a radiant system is installed in your home, the boiler works very little in the summer. Through heat exchangers (now available for salt water), the pool can be heated with your existing high efficiency boiler. We can eliminate the need for large unsightly heaters, venting and gas piping issues.
+        </p>
+      </section>
+    </div>
+
 <!--#include file="includes/footer.asp"-->

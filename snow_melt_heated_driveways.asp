@@ -2,9 +2,25 @@
 
     <!--#include file="includes/navigation.asp"-->
 
+    <!-- Jumbotron -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="jumbotron"
+        style="background-image: url(../images/display_images/radiant_driveway.jpg);background-position:0% 100%;height:600px;">
+        </div>
+      </div>
+    </div>
+
     <div class="container">
 	    <section>
 		    <h1>Snow Melt &amp; Heated Driveways</h1>
+        <figure class="pull-right figure-float-right">
+          <img src="images/demos/snow_melt_detail.jpg" alt="Figure 3.">
+          <figcaption>
+          </figcaption>
+        </figure>
+        <!-- TODO: write header here -->
+        <h2>Header Here</h2>
 		    <p>
 			    Snow Melt and Heated Driveway systems, are a technological alternative to shoveling, salting, snow plowing, snow blowing and other snow removal methods.
 		    </p>
@@ -13,4 +29,5 @@
 		    </p>
 	    </section>
     </div>
+
 <!--#include file="includes/footer.asp"-->
