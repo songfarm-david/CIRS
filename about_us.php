@@ -1,6 +1,6 @@
-<!--#include file="includes/header.asp"-->
+<!--#include file="includes/header.php"-->
 
-    <!--#include file="includes/navigation.asp"-->
+    <!--#include file="includes/navigation.php"-->
 
     <div class="container">
       <section>
@@ -84,4 +84,4 @@
       </section>
     </div>
 
-<!--#include file="includes/footer.asp"-->
+<!--#include file="includes/footer.php"-->

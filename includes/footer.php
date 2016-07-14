@@ -6,9 +6,9 @@
 						<!-- NOTE: consider ARIA roles for footer nav -->
 						<!-- NOTE: secondary nav needs citation -->
 						<ul class="nav navbar-nav">
-							<li><a href="default.asp">Home</a></li>
-							<li><a href="about_us.asp">About Us</a></li>
-							<li><a href="contact_us.asp">Contact</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="about_us.php">About Us</a></li>
+							<li><a href="contact_us.php">Contact</a></li>
 							<li><a href="#">Careers</a></li>
 							<li><a href="#">Site Map</a></li>
 						</ul>

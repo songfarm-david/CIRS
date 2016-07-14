@@ -27,7 +27,7 @@
 			<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 		</header>
 
-    <!--#include file="includes/navigation.asp"-->
+    <!--#include file="includes/navigation.php"-->
 
 		<!-- Jumbotron -->
 		<div class="container-fluid">
@@ -172,4 +172,4 @@
 
 
 
-		<!--#include file="includes/footer.asp"-->
+		<!--#include file="includes/footer.php"-->
