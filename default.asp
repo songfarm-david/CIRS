@@ -10,8 +10,8 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
-		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">
-		<link rel="stylesheet" href="css/main.css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
+		<link rel="stylesheet" href="css/main.css" media="screen">
         <!-- Legacy browser support -->
 			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -20,67 +20,42 @@
 	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 	</head>
-	<body>
+	<body class="container">
 
 		<!-- Logo Banner -->
+		<header id="main-header">
+			<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
+		</header>
+
+    <!--#include file="includes/navigation.asp"-->
+
+		<!-- Jumbotron -->
 		<div class="container-fluid">
-			<header id="main-header">
-				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
-			</header>
-		</div>
-
-        <!--#include file="includes/navigation.asp"-->
-
-		<!-- Main Content -->
-		<main><!-- TODO: Confirm Accessibility Standards for this Element -->
-
-			<!-- Jumbotron -->
-			<!-- NOTE: Jumbotron employs different styles from Main Pages -->
-			<div class="container-fluid">
-				<div class="row">
-					<div class="jumbotron">
-						<div class="container">
-							<div class="row">
-								<div class="col-sm-7">
-									<div class="panel">
-										<section class="panel-body">
-											<h1>Radiant Heating Systems for Your Home</h1>
-											<h2>
-												An Allergy-Free Way to Stay Warm
-											</h2>
-											<p>
-												Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:1234567896">talk to us</a> about the possibility of installing a radiant heating system.
-												<!-- NOTE: verify proper usage of phone link -->
-											</p>
-										</section>
-									</div>
+      <div class="row">
+        <div class="jumbotron" style="background-image:url(../images/display_images/playing_family.jpg);background-position: 0 58%; height:620px;">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="panel panel-body" style="position:relative;top:80px;left:-20px;">
+									<p class="h1">In-Floor Radiant Heat</p>
+									<p>
+										Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:1234567896">talk to us</a> about the possibility of installing a radiant heating system.
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+        </div>
+      </div>
+    </div>
 
-			<section id="main-content">
-				<!-- Content Header -->
-				<div class="full-width-custom-container">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 main-content-header">
-								<h1>In-Floor Heat</h1>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Content Body -->
-				<div class="container">
+			<!-- Main Content -->
+			<div class="container">
+				<section>
+					<h1>Radiant Heating Systems for Your Home</h1>
+					<h2>What is Radiant In-Floor Heating?</h2>
 					<div class="row">
-						<div class="col-xs-12">
-							<h2>What is Radiant In-Floor Heating?</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-8">
+						<div class="col-sm-7">
 							<p>
 								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="">In Floor Heating Page</a> for a brief overview.
 							</p>
@@ -97,7 +72,7 @@
 								</div>
 							</footer>
 						</div>
-						<div class="col-sm-4">
+						<div class="col-sm-5">
 							<div class="panel panel-default">
 								<aside class="panel-body" id="aside">
 										<h3 class="sr-only">Uponor Accreditation</h3>
@@ -112,8 +87,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
+
 			<!-- Testimonials Section -->
 			<section>
 				<h1 class="sr-only">Testimonials</h1>
@@ -171,41 +147,5 @@
 					</div>
 				</article>
 			</section>
-		</main>
-		<footer id="footer">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-4 text-center">
-						<p>
-							&copy; 2016 Canadian In-Floor Radiant Solutions
-						</p>
-					</div>
-					<div class="col-xs-4">
-						<!-- Secondary Site Nav -->
-						<ul role="navigation" class="nav navbar-nav">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Site Map</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-4 text-center">
-						<p>
-							Social Links
-						</p>
-					</div>
-				</div>
-			</div>
 
-			<!-- TODO: Add a careers page -->
-			<!-- TODO: Consider applying ASP.net server scripting for includes -->
-		</footer>
-		<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-		<!-- Bootstrap JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- Custom jQuery -->
-		<script></script>
-	</body>
-</html>
+		<!--#include file="includes/footer.asp"-->

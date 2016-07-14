@@ -1,93 +1,94 @@
 <!--#include file="includes/header.asp"-->
 
     <!--#include file="includes/navigation.asp"-->
+
+		<!-- Jumbotron -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="jumbotron hero">
-
+				<div class="jumbotron" style="background-image: url(../images/display_images/happy_family.jpg);">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-4 col-xs-offset-8">
+								<div class="panel panel-body">
+									<p class="h1">Hydronic Radiant Floor Heating</p>
+									<p>
+										Long ago, the Romans used radiant floor heating in their bathhouses. For centuries, the Koreans heated their royal palaces and traditional homes in this manner. Today, radiant heating technology has been improved and can be used in all or part of our homes.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<main role="main" class="container-fluid">
+
+		<!-- Main content -->
+		<div class="container">
 			<section>
-				<div class="container-fluid header">
-					<header>
-						<h1>Hydronic Radiant Floor Heating</h1>
-						<p>
-							Long ago, the Romans used radiant floor heating in their bathhouses. For centuries, the Koreans heated their royal palaces and traditional homes in this manner. Today, radiant heating technology has been improved and can be used in all or part of our homes.
-						</p>
-					</header>
-				</div>
-				<div class="container">
+				<h1>In-Floor Heat</h1>
+				<section>
 					<h2>What is Radiant Floor Heating?</h2>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-12">
-							<figure class="pull-right float-right-figure">
-								<!-- NOTE: image should be clickable -->
-								<!-- NOTE: How to best support accessibility here? -->
-								<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="Figure 1.">
-								<figcaption>
-									Figure 1. Write a better description here!
-								</figcaption>
-							</figure>
-							<p>
-								Radiant floor heating is a method of heating your home by applying heat underneath or within the floor. Comparable to warming yourself in the sun, this type of heating warms objects as opposed to raising the temperature of the air.
-							</p>
-							<p>
-								There are three types of radiant floor heating: hydronic, electric and air. This document focuses on hydronic (water) radiant floor heating.
-							</p>
-							<p>
-								Hydronic radiant floor heating is a system of plastic pipes laid within a floor that carries hot water into specific rooms or "zones", dispersing the heat through the floor surface (see Figure 1).
-							</p>
-							<p>
-								The cooler water returns to the heat source where it is reheated and sent out again in what is known as a "closed-loop system". The pipes can be encased in a concrete slab, a concrete or gypsum cement overpour, laid into thin grooved panels that nail on top of a subfloor, or suspended below a wooden subfloor under the floor surface (see Figure 2). The heat output is determined by pipe spacing, water temperature, flow rate and floor covering. The heat output must be calculated to meet the heat loss demands of the home.
-							</p>
-							<p>
-								Canadian In-floor uses only a leak-resistant, non-toxic, high temperature, flexible piping called cross-linked polyethylene (PEX). PEX is a durable tubing that doesn’t become brittle over time and isn’t affected by aggressive concrete additives or water conditions. PEX has been used in Europe since the 1970s and was introduced to North America in the early 1980s.
-							</p>
-						<!-- </div>
-							<div class="col-sm-4"> -->
-								<!-- figure 1. -->
-
-							<!-- </div> -->
-
-					</div>
-				</div>
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-5">
-							<figure>
-								<img src="images/demos/residential_house_demo.jpg" alt="Figure 2."><!-- alt tags need more description -->
-								<!-- <figcaption>
-									Figure 2. Suspended in subfloor. Image courtesy of Wirsbo Co.
-								</figcaption> -->
-							</figure>
-						</div>
-						<div class="col-sm-7">
-							<h2>Is this type of heating available in both new and existing homes?</h2>
-							<p>
-								Yes. While the system can be easily designed and installed in new construction, homeowners wishing to renovate may incorporate hydronic radiant floor heating throughout the home, given certain conditions exist:
-							</p>
-							<ul>
-								<!-- TODO: Add list bullets here -->
-								<li>
-									<p>The building structure can support the additional weight of the concrete/cement overpour, or</p>
-								</li>
-								<li>
-									<p>the underside of the subfloor is accessible, or</p>
-								</li>
-								<li>
-									<p>if being added to the basement, there is enough height for a concrete overpour above the insulation (if the concrete floor is already insulated below, additional insulation is not necessary).</p>
-								</li>
-							</ul>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-12">
+								<figure class="pull-right figure-float-right">
+									<!-- NOTE: image should be clickable -->
+									<!-- NOTE: How to best support accessibility here? -->
+									<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="Figure 1.">
+									<figcaption>
+										Figure 1. Write a better description here!
+									</figcaption>
+								</figure>
+								<p>
+									Radiant floor heating is a method of heating your home by applying heat underneath or within the floor. Comparable to warming yourself in the sun, this type of heating warms objects as opposed to raising the temperature of the air.
+								</p>
+								<p>
+									There are three types of radiant floor heating: hydronic, electric and air. This document focuses on hydronic (water) radiant floor heating.
+								</p>
+								<p>
+									Hydronic radiant floor heating is a system of plastic pipes laid within a floor that carries hot water into specific rooms or "zones", dispersing the heat through the floor surface (see Figure 1).
+								</p>
+								<p>
+									The cooler water returns to the heat source where it is reheated and sent out again in what is known as a "closed-loop system". The pipes can be encased in a concrete slab, a concrete or gypsum cement overpour, laid into thin grooved panels that nail on top of a subfloor, or suspended below a wooden subfloor under the floor surface (see Figure 2). The heat output is determined by pipe spacing, water temperature, flow rate and floor covering. The heat output must be calculated to meet the heat loss demands of the home.
+								</p>
+								<p>
+									Canadian In-floor uses only a leak-resistant, non-toxic, high temperature, flexible piping called cross-linked polyethylene (PEX). PEX is a durable tubing that doesn’t become brittle over time and isn’t affected by aggressive concrete additives or water conditions. PEX has been used in Europe since the 1970s and was introduced to North America in the early 1980s.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-				<!-- NOTE: Aside here -->
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-5">
+								<figure>
+									<img src="images/demos/residential_house_demo.jpg" alt="Figure 2."><!-- alt tags need more description -->
+									<!-- <figcaption>
+										Figure 2. Suspended in subfloor. Image courtesy of Wirsbo Co.
+									</figcaption> -->
+								</figure>
+							</div>
+							<div class="col-sm-7">
+								<h2>Is this type of heating available in both new and existing homes?</h2>
+								<p>
+									Yes. While the system can be easily designed and installed in new construction, homeowners wishing to renovate may incorporate hydronic radiant floor heating throughout the home, given certain conditions exist:
+								</p>
+								<ul>
+									<li>
+										<p>The building structure can support the additional weight of the concrete/cement overpour, or</p>
+									</li>
+									<li>
+										<p>the underside of the subfloor is accessible, or</p>
+									</li>
+									<li>
+										<p>if being added to the basement, there is enough height for a concrete overpour above the insulation (if the concrete floor is already insulated below, additional insulation is not necessary).</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
 				<aside>
-					<figure class="pull-right float-right-figure">
+					<figure class="pull-right figure-float-right">
 						<img src="images/demos/radiantheat_house.jpg" alt="Figure 3.">
 						<figcaption>
 							Figure 3: Hydronic radiant floor heating throughout a home. Note: Pipes are not visible when installation is completed.
@@ -112,7 +113,7 @@
 				</section>
 				<section>
 					<h2 id="system_components">System Components</h2>
-					<figure class="pull-right float-right-figure">
+					<figure class="pull-right figure-float-right">
 						<img src="images/demos/components.jpg" alt="Figure 3.">
 						<figcaption>
 						</figcaption>
@@ -171,7 +172,7 @@
 				</section>
 				<section>
 					<h2 id="lifespan_and_warranty">Lifespan &amp; Warranty</h2>
-					<figure class="pull-right float-right-figure">
+					<figure class="pull-right figure-float-right">
 						<img src="images/demos/pex.jpg" alt="Figure 3.">
 						<figcaption>
 						</figcaption>
@@ -218,21 +219,23 @@
 					</dl></div>
 				</section>
 				<section>
-					<h2 id="cautions_and_solutions">Cautions and Solutions</h2>
-					<p>
-						Due to thermal mass, the system is not designed to have the temperature frequently adjusted.
-					</p>
-					<p>
-						Night setbacks are not practical in most situations as the system is slow to react.
-					</p>
-					<p>
-						Ventilation must be done separately. As air conditioning cannot be used in ventilation-sized ducts, window/wall air conditioning can be installed or room-by-room split systems can be used. Additionally, high-velocity air conditioning systems that use small outlets in ceiling or walls have proven very compatible with radiant floor heating operation.
-					</p>
-					<p>
-						This is not a do-it-yourself project. It requires professional installation, maintenance and repair. Having professionals do the installation will allow you to have the best performance and warranty on the heating system.
-					</p>
-				</section>
+						<h2 id="cautions_and_solutions">Cautions and Solutions</h2>
+						<p>
+							Due to thermal mass, the system is not designed to have the temperature frequently adjusted.
+						</p>
+						<p>
+							Night setbacks are not practical in most situations as the system is slow to react.
+						</p>
+						<p>
+							Ventilation must be done separately. As air conditioning cannot be used in ventilation-sized ducts, window/wall air conditioning can be installed or room-by-room split systems can be used. Additionally, high-velocity air conditioning systems that use small outlets in ceiling or walls have proven very compatible with radiant floor heating operation.
+						</p>
+						<p>
+							This is not a do-it-yourself project. It requires professional installation, maintenance and repair. Having professionals do the installation will allow you to have the best performance and warranty on the heating system.
+						</p>
+					</section>
 			</section>
-		</main>
+		</div>
+
+		<!-- </main> -->
 
 <!--#include file="includes/footer.asp"-->
