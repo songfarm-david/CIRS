@@ -6,7 +6,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="jumbotron"
-        style="background-image: url(../images/display_images/family_pool.jpg); background-position: 0 10%; height:500px;">
+        style="background-image: url(../images/display_images/kids_pool.jpg); background-position: 0 10%; height:500px;">
         </div>
       </div>
     </div>

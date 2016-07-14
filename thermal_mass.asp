@@ -5,7 +5,7 @@
     <!-- Jumbotron -->
     <div class="container-fluid">
       <div class="row">
-        <div class="jumbotron" style="background-image:url(../images/display_images/radiant_cover.jpg);background-position:0;height:600px;">
+        <div class="jumbotron" style="background-image:url(../images/display_images/family_livingroom.jpg);background-position:0;height:600px;">
         </div>
       </div>
     </div>
