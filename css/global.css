@@ -285,6 +285,7 @@ figure {
 	background: #fff;
 	width: 100%;
 	padding: 15px;
+	margin-bottom: 15px;
 }
 aside#uponor img,
 figure > img {
@@ -292,9 +293,17 @@ figure > img {
 }
 figure > figcaption {
 	/* use a different font here */
-	font-family: sans-serif;
-	font-size: 1.25em;
+	font-family: 'Lucida Sans Unicode',sans-serif;
+	font-size: 1em;
 	margin-top: 15px;
+}
+figcaption > footer {
+	font-family: inherit;
+	text-align: right;
+	font-size: 0.75em;
+	font-style: italic;
+	color: #ccc;
+	margin-top: 6px;
 }
 
 /* Aside */
