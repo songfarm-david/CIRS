@@ -5,10 +5,10 @@
 		<!-- Jumbotron -->
 		<div class="container-fluid">
 			<div class="row">
-				<div class="jumbotron" style="background-image: url(../images/display_images/happy_family.jpg);">
+				<div class="jumbotron" style="background-image: url(../images/display_images/happy_family.jpg); height:700px;">
 					<div class="container">
 						<div class="row">
-							<div class="col-xs-4 col-xs-offset-8">
+							<div class="col-xs-12 col-md-5">
 								<div class="panel panel-body">
 									<p class="h1">Hydronic Radiant Floor Heating</p>
 									<p>

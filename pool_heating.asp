@@ -15,12 +15,12 @@
     <div class="container">
       <section>
         <h1>Pool Heating Systems</h1>
-        <figure class="pull-left figure-float-left">
+        <figure class="pull-right figure-float-right" style="width:38%;">
           <img src="images/demos/radiantfloor_pool.jpg" alt="Figure 3.">
           <figcaption>
           </figcaption>
         </figure>
-        <h2>Header here</h2>
+        <!-- <h2>Header here</h2> -->
         <p>
           When a radiant system is installed in your home, the boiler works very little in the summer. Through heat exchangers (now available for salt water), the pool can be heated with your existing high efficiency boiler. We can eliminate the need for large unsightly heaters, venting and gas piping issues.
         </p>

@@ -15,7 +15,7 @@
     <div class="container">
 	    <section>
 		    <h1>Fire Safety Systems</h1>
-        <h2>Header Here</h2>
+        <!-- <h2>Header Here</h2> -->
 		    <p>
 			    In-home sprinklers are becoming more popular than ever. Small pot light-looking ceiling fixtures are mounted throughout the home to monitor heat and disperse water to put out the fire threat.
 		    </p>
@@ -42,5 +42,5 @@
 		    </p>
 	    </section>
     </div>
-    
+
 <!--#include file="includes/footer.asp"-->

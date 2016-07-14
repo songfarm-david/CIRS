@@ -36,8 +36,8 @@
           <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
         </p>
         <div class="container-fluid">
-          <div class="panel panel-body">
-            <article id="cost_examples">
+          <article id="cost_examples">
+            <div class="panel panel-body">
               <h2>Cost Examples</h2>
               <!-- NOTE: this should be contained in a table -->
               <div class="container-fluid">
@@ -98,8 +98,8 @@
                   </tfoot>
                 </table>
               </div>
-            </article>
-          </div><!-- end of panel-body -->
+            </div><!-- end of panel-body -->
+          </article>
         </div>
 	    </section>
     </div>

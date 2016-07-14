@@ -20,7 +20,7 @@
           </figcaption>
         </figure>
         <!-- TODO: write header here -->
-        <h2>Header Here</h2>
+        <!-- <h2>Header Here</h2> -->
 		    <p>
 			    Snow Melt and Heated Driveway systems, are a technological alternative to shoveling, salting, snow plowing, snow blowing and other snow removal methods.
 		    </p>

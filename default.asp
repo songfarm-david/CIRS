@@ -49,63 +49,61 @@
       </div>
     </div>
 
-			<!-- Main Content -->
-			<div class="container">
-				<section>
-					<h1>Radiant Heating Systems for Your Home</h1>
-					<h2>What is Radiant In-Floor Heating?</h2>
-					<div class="row">
-						<div class="col-sm-7">
+		<!-- Main Content -->
+		<div class="container">
+			<section id="main-content">
+				<h1>Radiant Heating Systems for Your Home</h1>
+				<div class="row">
+					<div class="col-md-6 col-lg-7">
+						<h2>What is Radiant In-Floor Heating?</h2>
+						<p>
+							New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="">In Floor Heating Page</a> for a brief overview.
+						</p>
+						<p>
+							Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="">Heated Driveways</a>.
+						</p>
+						<p>
+							To get a sense of what In-Floor Heating may cost, please visit our <a href="#">What Does It Cost?</a> page.
+						</p>
+						<p class="call-us">
+		          <b>For a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
+		        </p>
+					</div>
+					<div class="col-md-6 col-lg-5">
+						<aside class="panel-body" id="uponor">
+							<h3 class="sr-only">Uponor Accreditation</h3>
+							<img src="images/uponor_logo_big.jpg" alt="Logo: Uponor"><!-- Add uponor image here -->
 							<p>
-								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="">In Floor Heating Page</a> for a brief overview.
+								<b>The world leader in radiant materials has accredited us with Level 2 Certification.</b>
 							</p>
 							<p>
-								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="">Heated Driveways</a>.
+								This special qualification entitles you to a <strong><em>25 Year Manufacturer's Warranty</em></strong> on systems we install
 							</p>
 							<footer>
-								<h2 class="sr-only">Partners</h2>
-								<div>
-									<a href="http://www.ultimatecomfort.ca/" rel="external"><img src="images/logo-canadianhydronics.gif" alt="Logo: Canadian Hydronics Council" title="Canadian Hydronics Council"></a>
-									<a href="http://www.burlingtonchamber.com/" rel="external"><img src="images/logo-burlingtonchamber.gif" alt="Logo: Burlington Chamber of Commerce" title="Burlington Chamber of Commerce"></a>
-									<a href="http://www.oakvillechamber.com/" rel="external"><img src="images/logo-oakvillechamber.gif" alt="Logo: Oakville Chamber of Commerce" title="Oakville Chamber of Commerce"></a>
-									<a href="https://www.facebook.com/beautifulheat/" rel="external"><img src="images/logo-beautifulheat.gif" alt="Logo: Beautiful Heat" title="Beautiful Heat"></a><!-- old inactive URL: http://www.beautifulheat.com/home replaced with Facebook page :: Revisit page later on -->
-								</div>
+								<img src="images/uponor_lrg.gif" alt="Uponor Logo" />
+								<img src="images/viessmann_sm.gif" alt="Viessmann Logo" />
+								<img src="images/seisco_sm.gif" alt="Seisco Logo"/>
 							</footer>
-						</div>
-						<div class="col-sm-5">
-							<div class="panel panel-default">
-								<aside class="panel-body" id="aside">
-										<h3 class="sr-only">Uponor Accreditation</h3>
-										<img src="images/uponor_lrg.gif" alt="Logo: Uponor"><!-- Add uponor image here -->
-										<p>
-											<b>The world leader in radiant materials has accredited us with level 2 certification.</b>
-										</p>
-										<p>
-										This special qualification entitles you to a <strong>25 Year Manufacturer's Warranty</strong> on systems we install
-										</p>
-								</aside>
-							</div>
-						</div>
+						</aside>
 					</div>
-				</section>
-			</div>
+				</div>
 
-			<!-- Testimonials Section -->
-			<section>
-				<h1 class="sr-only">Testimonials</h1>
-				<article>
+				<!-- Testimonials Section -->
+
+				<article id="testimonial">
 					<div class="container">
-						<div class="row">
-							<!-- Testimonials here -->
-							<div class="carousel slide" id="testimonials" data-ride="carousel">
-								<div class="carousel-inner">
+					<h2>Testimonials</h2>
+					<!-- <div class="container"> -->
+						<!-- <div class="row"> -->
+							<div class="carousel slide" data-ride="carousel" id="testimonials"> <!-- data-ride="carousel" -->
+								<div class="carousel-inner" >
 									<!-- NOTE: Carousel needs fallback for lt IE9 -->
 									<!-- NOTE: Requires distinct font here -->
-									<div class="item testimonial active">
+									<div class="item testimonial">
 										<!-- TODO: Center blockquote text -->
 										<blockquote>
 											<p>
-											"We Love our heated floors.  If you are planning a renovation you should absolutely consider radiant heating.  We highly recommend Canadian In-floor heating; they are very professional and have a knowledgeable crew working for them. Canadian In-floor heating stands behind their product and services 110 percent.  After our extensive renovations, Walter and his crew is on our recommend list."
+												We Love our heated floors.  If you are planning a renovation you should absolutely consider radiant heating.  We highly recommend Canadian In-floor heating; they are very professional and have a knowledgeable crew working for them. Canadian In-floor heating stands behind their product and services 110 percent.  After our extensive renovations, Walter and his crew is on our recommend list.
 											</p>
 											<footer>
 												Marie Fallon
@@ -115,23 +113,24 @@
 									<div class="item testimonial">
 										<blockquote cite="http://www.cochrenhomes.com">
 											<p>
-											"Walter and his staff have gone above and beyond the call of duty and made every customer happy. Every question and concern is promptly and professionally answered. We recommend Canadian In-floor to anyone who wishes to have a radiant heat system."
+												Walter and his staff have gone above and beyond the call of duty and made every customer happy. Every question and concern is promptly and professionally answered. We recommend Canadian In-floor to anyone who wishes to have a radiant heat system.
 											</p>
 											<footer>
 												James Dickinson, <cite>Cochren Homes</cite>
 											</footer>
 										</blockquote>
 									</div>
-									<div class="item testimonial">
+									<div class="item testimonial active">
 										<blockquote cite="http://">
 											<p>
-											"Canadian In-Floor provides a professional package with full shop drawings, installation and service."
+												Canadian In-Floor provides a professional package with full shop drawings, installation and service.
 											</p>
 											<footer>
 												Angelo Puglisi, <cite>Terracon Underground Ltd.</cite>
 											</footer>
 										</blockquote>
 									</div>
+
 								</div>
 								<!-- Manual Controls -->
 								<a href="#testimonials" class="carousel-control left" role="button" data-slide="prev">
@@ -143,9 +142,34 @@
 									<span class="sr-only">Next</span>
 								</a>
 							</div>
-						</div>
+						<!-- </div> -->
+					<!-- </div> -->
 					</div>
 				</article>
+
+				<!-- end of testimonial -->
+
+				<section id="partners">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<h2>Proud partners with</h2>
+								<div>
+									<a href="http://www.ultimatecomfort.ca/" rel="external"><img src="images/logo-canadianhydronics.gif" alt="Logo: Canadian Hydronics Council" title="Canadian Hydronics Council"></a>
+									<a href="http://www.burlingtonchamber.com/" rel="external"><img src="images/logo-burlingtonchamber.gif" alt="Logo: Burlington Chamber of Commerce" title="Burlington Chamber of Commerce"></a>
+									<a href="http://www.oakvillechamber.com/" rel="external"><img src="images/logo-oakvillechamber.gif" alt="Logo: Oakville Chamber of Commerce" title="Oakville Chamber of Commerce"></a>
+									<a href="https://www.facebook.com/beautifulheat/" rel="external"><img src="images/logo-beautifulheat.gif" alt="Logo: Beautiful Heat" title="Beautiful Heat"></a>
+									<!-- old inactive URL: http://www.beautifulheat.com/home replaced with Facebook page :: Revisit page later on -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
 			</section>
+		</div>
+
+
+
 
 		<!--#include file="includes/footer.asp"-->
