@@ -6,3 +6,6 @@ template.html
 # Ignore ASP.net V4.6
 App_Data/
 bin/
+
+# Ignore all old and unused images
+images/old_unused/
