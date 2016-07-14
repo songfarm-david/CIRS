@@ -10,7 +10,7 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
-		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles" charset="utf-8">
+		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
 		<!-- Legacy browser support -->
 			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!--[if lt IE 9]>
@@ -20,3 +20,5 @@
 	    <![endif]-->
 	</head>
 	<body class="container">
+		<!-- For document outline -->
+		<h1 class="hidden">Canadian In-Floor Radiant Solutions</h1>
