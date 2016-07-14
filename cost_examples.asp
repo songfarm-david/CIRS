@@ -2,6 +2,15 @@
 
     <!--#include file="includes/navigation.asp"-->
 
+    <!-- Jumbotron -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="jumbotron" style="background-image: url(../images/display_images/child_drawing.jpg); background-position:0 63%; height:560px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
     <div class="container">
 	    <section>
 		    <h1>What Does Radiant In-Floor Heating Cost?</h1>
@@ -23,67 +32,76 @@
 		    <p>
 			    Below are a few samples of typical projects you can use to get a ball park idea as to costs.
 		    </p>
-		    <p>
-			    To find out what your project will cost call us at <a href="tel:9055381661">905-538-1661</a>.
-		    </p>
-		    <section>
-			    <article>
-				    <h4 id="example1">Example #1</h4>
-				    <h5>Concrete basement floor of existing home: 12’ x 24’ (288 sq/ft)</h5>
-				    <p>
-					    Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
-				    </p>
-				    <p>
-					    Approximate cost: $8000.00 or $28.00 per sq/ft
-				    </p>
-			    </article>
-			    <article>
-				    <h4>Example #2</h4>
-				    <h5>Concrete basement floor of existing home: 1500 sq/ft</h5>
-				    <p>
-					    Tubing fastened to floor, pour 1 ½" gypsum concrete to cover, install X-Block.
-				    </p>
-				    <p>
-					    Approximate cost: $14,500.00 or $9.67 per sq/ft
-				    </p>
-			    </article>
-			    <article>
-				    <h4 id="example3">Example #3</h4>
-				    <h5>Full basement during new home construction: 1500 sq/ft</h5>
-				    <p>
-					    Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
-				    </p>
-				    <p>
-					    Approximate cost: $8800.00 or $5.86 per sq/ft
-				    </p>
-			    </article>
-			    <article>
-				    <h4 id="example4">Example #4</h4>
-				    <h5>Entire new home including basement: 4000 sq/ft</h5>
-				    <p>
-					    Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
-				    </p>
-				    <p>
-					    Approximate cost: $54,000.00 or $13.50 per sq/ft
-				    </p>
-			    </article>
-			    <article>
-				    <h4 id="example5">Example #5</h4>
-				    <h5>Underfloor heating on main floor of existing home</h5>
-				    <p>
-					    Install tubing between joists with reflective foil barrier.
-				    </p>
-				    <p>
-					    Approximate cost: $10.00 - $20.00 per sq/ft
-				    </p>
-			    </article>
-		    </section>
-		    <!-- end of examples section -->
-		    <footer>
-			    <p>
-				    <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
-			    </p>
-		    </footer>
+        <p>
+          <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
+        </p>
+        <div class="container-fluid">
+          <div class="panel panel-body">
+            <article id="cost_examples">
+              <h2>Cost Examples</h2>
+              <!-- NOTE: this should be contained in a table -->
+              <div class="container-fluid">
+                <table class="table">
+                  <!-- Create columns for styling -->
+                  <colgroup>
+                    <col></col>
+                    <col></col>
+                    <col></col>
+                  </colgroup>
+                  <thead class="text-center">
+                    <tr>
+                      <th>
+                        Basement Floor of Existing Home<br> <span>(288 sq/ft)</span>
+                      </th>
+                      <th>
+                        Full Basement during New Home Construction<br> <span>(1500 sq/ft)</span>
+                      </th>
+                      <th>
+                        Entire New Home including Basement<br> <span>(4000 sq/ft)</span>
+                      </th>
+                      <th>
+                        Underfloor Heating on Main Floor of Existing Home
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
+                      </td>
+                      <td>
+                        Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
+                      </td>
+                      <td>
+                        Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
+                      </td>
+                      <td>
+                        Install tubing between joists with reflective foil barrier.
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr class="text-center">
+                      <td>
+                        $8000.00<br> <span>($28.00 per sq/ft)</span>
+                      </td>
+                      <td>
+                        $8800.00<br> <span>($5.86 per sq/ft)</span>
+                      </td>
+                      <td>
+                        $54,000.00<br> <span>($13.50 per sq/ft)</span>
+                      </td>
+                      <td>
+                        $10.00-$20.00 per sq/ft
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </article>
+          </div><!-- end of panel-body -->
+        </div>
 	    </section>
     </div>
+
 <!--#include file="includes/footer.asp"-->
