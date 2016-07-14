@@ -6,9 +6,7 @@
 			<div class="navbar-header">
 				<h1 class="sr-only">Navigation</h1>
 				<a href="default.asp" class="navbar-brand">
-					<img src="images/cirsLogo_iconOnly.jpg" alt="Home page">
-					<!-- full logo (optional) -->
-					<!-- <img src="images/cirsLogo_lowRes_white.jpg" alt="Home page"> -->
+					<img src="images/cirsLogo_iconOnly.jpg" alt="Home: Canadian In-Floor Radiant Solutions" title="Home">
 				</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">

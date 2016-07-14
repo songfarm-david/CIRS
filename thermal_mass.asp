@@ -15,7 +15,7 @@
 	    <section>
 		    <h1>Thermal Mass</h1>
         <figure class="pull-right figure-float-right">
-          <img src="images/demos/heated_bathroomfloor.jpg" alt="">
+          <img src="images/demos/heated_bathroomfloor.jpg" alt="Radiant-heated bathroom floor">
           <figcaption>
           </figcaption>
         </figure>
@@ -27,6 +27,8 @@
         <figure class="pull-left figure-float-left">
           <img src="images/demos/flooring.jpg" alt="">
           <figcaption>
+            Many options for finished-floor covering are conducive to radiant heat.
+            <footer>Courtest: Uponor</footer>
           </figcaption>
         </figure>
 		    <p>
@@ -36,11 +38,11 @@
 			    The thermal gain is significant since masonry materials hold the heat and the cool for up to twelve hours and re-releases it back into the room. As a result, the demand on your A/C or furnace is reduced during that part of the day. This works great in conjunction with radiant floors and/or rooms that have southern exposure and overhangs that shade in the summer and let heat in over the winter to warm the thermal mass. Similar benefits can come with thermal mass walls or even water tanks positioned strategically in the home.
 		    </p>
 		    <p>
-			    The return on investment of having a thermal mass is 13.3%, this does not take into effect the added comfort level.
+			    The return on investment of having a thermal mass is 13.3% &ndash; this does not take into effect the added comfort level.
 		    </p>
 		    <footer>
 			    <!-- NOTE: the could be formatted more effectively perhaps -->
-			    <p>
+			    <p class="small">
 				    The ROI Calculation is based on 1,000 square feet of floors with utility bill savings in both summer and winter.
 			    </p>
 		    </footer>

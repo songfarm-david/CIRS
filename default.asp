@@ -72,7 +72,7 @@
 					<div class="col-md-6 col-lg-5">
 						<aside class="panel-body" id="uponor">
 							<h3 class="sr-only">Uponor Accreditation</h3>
-							<img src="images/uponor_logo_big.jpg" alt="Logo: Uponor"><!-- Add uponor image here -->
+							<a href="http://www.uponor.ca/" target="_blank"><img src="images/partners/uponor_logo_lg.jpg" alt="Uponor website" title="Uponor"></a>
 							<p>
 								<b>The world leader in radiant materials has accredited us with Level 2 Certification.</b>
 							</p>
@@ -80,9 +80,9 @@
 								This special qualification entitles you to a <strong><em>25 Year Manufacturer's Warranty</em></strong> on systems we install
 							</p>
 							<footer>
-								<img src="images/uponor_lrg.gif" alt="Uponor Logo" />
-								<img src="images/viessmann_sm.gif" alt="Viessmann Logo" />
-								<img src="images/seisco_sm.gif" alt="Seisco Logo"/>
+								<a href="http://www.uponor.ca/" target="_blank"><img src="images/partners/uponor_sm.gif" alt="Uponor website"></a>
+								<a href="http://www.viessmann.ca/" target="_blank"><img src="images/partners/viessmann_sm.gif" alt="Viessmann website"></a>
+								<a href="http://www.seisco.com/" target="_blank"><img src="images/partners/seisco_sm.gif" alt="Seisco website"></a>
 							</footer>
 						</aside>
 					</div>
@@ -155,10 +155,10 @@
 							<div class="col-xs-12">
 								<h2>Proud partners with</h2>
 								<div>
-									<a href="http://www.ultimatecomfort.ca/" rel="external"><img src="images/logo-canadianhydronics.gif" alt="Logo: Canadian Hydronics Council" title="Canadian Hydronics Council"></a>
-									<a href="http://www.burlingtonchamber.com/" rel="external"><img src="images/logo-burlingtonchamber.gif" alt="Logo: Burlington Chamber of Commerce" title="Burlington Chamber of Commerce"></a>
-									<a href="http://www.oakvillechamber.com/" rel="external"><img src="images/logo-oakvillechamber.gif" alt="Logo: Oakville Chamber of Commerce" title="Oakville Chamber of Commerce"></a>
-									<a href="https://www.facebook.com/beautifulheat/" rel="external"><img src="images/logo-beautifulheat.gif" alt="Logo: Beautiful Heat" title="Beautiful Heat"></a>
+									<a href="http://www.ultimatecomfort.ca/" rel="external"><img src="images/partners/logo-canadianhydronics.gif" alt="Canadian Hydronics Council website" title="Canadian Hydronics Council"></a>
+									<a href="http://www.burlingtonchamber.com/" rel="external"><img src="images/partners/logo-burlingtonchamber.gif" alt="Burlington Chamber of Commerce website" title="Burlington Chamber of Commerce"></a>
+									<a href="http://www.oakvillechamber.com/" rel="external"><img src="images/partners/logo-oakvillechamber.gif" alt="Oakville Chamber of Commerce website" title="Oakville Chamber of Commerce"></a>
+									<a href="https://www.facebook.com/beautifulheat/" rel="external"><img src="images/partners/logo-beautifulheat.gif" alt="Beautiful Heat website" title="Beautiful Heat Facebook Page"></a>
 									<!-- old inactive URL: http://www.beautifulheat.com/home replaced with Facebook page :: Revisit page later on -->
 								</div>
 							</div>

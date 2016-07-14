@@ -34,9 +34,9 @@
 								<figure class="pull-right figure-float-right">
 									<!-- NOTE: image should be clickable -->
 									<!-- NOTE: How to best support accessibility here? -->
-									<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="Figure 1.">
+									<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="Radiant heat versus forced air">
 									<figcaption>
-										Figure 1. Write a better description here!
+										<footer>Photo: warmboard.com</footer>
 									</figcaption>
 								</figure>
 								<p>
@@ -46,10 +46,10 @@
 									There are three types of radiant floor heating: hydronic, electric and air. This document focuses on hydronic (water) radiant floor heating.
 								</p>
 								<p>
-									Hydronic radiant floor heating is a system of plastic pipes laid within a floor that carries hot water into specific rooms or "zones", dispersing the heat through the floor surface (see Figure 1).
+									Hydronic radiant floor heating is a system of plastic pipes laid within a floor that carries hot water into specific rooms or "zones", dispersing the heat through the floor surface.
 								</p>
 								<p>
-									The cooler water returns to the heat source where it is reheated and sent out again in what is known as a "closed-loop system". The pipes can be encased in a concrete slab, a concrete or gypsum cement overpour, laid into thin grooved panels that nail on top of a subfloor, or suspended below a wooden subfloor under the floor surface (see Figure 2). The heat output is determined by pipe spacing, water temperature, flow rate and floor covering. The heat output must be calculated to meet the heat loss demands of the home.
+									The cooler water returns to the heat source where it is reheated and sent out again in what is known as a "closed-loop system" (see Figure 1). The pipes can be encased in a concrete slab, a concrete or gypsum cement overpour, laid into thin grooved panels that nail on top of a subfloor, or suspended below a wooden subfloor under the floor surface (see Figure 2). The heat output is determined by pipe spacing, water temperature, flow rate and floor covering. The heat output must be calculated to meet the heat loss demands of the home.
 								</p>
 								<p>
 									Canadian In-floor uses only a leak-resistant, non-toxic, high temperature, flexible piping called cross-linked polyethylene (PEX). PEX is a durable tubing that doesn’t become brittle over time and isn’t affected by aggressive concrete additives or water conditions. PEX has been used in Europe since the 1970s and was introduced to North America in the early 1980s.
@@ -61,10 +61,11 @@
 						<div class="row">
 							<div class="col-sm-5">
 								<figure>
-									<img src="images/demos/residential_house_demo.jpg" alt="Figure 2."><!-- alt tags need more description -->
-									<!-- <figcaption>
-										Figure 2. Suspended in subfloor. Image courtesy of Wirsbo Co.
-									</figcaption> -->
+									<img src="images/demos/closed_loop.jpg" alt=""><!-- alt tags need more description -->
+									<figcaption>
+										Figure 1. Closed-loop Radiant heating system.
+										<footer>Photo: ecohydronics.com.au</footer>
+									</figcaption>
 								</figure>
 							</div>
 							<div class="col-sm-7">
@@ -89,9 +90,10 @@
 				</section>
 				<aside>
 					<figure class="pull-right figure-float-right">
-						<img src="images/demos/radiantheat_house.jpg" alt="Figure 3.">
+						<img src="images/demos/radiantheat_house.jpg" alt="">
 						<figcaption>
 							Figure 3: Hydronic radiant floor heating throughout a home. Note: Pipes are not visible when installation is completed.
+							<footer>Courtesy: Uponer</footer>
 						</figcaption>
 					</figure>
 					<h2>Entire House Versus Selected Rooms</h2>
@@ -114,8 +116,9 @@
 				<section>
 					<h2 id="system_components">System Components</h2>
 					<figure class="pull-right figure-float-right">
-						<img src="images/demos/components.jpg" alt="Figure 3.">
+						<img src="images/demos/components.jpg" alt="">
 						<figcaption>
+							<footer>Illustration by: Harry Campbell</footer>
 						</figcaption>
 					</figure>
 					<p>
@@ -173,12 +176,14 @@
 				<section>
 					<h2 id="lifespan_and_warranty">Lifespan &amp; Warranty</h2>
 					<figure class="pull-right figure-float-right">
-						<img src="images/demos/pex.jpg" alt="Figure 3.">
+						<img src="images/demos/pex.jpg" alt="">
 						<figcaption>
+							Uponor PEX-a tubing is flexible, durable, and has been used in plumbing systems for more than 20 years.
+							<footer>Courtesy: Uponor</footer>
 						</figcaption>
 					</figure>
 					<p>
-						Canadian In-Floors’ installations are <em>covered by a manufacturers warranty of <strong>25 years</strong></em> though PEX pipes set in the floor are expected to last more than 50 years (some test results indicate life expectancies of 200-300 years).
+						Canadian In-Floors’ installations are covered by a <strong>manufacturers warranty of 25 years</strong> though PEX pipes set in the floor are expected to last more than 50 years (some test results indicate life expectancies of 200-300 years).
 					</p>
 					<p>
 						There are two types of warranties: a Manufacturer’s Warranty and an Installation Warranty.

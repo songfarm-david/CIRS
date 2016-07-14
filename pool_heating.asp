@@ -18,6 +18,7 @@
         <figure class="pull-right figure-float-right" style="width:38%;">
           <img src="images/demos/radiantfloor_pool.jpg" alt="Figure 3.">
           <figcaption>
+            <footer>Photo: prostar-mechanical.com</footer>
           </figcaption>
         </figure>
         <!-- <h2>Header here</h2> -->
