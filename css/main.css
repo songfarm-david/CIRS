@@ -6,13 +6,20 @@ July, 2016
 ***/
 
 /* Logo Banner*/
+/*body.container > div.container-fluid {
+	padding: 0;
+}*/
 header#main-header {
-	/* NOTE: header height is currently variable! */
-	height: 330px;
+	height: 315px; /* NOTE: header height is currently variable! */
 	background: #f1f1f1 url(../images/cirsLogo_lowRes_white.jpg) center 50% no-repeat;
 	background-size: contain;
+	background-size: 81%;
 	/* IE does not support // NOTE: do not rely on this property in production */
 	background-blend-mode: multiply;
+}
+
+section#main-content p.call-us {
+	margin: 45px 0 0;
 }
 
 /* Primary Nav */
@@ -21,13 +28,11 @@ nav#nav-primary {
 	background: none;
 	padding: 0;
 }
-/* remove home icon */
-#nav-primary div.navbar-header {
-	display: none;
-}
 nav#nav-primary ul {
 	width: 100%;
 	text-align: center;
+	border-top: 3px solid #fff;
+	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
 }
 #nav-primary ul li {
 	float: none;
@@ -41,110 +46,35 @@ nav#nav-primary ul {
 	/* for <=IE7 */
 	*display: inline;
 }
-
+/* remove Icon (home link) */
+#nav-primary div.navbar-header {
+	display: none;
+}
+/* position call us button */
+#nav-primary > a {
+	top: -315px; right: 20px;
+}
 /* reset to default position: target only 'cost examples' li dropdown menu */
 nav#nav-primary li.dropdown > a[href^="cost_examples"] + ul.dropdown-menu {
 	left: 0; right: auto;
 }
 
-
-
-/* Jumbotron */
-.container-fluid .jumbotron { border-radius: 0; }
-.jumbotron {
-	border: none;
-	border-radius: 0;
-	margin-bottom: 0; /* remove Bootstrap bottom margin */
-	background-color: rgba(255, 152, 0, 0.5);
-	background-color: #c7c6c6;
-}
-.jumbotron .panel {
-	/* make panel transparent */
+/** Partners Footer */
+section#partners {
+	border: 10px solid #f5911f;
 	background: #fff;
-
+	padding-bottom: 15px;
+	/* make this only for smaller screen sizes */
+	/*overflow-x: scroll; */
 }
-.jumbotron h2 {
-	color: #f5911f;
-	/*font-size: 4.5em;*/
+section#partners > .container { width: 100%; }
+section#partners h2 {
+	border-bottom: 3px dotted #ccc;
+	/*margin-left: 1em; margin-right: 1em;*/
+	padding: 15px 0 0;
 }
-.jumbotron section.panel-body {
-	padding: 15px 35px;
+#partners > div a {
+	display: table-cell;
+	width: 25%; /* fixes weird centering behavior */
+	text-align: center;
 }
-
-.jumbotron section.panel-body > p:first-of-type {
-	/*font-weight: bold;*/
-}
-
-
-
-/* Main Content Section */
-#main-content {
-	margin-bottom: 60px; /* increase space between main content and testimonials */
-}
-#main-content .full-width-custom-container {
-	background: #fff;
-	margin-bottom: 20px;
-}
-.full-width-custom-container h3 {
-	padding: 10px 0 20px;
-	color: #f5911f;
-	/*font-size: 4em;*/
-}
-#main-content h4 {
-	/*font-size: 2.5em;*/
-	padding: 6px 0 16px;
-	font-family: 'Dynalight';
-}
-#main-content p.main-text {
-	/*font-size: 1.5em;*/
-	/*line-height: 1.5;*/
-}
-#main-content footer {
-	position: relative;
-	bottom: -30px;
-}
-
-/* could re-use */
-.full-width-custom-container {
-	width: 100%;
-}
-
-
-/* Aside */
-#aside {
-	border: 5px solid #ddd;
-	padding: 20px 1.5em;
-}
-#aside img {
-	padding: 15px 0;
-}
-
-
-/* Testimonials */
-section > article {
-	background: #fff;
-	height: 480px; /* create a fixed height for section */
-	margin-bottom: 120px;
-	border-bottom: 	10px solid #f5911f;
-}
-section > article div {
-	height: 100%;
-}
-blockquote { line-height: 1.5; }
-
-.testimonial p {
-	font-family: 'Italianno', 'Aramisi', cursive;
-	font-size: 2.5em;
-	line-height: 1.4;
-}
-
-.carousel-inner .item blockquote {
-	height: 200px; /* height of blockquote */
-	margin-top: 55px;
-	border-left: none; /* remove Bootstrap default left border */
-}
-/* remove default background */
-.carousel .carousel-control { background: none; }
-/* position chevrons futher outside */
-.carousel-control.left { left: -150px; }
-.carousel-control.right { right: -150px; }
