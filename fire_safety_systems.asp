@@ -23,7 +23,7 @@
 			    Fire safety systems are a cost-effective add-on/upgrade option to an in-floor heating installation.  They provide peace-of-mind and may earn you a reduction in your insurance rates.
 		    </p>
         <figure class="pull-left figure-float-left">
-          <img src="images/demos/sprinkler_head.jpg" alt="Pex-tubing connected Fire Sprinkler head">
+          <img src="images/demos/sprinkler_head.jpg" alt="AquaSAFE&trade; Fire Sprinkler System with Pex-a tubing" title="AquaSAFE&trade; Fire Sprinkler System with Pex-a tubing">
           <figcaption>
             Uponor AquaSAFE&trade; fastened under-floor, connected with Uponor PEX-a tubing.
             <footer>Courtest: Uponor.ca</footer>

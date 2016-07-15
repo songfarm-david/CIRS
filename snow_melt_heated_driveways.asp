@@ -15,7 +15,7 @@
 	    <section>
 		    <h1>Snow Melt &amp; Heated Driveways</h1>
         <figure class="pull-right figure-float-right">
-          <img src="images/demos/snow_melt_detail.jpg" alt="Figure 3.">
+          <img src="images/demos/snow_melt_detail.jpg" alt="Uponor PEX-a tubing encased in asphalt for residential snow melt" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
           <figcaption>
           </figcaption>
         </figure>

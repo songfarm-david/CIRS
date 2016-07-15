@@ -16,7 +16,7 @@
       <section>
         <h1>Pool Heating Systems</h1>
         <figure class="pull-right figure-float-right" style="width:38%;">
-          <img src="images/demos/radiantfloor_pool.jpg" alt="Figure 3.">
+          <img src="images/demos/radiantfloor_pool.jpg" alt="Residential pool heated by domestic radiant heat system" title="Residential pool heated by domestic radiant heat system">
           <figcaption>
             <footer>Photo: prostar-mechanical.com</footer>
           </figcaption>

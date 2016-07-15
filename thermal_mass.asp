@@ -15,7 +15,7 @@
 	    <section>
 		    <h1>Thermal Mass</h1>
         <figure class="pull-right figure-float-right">
-          <img src="images/demos/heated_bathroomfloor.jpg" alt="Radiant-heated bathroom floor">
+          <img src="images/demos/heated_bathroomfloor.jpg" alt="A bathroom floor heated by radiant heat">
           <figcaption>
           </figcaption>
         </figure>

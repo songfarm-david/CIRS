@@ -34,7 +34,7 @@
 								<figure class="pull-right figure-float-right">
 									<!-- NOTE: image should be clickable -->
 									<!-- NOTE: How to best support accessibility here? -->
-									<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="Radiant heat versus forced air">
+									<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="" title="Radiant heat versus forced air">
 									<figcaption>
 										<footer>Photo: warmboard.com</footer>
 									</figcaption>
@@ -61,7 +61,7 @@
 						<div class="row">
 							<div class="col-sm-5">
 								<figure>
-									<img src="images/demos/closed_loop.jpg" alt=""><!-- alt tags need more description -->
+									<img src="images/demos/closed_loop.jpg" alt="" title="Closed-loop system">
 									<figcaption>
 										Figure 1. Closed-loop Radiant heating system.
 										<footer>Photo: ecohydronics.com.au</footer>
@@ -116,7 +116,7 @@
 				<section>
 					<h2 id="system_components">System Components</h2>
 					<figure class="pull-right figure-float-right">
-						<img src="images/demos/components.jpg" alt="">
+						<img src="images/demos/components.jpg" alt="" title="Radiant heating system components">
 						<figcaption>
 							<footer>Illustration by: Harry Campbell</footer>
 						</figcaption>
