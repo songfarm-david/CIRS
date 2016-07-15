@@ -14,9 +14,12 @@
       		    </h3>
               <figure class="pull-right figure-float-right" style="width:45%;">
                 <img src="images/demos/readinggirl.jpg" alt="">
+                <figcaption>
+                  <footer>Photo: yahoo.com</footer>
+                </figcaption>
               </figure>
       		    <p>
-      			    We are an Ontario based Radiant heating company.
+      			    We are an Ontario-based Radiant heating company.
       		    </p>
       		    <h3>
       			    What we do

@@ -10,7 +10,7 @@
           <div class="col-xs-12 col-md-12 col-md-offset-0 col-lg-6 col-lg-offset-3">
             <div class="panel">
               <div class="panel-body text-center">
-                <h2>Canadian In-Floor Radiant Solutions</h2>
+                <h2>Canadian In-Floor Radiant&nbsp;Solutions</h2>
                 <p>
                   We are located in Burlington, Ontario.
                 </p>
