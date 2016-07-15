@@ -1,0 +1,6 @@
+/** Alternate stylesheet for IE styles **/
+
+/* Support for background gradients */
+/*.gradient,*/
+section > h1,
+#testimonial h2 { filter: none; }
