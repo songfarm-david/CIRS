@@ -111,16 +111,23 @@ nav ul > li.dropdown ul > li {
 }
 
 /* Main Content */
+
+/* Main section headers */
 section > h1,
 #testimonial h2 {
 	color: #fff;
-	background: #f5911f;
-	border-top: 1px solid white; border-bottom: 1px solid white;
-	padding-top: 20px;
-	padding: 15px;
+	padding: 15px;padding-top: 20px;
 	margin-bottom: 25px;
 	/* cancel out padding */
 	margin-left: -20px; margin-right: -20px;
+	background: #f5911f;
+	background: -moz-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(179,24,0,1)), color-stop(9%, rgba(232,36,1,0.99)), color-stop(32%, rgba(240,200,0,0.98)), color-stop(55%, rgba(240,152,0,0.85)), color-stop(74%, rgba(239,191,1,0.7)),	color-stop(95%, rgba(239,191,1,0.65)), color-stop(100%, rgba(255,215,69,0.5)));
+	background: -webkit-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
+	background: -o-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
+	background: linear-gradient(135deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b31800', endColorstr='#ffd745', GradientType=1 );
 }
 .jumbotron p:first-of-type,
 section h2, aside h2,
@@ -306,22 +313,24 @@ figcaption > footer {
 	margin-top: 6px;
 }
 
-/* Aside */
-aside#uponor {
+
+/* Uponor Aside and Contact Us panel*/
+aside#uponor, section#contact_us div.panel {
+	box-shadow: 0px 0px 15px 1px rgba(115, 115, 115, 0.75);
 	background: #fff;
 	border: 10px solid #dbdcde;
-	padding: 30px;
+	padding: 25px;
 }
-#uponor footer {
-	margin-top: 25px;
-	/*text-align: right;*/
-}
+
+
+/* Uponor Aside */
+aside#uponor {}
+#uponor footer {margin-top: 25px;}
 #uponor footer img {
 	border: 1px solid transparent;
 	display: inline-block;
 	width: auto;
 	height: 20px;
-	/*float: right;*/
 }
 
 .jumbotron.hero{
