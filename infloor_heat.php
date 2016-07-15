@@ -1,6 +1,6 @@
-<!--#include file="includes/header.php"-->
+<?php include('includes/header.php'); ?>
 
-    <!--#include file="includes/navigation.php"-->
+    <?php include('includes/navigation.php'); ?>
 
 		<!-- Jumbotron -->
 		<div class="container-fluid">
@@ -243,4 +243,4 @@
 
 		<!-- </main> -->
 
-<!--#include file="includes/footer.php"-->
+<?php include('includes/footer.php'); ?>
