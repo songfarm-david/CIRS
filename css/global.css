@@ -315,7 +315,9 @@ figcaption > footer {
 
 
 /* Uponor Aside and Contact Us panel*/
-aside#uponor, section#contact_us div.panel {
+aside#uponor,
+section#contact_us div.panel,
+section#sitemap div.panel {
 	box-shadow: 0px 0px 15px 1px rgba(115, 115, 115, 0.75);
 	background: #fff;
 	border: 10px solid #dbdcde;
@@ -481,4 +483,24 @@ article#testimonial blockquote:after {
 /** Contact Us **/
 #contact_us div.panel {
 	border: 10px solid #ccc;
+}
+
+
+/** Site Map **/
+#sitemap ul {
+	margin-bottom: 15px;
+}
+#sitemap ul > li {
+	padding-left: 15px;
+	list-style-position: inside;
+	font-size: 2.5em;
+	list-style-type: none;
+	color: #f5911f;
+}
+#sitemap ul li > ul > li {
+	list-style-type: square;
+	color: rgba(100, 100, 100, 0.8);
+	padding-left: 25px;
+	font-size: 0.75em;
+	font-family: sans-serif;
 }
