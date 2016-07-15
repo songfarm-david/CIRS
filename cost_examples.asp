@@ -98,6 +98,9 @@
                   </tfoot>
                 </table>
               </div>
+              <div class="panel-footer">
+                <small>*Listed prices are approximations</small>
+              </div>
             </div><!-- end of panel-body -->
           </article>
         </div>
