@@ -459,6 +459,14 @@ article#testimonial blockquote:after {
 	font-weight: normal;
 	font-size: .75em;
 }
+#cost_examples .panel-footer {
+	font-family: 'Lucida Sans Unicode',sans-serif;
+	font-size: 0.85em;
+	background: none;
+	padding: 15px 0 0;
+}
+
+
 
 
 /** Contact Us **/
