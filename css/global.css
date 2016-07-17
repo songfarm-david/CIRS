@@ -94,6 +94,16 @@ nav ul > li.dropdown ul > li {
 .dropdown-submenu:hover > .dropdown-menu {
 	display: block;
 }
+/* customize focus effect for dropdown class */
+/* NOTE: test this on other browsers */
+nav a.dropdown-toggle:focus {
+	outline: initial;
+	outline-color: initial;
+	outline-style: initial;
+	outline-width: initial;
+	outline: thin dotted;
+	outline:-webkit-focus-ring-color auto 5px;
+}
 
 /** jumbotron **/
 .container .jumbotron {
@@ -173,7 +183,7 @@ body > footer {
 	background-color: #343436;
 	color: #838385;
 	font-size: 1.25em;
-	padding-top: 30px;
+	padding-top: 15px;
 }
 #footer ul {
 	text-align: center;
@@ -182,19 +192,23 @@ body > footer {
 }
 #footer ul > li {
 	float: none;
-	display: inline-block;
-	line-height: 146px;
+	/*display: inline-block;*/
+	/*line-height: 146px;*/
+	display: block;
+	padding: 6px 0;
 	*display: inline; /* for <=IE7 */
 }
 #footer ul > li:hover { background: none;}
 #footer p {
-	line-height: 50px; /* same height as ul links */
-	margin-bottom: 0; /* turn off default bottom-margin */
+	/*line-height: 50px; */
+	/* same height as ul links */
+	/*margin-bottom: 0; */
+	/* turn off default bottom-margin */
 }
-/* target copyright text */
+/* copyright text */
 #footer .container div.row:last-child p {
-	margin: 0 0 20px;
-	font-size: .9em;
+	margin: 10px 0;
+	font-size: .85em;
 }
 #footer a { color: #838385; transition: color 250ms; }
 #footer a:hover {
@@ -503,4 +517,17 @@ article#testimonial blockquote:after {
 	padding-left: 25px;
 	font-size: 0.75em;
 	font-family: sans-serif;
+}
+
+
+
+@media (min-width: 768px) {
+	body > footer { padding-top: 30px; }
+	#footer ul > li {
+		display: inline-block;
+		line-height: 146px;
+	}
+	#footer .container div.row:last-child p {
+		margin: 0 0 20px;
+	}
 }
