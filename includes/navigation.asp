@@ -1,20 +1,23 @@
-		<nav class="navbar" id="nav-primary">
+		<nav id="nav-primary" class="navbar" aria-label="Main Navigation">
 			<!-- Call Us Button -->
-			<a href="tel:9055922141" class="call-us">
-				<span class="glyphicon glyphicon-earphone"></span>&nbsp;Call Us:&nbsp;<b>905-592-2141</b>
+			<a href="tel:9055381661" class="call-us">
+				<span class="glyphicon glyphicon-earphone"></span>&nbsp;Call Us:&nbsp;<b>905-538-1661</b>
 			</a>
 			<div class="navbar-header">
 				<h1 class="sr-only">Navigation</h1>
-				<a href="default.asp" class="navbar-brand">
+				<a href="default.asp" class="navbar-brand" title="Home">
 					<img src="images/cirsLogo_iconOnly.jpg" alt="Link to Canadian In-Floor Radiant Solutions Home Page" title="Home">
 				</a>
 			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="infloor_heat.asp" class="dropdown-toggle">Radiant Solutions <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li class="dropdown-submenu"><a href="infloor_heat.asp" class="dropdown-toggle">In-Floor Heat</a>
-							<ul class="dropdown-menu">
+			<ul role="menubar" class="nav navbar-nav navbar-right" >
+				<li role="menuitem" class="dropdown" aria-haspopup="true">
+					<a href="infloor_heat.asp" class="dropdown-toggle">
+						Radiant Solutions <span class="caret"></span>
+					</a>
+					<ul role="menu" class="dropdown-menu" aria-hidden="true" aria-expanded="false">
+						<li role="menuitem" class="dropdown-submenu" aria-haspopup="true">
+							<a href="infloor_heat.asp" class="dropdown-toggle">In-Floor Heat</a>
+							<ul class="dropdown-menu" aria-hidden="true" aria-expanded="false">
 								<li><a href="infloor_heat.asp#design">Design</a></li>
 								<li><a href="infloor_heat.asp#system_components">System Components</a></li>
 								<li><a href="infloor_heat.asp#installation">Installation</a></li>
@@ -25,13 +28,13 @@
 								<li><a href="infloor_heat.asp#cautions_and_solutions">Cautions and Solutions</a></li>
 							</ul>
 						</li>
-						<li><a href="thermal_mass.asp">Thermal Mass</a></li>
-						<li><a href="snow_melt_heated_driveways.asp">Snow Melt &amp; Heated Driveways</a></li>
-						<li><a href="fire_safety_systems.asp">Fire Safety Systems</a></li>
-						<li><a href="pool_heating.asp">Pool Heating</a></li>
+						<li role="menuitem"><a href="thermal_mass.asp">Thermal Mass</a></li>
+						<li role="menuitem"><a href="snow_melt_heated_driveways.asp">Snow Melt &amp; Heated Driveways</a></li>
+						<li role="menuitem"><a href="fire_safety_systems.asp">Fire Safety Systems</a></li>
+						<li role="menuitem"><a href="pool_heating.asp">Pool Heating</a></li>
 					</ul>
 				</li>
-				<li><a href="cost_examples.asp">What Does It Cost?</a></li>
-				<li><a href="about_us.asp">About Us</a></li>
+				<li role="menuitem"><a href="cost_examples.asp">What Does It Cost?</a></li>
+				<li role="menuitem"><a href="about_us.asp">About Us</a></li>
 			</ul>
 		</nav>

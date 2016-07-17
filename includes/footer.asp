@@ -17,7 +17,7 @@
 				<div class="row">
 					<div class="col-xs-12 text-center">
 						<p>
-							&copy; 2016 Canadian In-Floor Radiant Solutions
+							&copy; 2016 Canadian In-Floor Radiant&nbsp;Solutions
 						</p>
 					</div>
 				</div>
@@ -28,6 +28,6 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- Custom jQuery -->
-		<script></script>
+		<script src="scripts/infloor.js"></script>
 	</body>
 </html>
