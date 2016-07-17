@@ -12,13 +12,12 @@
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
 		<link rel="stylesheet" href="css/main.css" media="screen">
-        <!-- Legacy browser support -->
-			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	    <!--[if lt IE 9]>
-				<link rel="stylesheet" href="css/global_ie7.css" media="screen" title="Global Styles for IE7" charset="utf-8">
-	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	    <![endif]-->
+    <!-- Legacy browser support -->
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 	</head>
 	<body class="container">
 
@@ -26,6 +25,13 @@
 		<header id="main-header">
 			<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 		</header>
+		<script>
+			// if IE
+			if ((navigator.userAgent.indexOf('MSIE ') > -1)	|| (navigator.userAgent.indexOf('Trident') > -1)) {
+				// add class 'ie_logo' to #main-header
+				document.getElementById("main-header").className = 'ie_logo';
+			}
+		</script>
 
     <!--#include file="includes/navigation.asp"-->
 
@@ -39,7 +45,7 @@
 								<div class="panel panel-body" style="position:relative;top:80px;left:-20px;">
 									<p class="h1">In-Floor Radiant Heat</p>
 									<p>
-										Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:1234567896">talk to us</a> about the possibility of installing a radiant heating system.
+										Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
 									</p>
 								</div>
 							</div>
@@ -57,13 +63,13 @@
 					<div class="col-md-6 col-lg-7">
 						<h2>What is Radiant In-Floor Heating?</h2>
 						<p>
-							New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="">In Floor Heating Page</a> for a brief overview.
+							New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.asp">In Floor Heating Page</a> for a brief overview.
 						</p>
 						<p>
-							Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="">Heated Driveways</a>.
+							Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.asp">Heated Driveways</a>.
 						</p>
 						<p>
-							To get a sense of what In-Floor Heating may cost, please visit our <a href="#">What Does It Cost?</a> page.
+							To get a sense of what In-Floor Heating may cost, please visit our <a href="cost_examples.asp">What Does It Cost?</a> page.
 						</p>
 						<p class="call-us">
 		          <b>For a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
@@ -80,7 +86,7 @@
 								This special qualification entitles you to a <strong><em>25 Year Manufacturer's Warranty</em></strong> on systems we install
 							</p>
 							<footer>
-								<a href="http://www.uponor.ca/" target="_blank"><img src="images/partners/uponor_sm.gif" alt="Uponor website"></a>
+								<a href="http://www.uponor.ca/" target="_blank" tabindex="-1"><img src="images/partners/uponor_sm.gif" alt="Uponor website"></a>
 								<a href="http://www.viessmann.ca/" target="_blank"><img src="images/partners/viessmann_sm.gif" alt="Viessmann website"></a>
 								<a href="http://www.seisco.com/" target="_blank"><img src="images/partners/seisco_sm.gif" alt="Seisco website"></a>
 							</footer>
@@ -95,7 +101,7 @@
 					<h2>Testimonials</h2>
 					<!-- <div class="container"> -->
 						<!-- <div class="row"> -->
-							<div class="carousel slide" data-ride="carousel" id="testimonials"> <!-- data-ride="carousel" -->
+							<div class="carousel slide" id="testimonials"> <!-- data-ride="carousel" -->
 								<div class="carousel-inner" >
 									<!-- NOTE: Carousel needs fallback for lt IE9 -->
 									<!-- NOTE: Requires distinct font here -->
@@ -121,7 +127,7 @@
 										</blockquote>
 									</div>
 									<div class="item testimonial active">
-										<blockquote cite="http://">
+										<blockquote>
 											<p>
 												Canadian In-Floor provides a professional package with full shop drawings, installation and service.
 											</p>
