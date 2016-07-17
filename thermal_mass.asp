@@ -27,7 +27,7 @@
         <figure class="pull-left figure-float-left">
           <img src="images/demos/flooring.jpg" alt="">
           <figcaption>
-            Many options for finished-floor covering are conducive to radiant heat.
+            Various finished-floor coverings are conducive to radiant heat including tile, wood and carpet.
             <footer>Courtest: Uponor</footer>
           </figcaption>
         </figure>
