@@ -3,12 +3,10 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
-						<!-- NOTE: consider ARIA roles for footer nav -->
-						<!-- NOTE: secondary nav needs citation -->
-						<ul class="nav navbar-nav">
+						<ul role="navigation" class="nav navbar-nav" aria-label="Footer secondary navigation">
 							<li><a href="default.asp">Home</a></li>
 							<li><a href="about_us.asp">About Us</a></li>
-							<li><a href="contact_us.asp">Contact</a></li>
+							<li><a href="contact_us.asp">Contact Us</a></li>
 							<li><a href="careers.asp">Careers</a></li>
 							<li><a href="sitemap.asp">Site Map</a></li>
 						</ul>
