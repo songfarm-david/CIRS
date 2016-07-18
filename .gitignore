@@ -1,7 +1,7 @@
 template.html
 
 # Ignore all Markdown files
-*.md
+.md
 
 # Ignore ASP.net V4.6
 App_Data/
