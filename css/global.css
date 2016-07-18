@@ -53,11 +53,11 @@ body {
 }
 body > main {
 	background: #f1f1f1;
-	border-left: 1px solid #d7d7d7;
-	border-right: 1px solid #d7d7d7;
+	overflow: hidden;
+
 }
 body.container { padding: 0; }
-body > div.container{ padding-left: 20px;	padding-right: 20px; }
+main > div.container{ padding-left: 20px;	padding-right: 20px; }
 
 h2 { font-size: 4em; }
 h3 { font-size: 2.8em; }
@@ -65,6 +65,7 @@ h2, h3 { margin-top: 0; }
 h4 {
 	font-family: sans-serif;
 	font-weight: 700;
+	font-size: 1.44em; /* bootstrap initial */
 }
 
 nav {
@@ -100,7 +101,7 @@ nav a.dropdown-toggle:focus {
 	outline:-webkit-focus-ring-color auto 5px;
 }
 
-/* jumbotron */
+/** Jumbotron **/
 .container .jumbotron {
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -114,15 +115,23 @@ nav a.dropdown-toggle:focus {
 	background-color: rgba(255, 255, 255, 0.75);
 	border-radius: 0;
 }
+/* base styles for hero image */
+.jumbotron.hero{
+	padding: 0;
+	height: 600px;
+	background: #ccc url(../images/display_images/happy_family.jpg) 0 100%/100% no-repeat;
+	background-size: cover;
+}
 
 /* Main section headers */
 section > h2,
 #testimonial h3 {
 	color: #fff;
-	padding: 15px;padding-top: 20px;
+	padding: 20px; padding-top: 20px;
 	margin-bottom: 25px;
 	/* cancel out padding */
 	margin-left: -20px; margin-right: -20px;
+	/* gradient background */
 	background: #f5911f;
 	background: -moz-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(179,24,0,1)), color-stop(9%, rgba(232,36,1,0.99)), color-stop(32%, rgba(240,200,0,0.98)), color-stop(55%, rgba(240,152,0,0.85)), color-stop(74%, rgba(239,191,1,0.7)),	color-stop(95%, rgba(239,191,1,0.65)), color-stop(100%, rgba(255,215,69,0.5)));
@@ -142,6 +151,7 @@ section div.panel {
 	border: 20px solid #f5911f;
 }
 
+/* section spacing */
 div[class*="col"] > ul,
 div[class*="col"] > p:last-of-type,
 section > p:last-of-type,
@@ -161,8 +171,10 @@ dl, section > article ul {
 }
 dt, dd { margin-bottom: 15px; }
 
-/* footer */
+
+/** Footer **/
 #footer { margin-top: 30px; }
+
 /* targets only first-level footer */
 body > footer p {
 	font-size: inherit;
@@ -182,8 +194,6 @@ body > footer {
 }
 #footer ul > li {
 	float: none;
-	/*display: inline-block;*/
-	/*line-height: 146px;*/
 	display: block;
 	padding: 6px 0;
 	*display: inline; /* for <=IE7 */
@@ -202,7 +212,7 @@ body > footer {
 }
 
 
-/* Call Us Button */
+/** Call Us Button **/
 #nav-primary > a {
 	font-family: sans-serif;
 	position: absolute;
@@ -227,11 +237,11 @@ a > span.call-us:hover {
 	color: #f5911f;
 }
 
-/* Navigation styles (general) */
+
+/** Navigation styles (general) **/
 /*** TODO: Add a 250ms transition to dropdown block ***/
 nav#nav-primary {
 	padding-top: 65px;
-	/*box-shadow: 0px 1px 15px -5px rgba(0, 0, 0, 0.5);*/
 }
 #nav-primary div.navbar-header {
 	height: 100%;
@@ -284,6 +294,7 @@ nav#nav-primary li.dropdown > a[href^="cost_examples"] + ul.dropdown-menu {
 	right: -51%; left: auto;
 }
 
+
 /** Figure Styles **/
 figure, div.panel.panel-body{
 	box-shadow: 0px 0px 15px 1px rgba(150, 150, 150, 0.5);
@@ -312,38 +323,7 @@ figcaption > footer {
 	color: #ccc;
 	margin-top: 6px;
 }
-
-
-/* Uponor Aside and Contact Us panel*/
-aside#uponor,
-section#contact_us div.panel,
-section#sitemap div.panel {
-	box-shadow: 0px 0px 15px 1px rgba(115, 115, 115, 0.75);
-	background: #fff;
-	border: 10px solid #dbdcde;
-	padding: 25px;
-}
-
-
-/* Uponor Aside */
-aside#uponor {}
-#uponor footer {margin-top: 25px;}
-#uponor footer img {
-	border: 1px solid transparent;
-	display: inline-block;
-	width: auto;
-	height: 20px;
-}
-
-.jumbotron.hero{
-	padding: 0;
-	height: 600px;
-	background: #ccc url(../images/display_images/happy_family.jpg) 0 100%/100% no-repeat;
-	/*background-size: cover;*/
-}
-
-
-/** Special styles for Floated Figures **/
+/* special styles for Floated Figures */
 .figure-float-right {
 	width: 35%; max-width: 100%;
 	margin: 0 0 15px 15px;
@@ -354,7 +334,29 @@ aside#uponor {}
 }
 
 
-/* Testimonials */
+/** Uponor Aside and Contact Us panel**/
+aside#uponor,
+section#contact_us div.panel,
+section#sitemap div.panel {
+	box-shadow: 0px 0px 15px 1px rgba(115, 115, 115, 0.75);
+	background: #fff;
+	border: 10px solid #dbdcde;
+	padding: 25px;
+}
+
+
+/** Uponor Aside **/
+aside#uponor {}
+#uponor footer {margin-top: 25px;}
+#uponor footer img {
+	border: 1px solid transparent;
+	display: inline-block;
+	width: auto;
+	height: 20px;
+}
+
+
+/** Testimonials **/
 article#testimonial {
 	margin: 60px -20px 30px;
 	background: #fff;
@@ -364,21 +366,20 @@ article#testimonial {
 	overflow: hidden;
 }
 #testimonial h3 { padding-left: 60px; }
-article#testimonial > div,
+/*article#testimonial > article,*/
 article#testimonial .carousel {
 	height: 100%; /* fix carousel control height issue */
 	padding: 0;
 }
-article#testimonial div.carousel-inner {
+article#testimonial ul.carousel-inner {
 	min-height: 435px;
 	width: 70%;
 	margin: 0 auto;	/* pad inner carousel */
 }
-/*.item.testimonial {	display: table; }*/
+	/*.item.testimonial {	display: table; }*/
 article#testimonial blockquote {
 	border-left: none; /* remove Bootstrap default left border */
 	padding: 30px 0;
-
 	display: table-cell;
 	vertical-align: middle;
 }
@@ -408,7 +409,6 @@ article#testimonial blockquote:after {
 	color: #b7b7b7;
 	height: 100%;
 }
-
 /* remove default background */
 .carousel .carousel-control {
 	background: none;
@@ -418,9 +418,7 @@ article#testimonial blockquote:after {
 
 
 
-
-
-/* Cost table */
+/** Cost table **/
 #cost_examples h3 {
 	margin: 0 0 15px;
 	padding: 0 20px 10px;
@@ -441,7 +439,9 @@ article#testimonial blockquote:after {
 	border-right: 2px dotted #ccc;
 	/* NOTE: add an improved dotted line */
 }
-
+#cost_examples table colgroup > col:last-of-type {
+	border: none; /* remove right border from last column */
+}
 /* table header */
 #cost_examples table thead th {
 	font-size: 2.25em;
@@ -509,6 +509,6 @@ article#testimonial blockquote:after {
 		line-height: 146px;
 	}
 	#footer .container div.row:last-child p {
-		margin: 0 0 20px;
+		margin: 10px 0 25px;
 	}
 }
