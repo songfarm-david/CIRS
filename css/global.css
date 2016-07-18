@@ -371,7 +371,7 @@ article#testimonial .carousel {
 	height: 100%; /* fix carousel control height issue */
 	padding: 0;
 }
-article#testimonial ul.carousel-inner {
+article#testimonial div#testimonials > div {
 	min-height: 435px;
 	width: 70%;
 	margin: 0 auto;	/* pad inner carousel */
@@ -382,6 +382,7 @@ article#testimonial blockquote {
 	padding: 30px 0;
 	display: table-cell;
 	vertical-align: middle;
+	position: relative;
 }
 #testimonial blockquote p {
 	padding: 15px 0;
@@ -404,10 +405,16 @@ article#testimonial blockquote:before{
 article#testimonial blockquote:after {
 	content: close-quote;
 	bottom: -15px; right: 45px;
+	right: 0;
 }
 #testimonial a .glyphicon {
 	color: #b7b7b7;
 	height: 100%;
+}
+
+/* carousel controls container */
+#carousel-controls {
+	display: none;
 }
 /* remove default background */
 .carousel .carousel-control {
