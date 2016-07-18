@@ -11,23 +11,25 @@
       </div>
     </div>
 
-    <div class="container">
-	    <section>
-		    <h1>Snow Melt &amp; Heated Driveways</h1>
-        <figure class="pull-right figure-float-right">
-          <img src="images/demos/snow_melt_detail.jpg" alt="Uponor PEX-a tubing encased in asphalt for residential snow melt" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
-          <figcaption>
-          </figcaption>
-        </figure>
-        <!-- TODO: write header here -->
-        <!-- <h2>Header Here</h2> -->
-		    <p>
-			    Snow Melt and Heated Driveway systems, are a technological alternative to shoveling, salting, snow plowing, snow blowing and other snow removal methods.
-		    </p>
-		    <p>
-			    With most Snow Melt and Heated Driveway systems, tubing is run under the driveway (and walkways, patios and porch steps, too, if you like). Heated water is pumped through the tubing. The water in snowmelt systems is mixed with an anti-freeze (glycol). Heat radiates up from the tubing to the surface of your driveway, melting away snow and ice. Drains catch the water run-off produced by a snowmelt system, channeling the water away from your driveway.
-		    </p>
-	    </section>
-    </div>
+    <!-- Main content -->
+    <main role="main">
+      <div class="container">
+  	    <section>
+  		    <h2>Snow Melt &amp; Heated Driveways</h2>
+          <figure role="figure" class="pull-right figure-float-right" aria-describedby="figure-1">
+            <img src="images/demos/snow_melt_detail.jpg" alt="An illustration of Uponor PEX-a tubing encased in asphalt for residential snow melt" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
+            <figcaption id="figure-1">
+              <footer>Photo: facilitymanagement.com</footer>
+            </figcaption>
+          </figure>
+  		    <p>
+  			    Snow Melt and Heated Driveway systems, are a technological alternative to shoveling, salting, snow plowing, snow blowing and other snow removal methods.
+  		    </p>
+  		    <p>
+  			    With most Snow Melt and Heated Driveway systems, tubing is run under the driveway (and walkways, patios and porch steps, too, if you like). Heated water is pumped through the tubing. The water in snowmelt systems is mixed with an anti-freeze (glycol). Heat radiates up from the tubing to the surface of your driveway, melting away snow and ice. Drains catch the water run-off produced by a snowmelt system, channeling the water away from your driveway.
+  		    </p>
+  	    </section>
+      </div>
+    </main>
 
-<!--#include file="includes/footer.asp"-->
+    <!--#include file="includes/footer.asp"-->

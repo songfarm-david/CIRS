@@ -2,36 +2,38 @@
 
     <!--#include file="includes/navigation.asp"-->
 
-    <!-- div is used here because the <address> tag should remain a child of the <body> -->
-    <div class="container">
-	    <section id="contact_us">
-		    <h1>Contact Us</h1>
-        <div class="row">
-          <div class="col-xs-12 col-md-12 col-md-offset-0 col-lg-6 col-lg-offset-3">
-            <div class="panel">
-              <div class="panel-body text-center">
-                <h2>Canadian In-Floor Radiant&nbsp;Solutions</h2>
-                <p>
-                  We are located in Burlington, Ontario.
-                </p>
-                <address>
+    <main>
+      <div class="container">
+  	    <section id="contact_us">
+  		    <h2>Contact Us</h2>
+          <div class="row">
+            <div class="col-xs-12 col-md-12 col-md-offset-0 col-lg-6 col-lg-offset-3">
+              <div class="panel">
+                <div class="panel-body text-center">
+                  <h3>Canadian In-Floor Radiant&nbsp;Solutions</h3>
                   <p>
-                    Phone: <a href="tel:9055381661">905-538-1661</a>
+                    We are located in Burlington, Ontario.
                   </p>
-                  <p>
-                    Fax: 905-538-2963 <!-- NOTE: mark up for fax?? -->
-                  </p>
-                  <p>
-                    Cell: <a href="tel:9056304415">905-630-4415</a>
-                  </p>
-                  <p>
-                    Email: <a href="mailto:info@infloorheat.ca">info@infloorheat.ca</a>
-                  </p>
-                </address>
+                  <address role="contentinfo">
+                    <p>
+                      Phone: <a href="tel:9055381661">905-538-1661</a>
+                    </p>
+                    <p>
+                      Fax: 905-538-2963 <!-- NOTE: mark up for fax?? -->
+                    </p>
+                    <p>
+                      Cell: <a href="tel:9056304415">905-630-4415</a>
+                    </p>
+                    <p>
+                      Email: <a href="mailto:info@infloorheat.ca">info@infloorheat.ca</a>
+                    </p>
+                  </address>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-	    </section>
-    </div>
-<!--#include file="includes/footer.asp"-->
+  	    </section>
+      </div>
+    </main>
+
+    <!--#include file="includes/footer.asp"-->
