@@ -32,7 +32,7 @@ Color Palette
 	Tangerine Orange:       #f5911f
 																*/
 
-/* Simple Reset */
+/* Basic Reset */
 * {
 	margin: 0;	padding: 0;
 	font-size: 100%;
@@ -56,26 +56,23 @@ body > main {
 	border-left: 1px solid #d7d7d7;
 	border-right: 1px solid #d7d7d7;
 }
-main.container-fluid { padding: 0; }
 body.container { padding: 0; }
+body > div.container{ padding-left: 20px;	padding-right: 20px; }
 
-body > div.container{
-	padding-left: 20px;
-	padding-right: 20px;
+h2 { font-size: 4em; }
+h3 { font-size: 2.8em; }
+h2, h3 { margin-top: 0; }
+h4 {
+	font-family: sans-serif;
+	font-weight: 700;
 }
 
-h1 { font-size: 4em; }
-h2 { font-size: 2.8em; }
-h1, h2 { margin-top: 0; }
-h3 { font-family: sans-serif; font-weight: 700; }
-/* Nav */
 nav {
 	font-size: 1.75em;
 	background: #fff;
 }
-.navbar-brand > img {
-	height: 100%; /* make image size of container */
-}
+/* make image size of container */
+.navbar-brand > img { height: 100%; }
 
 /* turn off Bootstrap defaults */
 nav.navbar {
@@ -83,15 +80,13 @@ nav.navbar {
 	border-radius: 0;
 	border: 0;
 }
-nav li a {
-	color: #5b5b5b;
-}
+nav li a { color: #5b5b5b; }
 nav ul > li.dropdown ul > li {
 	font-size: 1.5em;
 }
 /* enable dropdown on hover */
-.dropdown:hover > .dropdown-menu,
-.dropdown-submenu:hover > .dropdown-menu {
+li.dropdown:hover > .dropdown-menu,
+li.dropdown-submenu:hover > .dropdown-menu {
 	display: block;
 }
 /* customize focus effect for dropdown class */
@@ -105,7 +100,7 @@ nav a.dropdown-toggle:focus {
 	outline:-webkit-focus-ring-color auto 5px;
 }
 
-/** jumbotron **/
+/* jumbotron */
 .container .jumbotron {
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -120,11 +115,9 @@ nav a.dropdown-toggle:focus {
 	border-radius: 0;
 }
 
-/* Main Content */
-
 /* Main section headers */
-section > h1,
-#testimonial h2 {
+section > h2,
+#testimonial h3 {
 	color: #fff;
 	padding: 15px;padding-top: 20px;
 	margin-bottom: 25px;
@@ -139,15 +132,13 @@ section > h1,
 	background: linear-gradient(135deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b31800', endColorstr='#ffd745', GradientType=1 );
 }
-.jumbotron p:first-of-type,
-section h2, aside h2,
-#contact_us h2 { color: #f5911f; }
-/*section h2:first-of-type{ margin-top: 15px; }*/
-section > div.panel h2 { color: inherit;}
 
+.jumbotron p:first-of-type,
+section h3, aside h3, #contact_us h3 { color: #f5911f; }
+section > div.panel h3 { color: inherit;}
 section > div.container-fluid { padding: 0; }
+/* orange border around focal panels */
 section div.panel {
-	/* orange border around focal panels */
 	border: 20px solid #f5911f;
 }
 
@@ -168,13 +159,12 @@ ol, dl, section > article ul { font-family: sans-serif; }
 dl, section > article ul {
 	font-size: 1.4em;
 }
-dt, dd {
-	margin-bottom: 15px;
-}
+dt, dd { margin-bottom: 15px; }
 
-/* Footer */
-#footer { margin-top: 30px;}
-body > footer p { /* targets only first-level footer */
+/* footer */
+#footer { margin-top: 30px; }
+/* targets only first-level footer */
+body > footer p {
 	font-size: inherit;
 }
 p, footer { font-family: sans-serif; }
@@ -199,12 +189,7 @@ body > footer {
 	*display: inline; /* for <=IE7 */
 }
 #footer ul > li:hover { background: none;}
-#footer p {
-	/*line-height: 50px; */
-	/* same height as ul links */
-	/*margin-bottom: 0; */
-	/* turn off default bottom-margin */
-}
+
 /* copyright text */
 #footer .container div.row:last-child p {
 	margin: 10px 0;
@@ -215,6 +200,7 @@ body > footer {
 	color: #ddd;
 	background: none;
 }
+
 
 /* Call Us Button */
 #nav-primary > a {
@@ -377,7 +363,7 @@ article#testimonial {
 	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
 	overflow: hidden;
 }
-#testimonial h2 { padding-left: 60px; }
+#testimonial h3 { padding-left: 60px; }
 article#testimonial > div,
 article#testimonial .carousel {
 	height: 100%; /* fix carousel control height issue */
@@ -435,7 +421,7 @@ article#testimonial blockquote:after {
 
 
 /* Cost table */
-#cost_examples h2 {
+#cost_examples h3 {
 	margin: 0 0 15px;
 	padding: 0 20px 10px;
 	border-bottom: 3px dotted;
@@ -491,14 +477,10 @@ article#testimonial blockquote:after {
 	padding: 15px 0 0;
 }
 
-
-
-
 /** Contact Us **/
 #contact_us div.panel {
 	border: 10px solid #ccc;
 }
-
 
 /** Site Map **/
 #sitemap ul {
@@ -519,8 +501,7 @@ article#testimonial blockquote:after {
 	font-family: sans-serif;
 }
 
-
-
+/** Media Queries **/
 @media (min-width: 768px) {
 	body > footer { padding-top: 30px; }
 	#footer ul > li {
