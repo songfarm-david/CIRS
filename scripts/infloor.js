@@ -11,32 +11,39 @@
 	// target all children of primary nav
 	var navChildren = document.getElementById("nav-primary").children;
 	// cycle through children of navigation for ul element
-	function initNav() {
-		for (var i = 0; i < navChildren.length; i++) {
-			if (navChildren[i].nodeName == "UL") {
-				// get the first element child of the first element child (the a tag)
-				targetElement = navChildren[i].firstElementChild.firstElementChild;
-				// get the next sibling of the <a> tag (the dropdown menu)
-				dropdownMenu = targetElement.nextElementSibling;
-				// get the second dropdown menu
-				subDropdownMenu = dropdownMenu.firstElementChild.lastElementChild;
+	for (var i = 0; i < navChildren.length; i++) {
+		if (navChildren[i].nodeName == "UL") {
+			// get the first element child of the first element child (the a tag)
+			targetElement = navChildren[i].firstElementChild.firstElementChild;
+			// get the next sibling of the <a> tag (the dropdown menu)
+			dropdownMenu = targetElement.nextElementSibling;
+			// get the second dropdown menu
+			subDropdownMenu = dropdownMenu.firstElementChild.lastElementChild;
 
-				// loop through both dropdown menus and assign aria properties
-				dropMenus = [dropdownMenu,subDropdownMenu];
-				dropMenus.forEach(function(el, i){
-					el.setAttribute("aria-haspopup","true");
-					el.setAttribute("aria-expanded","false");
-				});
-			}
-		} // end of for loop
-	}
+			// loop through both dropdown menus and assign aria properties
+			dropMenus = [dropdownMenu,subDropdownMenu];
+			dropMenus.forEach(function(el, i){
+				el.setAttribute("aria-haspopup","true");
+				el.setAttribute("aria-expanded","false");
+			});
+		}
+	} // end of for loop
 
 	function toggleARIAProps(el) {
 		if (el.getAttribute("aria-expanded") == "false") {
-			el.classList.add("open");
+			/* NOTE: IE9 does not support classList */
+			if (!el.classList) {
+				el.className = el.className + " open";
+			} else {
+				el.classList.add("open");
+			}
 			el.setAttribute("aria-expanded","true");
 		} else {
-			el.classList.remove("open");
+			if (!el.classList) {
+				el.className = el.className.replace(/\bopen/g, "");
+			} else {
+				el.classList.remove("open");
+			}
 			el.setAttribute("aria-expanded","false");
 		}
 	}
@@ -91,12 +98,10 @@
 	// on focus targets' adjacent list item ('What does it cost?')
 	targetElement.parentElement.nextElementSibling.addEventListener("focusin", function() {
 		dropdownMenu.style.left = -9999+"px";
-		targetElement.nextElementSibling.classList.remove("open");
-		targetElement.nextElementSibling.setAttribute("aria-expanded","false");
+		toggleARIAProps(targetElement.nextElementSibling);
 	}, true);
 
-	// Initialize navigation
-	initNav();
+	/** end of navigation **/
 
 	/*** Detect IE Browser Version ***/
 	// NOTE: Browser is global variable
