@@ -52,20 +52,20 @@
 	* When the trigger list item loses focus, position the dropdown menu in viewport
 	* When the first item of dropdown menu loses focus, give focus to second list item in dropdown
 	*/
-	targetElement.addEventListener("focusout", function() {
+	targetElement.addEventListener("focus", function() {
 		// position element in viewport
-		dropdownMenu.style.left = 0;
+		dropdownMenu.style.left = "0px";
 		// target dropdown menus first <li>
-		dropdownMenu.firstElementChild.addEventListener("focusout", function() {
+		dropdownMenu.firstElementChild.firstElementChild.addEventListener("blur", function() {
 			// on focusout, move focus to next sibling
-			this.nextElementSibling.firstElementChild.focus();
+			this.parentElement.nextElementSibling.firstElementChild.focus();
 		}, false);
 	}, false);
 
 	["focus","mouseover"].forEach(function(el,i){
 		targetElement.addEventListener(el, function() {
 			toggleARIAProps(this.nextElementSibling);
-			this.nextElementSibling.style.left = "";
+			// this.nextElementSibling.style.left = "";
 		}, true);
 		// target first list item of dropdown
 		dropdownMenu.firstElementChild.addEventListener(el, function() {
@@ -99,6 +99,8 @@
 	targetElement.parentElement.nextElementSibling.addEventListener("focusin", function() {
 		dropdownMenu.style.left = -9999+"px";
 		toggleARIAProps(targetElement.nextElementSibling);
+		// targetElement.nextElementSibling.classList.remove("open");
+		// targetElement.nextElementSibling.setAttribute("aria-expanded","false");
 	}, true);
 
 	/** end of navigation **/
