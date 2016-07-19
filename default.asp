@@ -101,7 +101,7 @@
 					<article role="region" id="testimonial" aria-labelledby="header-testimonials">
 						<div class="container">
 						<h3 id="header-testimonials">Testimonials</h3>
-								<div id="testimonials" class="carousel slide" data-ride="carousel"><!---->
+								<div id="testimonials" class="carousel slide" data-ride="carousel">
 									<div class="">
 										<!-- NOTE: Carousel needs fallback for lt IE9 -->
 										<article class="item testimonial">

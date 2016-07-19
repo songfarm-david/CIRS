@@ -1,4 +1,4 @@
-/***
+	/***
 Global Styles for infloorheat.ca
 ==============================
 Author: David Gaskin
@@ -387,7 +387,7 @@ article#testimonial blockquote {
 #testimonial blockquote p {
 	padding: 15px 0;
 	text-indent: 75px;
-	font-family: 'Italianno', 'Aramisi', cursive;
+	font-family: 'Italianno', cursive;
 	font-size: 2.25em; line-height: 1.25;
 
 }
