@@ -40,7 +40,7 @@
 			el.setAttribute("aria-expanded","true");
 		} else {
 			if (!el.classList) {
-				el.className = el.className.replace(/\bopen/g, "");
+				el.className = el.className.replace(/\b open/g, "");
 			} else {
 				el.classList.remove("open");
 			}
@@ -53,20 +53,23 @@
 	* When the first item of dropdown menu loses focus, give focus to second list item in dropdown
 	*/
 	targetElement.addEventListener("focus", function() {
+		toggleARIAProps(this.nextElementSibling);
 		// position element in viewport
 		dropdownMenu.style.left = "0px";
 		// target dropdown menus first <li>
 		dropdownMenu.firstElementChild.firstElementChild.addEventListener("blur", function() {
 			// on focusout, move focus to next sibling
 			this.parentElement.nextElementSibling.firstElementChild.focus();
+			toggleARIAProps(subDropdownMenu);
 		}, false);
 	}, false);
 
+	targetElement.addEventListener("mouseover", function() {
+		toggleARIAProps(this.nextElementSibling);
+		this.nextElementSibling.style.left = "";
+	}, true);
+
 	["focus","mouseover"].forEach(function(el,i){
-		targetElement.addEventListener(el, function() {
-			toggleARIAProps(this.nextElementSibling);
-			// this.nextElementSibling.style.left = "";
-		}, true);
 		// target first list item of dropdown
 		dropdownMenu.firstElementChild.addEventListener(el, function() {
 			toggleARIAProps(dropdownMenu.firstElementChild.lastElementChild);
@@ -96,11 +99,9 @@
 	}, true);
 
 	// on focus targets' adjacent list item ('What does it cost?')
-	targetElement.parentElement.nextElementSibling.addEventListener("focusin", function() {
+	targetElement.parentElement.nextElementSibling.addEventListener("focus", function() {
 		dropdownMenu.style.left = -9999+"px";
 		toggleARIAProps(targetElement.nextElementSibling);
-		// targetElement.nextElementSibling.classList.remove("open");
-		// targetElement.nextElementSibling.setAttribute("aria-expanded","false");
 	}, true);
 
 	/** end of navigation **/
@@ -109,12 +110,12 @@
 	// NOTE: Browser is global variable
 		// if using less than IE9
 		if (Browser.isIE && Browser.version < 9) {
-			console.log(Browser.version);
+			// console.log(Browser.version);
 			return false;
 		}
 		// if IE9
 		else if (Browser.isIE && Browser.version == 9) {
-			console.log(Browser.version);
+			// console.log(Browser.version);
 			// load fallback script
 			$.getScript("scripts/bootstrapCarouselIE.js");
 			return false;
