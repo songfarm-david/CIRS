@@ -243,6 +243,11 @@
 				</section>
 			</div>
 		</main>
-		<!-- </main> -->
+
+		<script type="text/javascript">
+			// trigger the image element and wrap an a tag around it
+			var img1 = document.getElementById("figure-2").parentNode;
+			console.log(img1);
+		</script>
 
 <!--#include file="includes/footer.asp"-->
