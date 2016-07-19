@@ -1,11 +1,25 @@
 (function(){
 
+	/*** Detect IE Browser Version ***/
+	// NOTE: Browser is global variable
+		// if using less than IE9
+		if (Browser.isIE && Browser.version < 9) {
+			console.log(Browser.version);
+			return false;
+		}
+		// if IE9
+		else if (Browser.isIE && Browser.version == 9) {
+			console.log(Browser.version);
+			// load fallback script
+			$.getScript("scripts/bootstrapCarouselIE.js");
+			return false;
+		}
+
 	/*** Carousel ***/
 	/*
 	* Handles the initialization of ARIA states and properties
 	* Handles the toggling and updating of ARIA properties during carousel cycling
 	*/
-
 	// get handle to the carousel
 	var carousel = document.getElementById("testimonials");
 	// get all testimonials
@@ -71,5 +85,6 @@
 
 	// Initialize ARIA and Carousel
 	ARIAInit();
+
 
 })();
