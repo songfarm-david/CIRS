@@ -1,5 +1,5 @@
-		<nav id="nav-primary" class="navbar">
-			<h2 class="sr-only">Navigation</h2>
+		<nav role="navigation" id="nav-primary" class="navbar" aria-labelledby="nav-header">
+			<h2 id="nav-header" class="sr-only">Main Navigation</h2>
 			<!-- Call Us Button -->
 			<a href="tel:9055381661" class="call-us">
 				<span class="glyphicon glyphicon-earphone"></span>&nbsp;Call Us:&nbsp;<b>905-538-1661</b>
@@ -14,9 +14,9 @@
 					<a href="infloor_heat.asp">
 						Radiant Solutions <span class="caret"></span>
 					</a>
-					<ul role="menu" class="dropdown-menu">
- 						<li class="dropdown-submenu dropdown-toggle">
-							<a id="test" href="infloor_heat.asp">In-Floor Heat</a>
+					<ul class="dropdown-menu">
+						<li class="dropdown-submenu dropdown-toggle">
+							<a href="infloor_heat.asp">In-Floor Heat</a>
 							<!-- Inaccessible Sub-Menu -->
 							<ul class="dropdown-menu">
 								<li><a href="infloor_heat.asp#design">Design</a></li>

@@ -3,7 +3,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
-						<ul role="navigation" class="nav navbar-nav" aria-label="Footer secondary navigation">
+						<ul role="navigation" class="nav navbar-nav" aria-label="Secondary Navigation">
 							<li><a href="default.asp">Home</a></li>
 							<li><a href="about_us.asp">About Us</a></li>
 							<li><a href="contact_us.asp">Contact Us</a></li>
