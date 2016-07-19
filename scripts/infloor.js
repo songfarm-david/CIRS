@@ -1,5 +1,38 @@
 (function(){
 
+	/*** Navigation ***/
+	/*
+	* Handles navigation behavior including hover and focus states
+	* as well as the inclusion of ARIA states and properties
+	*/
+	var target, dropdownMenu;
+	// target the ul
+	var navChildren = document.getElementById("nav-primary").children;
+	// cycle through children of navigation for ul element
+	for (var i = 0; i < navChildren.length; i++) {
+		if (navChildren[i].nodeName == "UL") {
+			// target the first list time
+			var target = navChildren[i].firstElementChild.firstElementChild;
+			// target the dropdown menu
+			var dropdownMenu = navChildren[i].firstElementChild.lastElementChild;
+		}
+	}
+	// on target focus
+	target.addEventListener("focusout", function() {
+		dropdownMenu.style.left = 0;
+		dropdownMenu.firstElementChild.addEventListener("focusout", function() {
+			// when focus moves out of targets' first list item,
+			// immediately put focus on second list item
+			this.nextElementSibling.firstElementChild.focus();
+		} false);
+	}, false);
+	// on focus targets' adjacent list item
+	target.parentElement.nextElementSibling.addEventListener("focusin", function() {
+		dropdownMenu.style.left = -9999+"px";
+	}, true);
+
+
+
 	/*** Detect IE Browser Version ***/
 	// NOTE: Browser is global variable
 		// if using less than IE9
@@ -14,6 +47,7 @@
 			$.getScript("scripts/bootstrapCarouselIE.js");
 			return false;
 		}
+
 
 	/*** Carousel ***/
 	/*
