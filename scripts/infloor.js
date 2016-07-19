@@ -5,33 +5,98 @@
 	* Handles navigation behavior including hover and focus states
 	* as well as the inclusion of ARIA states and properties
 	*/
-	var target, dropdownMenu;
-	// target the ul
+	var targetElement, dropdownMenu, subDropdownMenu;
+	var dropMenus = [];
+	var timer;
+	// target all children of primary nav
 	var navChildren = document.getElementById("nav-primary").children;
 	// cycle through children of navigation for ul element
-	for (var i = 0; i < navChildren.length; i++) {
-		if (navChildren[i].nodeName == "UL") {
-			// target the first list time
-			var target = navChildren[i].firstElementChild.firstElementChild;
-			// target the dropdown menu
-			var dropdownMenu = navChildren[i].firstElementChild.lastElementChild;
+	function initNav() {
+		for (var i = 0; i < navChildren.length; i++) {
+			if (navChildren[i].nodeName == "UL") {
+				// get the first element child of the first element child (the a tag)
+				targetElement = navChildren[i].firstElementChild.firstElementChild;
+				// get the next sibling of the <a> tag (the dropdown menu)
+				dropdownMenu = targetElement.nextElementSibling;
+				// get the second dropdown menu
+				subDropdownMenu = dropdownMenu.firstElementChild.lastElementChild;
+
+				// loop through both dropdown menus and assign aria properties
+				dropMenus = [dropdownMenu,subDropdownMenu];
+				dropMenus.forEach(function(el, i){
+					el.setAttribute("aria-haspopup","true");
+					el.setAttribute("aria-expanded","false");
+				});
+			}
+		} // end of for loop
+	}
+
+	function toggleARIAProps(el) {
+		if (el.getAttribute("aria-expanded") == "false") {
+			el.classList.add("open");
+			el.setAttribute("aria-expanded","true");
+		} else {
+			el.classList.remove("open");
+			el.setAttribute("aria-expanded","false");
 		}
 	}
-	// on target focus
-	target.addEventListener("focusout", function() {
+
+	/**
+	* When the trigger list item loses focus, position the dropdown menu in viewport
+	* When the first item of dropdown menu loses focus, give focus to second list item in dropdown
+	*/
+	targetElement.addEventListener("focusout", function() {
+		// position element in viewport
 		dropdownMenu.style.left = 0;
+		// target dropdown menus first <li>
 		dropdownMenu.firstElementChild.addEventListener("focusout", function() {
-			// when focus moves out of targets' first list item,
-			// immediately put focus on second list item
+			// on focusout, move focus to next sibling
 			this.nextElementSibling.firstElementChild.focus();
-		} false);
+		}, false);
 	}, false);
-	// on focus targets' adjacent list item
-	target.parentElement.nextElementSibling.addEventListener("focusin", function() {
-		dropdownMenu.style.left = -9999+"px";
+
+	["focus","mouseover"].forEach(function(el,i){
+		targetElement.addEventListener(el, function() {
+			toggleARIAProps(this.nextElementSibling);
+			this.nextElementSibling.style.left = "";
+		}, true);
+		// target first list item of dropdown
+		dropdownMenu.firstElementChild.addEventListener(el, function() {
+			toggleARIAProps(dropdownMenu.firstElementChild.lastElementChild);
+		}, true);
+	});
+
+	targetElement.addEventListener("mouseout", function() {
+		this.nextElementSibling.style.left = 0;
+		timer = setTimeout(function() {
+			toggleARIAProps(targetElement.nextElementSibling);
+			targetElement.nextElementSibling.style.left = "-9999px";
+		}, 850);
+	}, false);
+
+	// console.log(subDropdownMenu.parentElement);
+	subDropdownMenu.parentElement.addEventListener("mouseout", function() {
+			subDropdownMenu.style.display = "block";
+		setTimeout(function() {
+			toggleARIAProps(subDropdownMenu);
+			subDropdownMenu.style.display = "";
+		}, 850);
 	}, true);
 
+	dropdownMenu.addEventListener("mouseover", function() {
+		// if mouseover first drop down menu, cancel timer function
+		clearTimeout(timer);
+	}, true);
 
+	// on focus targets' adjacent list item ('What does it cost?')
+	targetElement.parentElement.nextElementSibling.addEventListener("focusin", function() {
+		dropdownMenu.style.left = -9999+"px";
+		targetElement.nextElementSibling.classList.remove("open");
+		targetElement.nextElementSibling.setAttribute("aria-expanded","false");
+	}, true);
+
+	// Initialize navigation
+	initNav();
 
 	/*** Detect IE Browser Version ***/
 	// NOTE: Browser is global variable
