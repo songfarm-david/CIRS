@@ -45,7 +45,7 @@ footer, header, menu, nav, section {
 }
 
 /* Global Styles */
-html { background: #ccc;}
+html { background: #f7f7f7; }
 body {
 	background-color: #eee;
 	font-family: 'Aramisi', cursive;
