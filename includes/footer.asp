@@ -1,5 +1,4 @@
-﻿    <footer id="footer">
-			<div class="container">
+	﻿    <footer id="footer" class="full-width">
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
@@ -19,13 +18,17 @@
 						</p>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
+
+		<!-- end of Wrapper Container -->
+		</div>
+
 		<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- Custom Javascripts -->
 		<script src="scripts/infloor.js"></script>
+
 	</body>
 </html>

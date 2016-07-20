@@ -13,6 +13,8 @@
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
 		<!--#include file="browser_detect.asp"-->
 	</head>
-	<body class="container">
+	<body>
 		<!-- For document outline -->
 		<h1 class="hidden">Canadian In-Floor Radiant Solutions</h1>
+		<!-- Main Wrapper -->
+		<div class="wrapper container">

@@ -1,167 +1,118 @@
-	/***
-Global Styles for infloorheat.ca
-==============================
+/************************
+** Canadian In-Floor.ca
+==========================
 Author: David Gaskin
-July, 2016
-***/
+Date: July 2016
+*************************/
 
-/**
-TODO: Look into usage statistics for IE7 and below -- if necesary, created styles for IE7
-**/
-
-/* Cursive font for Headers*/
-@import 'https://fonts.googleapis.com/css?family=Exo+2|Playball|Italianno|Dynalight';
-
-@font-face {
-	font-family: 'Aramisi';
-	src: url('../fonts/aramisi.ttf');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-  font-family: 'museo_sans300';
-  src: url('../fonts/museo_sans/museosans-300-webfont.eot');
-  src: url('../fonts/museo_sans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/museo_sans/museosans-300-webfont.woff2') format('woff2'),
-       url('../fonts/museo_sans/museosans-300-webfont.woff') format('woff'),
-       url('../fonts/museo_sans/museosans-300-webfont.ttf') format('truetype'),
-       url('../fonts/museo_sans/museosans-300-webfont.svg#museo_sans300') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
+/*** Global Colors ***/
 /*
-Color Palette
-==============
-	Base Grey: 				#f1f1f1
-	Light Grey:				#e7e7e7
-	Dark Grey:				#545456
-	Slate: 					#343436
-	Silver: 				#5c5d5f
-	----------
-	Accent Colors:
-	Tangerine Orange:       #f5911f
-																*/
+*	Accent Orange:	#f5911f
+*
+*
+*
+*/
 
-/* Basic Reset */
+/*** Import Fonts ***/
+
+/* Cursive Font */
+@font-face {
+font-family: 'Aramisi';
+src: url('../fonts/aramisi.ttf');
+font-weight: normal;
+font-style: normal;
+}
+/* Sans-Serif Font */
+@font-face {
+font-family: 'museo_sans300';
+src: url('../fonts/museo_sans/museosans-300-webfont.eot');
+src: url('../fonts/museo_sans/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo_sans/museosans-300-webfont.woff2') format('woff2'),
+		 url('../fonts/museo_sans/museosans-300-webfont.woff') format('woff'),
+		 url('../fonts/museo_sans/museosans-300-webfont.ttf') format('truetype'),
+		 url('../fonts/museo_sans/museosans-300-webfont.svg#museo_sans300') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+/*** General Reset ***/
 * {
-	margin: 0;	padding: 0;
-	font-size: 100%;
+margin: 0;	padding: 0;
+font-size: 100%;
 }
 
 /* HTML5 display reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, menu, nav, section {
-	display: block;
+display: block;
 }
 
-/* Global Styles */
-html { background: #fcfcfc; }
+/*** Global Styles ***/
 body {
-	background-color: #fff;
-	font-family: 'Aramisi', cursive;
-	box-shadow: 0px 0px 5px 3px rgba(125, 125, 125, 0.5);
+	background: #ffffff;
+	font-family: museo_sans300, sans-serif;
+	font-size: 1.9em;
+	line-height: 1.75;
 }
-body > main {
-	background: #fff;
-	overflow: hidden;
-}
-body.container { padding: 0; }
-main > div.container{ padding-left: 135px;	padding-right: 135px; }
-
-h2 { font-size: 4em; }
-h3 { font-size: 2.8em; }
-h2, h3 { margin-top: 0; margin-bottom: 25px; }
-h4 {
-	font-family: 'museo_sans300', sans-serif;
-	font-weight: 700;
-	font-size: 1.44em; /* bootstrap initial */
+body div.wrapper {
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.25);
+	/** NOTE: Add proper padding here **/
+	padding: 0 135px;
 }
 
-nav {
-	font-size: 1.75em;
-	background: #fff;
+h1,h2,h3,h4 {
+	font-family: 'Aramisi', serif;
+	color: #f5911f;
+	font-size: 2.25em;
 }
-/* make image size of container */
-.navbar-brand > img { height: 100%; }
+h3 { margin: 0 0 25px; }
 
-/* turn off Bootstrap defaults */
-nav.navbar {
-	margin-bottom: 0;
-	border-radius: 0;
-	border: 0;
-}
-nav li a { color: #5b5b5b; }
-nav ul > li.dropdown ul > li {
-	font-size: 1.5em;
-}
-/* enable dropdown on hover */
-#nav-primary > ul > li.dropdown > a:hover > ul.dropdown-menu{
-	display: block;
-	left: 0;
-}
-/* customize focus effect for dropdown class */
-/* NOTE: test this on other browsers */
-nav a.dropdown-toggle:focus {
-	outline: initial;
-	outline-color: initial;
-	outline-style: initial;
-	outline-width: initial;
-	outline: thin dotted;
-	outline:-webkit-focus-ring-color auto 5px;
-}
+section > p:last-of-type,
+section > p:only-of-type,
+section ul li:last-child,
+aside p {	margin-bottom: 30px; }
 
+ul, ol { margin-left: 20px; }
 
-li.dropdown > a:focus + ul.dropdown-menu,
-li.dropdown:hover > ul.dropdown-menu,
-li.dropdown-submenu:hover > ul.dropdown-menu,
-li.dropdown-submenu > a:focus + ul.dropdown-menu {
-	display: block;
-	left: 0;
+figure {
+	padding: 15px;
+	box-shadow: 0px 0px 15px 1px rgba(150, 150, 150, 0.5);
+	margin-top: 5px 0;
+	width: 50%; /* base-width for figure images */
 }
-nav > ul.nav.navbar-nav > li.dropdown > ul.dropdown-menu:focus {
-	/*background: #555;*/
-	/*left: 0;*/
-}
-nav > ul.nav.navbar-nav > li.dropdown > ul.dropdown-menu:focus > a {
-	/*background: #ccc;*/
-}
+figure img { width: 100% }
 
-
+/* class to make parent container full width of wrapper */
+.full-width {
+	margin-left: -135px;
+	margin-right: -135px;
+}
 
 /** Jumbotron **/
-.container .jumbotron {
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-size: cover; /* is cover supported */
-	background-position: 0 0;
-	height: auto;
-	/* remove Bootstrap defaults */
-	border-radius: 0;	margin-bottom: 0;
+.jumbotron {
+	border-radius: 0 !important;
+	margin-bottom: 0;
 }
-.jumbotron .panel.panel-body {
-	background-color: rgba(255, 255, 255, 0.75);
-	border-radius: 0;
+.jumbotron .panel {
+	background: rgba(255, 255, 255, 0.75);
+	padding: 15px;
 }
-/* base styles for hero image */
-.jumbotron.hero{
-	padding: 0;
-	height: 600px;
-	background: #ccc url(../images/display_images/happy_family.jpg) 0 100%/100% no-repeat;
-	background-size: cover;
+.jumbotron .panel p.h1 {
+	font-family: 'Aramisi', serif;
+	color: #f5911f;
 }
 
-/* Main section headers */
-section > h2,
-#testimonial h3 {
+/** Main Page Headers **/
+h2 {
 	color: #fff;
-	padding: 20px; padding-top: 20px;
-	padding-left: 135px;
-	margin-bottom: 50px;
-	/* cancel out padding */
-	margin-left: -135px; margin-right: -135px;
-	/* gradient background */
+	padding: 30px 135px;
+	margin: 0 -135px 45px;
+	font-size: 3.5em;
+}
+
+h2, .panel {
 	background: #f5911f;
+	/* gradient background */
 	background: -moz-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(179,24,0,1)), color-stop(9%, rgba(232,36,1,0.99)), color-stop(32%, rgba(240,200,0,0.98)), color-stop(55%, rgba(240,152,0,0.85)), color-stop(74%, rgba(239,191,1,0.7)),	color-stop(95%, rgba(239,191,1,0.65)), color-stop(100%, rgba(255,215,69,0.5)));
 	background: -webkit-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
@@ -171,212 +122,43 @@ section > h2,
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b31800', endColorstr='#ffd745', GradientType=1 );
 }
 
-.jumbotron p:first-of-type,
-section h3, aside h3, #contact_us h3 { color: #f5911f; }
-section > div.panel h3 { color: inherit;}
-section > div.container-fluid { padding: 0; }
-/* orange border around focal panels */
-section div.panel {
-	border: 20px solid #f5911f;
+/** Feature Panels **/
+.panel { padding: 50px; margin-bottom: 45px;}
+.panel-body {
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* section spacing */
-div[class*="col"] > ul,
-div[class*="col"] > p:last-of-type,
-section > p:last-of-type,
-aside > p:only-of-type,
-section > p:only-of-type {
-	margin-bottom: 20px;
+figure, .panel,
+aside#uponor, .complimentary {
+	box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.25);
 }
-
-/* list styles */
-div[class*="col"] > ul, ol, dl > dd ul {
-	margin-left: 20px;
-}
-ol > li > ol { list-style: lower-roman; }
-ol, dl, section > article ul { 	font-family: 'museo_sans300', sans-serif; }
-dl, section > article ul {
-	font-size: 1.4em;
-}
-dt, dd { margin-bottom: 15px; }
-
-
-/** Footer **/
-#footer { margin-top: 30px; }
-
-/* targets only first-level footer */
-body > footer p {
-	font-size: inherit;
-}
-p, footer { 	font-family: 'museo_sans300', sans-serif; }
-p { font-size: 1.4em; line-height: 1.65; }
-body > footer {
-	background-color: #343436;
-	color: #838385;
-	font-size: 1.25em;
-	padding-top: 15px;
-}
-#footer ul {
-	text-align: center;
-	width: 100%;
-	margin: 0;
-}
-#footer ul > li {
-	float: none;
-	display: block;
-	padding: 6px 0;
-	*display: inline; /* for <=IE7 */
-}
-#footer ul > li:hover { background: none;}
-
-/* copyright text */
-#footer .container div.row:last-child p {
-	margin: 10px 0;
-	font-size: .85em;
-}
-#footer a { color: #838385; transition: color 250ms; }
-#footer a:hover {
-	color: #ddd;
-	background: none;
-}
-
-
-/** Call Us Button **/
-#nav-primary > a {
-	font-family: 'museo_sans300', sans-serif;
-	position: absolute;
-	right: 15px; top: 0;
-	padding: 0 12px;
-	margin-top: 25px;
-	border-radius: 25px;
-	border: 1px solid #5b5b5b;
-	color: #5b5b5b;
-	text-decoration: none;
-	transition: color 250ms; /* transition hover effect */
-}
-/* position the phone icon */
-#nav-primary > a > span {
-	position: relative;
-	top: 4px; left: -6px;
-	padding-left: 12px;
-	color: #f5911f;
-}
-/* call button on hover */
-a > span.call-us:hover {
-	color: #f5911f;
-}
-
-
-/** Navigation styles (general) **/
-/*** TODO: Add a 250ms transition to dropdown block ***/
-nav#nav-primary {
-	padding-top: 65px;
-}
-#nav-primary div.navbar-header {
-	height: 100%;
-	position: absolute;
-	top: 0;
-}
-#nav-primary .navbar-header a {
-	padding: 0;
-	height: 100%;
-}
-#nav-primary > ul {
-	margin-right: 0; /* remove Bootstrap default margin */
-}
-
-/* hover styles */
-#nav-primary a,
-#nav-primary ul.dropdown-menu > li a {
-	transition: color 250ms;
-}
-#nav-primary  a:hover {
-	color: orange;
-	background: none;
-}
-
-/** dropdown menu & sub-menu rules **/
-/* left align dropdown menu */
-.navbar-right > li.dropdown > .dropdown-menu {
-	right: auto; left: -9999px;
-	display: block;
-}
-nav#nav-primary li.dropdown > ul[class*="dropdown"] {
-	text-align: left;
-	width: auto; /* allow ul to span full width of text */
-	padding: 1em 0;
-}
-nav#nav-primary ul[class*="dropdown"] > li {
-	width: 100%; /* make li full width of ul */
-}
-#nav-primary ul.dropdown-menu > li { padding: 0; }
-#nav-primary ul.dropdown-menu > li a{
-	text-align: left;
-	padding: 3px 1em;
-	padding-left: 1.75em;	/* to allow room for content before */
-}
-#nav-primary li.dropdown-submenu > ul.dropdown-menu {
-	top: 0;	right: -83%; left: 99%; /* finnicky style for submenu */
-}
-
-/* target only cost examples li dropdown menu */
-nav#nav-primary li.dropdown > a[href^="cost_examples"] + ul.dropdown-menu {
-	right: -51%; left: auto;
-}
-#nav-primary > ul.nav > li.dropdown-submenu:focus > ul.dropdown-menu {
-	display: block;
-}
-
-
-
-
 
 /** Figure Styles **/
-figure, div.panel.panel-body{
-	box-shadow: 0px 0px 15px 1px rgba(150, 150, 150, 0.5);
+figure figcaption {
+	font-family: 'Lucida Sans Unicode', sans-serif;
+	font-size: 0.75em; line-height: 1.25;
+	margin-top: 10px;
+	color: #444;
 }
-figure {
-	background: #fff;
-	width: 100%;
-	padding: 15px;
-	margin-bottom: 15px;
-	position: relative;
-}
-aside#uponor img,
-figure > img {
-	width: 100%;
-}
-figure > figcaption {
-	/* use a different font here */
-	font-family: 'Lucida Sans Unicode',sans-serif;
-	font-size: 1em;
-	margin-top: 15px;
-}
-figcaption > footer {
-	font-family: inherit;
+figcaption footer {
 	text-align: right;
-	font-size: 0.75em;
+	font-size: .75em;
 	font-style: italic;
-	color: #ccc;
-	margin-top: 6px;
+	color: #bbb;
+	margin-top: 10px;
 }
-/* special styles for Floated Figures */
-.figure-float-right {
-	width: 45%; max-width: 100%;
-	margin: 0 0 15px 15px;
-}
-.figure-float-left {
-	width: 45%; max-width: 100%;
-	margin: 0 15px 15px 0;
-}
-/* pop-out figure styles */
+
+/* float styles */
+.figure-float-right {	margin: 0 0 15px 15px; }
+.figure-float-left { margin: 0 15px 15px 0; }
+
+/* Pop-out styles */
 .pop-out {
 	cursor: pointer;
 	transition: all 0.25s ease-out;
 }
-.pop-out:hover {
-  transform: scale(1.01);
-}
+.pop-out:hover { transform: scale(1.025); }
 .pop-out:after {
 	content: '';
 	position: absolute;
@@ -388,234 +170,104 @@ figcaption > footer {
 	box-shadow: 0px 0px 15px 5px rgba(150, 150, 150, 0.85);
 	transition: opacity 0.5s ease-out;
 }
-/* Fade in the pseudo-element with the bigger shadow */
+/* fade in the pseudo-element with the bigger shadow */
 .pop-out:hover::after {
-  opacity: 1;
+	opacity: 1;
 }
 
-
-/** Uponor Aside and Contact Us panel**/
+/** complimentary feature styles **/
 aside#uponor,
-section#contact_us div.panel,
-section#sitemap div.panel {
-	box-shadow: 0px 0px 15px 1px rgba(115, 115, 115, 0.75);
+.complimentary
+ {
 	background: #fff;
 	border: 10px solid #dbdcde;
 	padding: 25px;
 }
-
-
-/** Uponor Aside **/
-aside#uponor {}
-#uponor footer {margin-top: 25px;}
-#uponor footer img {
-	border: 1px solid transparent;
+#uponor img { width: 100%; }
+#uponor footer img{
+	height: 20px; width: auto;
 	display: inline-block;
-	width: auto;
-	height: 20px;
+	border: 1px solid transparent;
 }
-
 
 /** Testimonials **/
-article#testimonial {
-	margin: 60px -20px 30px;
-	background: #fff;
-	/*min-height: 390px; */
-	/* minimum height of highest blockquote */
-	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
-	overflow: hidden;
+#testimonial { margin: 30px 0; }
+#testimonial h3 {
+	margin: 0; padding: 0 0 15px;
 }
-#testimonial h3 { padding-left: 60px; }
-/*article#testimonial > article,*/
-article#testimonial .carousel {
-	height: 100%; /* fix carousel control height issue */
-	padding: 0;
+#testimonial .carousel {
+	padding: 0 90px; margin: 0 -15px;
 }
-article#testimonial div#testimonials > div {
-	min-height: 435px;
-	width: 70%;
-	margin: 0 auto;	/* pad inner carousel */
+#testimonial article.item {
+	margin-bottom: 30px;
 }
-	/*.item.testimonial {	display: table; }*/
-article#testimonial blockquote {
-	border-left: none; /* remove Bootstrap default left border */
-	padding: 30px 0;
-	display: table-cell;
-	vertical-align: middle;
+#testimonial blockquote {
+	border-left: none; /* remove default border */
 	position: relative;
+	margin: 0;
 }
 #testimonial blockquote p {
-	padding: 15px 0;
-	text-indent: 75px;
-	font-family: 'Italianno', cursive;
-	font-size: 2.25em; line-height: 1.25;
-
+/*padding: 15px 0;*/
+text-indent: 75px;
+font-family: 'Italianno', serif;
+font-size: 2.25em; line-height: 1.25;
+}
+blockquote footer:before {
+	color: #f5911f;
+	font-weight: bold;
 }
 article#testimonial blockquote:before,
 article#testimonial blockquote:after {
-	color: #f5911f;
-	content: open-quote;
-	font-size: 8em;
-	position: absolute;
-	line-height: 1;
+color: #f5911f;
+font-size: 8em;
+position: absolute;
+line-height: 1;
 }
 article#testimonial blockquote:before{
-	top: 15px;
+	content: open-quote;
+	top: 0;
 }
 article#testimonial blockquote:after {
 	content: close-quote;
-	bottom: -15px; right: 45px;
-	right: 0;
+	bottom: 0; right: 0;
+	line-height: 0.25;
 }
-#testimonial a .glyphicon {
-	color: #b7b7b7;
-	height: 100%;
-}
-
-/* carousel controls container */
-#carousel-controls {
-	display: none;
-}
-/* remove default background */
-.carousel .carousel-control {
-	background: none;
-	color: #333;
-	height: 100%;
+#testimonial a {
+	background: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 10%;
 }
 
-
-
-/** Cost table **/
-#cost_examples h3 {
-	margin: 0 0 15px;
-	padding: 0 20px 10px;
-	border-bottom: 3px dotted;
+/** Footer **/
+div.wrapper > footer {
+	color: #575759;
+	background-color: #242424;
+	margin-top: 30px;
 }
-#cost_examples > div.panel-body { border-width: 20px; }
-#cost_examples table {
-	table-layout: fixed;
-}
-#cost_examples table tbody,
-#cost_examples table tfoot {
-	font-family: 'Lucida Sans Unicode', sans-serif;
-}
-#cost_examples table td,
-#cost_examples table thead th { border: none;}
-
-#cost_examples table colgroup > col {
-	border-right: 2px dotted #ccc;
-	/* NOTE: add an improved dotted line */
-}
-#cost_examples table colgroup > col:last-of-type {
-	border: none; /* remove right border from last column */
-}
-/* table header */
-#cost_examples table thead th {
-	font-size: 2.25em;
-	text-align: center; /* because class text-center will not work on th */
-	vertical-align: top;
-}
-#cost_examples table thead th > span {
-	font-size: .7em;
-	font-weight: normal;
-}
-
-/* table body */
-#cost_examples table tbody {
-	font-size: 1.35em;
-	line-height: 1.4;
-}
-/*#cost_examples tbody td { vertical-align: middle;}*/
-
-/* table foot */
-#cost_examples table tfoot {
-	font-weight: bold;
-	color: #f5911f;
-	font-size: 1.75em;
-}
-#cost_examples table tfoot td > span{
-	font-weight: normal;
-	font-size: .75em;
-}
-#cost_examples .panel-footer {
-	font-family: 'Lucida Sans Unicode',sans-serif;
-	font-size: 0.85em;
-	background: none;
-	padding: 15px 0 0;
-}
-
-/** Contact Us **/
-#contact_us div.panel {
-	border: 10px solid #ccc;
-}
-
-/** Site Map **/
-#sitemap ul {
-	margin-bottom: 15px;
-}
-#sitemap ul > li {
-	padding-left: 15px;
-	list-style-position: inside;
-	font-size: 2.5em;
-	list-style-type: none;
-	color: #f5911f;
-}
-#sitemap ul li > ul > li {
-	list-style-type: square;
-	color: rgba(100, 100, 100, 0.8);
-	padding-left: 25px;
-	font-size: 0.75em;
-	font-family: 'museo_sans300', sans-serif;
-}
-
-
-.modal {
-	font-family: 'Aramisi', cursive;
-	font-size: 2.75em;
-	line-height: 1.25;
-}
-.modal-content { border-radius: 12px; }
-.modal-dialog {
-	margin-top: 90px; /** NOTE: make this a recurring middle distance **/
-}
-.modal-header {
-	text-transform: capitalize;
-	color: white;
-	background: #f5911f;
-	padding: 25px;
-	border: 3px solid white;
-	border-top-left-radius: 12px;
-	border-top-right-radius: 12px;
-}
-.modal-header button {
-	color: #3d3d3d;
-	line-height: 1.25;
-}
-.modal-body img {
+div.wrapper > footer p { font-size: .85em; }
+div.wrapper > footer ul {
+	text-align: center;
 	width: 100%;
+	margin: 10px 0;
 }
-.modal-footer {
-	font-family: 'museo_sans300', sans-serif;
-	border-top-color: #f5911f;
-	font-size: 0.5em;
-	text-align: left;
+div.wrapper > footer ul > li {
+	float: none;
+	display: block;
+	padding: 6px 0;
 }
-.modal-footer button {
-	border-color: #f5911f;
-	background: #f4e4d1;
-	color: #3d3d3d;
-	float: right;
-	margin-top: 12px;
+div.wrapper > footer a {
+	color: inherit;
+	font-weight: bold;
 }
-.modal-footer button:hover {
-	background: #f5911f;
-	color: white;
-	border-color: #f4e4d1;
+div.wrapper > footer a:hover {
+	background: none;
+	color: #c9c9c9;
 }
+
 
 /** Media Queries **/
 @media (min-width: 768px) {
-	body > footer { padding-top: 30px; }
+	/*body > footer { padding-top: 30px; }*/
 	#footer ul > li {
 		display: inline-block;
 		line-height: 146px;

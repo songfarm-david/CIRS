@@ -14,41 +14,42 @@
 		<link rel="stylesheet" href="css/main.css" media="screen">
 		<!--#include file="includes/browser_detect.asp"-->
 	</head>
-	<body class="container">
-		<!-- Logo Banner -->
-		<header role="banner" id="main-header">
-			<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
-		</header>
-		<script>
-			// if IE
-			if ((navigator.userAgent.indexOf('MSIE ') > -1)	|| (navigator.userAgent.indexOf('Trident') > -1)) {
-				// add class 'ie_logo' to #main-header
-				document.getElementById("main-header").className = 'ie_logo';
-			}
-		</script>
-    <!--#include file="includes/navigation.asp"-->
-		<!-- Jumbotron -->
-		<div class="container-fluid">
-      <div class="row">
-        <div class="jumbotron" style="background-image:url(../images/display_images/playing_family.jpg);background-position: 0 58%; height:620px;">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-6">
-								<div class="panel panel-body" style="position:relative;top:80px;left:-20px;">
-									<p class="h1">In-Floor Radiant Heat</p>
-									<p>
-										Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
-									</p>
-								</div>
+	<body>
+
+		<div class="wrapper container">
+
+			<!-- Logo Banner -->
+			<header role="banner" id="main-header">
+				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
+			</header>
+			<script>
+				// if IE
+				if ((navigator.userAgent.indexOf('MSIE ') > -1)	|| (navigator.userAgent.indexOf('Trident') > -1)) {
+					// add class 'ie_logo' to #main-header
+					document.getElementById("main-header").className = 'ie_logo';
+				}
+			</script>
+
+    	<!--#include file="includes/navigation.asp"-->
+
+			<!-- Jumbotron -->
+      <div class="jumbotron full-width" style="background-image:url(../images/display_images/playing_family.jpg);background-position: 0 58%; height:620px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6">
+							<div class="panel" style="position:relative;top:80px;left:-20px;">
+								<p class="h1">In-Floor Radiant Heat</p>
+								<p>
+									Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
+								</p>
 							</div>
 						</div>
 					</div>
-        </div>
+				</div>
       </div>
-    </div>
-		<!-- Main Content -->
-		<main>
-			<div class="container">
+
+			<!-- Main Content -->
+			<main>
 				<section id="main-content">
 					<h2>Radiant Heating Systems for Your Home</h2>
 					<div class="row">
@@ -88,11 +89,12 @@
 
 					<!-- Testimonials Section -->
 					<article role="region" id="testimonial" aria-labelledby="header-testimonials">
-						<div class="container">
-						<h3 id="header-testimonials">Testimonials</h3>
+						<div class="panel">
+							<div class="panel-body">
+								<h3 id="header-testimonials">Testimonials</h3>
 								<div id="testimonials" class="carousel slide" data-ride="carousel">
+									<!-- Div w/ empty class is for JavaScript carousel script -->
 									<div class="">
-										<!-- NOTE: Carousel needs fallback for lt IE9 -->
 										<article class="item testimonial">
 											<h4 class="sr-only">Testimonial: James Dickinson, Cochren Homes</h4>
 											<blockquote cite="http://www.cochrenhomes.com">
@@ -141,6 +143,7 @@
 										</div>
 									</section>
 								</div>
+							</div>
 						</div>
 					</article>
 
@@ -162,10 +165,10 @@
 						</div>
 					</section>
 				</section>
-			</div>
-		</main>
-		<footer id="footer">
-			<div class="container">
+			</main>
+
+			<!-- Footer -->
+			<footer id="footer" class="full-width">
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
@@ -185,14 +188,18 @@
 						</p>
 					</div>
 				</div>
-			</div>
-		</footer>
-		<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-		<!-- Bootstrap JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- Custom Javascripts -->
-		<script src="scripts/infloor.js"></script>
-		<script src="scripts/carousel.js"></script>
+			</footer>
+
+			<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
+			<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+			<!-- Bootstrap JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			<!-- Custom Javascripts -->
+			<script src="scripts/infloor.js"></script>
+			<script src="scripts/carousel.js"></script>
+
+		<!-- end of Wrapper Container -->
+		</div>
+
 	</body>
 </html>
