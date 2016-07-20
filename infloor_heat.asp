@@ -64,7 +64,7 @@
 									<figure role="figure" aria-describedby="figure-1">
 										<img src="images/demos/closed_loop.jpg" alt="An illustration of a closed-loop hydronic heating pipe system running through a three-level home" title="Closed-loop system">
 										<figcaption id="figure-1">
-											Figure 1. Closed-loop Radiant heating system.
+											Figure 1. Closed-loop radiant heating system.
 											<footer>Photo: ecohydronics.com.au</footer>
 										</figcaption>
 									</figure>
@@ -243,11 +243,5 @@
 				</section>
 			</div>
 		</main>
-
-		<script type="text/javascript">
-			// trigger the image element and wrap an a tag around it
-			var img1 = document.getElementById("figure-2").parentNode;
-			console.log(img1);
-		</script>
 
 <!--#include file="includes/footer.asp"-->
