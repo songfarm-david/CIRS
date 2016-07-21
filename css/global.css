@@ -205,15 +205,13 @@ nav > ul.navbar-nav a:hover:before {
 }
 /* top-level list items */
 nav > ul.navbar-nav > li a:hover:before {
-	top: 15px; left: -4px;
+	top: 10px; left: -4px;
 }
 /* dropdown-menu list items */
 nav ul.dropdown-menu > li > a:hover:before {
 	position: absolute;
 	left: 0; top: 7px;
 }
-
-
 
 /** Jumbotron **/
 .jumbotron {
@@ -372,6 +370,27 @@ article#testimonial blockquote:after {
 	width: 10%;
 }
 
+/** Site Map **/
+.complimentary > ul {
+	font-size: 1.5em;
+	margin: 10px 45px;
+}
+.complimentary > ul > li {
+	font-family: 'Aramisi', serif;
+	list-style: none;
+	list-style-position: inside;
+}
+.complimentary > ul > li:last-child { margin-bottom: 0;  }
+.complimentary > ul > li > ul {
+	font-size: .85em;
+	list-style-type: disc;
+	list-style-image: url(../images/nav_flame.png);
+	list-style-position: inside -5px;
+}
+.complimentary > ul > li > ul > li:last-child {
+	margin-bottom: 0px;
+}
+
 /** Footer **/
 div.wrapper > footer {
 	color: #767676;
@@ -402,6 +421,7 @@ div.wrapper > footer a:focus {
 	background: none;
 	color: #c9c9c9;
 }
+
 
 /*** Modal Pop-Out ***/
 .modal {
@@ -447,7 +467,6 @@ div.wrapper > footer a:focus {
 	color: white;
 	border-color: #f4e4d1;
 }
-
 
 /*** Partners aside ***/
 #partners {
@@ -509,6 +528,7 @@ div.wrapper > footer a:focus {
 @media (min-width: 992px) and (max-width: 1199px) {
 	body div.wrapper {
 	}
+
 }
 
 /* Small Screens */
@@ -557,4 +577,8 @@ div.wrapper > footer a:focus {
 		text-align: center;
 	}
 	#partners div a { margin: 0 auto 15px; }
+
+	.complimentary > ul {
+		margin: 0;
+	}
 }
