@@ -60,7 +60,8 @@ body div.wrapper {
 	padding: 0 135px;
 }
 
-h1,h2,h3,h4 {
+h1,h2,h3,h4,
+div.wrapper > footer {
 	font-family: 'Aramisi', serif;
 	color: #f5911f;
 	font-size: 2.25em;
@@ -88,7 +89,6 @@ figure img { width: 100% }
 	margin-right: -135px;
 }
 
-
 /** Navigation **/
 nav {
 	position: relative;
@@ -101,29 +101,16 @@ nav > ul.navbar-nav {
 	width: 100%;
 	text-align: center;
 	position: relative;
-	top: 50px;
+	top: 45px;
 }
 nav > ul.navbar-nav > li {
 	float: none;
 	display: inline-block;
 	position: relative;
-	left: -60px;
+	left: -85px; /* offset the list items to the left */
 }
-nav li.dropdown > ul.dropdown-menu {
-	font-size: .85em;
-	left: -9999px;
-	display: block;
-}
-nav ul.dropdown-menu li:hover {	background: #eee; }
-nav li.dropdown-submenu > ul.dropdown-menu {
-	font-size: inherit;
-	top: 0;	right: -83%;
-	left: 99% !important; /* finnicky style for submenu */
-}
-nav > ul.navbar-nav > li a:hover { background: none; }
-nav li a { color: #5b5b5b; }
 
-/* Logo */
+/* CIRS icon */
 nav .navbar-header {
 	position: absolute;
 }
@@ -131,24 +118,41 @@ nav .navbar-header a {
 	height: 100%;
 	padding: 10px;
 }
-nav .navbar-header img {
-	border: 1px solid transparent;
-}
-/* Call-Us Button */
+nav .navbar-header img { border: 1px solid transparent; }
+
+/* call-us button */
 nav > a.call-us {
 	border-radius: 25px;
-	border: 1px solid #242424;
+	border: 2px solid #ddd;
+	background: #eee;
 	padding: 0 12px;
 	position: absolute;
 }
 nav > a.call-us span {
 	position: relative;
-	top: 3px; left: -6px;
+	top: 4px; left: -6px;
 	padding-left: 12px;
 	color: #f5911f;
+	font-size: 1.25em;
 }
 
-/* Dropdown behavior */
+/* dropdown menu */
+nav li.dropdown > ul.dropdown-menu {
+	font-size: .85em;
+	left: -9999px;
+	display: block;
+}
+nav ul.dropdown-menu > li {	padding: 0.15em 0; }
+nav ul.dropdown-menu li:hover {	background: #eee; }
+nav li.dropdown-submenu > ul.dropdown-menu {
+	font-size: inherit;
+	top: 0;	right: -83%;
+	left: 99% !important; /* finnicky style for submenu */
+}
+nav > ul.navbar-nav > li a:hover { background: none; }
+nav a { color: #5b5b5b; }
+
+/* dropdown behavior */
 .navbar-nav > li.dropdown > a:hover > ul.dropdown-menu{
 	display: block;
 	left: 0;
@@ -170,7 +174,7 @@ li.dropdown-submenu > a:focus + ul.dropdown-menu {
 	}
 	/* Logo */
 	nav .navbar-header {
-		left: 175px; top: 8px;
+		left: 145px; top: 8px;
 	}
 	/* Call Button */
 	nav > a.call-us {
@@ -330,15 +334,19 @@ article#testimonial blockquote:after {
 
 /** Footer **/
 div.wrapper > footer {
-	color: #575759;
+	color: #767676;
 	background-color: #242424;
 	margin-top: 30px;
+	font-size: 1.25em;
 }
-div.wrapper > footer p { font-size: .85em; }
+div.wrapper > footer p {
+	font-size: .85em;
+	margin-bottom: 25px;
+}
 div.wrapper > footer ul {
 	text-align: center;
 	width: 100%;
-	margin: 10px 0;
+	margin: 25px 0;
 }
 div.wrapper > footer ul > li {
 	float: none;
@@ -347,9 +355,10 @@ div.wrapper > footer ul > li {
 }
 div.wrapper > footer a {
 	color: inherit;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
-div.wrapper > footer a:hover {
+div.wrapper > footer a:hover,
+div.wrapper > footer a:focus {
 	background: none;
 	color: #c9c9c9;
 }
