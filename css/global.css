@@ -318,7 +318,7 @@ aside#uponor,
 }
 
 /** Testimonials **/
-#testimonial { margin-top: 30px; }
+#testimonial { margin-top: 30px; margin-bottom: 60px; }
 #testimonial h3 {
 	margin: 0; padding: 0 0 15px;
 	display: none;
@@ -364,10 +364,14 @@ article#testimonial blockquote:after {
 	bottom: 15px; right: 45px;
 	line-height: 0.25;
 }
-#testimonial a {
+#testimonial a.carousel-control {
 	background: #fff;
 	background-color: rgba(255, 255, 255, 0.5);
 	width: 10%;
+	color: #c8c8c8;
+}
+#testimonial a.carousel-control:hover {
+	color: #8c8c8c;
 }
 
 /** Site Map **/
@@ -569,6 +573,17 @@ div.wrapper > footer a:focus {
 		padding: 6px 0;
 	}
 	div.wrapper > footer { margin-top: 0; }
+
+	#testimonial .carousel { padding: 0 35px 0 45px; }
+	#testimonial blockquote p { text-indent: 45px; }
+	#testimonial a.carousel-control { width: 9%; }
+	#testimonial a.carousel-control span { font-size: 1.75em; }
+	article#testimonial blockquote:before {
+		top: -10px; left: -10px;
+	}article#testimonial blockquote:after {
+		bottom: 45px;
+	}
+
 	#partners {
 		padding: 15px; padding-bottom: 30px;
 		margin-bottom: -33px;

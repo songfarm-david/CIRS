@@ -37,7 +37,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-6">
-							<div class="panel" style="position:relative;top:80px;left:-20px;">
+							<div class="panel" style="position:absolute;top:80px;left:-20px;display:none;">
 								<p class="h1">In-Floor Radiant Heat</p>
 								<p>
 									Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
@@ -51,7 +51,7 @@
 			<!-- Main Content -->
 			<main>
 				<section id="main-content">
-					<h2>Radiant Heating Systems for Your Home</h2>
+					<h2 class="full-width">Radiant Heating Systems for Your Home</h2>
 					<div class="row">
 						<div class="col-md-6 col-lg-7">
 							<h3>What is Radiant In-Floor Heating?</h3>
@@ -68,7 +68,7 @@
 			          <b>For a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
 			        </p>
 						</div>
-						<div class="col-md-6 col-lg-5">
+						<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5">
 							<aside id="uponor" class="panel-body" >
 								<h3 class="sr-only">Uponor Accreditation</h3>
 								<a href="http://www.uponor.ca/" target="_blank"><img src="images/partners/uponor_logo_lg.jpg" alt="Uponor website" title="Uponor"></a>
