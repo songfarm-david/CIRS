@@ -6,7 +6,7 @@
 			</a>
 			<div class="navbar-header">
 				<a href="default.asp" class="navbar-brand" title="Home">
-					<img src="images/logoo.png" alt="Link to Canadian In-Floor Radiant Solutions Home Page" title="Home">
+					<img src="images/CIRSicon.png" alt="Link to Canadian In-Floor Radiant Solutions Home Page" title="Home">
 				</a>
 			</div>
 			<ul class="nav navbar-nav">
