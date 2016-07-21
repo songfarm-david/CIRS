@@ -146,24 +146,7 @@
 							</div>
 						</div>
 					</article>
-
 					<!-- end of testimonial -->
-
-					<section role="complementary" id="partners">
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12">
-									<h3>Partners</h3>
-									<div>
-										<a href="http://www.ultimatecomfort.ca/" rel="external"><img src="images/partners/logo-canadianhydronics.gif" alt="Canadian Hydronics Council website" title="Canadian Hydronics Council"></a>
-										<a href="http://www.burlingtonchamber.com/" rel="external"><img src="images/partners/logo-burlingtonchamber.gif" alt="Burlington Chamber of Commerce website" title="Burlington Chamber of Commerce"></a>
-										<a href="http://www.oakvillechamber.com/" rel="external"><img src="images/partners/logo-oakvillechamber.gif" alt="Oakville Chamber of Commerce website" title="Oakville Chamber of Commerce"></a>
-										<a href="https://www.facebook.com/beautifulheat/" rel="external"><img src="images/partners/logo-beautifulheat.gif" alt="Beautiful Heat website" title="Beautiful Heat Facebook Page"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
 				</section>
 			</main>
 

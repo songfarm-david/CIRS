@@ -4,7 +4,7 @@
 
 		<main>
 			<section id="sitemap">
-				<h2>Canadian In-Floor Radiant Solutions Sitemap</h2>
+				<h2 class="full-width">Canadian In-Floor Radiant Solutions Sitemap</h2>
 				<div class="row">
 					<div class="col-xs-12 col-sm-8 col-sm-offset-2">
 						<div class="complimentary">

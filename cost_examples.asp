@@ -8,7 +8,7 @@
     <!-- Main Content -->
     <main>
 	    <section>
-		    <h2>What Does Radiant In-Floor Heating Cost?</h2>
+		    <h2 class="full-width">What Does Radiant In-Floor Heating Cost?</h2>
 		    <p>
 			    One of the factors affecting the cost of an in-floor radiant heating installation is the method that will be used to heat the hot water.
 		    </p>

@@ -21,10 +21,10 @@
 		<!-- Main content -->
 		<main>
 			<section>
-				<h2>In-Floor Heat</h2>
+				<h2 class="full-width">In-Floor Heat</h2>
 				<section>
 					<h3>What is Radiant Floor Heating?</h3>
-					<figure role="figure" class="pull-right figure-float-right" aria-describedby="figure-2" data-pop-out="true">
+					<figure role="figure" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-2" data-pop-out="true">
 						<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="An illustration of how ground-level radiant heat produces steady, even, room heating while forced air heat rises to the ceiling leaving the lower half of the room unaffected" title="Radiant heat versus forced air">
 						<figcaption id="figure-2">
 							<footer>Photo: warmboard.com</footer>
@@ -47,7 +47,7 @@
 					</p>
 					<div class="row">
 						<div class="col-sm-5">
-							<figure role="figure" class="pull-left" aria-describedby="figure-1" data-pop-out="true" style="width:100%;">
+							<figure role="figure" class="pull-left hidden-xs" aria-describedby="figure-1" data-pop-out="true" style="width:100%;">
 								<img src="images/demos/closed_loop.jpg" alt="An illustration of a closed-loop hydronic heating pipe system running through a three-level home" title="Closed-loop system">
 								<figcaption id="figure-1">
 									Figure 1. Closed-loop radiant heating system.
@@ -75,7 +75,7 @@
 					</div>
 				</section>
 				<aside>
-					<figure role="figure" class="pull-right figure-float-right" aria-describedby="figure-3" data-pop-out="true">
+					<figure role="figure" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-3" data-pop-out="true">
 						<img src="images/demos/radiantheat_house.jpg" alt="An illustration of a three storey residential house with radiant heat tubing running under-floor throughout the home including the garage and driveway">
 						<figcaption id="figure-3">
 							Figure 3. Hydronic radiant floor heating laid throughout a home. Note: Pipes are not visible when installation is completed.
@@ -101,7 +101,7 @@
 				</section>
 				<section>
 					<h3 id="system_components">System Components</h3>
-					<figure role="figure" class="pull-right figure-float-right" aria-describedby="figure-4" data-pop-out="true">
+					<figure role="figure" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-4" data-pop-out="true">
 						<img src="images/demos/components.jpg" alt="In illustration of the components of a radiant heat system" title="Radiant heating system components">
 						<figcaption id="figure-4">
 							Figure 4. Radiant heating system components.
@@ -132,8 +132,7 @@
 								</li>
 								<li>
 									<p>Thin slab system:</p>
-									<ol>
-										<!-- this section takes Roman Numerals -->
+									<ol style="list-style-type:lower-roman;">
 										<li>
 											<p>The floor heating tubing is fastened above the subfloor and is covered with lightweight concrete or selflevelling gypsum cement underlayment. The floor thickness is 1.5 in.</p>
 										</li>
@@ -166,7 +165,7 @@
 					</section>
 					<section>
 						<h3 id="lifespan_and_warranty">Lifespan &amp; Warranty</h3>
-						<figure role="figure" class="pull-right figure-float-right" aria-describedby="figure-5" data-pop-out="true">
+						<figure role="figure" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-5" data-pop-out="true">
 							<img src="images/demos/pex.jpg" alt="An close-up image of Uponor PEX-a tubing being installed onto a floor by hand">
 							<figcaption id="figure-5">
 								Uponor PEX-a tubing is flexible, durable, and has been used in plumbing systems for more than 20 years.

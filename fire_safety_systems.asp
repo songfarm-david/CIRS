@@ -9,14 +9,14 @@
     <!-- Main content -->
     <main>
 	    <section>
-		    <h2>Fire Safety Systems</h2>
+		    <h2 class="full-width">Fire Safety Systems</h2>
 		    <p>
 			    In-home sprinklers are becoming more popular than ever. Small pot light-looking ceiling fixtures are mounted throughout the home to monitor heat and disperse water to put out the fire threat.
 		    </p>
 		    <p>
 			    Fire safety systems are a cost-effective add-on/upgrade option to an in-floor heating installation.  They provide peace-of-mind and may earn you a reduction in your insurance rates.
 		    </p>
-        <figure role="figure" class="pull-left figure-float-left" aria-describedby="figure-1" data-pop-out="true">
+        <figure role="figure" class="pull-left figure-float-left hidden-xs" aria-describedby="figure-1" data-pop-out="true">
           <img src="images/demos/sprinkler_head.jpg" alt="AquaSAFE&trade; Fire Sprinkler System with Pex-a tubing" title="AquaSAFE&trade; Fire Sprinkler System with Pex-a tubing">
           <figcaption id="figure-1">
             Uponor AquaSAFE&trade; fastened under-floor, connected with Uponor PEX-a tubing.
