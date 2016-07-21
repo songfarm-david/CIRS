@@ -19,7 +19,7 @@
 		<div class="wrapper container">
 
 			<!-- Logo Banner -->
-			<header role="banner" id="main-header">
+			<header role="banner" id="main-header" class="full-width">
 				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 			</header>
 			<script>
@@ -88,7 +88,7 @@
 					</div>
 
 					<!-- Testimonials Section -->
-					<article role="region" id="testimonial" aria-labelledby="header-testimonials">
+					<article role="region" id="testimonial" class="full-width" aria-labelledby="header-testimonials">
 						<div class="panel">
 							<div class="panel-body">
 								<h3 id="header-testimonials">Testimonials</h3>
