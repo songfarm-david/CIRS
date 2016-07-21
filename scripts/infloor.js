@@ -124,57 +124,53 @@
 	for (var i = 0; i < figureSet.length; i++) {
 
 		// NOTE: optional selection of only figures with 'data-pop-out="true"
-		/*
-		* if (figureSet[i].getAttribute("data-pop-out")) {}
-		*/
+		if (figureSet[i].getAttribute("data-pop-out")) {
+			// add class pop-out to the figure
+			figureSet[i].className = figureSet[i].className + " pop-out";
 
-		// add class pop-out to the figure
-		figureSet[i].className = figureSet[i].className + " pop-out";
+			figureSet[i].addEventListener("click", function() {
+				var imgText, imgTitle, imgWidth;
 
-		figureSet[i].addEventListener("click", function() {
-			var imgText, imgTitle, imgWidth;
+				// clone the figures' img element
+				var modalImg = this.firstElementChild.cloneNode(false);
 
-			// clone the figures' img element
-			var modalImg = this.firstElementChild.cloneNode(false);
+				imgWidth = modalImg.width;
+				// if the width of the pop-out is too small
+				if (modalImg.width < 450) {
+					// set to 450px
+					imgWidth = 450 + "px";
+				}
 
-			imgWidth = modalImg.width;
-			// if the width of the pop-out is too small
-			if (modalImg.width < 450) {
-				// set to 450px
-				imgWidth = 450 + "px";
-			}
+				// if a title attribute exists,
+				// create a new text tode and populate with title of default
+				if (modalImg.title) {
+					imgTitle = document.createTextNode(modalImg.title);
+				} else {
+					imgTitle = document.createTextNode("(Untitled image)");
+				}
 
-			// if a title attribute exists,
-			// create a new text tode and populate with title of default
-			if (modalImg.title) {
-				imgTitle = document.createTextNode(modalImg.title);
-			} else {
-				imgTitle = document.createTextNode("(Untitled image)");
-			}
+				// if exists text data, set imgText to text data
+				if (this.lastElementChild.childNodes[0].data != null) {
+					imgText = this.lastElementChild.childNodes[0].data;
+					imgText = document.createTextNode(imgText);
+				} else {
+					imgText = document.createTextNode("");
+				}
 
-			// if exists text data, set imgText to text data
-			if (this.lastElementChild.childNodes[0].data != null) {
-				imgText = this.lastElementChild.childNodes[0].data;
-				imgText = document.createTextNode(imgText);
-			} else {
-				imgText = document.createTextNode("");
-			}
+				// Append the image, title and image text to the modal
+				modalBody.appendChild(modalImg);
+				modalHeader.appendChild(imgTitle);
+				var footerBtn = modalFooter.firstElementChild;
+				modalFooter.insertBefore(imgText, footerBtn);
 
-			// Append the image, title and image text to the modal
-			modalBody.appendChild(modalImg);
-			modalHeader.appendChild(imgTitle);
-			var footerBtn = modalFooter.firstElementChild;
-			modalFooter.insertBefore(imgText, footerBtn);
+				/* optional: add extra width to account for styled padding */
+				// modal.firstElementChild.style.width = imgWidth + 60 + "px";
 
-			/* optional: add extra width to account for styled padding */
-			// modal.firstElementChild.style.width = imgWidth + 60 + "px";
+				// fire the modal
+				$(modal).modal();
 
-			// fire the modal
-			$(modal).modal();
-
-		}, false); // End of: addEventListener
-
-			/* End of If here */
+			}, false); // End of: addEventListener
+		}
 
 	}
 
