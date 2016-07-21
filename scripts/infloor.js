@@ -9,7 +9,10 @@
 	var dropMenus = [];
 	var timer;
 	// target all children of primary nav
-	var navChildren = document.getElementById("nav-primary").children;
+	var nav = document.getElementById("nav-primary");
+	var navChildren = nav.children;
+	var navSibling = nav.nextElementSibling;
+
 	// cycle through children of navigation for ul element
 	for (var i = 0; i < navChildren.length; i++) {
 		if (navChildren[i].nodeName == "UL") {
@@ -102,6 +105,15 @@
 	targetElement.parentElement.nextElementSibling.addEventListener("focus", function() {
 		dropdownMenu.style.left = -9999+"px";
 		toggleARIAProps(targetElement.nextElementSibling);
+	}, true);
+
+	// on jumbotron mouseover, hide submenu
+	navSibling.addEventListener("mouseover", function() {
+		// close submenu if open
+		timer = setTimeout(function() {
+			toggleARIAProps(targetElement.nextElementSibling);
+			targetElement.nextElementSibling.style.left = "-9999px";
+		}, 500);
 	}, true);
 
 	/** end of navigation **/
