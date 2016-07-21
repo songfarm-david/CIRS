@@ -7,45 +7,80 @@ July, 2016
 
 header#main-header {
 	height: 315px; /* NOTE: header height is currently variable! */
-	background: #f1f1f1 url(../images/cirsLogo_lowRes_white.jpg) center 50% no-repeat;
-	background-size: contain;
-	background-size: 81%;
+	background: #f1f1f1;
+	background-image: url(../images/cirsLogo_lowRes_white.jpg);
+	background-image: url(../images/cirsLogo.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain, cover;
+	/*background-size: 81%;*/
 	/* IE does not support // NOTE: do not rely on this property in production */
-	background-blend-mode: multiply;
+	/*background-blend-mode: multiply;*/
+	/*background: #f1f1f1;*/
+	/*background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 52%, #e5e5e5 100%);
+	background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);*/
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );*/
 }
+
+/** NOTE: is this still necesary? */
 /* if IE is the requesting browser, apply this class */
 header#main-header.ie_logo {
 	background-color: transparent;
 	background-image: url(../images/cirsLogo.png);
 }
 
-section#main-content p.call-us {
-	margin: 45px 0 0;
+nav {
+	/* use main navigation bg here */
+	background: transparent url(../images/bg_nav_main.png) no-repeat;
+	border-top: 3px solid white;
+	width: auto; left: 0;
+	/* reverse box shadow on top */
+	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
+	margin-bottom: -58px; /* to account for extra bg area */
 }
+nav > ul.navbar-nav {	top: 8px; }
+nav > ul.navbar-nav > li { left: 0; }
+
+/* make 'Call Us' button originate from the right */
+nav > a.call-us { transform-origin: 100%; }
+nav > a.call-us:hover { transform-origin: 100%; }
+
+
+
+
+
+
+
+
+/*section#main-content p.call-us {
+	margin: 45px 0 0;
+}*/
 
 /* Primary Nav */
-nav#nav-primary {
+/*nav#nav-primary {
 	margin-bottom: 0;
 	background: none;
 	padding: 0;
-}
-nav#nav-primary ul {
+}*/
+/*nav#nav-primary ul {
 	width: 100%;
 	text-align: center;
 	border-top: 3px solid #fff;
 	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
-}
+}*/
 #nav-primary ul li {
-	float: none;
+	/*float: none;
 	display: inline-block;
-	*display: inline; /* for <=IE7 */
+	*display: inline; */
+	/* for <=IE7 */
 }
 #nav-primary li > a {
-	width: 100%;
+	/*width: 100%;
 	display: inline-block;
-	color: #545456;
+	color: #545456;*/
 	/* for <=IE7 */
-	*display: inline;
+	/**display: inline;*/
 }
 /* remove Icon (home link) */
 #nav-primary div.navbar-header {
@@ -53,11 +88,12 @@ nav#nav-primary ul {
 }
 /* position call us button */
 #nav-primary > a {
-	top: -315px; right: 20px;
+	top: -285px;
+	right: 15px;
 }
 /* reset to default position: target only 'cost examples' li dropdown menu */
 nav#nav-primary li.dropdown > a[href^="cost_examples"] + ul.dropdown-menu {
-	left: 0; right: auto;
+	/*left: 0; right: auto;*/
 }
 
 /** Partners Footer */
