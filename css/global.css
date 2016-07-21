@@ -8,7 +8,7 @@ Date: July 2016
 /*** Global Colors ***/
 /*
 *	Accent Orange:	#f5911f
-*
+* Dark Grey:			#242424
 *
 *
 */
@@ -86,6 +86,96 @@ figure img { width: 100% }
 .full-width {
 	margin-left: -135px;
 	margin-right: -135px;
+}
+
+
+/** Navigation **/
+nav {
+	position: relative;
+	margin-top: -13px;
+	margin-bottom: -30px;
+}
+nav > ul.navbar-nav {
+	font-family: 'Aramisi', serif;
+	font-size: 1.35em;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 50px;
+}
+nav > ul.navbar-nav > li {
+	float: none;
+	display: inline-block;
+	position: relative;
+	left: -60px;
+}
+nav li.dropdown > ul.dropdown-menu {
+	font-size: .85em;
+	left: -9999px;
+	display: block;
+}
+nav ul.dropdown-menu li:hover {	background: #eee; }
+nav li.dropdown-submenu > ul.dropdown-menu {
+	font-size: inherit;
+	top: 0;	right: -83%;
+	left: 99% !important; /* finnicky style for submenu */
+}
+nav > ul.navbar-nav > li a:hover { background: none; }
+nav li a { color: #5b5b5b; }
+
+/* Logo */
+nav .navbar-header {
+	position: absolute;
+}
+nav .navbar-header a {
+	height: 100%;
+	padding: 10px;
+}
+nav .navbar-header img {
+	border: 1px solid transparent;
+}
+/* Call-Us Button */
+nav > a.call-us {
+	border-radius: 25px;
+	border: 1px solid #242424;
+	padding: 0 12px;
+	position: absolute;
+}
+nav > a.call-us span {
+	position: relative;
+	top: 3px; left: -6px;
+	padding-left: 12px;
+	color: #f5911f;
+}
+
+/* Dropdown behavior */
+.navbar-nav > li.dropdown > a:hover > ul.dropdown-menu{
+	display: block;
+	left: 0;
+}
+li.dropdown > a:focus + ul.dropdown-menu,
+li.dropdown:hover > ul.dropdown-menu,
+li.dropdown-submenu:hover > ul.dropdown-menu,
+li.dropdown-submenu > a:focus + ul.dropdown-menu {
+	display: block;
+	left: 0;
+}
+
+/* Desktop styles */
+@media (min-width: 1170px) {
+	nav {
+		background: transparent url(../images/bg_nav_general.png) no-repeat;
+		height: 124px; width: 1263px;
+		left: -46px;
+	}
+	/* Logo */
+	nav .navbar-header {
+		left: 175px; top: 8px;
+	}
+	/* Call Button */
+	nav > a.call-us {
+		right: 135px; top: 50px;
+	}
 }
 
 /** Jumbotron **/

@@ -1,4 +1,4 @@
-		<nav role="navigation" id="nav-primary" class="navbar" aria-labelledby="nav-header">
+		<nav role="navigation" id="nav-primary" class="full-width" aria-labelledby="nav-header">
 			<h2 id="nav-header" class="sr-only">Main Navigation</h2>
 			<!-- Call Us Button -->
 			<a href="tel:9055381661" class="call-us">
@@ -6,10 +6,10 @@
 			</a>
 			<div class="navbar-header">
 				<a href="default.asp" class="navbar-brand" title="Home">
-					<img src="images/cirsLogo_iconOnly.jpg" alt="Link to Canadian In-Floor Radiant Solutions Home Page" title="Home">
+					<img src="images/logoo.png" alt="Link to Canadian In-Floor Radiant Solutions Home Page" title="Home">
 				</a>
 			</div>
-			<ul class="nav navbar-nav navbar-right" >
+			<ul class="nav navbar-nav">
 				<li class="dropdown dropdown-toggle">
 					<a href="infloor_heat.asp">
 						Radiant Solutions <span class="caret"></span>
