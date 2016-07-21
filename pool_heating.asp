@@ -8,9 +8,9 @@
 
     <!-- Main content -->
     <main>
-      <section>
+      <section class="clearfix">
         <h2>Pool Heating Systems</h2>
-        <figure role="figure" class="pull-right figure-float-right" aria-describedby="figure-1" style="width:38%;">
+        <figure role="figure" class="pull-right figure-float-right" aria-describedby="figure-1" data-pop-out="true" style="width:38%;">
           <img src="images/demos/radiantfloor_pool.jpg" alt="An illustration of a residential pool heated by domestic radiant heat system" title="Residential pool heated by domestic radiant heat system">
           <figcaption id="figure-1">
             <footer>Photo: prostar-mechanical.com</footer>
