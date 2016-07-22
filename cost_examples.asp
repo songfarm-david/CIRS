@@ -1,4 +1,22 @@
-<!--#include file="includes/header.asp"-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- IE Edge Meta tag -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario." />
+		<title>In-Floor Heating systems designed, installed by expert infloor heat contractor in Ontario</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Author CSS -->
+		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
+		<link rel="stylesheet" href="css/table.css" media="screen">
+		<!--#include file="includes/browser_detect.asp"-->
+	</head>
+	<body>
+
+		<div class="wrapper container">
 
     <!--#include file="includes/navigation.asp"-->
 
@@ -6,7 +24,7 @@
     <div class="jumbotron full-width" style="background-image: url(../images/display_images/child_drawing.jpg); background-position:0 63%; height:560px;"></div>
 
     <!-- Main Content -->
-    <main>
+    <main role="main">
 	    <section>
 		    <h2 class="full-width">What Does Radiant In-Floor Heating Cost?</h2>
 		    <p>
@@ -30,11 +48,10 @@
         <p>
           <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
         </p>
-        <div class="container-fluid">
-          <article id="cost_examples">
-            <div class="panel panel-body">
+        <!-- <div class="container-fluid"> -->
+          <section role="region" aria-label="Cost Examples table" id="cost_examples" class="full-width">
+            <div class="panel">
               <h3>Cost Examples</h3>
-              <!-- NOTE: this should be contained in a table -->
               <div class="container-fluid">
                 <table class="table">
                   <!-- Create columns for styling -->
@@ -44,19 +61,27 @@
                     <col>
                     <col>
                   </colgroup>
-                  <thead class="text-center">
+                  <thead >
                     <tr>
                       <th>
-                        Basement Floor of Existing Home<br> <span>(288 sq/ft)</span>
+                        <span>Basement Floor</span>
+                        <br>of Existing Home<br>
+                        <!-- <span>(288 sq/ft)</span> -->
                       </th>
                       <th>
-                        Full Basement during New Home Construction<br> <span>(1500 sq/ft)</span>
+                        <span>Full Basement</span>
+                        <br>of New Home<br>
+                        <!-- <span>(1500 sq/ft)</span> -->
                       </th>
                       <th>
-                        Entire New Home including Basement<br> <span>(4000 sq/ft)</span>
-                      </th>
+                        <span>Entire New Home</span>
+                        <br>incl. Basement<br>
+                        <!-- <span>(4000 sq/ft)</span> -->
+                    </th>
                       <th>
-                        Underfloor Heating on Main Floor of Existing Home
+                        <span>Main Floor</span>
+                        <br>of Existing Home
+                        <!-- <span></span> -->
                       </th>
                     </tr>
                   </thead>
@@ -79,27 +104,27 @@
                   <tfoot>
                     <tr class="text-center">
                       <td>
-                        $8000.00<br> <span>($28.00 per sq/ft)</span>
+                        <span>$8000.00<br> <span>($28.00 per sq/ft)</span></span> <span></span>
                       </td>
                       <td>
-                        $8800.00<br> <span>($5.86 per sq/ft)</span>
+                        <span>$8800.00<br> <span>($5.86 per sq/ft)</span></span> <span></span>
                       </td>
                       <td>
-                        $54,000.00<br> <span>($13.50 per sq/ft)</span>
+                        <span>$54,000.00<br> <span>($13.50 per sq/ft)</span></span><span></span>
                       </td>
                       <td>
-                        $10.00-$20.00 per sq/ft
+                        <span>$10.00-$20.00<br> <span>(per sq/ft)</span></span><span></span>
                       </td>
                     </tr>
                   </tfoot>
                 </table>
               </div>
-              <div role="note" class="panel-footer">
+              <!-- <div role="note" class="panel-footer">
                 <small>*Listed prices are approximations</small>
-              </div>
+              </div> -->
             </div>
-          </article>
-        </div>
+          </section>
+        <!-- </div> -->
 	    </section>
     </main>
 
