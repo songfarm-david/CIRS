@@ -19,7 +19,7 @@
 		</div>
 
 		<!-- Main content -->
-		<main>
+		<main role="main">
 			<section>
 				<h2 class="full-width">In-Floor Heat</h2>
 				<section>

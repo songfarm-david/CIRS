@@ -2,7 +2,7 @@
 
     <!--#include file="includes/navigation.asp"-->
 
-    <main>
+    <main role="main">
       <section>
   	    <h2 class="full-width">About Us</h2>
         <article>

@@ -7,7 +7,7 @@
     style="background-image: url(../images/display_images/fire_sprinkler.jpg); background-position: 0 10%; height:500px;"></div>
 
     <!-- Main content -->
-    <main>
+    <main role="main">
 	    <section>
 		    <h2 class="full-width">Fire Safety Systems</h2>
 		    <p>

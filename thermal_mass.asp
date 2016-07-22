@@ -6,7 +6,7 @@
     <div class="jumbotron full-width" style="background-image:url(../images/display_images/family_livingroom.jpg);background-position:0;height:600px;"></div>
 
     <!-- Main content -->
-    <main>
+    <main role="main">
 	    <section>
 		    <h2 class="full-width">Thermal Mass</h2>
         <figure role="presentation" class="pull-right figure-float-right hidden-xs">

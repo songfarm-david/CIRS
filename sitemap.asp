@@ -2,7 +2,7 @@
 
     <!--#include file="includes/navigation.asp"-->
 
-		<main>
+		<main role="main">
 			<section id="sitemap">
 				<h2 class="full-width">Canadian In-Floor Radiant Solutions Sitemap</h2>
 				<div class="row">

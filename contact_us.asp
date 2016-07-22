@@ -2,7 +2,7 @@
 
     <!--#include file="includes/navigation.asp"-->
 
-    <main>
+    <main role="main">
 	    <section id="contact_us">
 		    <h2 class="full-width">Contact Us</h2>
         <div class="row">

@@ -7,7 +7,7 @@
     style="background-image: url(../images/display_images/kids_pool.jpg); background-position: 0 10%; height:500px;"></div>
 
     <!-- Main content -->
-    <main>
+    <main role="main">
       <section class="clearfix">
         <h2 class="full-width">Pool Heating Systems</h2>
         <figure role="figure" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-1" data-pop-out="true" style="width:38%;">

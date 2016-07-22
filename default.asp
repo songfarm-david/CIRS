@@ -49,7 +49,7 @@
       </div>
 
 			<!-- Main Content -->
-			<main>
+			<main role="main">
 				<section id="main-content">
 					<h2 class="full-width">Radiant Heating Systems for Your Home</h2>
 					<div class="row">
@@ -88,7 +88,7 @@
 					</div>
 
 					<!-- Testimonials Section -->
-					<article role="region" id="testimonial" class="full-width" aria-labelledby="header-testimonials">
+					<section role="region" id="testimonial" class="full-width" aria-labelledby="header-testimonials">
 						<div class="panel">
 							<div class="panel-body">
 								<h3 id="header-testimonials">Testimonials</h3>
@@ -145,7 +145,7 @@
 								</div>
 							</div>
 						</div>
-					</article>
+					</section>
 					<!-- end of testimonial -->
 				</section>
 			</main>
@@ -155,7 +155,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
-						<ul role="navigation" class="nav navbar-nav" aria-label="Secondary Navigation">
+						<ulclass="nav navbar-nav" aria-label="Secondary Navigation">
 							<li><a href="default.asp">Home</a></li>
 							<li><a href="about_us.asp">About Us</a></li>
 							<li><a href="contact_us.asp">Contact Us</a></li>
