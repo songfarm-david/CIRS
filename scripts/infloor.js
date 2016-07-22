@@ -118,6 +118,81 @@
 
 	/** end of navigation **/
 
+	/*** Mobile Navigation ***/
+
+	// create the hamburger menu
+	var hamburger = document.createElement("button");
+	hamburger.setAttribute("type","button");
+	hamburger.className = "navbar-toggle";
+	hamburger.setAttribute("data-toggle","collapse");
+	hamburger.setAttribute("data-target","#navbar-xs");
+	// add the vertical lines 3 times
+	for (var i = 0; i < 3; i++) {
+		// create vertical lines
+		var iconBar = document.createElement("span");
+		iconBar.className = "icon-bar";
+		hamburger.appendChild(iconBar);
+	}
+
+	// create the parent wrapper:
+	var wrapper = document.createElement("div");
+	wrapper.id = "navbar-xs";
+	wrapper.className = "collapse navbar-collapse";
+	// get handle to top-level dropdown menu
+	var TLDropdown = targetElement.parentElement.parentElement;
+	var isMenu;
+
+	/**
+	* If screen is loaded on XS device size
+	*/
+	window.onload = function() {
+		if (window.innerWidth <= 768) {
+			// append the hamburger icon to primary nav
+			nav.appendChild(hamburger);
+			// wrap the top-level dropdown menu in parent wrapper
+			$(TLDropdown).wrap(wrapper);
+			// set isMenu boolean
+			isMenu = true;
+		}
+	}
+
+	/**
+	* On resize
+	* less than or equal to 767px => add hamburger navigation
+	* greater than 767px, remove hamburger navigation
+	*/
+	$(window).resize(function() {
+		if (window.innerWidth <= 767) {
+			if (!isMenu) {
+				// append hamburger icon to primary nav
+				nav.appendChild(hamburger);
+				// wrap the top-level dropdown menu in parent wrapper
+				$(TLDropdown).wrap(wrapper);
+				// set isMenu boolean
+				isMenu = true;
+			}
+		}
+		if (window.innerWidth > 768) {
+			if (isMenu) {
+				// remove hamburger icon from primary nav
+				nav.removeChild(hamburger);
+				// unwrap top-level dropdown menu
+				$(TLDropdown).unwrap(wrapper);
+				// set isMenu boolean to false
+				isMenu = false;
+			}
+		}
+	});
+
+	/**
+	* Animate text fade in
+	*/
+	$(wrapper).on("show.bs.collapse", function(){
+		// animate text fade in here
+	});
+
+	/** end of Mobile Nav **/
+
 	/*** Img Pop-Out ***/
 
 	// create a virtual modal element
