@@ -139,9 +139,6 @@ nav > a.call-us {
 	transition: border-color 250ms, color 250ms, transform 400ms ease-in;
 	transform-origin: center;
 }
-nav > a.call-us:before {
-	/*content: "&nbsp;Call Us:&nbsp;";*/
-}
 nav > a.call-us:hover {
 	cursor: pointer;
 	text-decoration: none;
@@ -201,8 +198,6 @@ nav ul.dropdown-menu > li > a:hover:before {
 	position: absolute;
 	left: 0; top: 7px;
 }
-
-
 
 /* navbar-xs styles */
 #navbar-xs.navbar-collapse, #navbar-xs-submenu.navbar-collapse {
@@ -630,11 +625,8 @@ tfoot tr td { box-shadow: 0px 75px 45px -25px rgba(0, 0, 0, 0.5); }
 
 /* Desktop styles */
 @media (min-width: 1200px) {
-	nav {
-		/*background: transparent url(../images/bg_nav_general.png) no-repeat;*/
-		width: 1263px;
-		/*left: -46px;*/
-	}
+	nav {	width: 1263px; }
+	
 	/* Logo */
 	nav .navbar-header {
 		left: 145px; top: 15px;
@@ -645,13 +637,14 @@ tfoot tr td { box-shadow: 0px 75px 45px -25px rgba(0, 0, 0, 0.5); }
 		padding-left: 8px;
 		left: -8px;
 	}
-	nav > a.call-us span:after {
+	/*nav > a.call-us span:after {
 		content: "Call:";
 		color: #999;
 		position: relative;
 		top: -4px;
 		left: 10px;
-	}
+	}*/
+	/*nav > a.call-us span::after:hover { color: #f5911f; }*/
 	nav > ul.nav > li {	left: -85px; /* offset the list items to the left */ }
 }
 
@@ -690,7 +683,6 @@ tfoot tr td { box-shadow: 0px 75px 45px -25px rgba(0, 0, 0, 0.5); }
 	nav > a.call-us {
 		right: 25px; top: 20px;
 	}
-
 
 	h2 { padding-left: 45px; padding-right: 45px; }
 
