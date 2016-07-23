@@ -5,32 +5,28 @@
 	* Handles navigation behavior including hover and focus states
 	* as well as the inclusion of ARIA states and properties
 	*/
-	var targetElement, dropdownMenu, subDropdownMenu;
-	var dropMenus = [];
-	var timer;
-	// target all children of primary nav
+	var dropdownTrigger, firstDropdownMenu, secondDropdownMenu;
+	var timer_one, timer_two;
 	var nav = document.getElementById("nav-primary");
-	var navChildren = nav.children;
+	// jumbotron
 	var navSibling = nav.nextElementSibling;
+	// get the first li in the top-level unordered list
+	dropdownTrigger = $("ul.nav.navbar-nav > li.dropdown > a")[0];
+	dropdownTriggerSibling = $("ul.nav.navbar-nav > li.dropdown + li > a")[0];
+	// get the first dropdown unordered list
+	firstDropdownMenu = $("li.dropdown > ul.dropdown-menu")[0];
+	// get the second dropdown unordered list
+	secondDropdownMenu = $("ul.dropdown-menu.submenu")[0];
 
-	// cycle through children of navigation for ul element
-	for (var i = 0; i < navChildren.length; i++) {
-		if (navChildren[i].nodeName == "UL") {
-			// get the first element child of the first element child (the a tag)
-			targetElement = navChildren[i].firstElementChild.firstElementChild;
-			// get the next sibling of the <a> tag (the dropdown menu)
-			dropdownMenu = targetElement.nextElementSibling;
-			// get the second dropdown menu
-			subDropdownMenu = dropdownMenu.firstElementChild.lastElementChild;
+	// set ARIA attributes on both dropdowns
+	var dropdownArray = [firstDropdownMenu,secondDropdownMenu];
+	dropdownArray.forEach(function(el, i){
+		el.setAttribute("aria-haspopup","true");
+		el.setAttribute("aria-expanded","false");
+	});
 
-			// loop through both dropdown menus and assign aria properties
-			dropMenus = [dropdownMenu,subDropdownMenu];
-			dropMenus.forEach(function(el, i){
-				el.setAttribute("aria-haspopup","true");
-				el.setAttribute("aria-expanded","false");
-			});
-		}
-	} // end of for loop
+	var subDropdownTrigger = $("li.dropdown-submenu > a")[0];
+	var subDropdownTriggerSibling = $("ul.dropdown-menu > li.dropdown-submenu + li > a")[0];
 
 	function toggleARIAProps(el) {
 		if (el.getAttribute("aria-expanded") == "false") {
@@ -52,67 +48,85 @@
 	}
 
 	/**
-	* When the trigger list item loses focus, position the dropdown menu in viewport
-	* When the first item of dropdown menu loses focus, give focus to second list item in dropdown
+	* Delay the closing/hiding of Dropdown menus
 	*/
-	targetElement.addEventListener("focus", function() {
-		toggleARIAProps(this.nextElementSibling);
-		// position element in viewport
-		dropdownMenu.style.left = "0px";
-		// target dropdown menus first <li>
-		dropdownMenu.firstElementChild.firstElementChild.addEventListener("blur", function() {
-			// on focusout, move focus to next sibling
-			this.parentElement.nextElementSibling.firstElementChild.focus();
-			toggleARIAProps(subDropdownMenu);
-		}, false);
-	}, false);
+	function delayMenu() {
+		// access the menu item
+		var theMenu = this.nextElementSibling
+		if (this.firstElementChild) {
+			theMenu.style.left = 0;
+			timer_one = setTimeout(function() {
+				toggleARIAProps(theMenu);
+				theMenu.style.left = "-9999px";
+			}, 850);
+		} else {
+			secondDropdownMenu.style.display = "block";
+			timer_two = setTimeout(function() {
+				toggleARIAProps(theMenu);
+				secondDropdownMenu.style.display = "";
+			}, 850);
+		}
+	}
 
-	targetElement.addEventListener("mouseover", function() {
-		toggleARIAProps(this.nextElementSibling);
-		this.nextElementSibling.style.left = "";
-	}, true);
-
-	["focus","mouseover"].forEach(function(el,i){
-		// target first list item of dropdown
-		dropdownMenu.firstElementChild.addEventListener(el, function() {
-			toggleARIAProps(dropdownMenu.firstElementChild.lastElementChild);
-		}, true);
+	// on focus - main menu dropdown trigger
+	// show dropdown menu
+	dropdownTrigger.addEventListener("focus", function() {
+		firstDropdownMenu.style.left = "0px";
+		toggleARIAProps(firstDropdownMenu);
 	});
 
-	targetElement.addEventListener("mouseout", function() {
-		this.nextElementSibling.style.left = 0;
-		timer = setTimeout(function() {
-			toggleARIAProps(targetElement.nextElementSibling);
-			targetElement.nextElementSibling.style.left = "-9999px";
-		}, 850);
-	}, false);
+	// on focus - main menu, second list item.
+	// hide dropdown menu
+	dropdownTriggerSibling.addEventListener("focus", function() {
+		firstDropdownMenu.style.left = "";
+		toggleARIAProps(firstDropdownMenu);
+	});
 
-	// console.log(subDropdownMenu.parentElement);
-	subDropdownMenu.parentElement.addEventListener("mouseout", function() {
-			subDropdownMenu.style.display = "block";
-		setTimeout(function() {
-			toggleARIAProps(subDropdownMenu);
-			subDropdownMenu.style.display = "";
-		}, 850);
-	}, true);
+	// on focus dropdown menu first li
+	subDropdownTrigger.addEventListener("focus", function(){
+		toggleARIAProps(secondDropdownMenu);
+	});
 
-	dropdownMenu.addEventListener("mouseover", function() {
-		// if mouseover first drop down menu, cancel timer function
-		clearTimeout(timer);
-	}, true);
+	// on blur dropdown menu first li
+	// put focus on SECOND item instantly
+	subDropdownTrigger.addEventListener("blur", function(){
+		toggleARIAProps(secondDropdownMenu);
+		subDropdownTriggerSibling.focus();
+	})
 
-	// on focus targets' adjacent list item ('What does it cost?')
-	targetElement.parentElement.nextElementSibling.addEventListener("focus", function() {
-		dropdownMenu.style.left = -9999+"px";
-		toggleARIAProps(targetElement.nextElementSibling);
-	}, true);
+	// on MOUSEOVER, main dropdown trigger
+	// show dropdown menu
+	dropdownTrigger.addEventListener("mouseover", function() {
+		toggleARIAProps(firstDropdownMenu);
+		firstDropdownMenu.style.left = "0px";
+	});
+	// on mouseout, hide the dropdown menu
+	dropdownTrigger.addEventListener("mouseout", function() {
+		toggleARIAProps(firstDropdownMenu);
+		firstDropdownMenu.style.left = "";
+	});
 
-	// on jumbotron mouseover, hide submenu
+	// on mouseover - SUB dropdown menu
+	// show the submenu
+	subDropdownTrigger.addEventListener("mouseover", function() {
+		toggleARIAProps(secondDropdownMenu);
+	})
+	subDropdownTrigger.addEventListener("mouseout", function() {
+		toggleARIAProps(secondDropdownMenu);
+	})
+
+	dropdownTrigger.addEventListener("mouseout", delayMenu, false);
+	subDropdownTrigger.addEventListener("mouseout",delayMenu, false);
+
+	// clear the timer intervals (closing/hiding behavior) on elements mouseover
+	firstDropdownMenu.addEventListener("mouseover", function() {clearTimeout(timer_one);})
+	secondDropdownMenu.addEventListener("mouseover", function() {clearTimeout(timer_two);})
+
+	// on jumbotron mouseover, close/hide dropdown
 	navSibling.addEventListener("mouseover", function() {
-		// close submenu if open
 		timer = setTimeout(function() {
-			toggleARIAProps(targetElement.nextElementSibling);
-			targetElement.nextElementSibling.style.left = "-9999px";
+			toggleARIAProps(firstDropdownMenu);
+			firstDropdownMenu.style.left = "-9999px";
 		}, 500);
 	}, true);
 
@@ -139,7 +153,7 @@
 	wrapper.id = "navbar-xs";
 	wrapper.className = "collapse navbar-collapse";
 	// get handle to top-level dropdown menu
-	var TLDropdown = targetElement.parentElement.parentElement;
+	var TLDropdown = dropdownTrigger.parentElement.parentElement;
 	var isMenu;
 
 	/**
@@ -171,6 +185,7 @@
 				// set isMenu boolean
 				isMenu = true;
 			}
+			// remove any hover event listeners
 		}
 		if (window.innerWidth > 768) {
 			if (isMenu) {
