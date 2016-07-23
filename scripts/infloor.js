@@ -15,8 +15,10 @@
 	dropdownTriggerSibling = $("ul#navbar > li.dropdown + li > a")[0];
 	// get the first dropdown unordered list
 	firstDropdownMenu = $("#navbar-xs")[0];
+	console.log(firstDropdownMenu);
 	// get the second dropdown unordered list
 	secondDropdownMenu = $("#navbar-xs > li > ul.dropdown-menu")[0];
+	console.log(secondDropdownMenu);
 
 	// set ARIA attributes on both dropdowns
 	var dropdownArray = [firstDropdownMenu,secondDropdownMenu];
@@ -27,7 +29,6 @@
 
 	var subDropdownTrigger = $("li.dropdown-submenu > a")[0];
 	var subDropdownTriggerSibling = $("ul.dropdown-menu > li.dropdown-submenu + li > a")[0];
-	console.log(subDropdownTriggerSibling);
 
 	function toggleARIAProps(el) {
 		if (el.getAttribute("aria-expanded") == "false") {
