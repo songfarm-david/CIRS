@@ -167,6 +167,10 @@
 			$(TLDropdown).wrap(wrapper);
 			// set isMenu boolean
 			isMenu = true;
+
+			// remove hover event listeners
+			dropdownTrigger.removeEventListener("mouseout", delayMenu);
+			subDropdownTrigger.removeEventListener("mouseout", delayMenu);
 		}
 	}
 
@@ -184,6 +188,10 @@
 				$(TLDropdown).wrap(wrapper);
 				// set isMenu boolean
 				isMenu = true;
+
+				// remove hover event listeners
+				dropdownTrigger.removeEventListener("mouseout", delayMenu);
+				subDropdownTrigger.removeEventListener("mouseout", delayMenu);
 			}
 			// remove any hover event listeners
 		}
@@ -195,6 +203,10 @@
 				$(TLDropdown).unwrap(wrapper);
 				// set isMenu boolean to false
 				isMenu = false;
+
+				// add hover events back
+				dropdownTrigger.addEventListener("mouseout", delayMenu);
+				subDropdownTrigger.addEventListener("mouseout", delayMenu);
 			}
 		}
 	});
