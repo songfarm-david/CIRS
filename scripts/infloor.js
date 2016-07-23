@@ -14,7 +14,7 @@
 	dropdownTrigger = $("ul.nav.navbar-nav > li.dropdown > a")[0];
 	dropdownTriggerSibling = $("ul.nav.navbar-nav > li.dropdown + li > a")[0];
 	// get the first dropdown unordered list
-	firstDropdownMenu = $("li.dropdown > ul.dropdown-menu")[0];
+	firstDropdownMenu = $("li.dropdown ul.dropdown-menu")[0];
 	// get the second dropdown unordered list
 	secondDropdownMenu = $("ul.dropdown-menu.submenu")[0];
 
@@ -132,6 +132,8 @@
 
 	/** end of navigation **/
 
+
+
 	/*** Mobile Navigation ***/
 
 	// create the hamburger menu
@@ -152,9 +154,44 @@
 	var wrapper = document.createElement("div");
 	wrapper.id = "navbar-xs";
 	wrapper.className = "collapse navbar-collapse";
+
+	// create the a second toggle button
+	var menuButton = document.createElement("button");
+	menuButton.setAttribute("type","button");
+	menuButton.setAttribute("data-toggle","collapse");
+	menuButton.setAttribute("data-target","#navbar-xs-submenu");
+
+	// create the inner parent wrapper
+	var innerWrapper = document.createElement("div");
+	innerWrapper.id = "navbar-xs-submenu";
+	innerWrapper.className = "collapse";
+
 	// get handle to top-level dropdown menu
 	var TLDropdown = dropdownTrigger.parentElement.parentElement;
 	var isMenu;
+
+	function addComponents() {
+		// append toggle buttons
+		nav.appendChild(hamburger);
+		$("ul.nav.navbar-nav").append(menuButton);
+		// console.log(nav);
+		// wrap unordered lists
+		$(TLDropdown).wrap(wrapper);
+		$(firstDropdownMenu).wrap(innerWrapper);
+		// set boolean
+		isMenu = true;
+	}
+
+	function removeComponents() {
+		nav.removeChild(hamburger);
+		$("ul.nav.navbar-nav").removeChild(menuButton);
+
+		$(TLDropdown).unwrap(wrapper);
+		$(firstDropdownMenu).unwrap(innerWrapper);
+
+		isMenu = false;
+	}
+
 
 	/**
 	* If screen is loaded on XS device size
@@ -162,15 +199,19 @@
 	window.onload = function() {
 		if (window.innerWidth <= 768) {
 			// append the hamburger icon to primary nav
-			nav.appendChild(hamburger);
+			// nav.appendChild(hamburger);
 			// wrap the top-level dropdown menu in parent wrapper
-			$(TLDropdown).wrap(wrapper);
-			// set isMenu boolean
-			isMenu = true;
+			// $(TLDropdown).wrap(wrapper);
+			// add menu button to dropdown
 
+			addComponents()
+			// set isMenu boolean
+			// isMenu = true;
 			// remove hover event listeners
 			dropdownTrigger.removeEventListener("mouseout", delayMenu);
 			subDropdownTrigger.removeEventListener("mouseout", delayMenu);
+			//
+			firstDropdownMenu.style.left = 0;
 		}
 	}
 
@@ -183,31 +224,30 @@
 		if (window.innerWidth <= 767) {
 			if (!isMenu) {
 				// append hamburger icon to primary nav
-				nav.appendChild(hamburger);
-				// wrap the top-level dropdown menu in parent wrapper
-				$(TLDropdown).wrap(wrapper);
-				// set isMenu boolean
-				isMenu = true;
-
-				// remove hover event listeners
-				dropdownTrigger.removeEventListener("mouseout", delayMenu);
-				subDropdownTrigger.removeEventListener("mouseout", delayMenu);
+				// nav.appendChild(hamburger);
+				// // wrap the top-level dropdown menu in parent wrapper
+				// $(TLDropdown).wrap(wrapper);
+				// // set isMenu boolean
+				// isMenu = true;
+				addComponents()
 			}
-			// remove any hover event listeners
+			// remove hover event listeners
+			dropdownTrigger.removeEventListener("mouseout", delayMenu);
+			subDropdownTrigger.removeEventListener("mouseout", delayMenu);
 		}
 		if (window.innerWidth > 768) {
 			if (isMenu) {
 				// remove hamburger icon from primary nav
-				nav.removeChild(hamburger);
+				// nav.removeChild(hamburger);
 				// unwrap top-level dropdown menu
-				$(TLDropdown).unwrap(wrapper);
+				// $(TLDropdown).unwrap(wrapper);
 				// set isMenu boolean to false
-				isMenu = false;
-
-				// add hover events back
-				dropdownTrigger.addEventListener("mouseout", delayMenu);
-				subDropdownTrigger.addEventListener("mouseout", delayMenu);
+				// isMenu = false;
+				removeComponents();
 			}
+			// add hover events back
+			dropdownTrigger.addEventListener("mouseout", delayMenu);
+			subDropdownTrigger.addEventListener("mouseout", delayMenu);
 		}
 	});
 
