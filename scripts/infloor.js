@@ -11,12 +11,12 @@
 	// jumbotron
 	var navSibling = nav.nextElementSibling;
 	// get the first li in the top-level unordered list
-	dropdownTrigger = $("ul.nav.navbar-nav > li.dropdown > a")[0];
-	dropdownTriggerSibling = $("ul.nav.navbar-nav > li.dropdown + li > a")[0];
+	dropdownTrigger = $("ul#navbar > li.dropdown > a")[0];
+	dropdownTriggerSibling = $("ul#navbar > li.dropdown + li > a")[0];
 	// get the first dropdown unordered list
-	firstDropdownMenu = $("li.dropdown ul.dropdown-menu")[0];
+	firstDropdownMenu = $("#navbar-xs")[0];
 	// get the second dropdown unordered list
-	secondDropdownMenu = $("ul.dropdown-menu.submenu")[0];
+	secondDropdownMenu = $("#navbar-xs > li > ul.dropdown-menu")[0];
 
 	// set ARIA attributes on both dropdowns
 	var dropdownArray = [firstDropdownMenu,secondDropdownMenu];
@@ -27,6 +27,7 @@
 
 	var subDropdownTrigger = $("li.dropdown-submenu > a")[0];
 	var subDropdownTriggerSibling = $("ul.dropdown-menu > li.dropdown-submenu + li > a")[0];
+	console.log(subDropdownTriggerSibling);
 
 	function toggleARIAProps(el) {
 		if (el.getAttribute("aria-expanded") == "false") {
@@ -92,7 +93,7 @@
 	subDropdownTrigger.addEventListener("blur", function(){
 		toggleARIAProps(secondDropdownMenu);
 		subDropdownTriggerSibling.focus();
-	})
+	});
 
 	// on MOUSEOVER, main dropdown trigger
 	// show dropdown menu
@@ -132,16 +133,15 @@
 
 	/** end of navigation **/
 
-
-
 	/*** Mobile Navigation ***/
 
+	var isMenu;
 	// create the hamburger menu
 	var hamburger = document.createElement("button");
 	hamburger.setAttribute("type","button");
 	hamburger.className = "navbar-toggle";
 	hamburger.setAttribute("data-toggle","collapse");
-	hamburger.setAttribute("data-target","#navbar-xs");
+	hamburger.setAttribute("data-target","#navbar");
 	// add the vertical lines 3 times
 	for (var i = 0; i < 3; i++) {
 		// create vertical lines
@@ -150,68 +150,28 @@
 		hamburger.appendChild(iconBar);
 	}
 
-	// create the parent wrapper:
-	var wrapper = document.createElement("div");
-	wrapper.id = "navbar-xs";
-	wrapper.className = "collapse navbar-collapse";
-
-	// create the a second toggle button
-	var menuButton = document.createElement("button");
-	menuButton.setAttribute("type","button");
-	menuButton.setAttribute("data-toggle","collapse");
-	menuButton.setAttribute("data-target","#navbar-xs-submenu");
-
-	// create the inner parent wrapper
-	var innerWrapper = document.createElement("div");
-	innerWrapper.id = "navbar-xs-submenu";
-	innerWrapper.className = "collapse";
-
-	// get handle to top-level dropdown menu
-	var TLDropdown = dropdownTrigger.parentElement.parentElement;
-	var isMenu;
-
-	function addComponents() {
-		// append toggle buttons
-		nav.appendChild(hamburger);
-		$("ul.nav.navbar-nav").append(menuButton);
-		// console.log(nav);
-		// wrap unordered lists
-		$(TLDropdown).wrap(wrapper);
-		$(firstDropdownMenu).wrap(innerWrapper);
-		// set boolean
+	function createMobileMenu() {
+		$("#nav-primary").append(hamburger);
+		$("#navbar").addClass("collapse").removeClass("navbar-nav");
+		$("#navbar > li:first-child > a").attr("href","#").attr("data-toggle","collapse").attr("data-target","#navbar-xs");
+		$("#navbar-xs").addClass("collapse").removeClass("dropdown-menu");
 		isMenu = true;
 	}
 
-	function removeComponents() {
-		nav.removeChild(hamburger);
-		$("ul.nav.navbar-nav").removeChild(menuButton);
-
-		$(TLDropdown).unwrap(wrapper);
-		$(firstDropdownMenu).unwrap(innerWrapper);
-
+	function revertMobileMenu() {
+		$("#nav-primary > button").remove();
+		$("#navbar").addClass("navbar-nav").removeClass("collapse");
+		$("#navbar > li:first-child > a").attr("href","infloor_heat.asp").removeAttr("data-toggle").removeAttr("data-target");
+		$("#navbar-xs").removeClass("collapse").addClass("dropdown-menu");
 		isMenu = false;
 	}
-
 
 	/**
 	* If screen is loaded on XS device size
 	*/
 	window.onload = function() {
 		if (window.innerWidth <= 768) {
-			// append the hamburger icon to primary nav
-			// nav.appendChild(hamburger);
-			// wrap the top-level dropdown menu in parent wrapper
-			// $(TLDropdown).wrap(wrapper);
-			// add menu button to dropdown
-
-			addComponents()
-			// set isMenu boolean
-			// isMenu = true;
-			// remove hover event listeners
-			dropdownTrigger.removeEventListener("mouseout", delayMenu);
-			subDropdownTrigger.removeEventListener("mouseout", delayMenu);
-			//
-			firstDropdownMenu.style.left = 0;
+			createMobileMenu();
 		}
 	}
 
@@ -223,40 +183,23 @@
 	$(window).resize(function() {
 		if (window.innerWidth <= 767) {
 			if (!isMenu) {
-				// append hamburger icon to primary nav
-				// nav.appendChild(hamburger);
-				// // wrap the top-level dropdown menu in parent wrapper
-				// $(TLDropdown).wrap(wrapper);
-				// // set isMenu boolean
-				// isMenu = true;
-				addComponents()
+				createMobileMenu();
 			}
-			// remove hover event listeners
-			dropdownTrigger.removeEventListener("mouseout", delayMenu);
-			subDropdownTrigger.removeEventListener("mouseout", delayMenu);
+			// remove any hover event listeners
 		}
 		if (window.innerWidth > 768) {
 			if (isMenu) {
-				// remove hamburger icon from primary nav
-				// nav.removeChild(hamburger);
-				// unwrap top-level dropdown menu
-				// $(TLDropdown).unwrap(wrapper);
-				// set isMenu boolean to false
-				// isMenu = false;
-				removeComponents();
+				revertMobileMenu();
 			}
-			// add hover events back
-			dropdownTrigger.addEventListener("mouseout", delayMenu);
-			subDropdownTrigger.addEventListener("mouseout", delayMenu);
 		}
 	});
 
 	/**
 	* Animate text fade in
 	*/
-	$(wrapper).on("show.bs.collapse", function(){
-		// animate text fade in here
-	});
+	// $(wrapper).on("show.bs.collapse", function(){
+	// 	// animate text fade in here
+	// });
 
 	/** end of Mobile Nav **/
 
