@@ -479,12 +479,12 @@ div.wrapper > footer a:focus {
 #partners {
 	margin-bottom: -60px;
 	padding: 30px 135px;
+	box-shadow: inset 0px 10px 24px -10px #8c8c8c;
 	background: #f1f1f1;
 	background: -moz-linear-gradient(top,  #dddddd 25%, #ffffff 52%, #e5e5e5 100%);
 	background: -webkit-linear-gradient(top,  #dddddd 25%,#ffffff 52%,#e5e5e5 100%);
 	background: linear-gradient(to bottom,  #dddddd 25%,#ffffff 52%,#e5e5e5 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
-	box-shadow: inset 0px 10px 24px -10px #8c8c8c;
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );*/
 }
 #partners h3 {
 	display: inline-block;
@@ -514,16 +514,34 @@ div.wrapper > footer a:focus {
 }
 
 /*** Costs Table ***/
-#cost_examples .panel {
-	padding: 50px 25px;
+section[aria-labelledby="#cost_examples"] {
+	padding: 25px 15px;
+	height: 485px;
+	position: relative;
+	margin-top: 152px;
+	margin-bottom: 140px;
 	border-bottom: none; border-radius: 0;
 	/* remove panel box shadow */
 	box-shadow: none;
 	/* fire background */
-	background: -moz-linear-gradient(top,  rgba(183,25,0,1) 0%, rgba(230,37,3,0.98) 3%, rgba(239,184,5,0.91) 12%, rgba(251,236,187,0.44) 76%, rgba(255,255,255,0.44) 100%);
-	background: -webkit-linear-gradient(top,  rgba(183,25,0,1) 0%,rgba(230,37,3,0.98) 3%,rgba(239,184,5,0.91) 12%,rgba(251,236,187,0.44) 76%,rgba(255,255,255,0.44) 100%);
-	background: linear-gradient(to bottom,  rgba(183,25,0,1) 0%,rgba(230,37,3,0.98) 3%,rgba(239,184,5,0.91) 12%,rgba(251,236,187,0.44) 76%,rgba(255,255,255,0.44) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b71900', endColorstr='#70ffffff',GradientType=0 );
+	background: -moz-linear-gradient(top,  rgb(222, 57, 31) 0%, rgba(230, 150, 3, 0.98) 7.5%, rgba(239,184,5,0.91) 15%, rgba(251,236,187,0.44) 55%, rgba(255,255,255,0.35) 100%);
+	background: -webkit-linear-gradient(top,  rgb(222, 57, 31) 0%, rgba(230, 150, 3, 0.98) 7.5%, rgba(239,184,5,0.91) 15%, rgba(251,236,187,0.44) 55%, rgba(255,255,255,0.35) 100%);
+	background: linear-gradient(to right, rgb(222, 57, 31) 0%, rgba(244, 121, 35, 0.98) 20%, rgba(239,184,5,0.91) 50%, rgba(251,236,187,0.44) 75%, rgba(255,255,255,0.35) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47923', endColorstr='#70ffffff',GradientType=0 );
+}
+section[aria-labelledby="#cost_examples"] h3 {
+	position: relative;
+	top: -142px;
+	padding: 30px 135px;
+	margin: 0 -15px -120px;
+	font-size: 2.75em;
+}
+section[aria-labelledby="#cost_examples"] > div {
+	/*border: 2px solid blue;*/
+	margin-top: -35px;
+	padding: 0 15px;
+	font-style: italic;
+	text-align: right;
 }
 
 /* Global table styles */
@@ -531,95 +549,100 @@ table.table {
 	table-layout: fixed;
 	border-collapse: separate;
 	border-spacing: 10px 0;
+	position: relative;
+	z-index: 1000;
 }
 
-/* white border around columns */
-#cost_examples .table thead tr th,
-#cost_examples tbody tr td,
-#cost_examples tfoot tr td {
-	border: 1px solid white;
-}
-
-/** Column Colors **/
+/* column colors */
 .table > thead > tr > th:nth-child(1) { color: #f37821; }
 .table > thead > tr > th:nth-child(2) { color: #29b9c1; }
 .table > thead > tr > th:nth-child(3) { color: #9168ae; }
 .table > thead > tr > th:nth-child(4) { color: #c3cd2e; }
 
+/** Table Head */
 /* chrome background for thead and tbody */
-thead th, tbody tr {
-	background: #f1f1f1;
-	background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 30%, #ffffff 70%, #d5d5d5 100%);
-	background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 30%, #ffffff 70%, #d5d5d5 100%);
-	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 30%, #ffffff 70%, #d5d5d5 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
-}
-
-/** Table Head **/
-.table > thead > tr > th {
+.table thead tr th {
 	text-align: center;
-	border-bottom: 3px solid #eee;
-	box-shadow: 0px 20px 30px -30px rgba(0, 0, 0, 0.75);
-	position: relative;
-	z-index: 1;
-	padding: 15px;
-	font-size: 1.4em;
+	padding: 30px 8px;
+	font-size: 1.5em;
+	line-height: 1.2;
 	vertical-align: top;
 	font-weight: normal;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 2px solid #ccc;
+	border-bottom: 5px ridge #fff;
+	background: rgb(235,235,235);
+	background: -moz-linear-gradient(top, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
+	background: linear-gradient(to bottom, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
 }
 /* bold accents */
 .table > thead > tr > th > span { font-family: 'museo_sans900'; }
-/*.table > thead > tr > th > span:last-of-type { font-size: .75em; }*/
-.table > tbody > tr > td > span { font-style: italic; }
 
 /** Table Body **/
+tbody tr {
+	font-size: 0.85em;
+	background: rgb(235,235,235);
+	background: -moz-linear-gradient(top,  rgba(214,214,214,1) 0%, rgba(255,255,255,1) 50%, rgba(200,200,200,1) 85%);
+	background: -webkit-linear-gradient(top,  rgba(214,214,214,1) 0%,rgba(255,255,255,1) 50%,rgba(200,200,200,1) 85%);
+	background: linear-gradient(to bottom,  rgba(214,214,214,1) 0%,rgba(255,255,255,1) 50%,rgba(200,200,200,1) 85%);
+}
+tbody td {
+	border: 2px solid #ccc;
+	border-top: none;
+}
+/* table body cells */
 .table tbody tr td{
 	text-align: center;
 	vertical-align: middle;
 	padding: 15px 20px;
 	font-size: 1.15em;
-	padding-bottom: 75px;
-	/* last 3 styles are to accomodate footer styles */
-	/*padding-bottom: 110px;
+	padding-bottom: 150px;
+}
+.table tbody > tr > td,
+.table tfoot > tr > td {
 	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;*/
-
+	border-bottom-right-radius: 15px;
 }
 
-/** Table footer **/
-.table tfoot { background: white; }
+/* footer cells */
+.table tfoot > tr > td {
+	position: relative;
+	top: -85px;
+	border-top: none;
+	height: 50px;
+	box-shadow: 0px 75px 45px -25px rgba(0, 0, 0, 0.5);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
-/** Footer Backgrounds **/
-tfoot td:nth-child(1){ background-image: url(); color: #f37821; }
-tfoot td:nth-child(2){ background-image: url(); color: #29b9c1; }
-tfoot td:nth-child(3){ background-image: url(); color: #9168ae; }
-tfoot td:nth-child(4){ background-image: url(); color: #c3cd2e; }
+/** footer base colors and colored images **/
+tfoot td:nth-child(1){ background-image: url(../images/orange_base.png); color: #f37821; }
+tfoot td:nth-child(2){ background-image: url(../images/teal_base.png); color: #29b9c1; }
+tfoot td:nth-child(3){ background-image: url(../images/lavender_base.png); color: #9168ae; }
+tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
 
-
-/* Price tags */
+/* price tag */
 .table tfoot > tr > td > span:first-of-type {
 	font-family: 'museo_sans900';
-	font-size: 1.25em;
+	font-size: 1.3em;
 	border-radius: 6px;
 	padding: 8px 15px;
-	position: relative; top: -25px;
+	position: relative; top: -50px;
 	display: inline-block;
 	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+	background: #eee;
 	background: -moz-linear-gradient(left,  #dddddd 0%, #ffffff 52%, #d5d5d5 100%);
 	background: -webkit-linear-gradient(left,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
 	background: linear-gradient(to right,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
 }
-.table tfoot > tr > td > span:first-of-type > span { font-size: 0.5em; display: block; font-family: 'museo_sans700'; }
-.table tfoot > tr > td > span:last-child {
-	position: relative;
-	top: -105px;
-	font-size: 0.75em;
-	color: #999;
-}
+/* price tag secondary text */
+.table tfoot td > span:first-of-type > span { font-size: 0.5em; display: block; font-family: 'museo_sans700'; }
 
-/* column drop shadow */
-tfoot tr td { box-shadow: 0px 75px 45px -25px rgba(0, 0, 0, 0.5); }
+
+
+/*** Media Queries ***/
 
 /* Desktop styles */
 @media (min-width: 1200px) {
@@ -688,7 +711,7 @@ tfoot tr td { box-shadow: 0px 75px 45px -25px rgba(0, 0, 0, 0.5); }
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	
+
 	nav { margin-bottom: 0; }
 	nav.full-width {
 		margin-top: 0;

@@ -48,83 +48,77 @@
         <p>
           <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
         </p>
-        <!-- <div class="container-fluid"> -->
-          <section role="region" aria-label="Cost Examples table" id="cost_examples" class="full-width">
-            <div class="panel">
-              <h3>Cost Examples</h3>
-              <div class="container-fluid">
-                <table class="table">
-                  <!-- Create columns for styling -->
-                  <colgroup>
-                    <col>
-                    <col>
-                    <col>
-                    <col>
-                  </colgroup>
-                  <thead >
-                    <tr>
-                      <th>
-                        <span>Basement Floor</span>
-                        <br>of Existing Home<br>
-                        <!-- <span>(288 sq/ft)</span> -->
-                      </th>
-                      <th>
-                        <span>Full Basement</span>
-                        <br>of New Home<br>
-                        <!-- <span>(1500 sq/ft)</span> -->
-                      </th>
-                      <th>
-                        <span>Entire New Home</span>
-                        <br>incl. Basement<br>
-                        <!-- <span>(4000 sq/ft)</span> -->
-                    </th>
-                      <th>
-                        <span>Main Floor</span>
-                        <br>of Existing Home
-                        <!-- <span></span> -->
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
-                      </td>
-                      <td>
-                        Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
-                      </td>
-                      <td>
-                        Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
-                      </td>
-                      <td>
-                        Install tubing between joists with reflective foil barrier.
-                      </td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr class="text-center">
-                      <td>
-                        <span>$8000.00<br> <span>($28.00 per sq/ft)</span></span> <span></span>
-                      </td>
-                      <td>
-                        <span>$8800.00<br> <span>($5.86 per sq/ft)</span></span> <span></span>
-                      </td>
-                      <td>
-                        <span>$54,000.00<br> <span>($13.50 per sq/ft)</span></span><span></span>
-                      </td>
-                      <td>
-                        <span>$10.00-$20.00<br> <span>(per sq/ft)</span></span><span></span>
-                      </td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-              <!-- <div role="note" class="panel-footer">
-                <small>*Listed prices are approximations</small>
-              </div> -->
-            </div>
-          </section>
-        <!-- </div> -->
+        <section role="region" aria-labelledby="#cost_examples" class="full-width">
+          <h3 id="cost_examples" class="">Cost Examples</h3>
+            <table class="table">
+              <!-- Create columns for styling -->
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <thead >
+                <tr>
+                  <th>
+                    <span>Basement Floor</span>
+                    <br>of Existing Home<br>
+                    <!-- <span>(288 sq/ft)</span> -->
+                  </th>
+                  <th>
+                    <span>Full Basement</span>
+                    <br>of New Home<br>
+                    <!-- <span>(1500 sq/ft)</span> -->
+                  </th>
+                  <th>
+                    <span>Entire New Home</span>
+                    <br>incl. Basement<br>
+                    <!-- <span>(4000 sq/ft)</span> -->
+                </th>
+                  <th>
+                    <span>Main Floor</span>
+                    <br>of Existing Home
+                    <!-- <span></span> -->
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
+                  </td>
+                  <td>
+                    Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
+                  </td>
+                  <td>
+                    Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
+                  </td>
+                  <td>
+                    Install tubing between joists with reflective foil barrier.
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="text-center">
+                  <td>
+                    <span>$8000.00<br> <span>($28.00 per sq/ft)</span></span> <span></span>
+                  </td>
+                  <td>
+                    <span>$8800.00<br> <span>($5.86 per sq/ft)</span></span> <span></span>
+                  </td>
+                  <td>
+                    <span>$54,000.00<br> <span>($13.50 per sq/ft)</span></span><span></span>
+                  </td>
+                  <td>
+                    <span>$10.00-$20.00<br> <span>(per sq/ft)</span></span><span></span>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          <div role="note">
+            <small>*Listed prices are approximations</small>
+          </div>
+        </section>
 	    </section>
     </main>
 
