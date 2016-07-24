@@ -868,12 +868,12 @@ tbody td {
 		box-shadow: 0px -1px 5px 3px rgba(0, 0, 0, 0.5);
 	}
 	nav .navbar-header {
-		left: 30px; top: 8px;
+		left: 15px; top: 8px;
 		transform: scale(1.15);
 		z-index: 1000;
 	}
 	nav .nav { top: 99999px;}
-	nav > a.call-us {	right: 10px; top: 10px;	}
+	nav > a.call-us {	right: 10px; top: 10px;	display: none;}
 	nav > a.call-us:hover {
 		cursor: default;
 		transform: none;
@@ -891,10 +891,9 @@ tbody td {
 	}
 	/* hamburger icon */
 	.navbar-toggle {
-		border: 2px solid #aaa;
+		top: 54px; z-index: 10000;
 		height: 45px; width: 50px;
-		margin-top: 60px;
-		z-index: 10000;
+		border: 2px solid #aaa;
 	}
 	.navbar-toggle:hover { cursor: default; }
 	.navbar-toggle .icon-bar {
@@ -922,6 +921,7 @@ tbody td {
 		background: white;
 		width: 100%;
 		text-align: left;
+		left: -9999px;
 	}
 	#navbar li {
 		display: block; width: 100%;
@@ -944,12 +944,13 @@ tbody td {
 	/** Jumbotron Captions **/
 	.jumbotron[name="default"] .panel,
 	.jumbotron[name="infloor_heat"] .panel {
-		top: -102px; left: 0; right: 0;
+		top: -68px; left: 0; right: 0;
 		width: auto;
 		max-height: 446px;
 		overflow: auto;
 		padding: 15px;
 	}
+	.jumbotron[name="infloor_heat"] .panel { top: -10px;}
 	.jumbotron[name="infloor_heat"] .panel { max-height: 484px; }
 	.jumbotron[name="default"] .panel p.h1,
 	.jumbotron[name="infloor_heat"] .panel p.h1 {
@@ -967,7 +968,6 @@ tbody td {
 		font-size: 1.5em;
 		color: #f5911f;
 	}
-
 	/** Jumbotron Images **/
 	.jumbotron { background-position: center center; }
 	.jumbotron[name="default"] {

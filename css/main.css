@@ -73,7 +73,8 @@ nav .navbar-header { display: none; }
 		background-color: transparent;
 		border: none;
 		box-shadow: none;
-		margin-bottom: -120px; /* to remove height of 120px high nav */
+		/*margin-bottom: -120px; */
+		/* to remove height of 120px high nav */
 	}
 	#nav-primary > a {
 		display: none;
@@ -95,11 +96,11 @@ nav .navbar-header { display: none; }
 		transform: scale(1.1);*/
 
 	}
-	nav button.navbar-toggle { top: -116px; }
+	nav button.navbar-toggle { top: -66px; }
 	nav a.call-us { top: 0; }
 
 	/* dropdown menu */
 	#navbar { top: 0; }
 
-	.jumbotron { margin-top: -24px; }
+	/*.jumbotron { margin-top: -24px; }*/
 }

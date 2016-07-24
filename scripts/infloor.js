@@ -15,10 +15,8 @@
 	dropdownTriggerSibling = $("ul#navbar > li.dropdown + li > a")[0];
 	// get the first dropdown unordered list
 	firstDropdownMenu = $("#navbar-xs")[0];
-	console.log(firstDropdownMenu);
 	// get the second dropdown unordered list
 	secondDropdownMenu = $("#navbar-xs > li > ul.dropdown-menu")[0];
-	console.log(secondDropdownMenu);
 
 	// set ARIA attributes on both dropdowns
 	var dropdownArray = [firstDropdownMenu,secondDropdownMenu];
@@ -153,6 +151,7 @@
 
 	function createMobileMenu() {
 		$("#nav-primary").append(hamburger);
+		$("#navbar").css("left","0");
 		$("#navbar").addClass("collapse").removeClass("navbar-nav");
 		$("#navbar > li:first-child > a").attr("href","#").attr("data-toggle","collapse").attr("data-target","#navbar-xs");
 		$("#navbar-xs").addClass("collapse").removeClass("dropdown-menu");
