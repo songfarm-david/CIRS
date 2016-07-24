@@ -5,29 +5,17 @@ Author: David Gaskin
 July, 2016
 ***/
 
-header#main-header {
-	height: 315px; /* NOTE: header height is currently variable! */
+#main-header {
+	height: 315px;
 	background: #f1f1f1;
-	background-image: url(../images/cirsLogo_lowRes_white.jpg);
-	background-image: url(../images/cirsLogo.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain, cover;
-	/*background-size: 81%;*/
-	/* IE does not support // NOTE: do not rely on this property in production */
-	/*background-blend-mode: multiply;*/
-	/*background: #f1f1f1;*/
-	/*background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 52%, #e5e5e5 100%);
+	background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 52%, #e5e5e5 100%);
 	background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
-	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);*/
-	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );*/
-}
-
-/** NOTE: is this still necesary? */
-/* if IE is the requesting browser, apply this class */
-header#main-header.ie_logo {
-	background-color: transparent;
-	background-image: url(../images/cirsLogo.png);
+	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
+	background-image: url(../images/cirsLogo.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 nav {
@@ -77,9 +65,8 @@ nav .navbar-header { display: none; }
 		height: 124px;
 		box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.5);
 		position: relative;
-		background-size: 80%; /* approx. */
-		background-position-x: -15px;
-		background-image: url(../images/cirsLogo.png);
+		background-size: 82.5%, 100%; /* approx. */
+		background-position: -15px center, 0 0;
 	}
 	nav, nav.full-width {
 		background-image: none;
@@ -90,7 +77,7 @@ nav .navbar-header { display: none; }
 	}
 	#nav-primary > a {
 		display: none;
-		
+
 		top: -114px;
 		color: #f5911f;
 

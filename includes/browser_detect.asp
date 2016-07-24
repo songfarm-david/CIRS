@@ -9,4 +9,5 @@
 <![endif]-->
 <!--[if IE 9]>
 	<script>Browser = {isIE:true,version:9};</script>
+	<link rel="stylesheet" href="css/ie_styles.css" media="screen">
 <![endif]-->

@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
-		<link rel="stylesheet" href="css/main.css" media="screen">
+		<!-- <link rel="stylesheet" href="css/main.css" media="screen"> -->
 		<!--#include file="includes/browser_detect.asp"-->
 	</head>
 	<body>
@@ -22,13 +22,6 @@
 			<header role="banner" id="main-header" class="full-width">
 				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 			</header>
-			<script>
-				// if IE
-				if ((navigator.userAgent.indexOf('MSIE ') > -1)	|| (navigator.userAgent.indexOf('Trident') > -1)) {
-					// add class 'ie_logo' to #main-header
-					document.getElementById("main-header").className = 'ie_logo';
-				}
-			</script>
 
     	<!--#include file="includes/navigation.asp"-->
 
@@ -155,11 +148,11 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
-						<ulclass="nav navbar-nav" aria-label="Secondary Navigation">
+						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
 							<li><a href="default.asp">Home</a></li>
 							<li><a href="about_us.asp">About Us</a></li>
 							<li><a href="contact_us.asp">Contact Us</a></li>
-							<li><a href="careers.asp">Careers</a></li>
+							<!-- <li><a href="careers.asp">Careers</a></li> -->
 							<li><a href="sitemap.asp">Site Map</a></li>
 						</ul>
 					</div>
@@ -173,16 +166,16 @@
 				</div>
 			</footer>
 
-			<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
-			<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-			<!-- Bootstrap JavaScript -->
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-			<!-- Custom Javascripts -->
-			<script src="scripts/infloor.js"></script>
-			<script src="scripts/carousel.js"></script>
-
 		<!-- end of Wrapper Container -->
 		</div>
+
+		<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- Custom Javascripts -->
+		<script src="scripts/infloor.js"></script>
+		<script src="scripts/carousel.js"></script>
 
 	</body>
 </html>
