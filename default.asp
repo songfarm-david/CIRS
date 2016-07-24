@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
-		<!-- <link rel="stylesheet" href="css/main.css" media="screen"> -->
+		<link rel="stylesheet" href="css/main.css" media="screen">
 		<!--#include file="includes/browser_detect.asp"-->
 	</head>
 	<body>

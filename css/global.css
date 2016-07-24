@@ -944,7 +944,7 @@ tbody td {
 	/** Jumbotron Captions **/
 	.jumbotron[name="default"] .panel,
 	.jumbotron[name="infloor_heat"] .panel {
-		top: -10px; left: 0; right: 0;
+		top: -102px; left: 0; right: 0;
 		width: auto;
 		max-height: 446px;
 		overflow: auto;
@@ -972,8 +972,8 @@ tbody td {
 	.jumbotron { background-position: center center; }
 	.jumbotron[name="default"] {
 		background-image: url(../images/display_images/mobile/playing_family.jpg);
-		background-position: 35% top;
-		height: 488px;
+		background-position: 35% bottom;
+		height: 468px;
 	}
 	.jumbotron[name="infloor_heat"] {
 		background-image: url(../images/display_images/mobile/happy_family.jpg);
