@@ -60,6 +60,11 @@ body div.wrapper {
 	padding: 0 135px;
 }
 
+a {
+	/*color: #f5911f;*/
+	text-decoration: underline;
+}
+
 h1,h2,h3,h4,
 div.wrapper > footer {
 	font-family: 'Aramisi', serif;
@@ -101,6 +106,7 @@ nav {
 nav a {
 	color: #5b5b5b;
 	transition: color 250ms;
+	text-decoration: none;
 }
 nav > ul {
 	font-family: 'Aramisi', serif;
@@ -232,7 +238,10 @@ nav ul.dropdown-menu > li > a:hover:before {
 	font-family: 'Aramisi', serif;
 	color: #f5911f;
 }
-
+.jumbotron .panel a {
+	color: #f5911f;
+	font-weight: bold;
+}
 /** Jumbotron Captions **/
 .jumbotron[name="default"] .panel,
 .jumbotron[name="infloor_heat"] .panel {
@@ -298,6 +307,7 @@ h2 {
 	padding: 30px 135px;
 	margin: 0 0 45px;
 	font-size: 2.75em;
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b31800', endColorstr='#ffd745', GradientType=1 );
 }
 h2, .panel {
 	background: #f5911f;
@@ -308,7 +318,7 @@ h2, .panel {
 	background: -o-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
 	background: -ms-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
 	background: linear-gradient(135deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b31800', endColorstr='#ffd745', GradientType=1 );
+
 	background-position-x: 0;
 }
 
@@ -317,6 +327,7 @@ h2, .panel {
 .panel-body {
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, 0.95);
+	padding: 0 15px;
 }
 
 figure, .panel,
