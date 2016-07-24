@@ -222,6 +222,7 @@ nav ul.dropdown-menu > li > a:hover:before {
 .jumbotron {
 	border-radius: 0 !important;
 	margin-bottom: 0;
+	background-color: #eee;
 }
 .jumbotron .panel {
 	background: rgba(255, 255, 255, 0.75);
@@ -232,6 +233,56 @@ nav ul.dropdown-menu > li > a:hover:before {
 	color: #f5911f;
 }
 
+/** Jumbotron Images **/
+.jumbotron[name="default"] {
+	background-image:url(../images/display_images/playing_family.jpg);
+	background-position: 0 86%;
+	background-size: 100%;
+	background-size: cover;
+	height: 714px;
+}
+.jumbotron[name="infloor_heat"] {
+	background-image: url(../images/display_images/happy_family.jpg);
+	background-size: 100%;
+	background-size: cover;
+	height: 700px;
+}
+.jumbotron[name="thermal_mass"] {
+	background-image:url(../images/display_images/family_livingroom.jpg);
+	background-position:0;
+	background-size: 100%;
+	background-size: cover;
+	height:600px;
+}
+.jumbotron[name="snow_melt"] {
+	background-image: url(../images/display_images/radiant_driveway.jpg);
+	background-position:0% 99%;
+	background-size: 100%;
+	background-size: cover;
+	height:600px;
+}
+.jumbotron[name="fire_safety_systems"] {
+	background-image: url(../images/display_images/fire_sprinkler.jpg);
+	background-position: 0 10%;
+	background-size: 100%;
+	background-size: cover;
+	height: 500px;
+}
+.jumbotron[name="pool_heating"] {
+	background-image: url(../images/display_images/kids_pool.jpg);
+	background-position: 0 10%;
+	background-size: 100%;
+	background-size: cover;
+	height: 500px;
+}
+.jumbotron[name="cost_examples"] {
+	background-image: url(../images/display_images/child_drawing.jpg);
+	background-position: 0 63%;
+	background-size: 100%;
+	background-size: cover;
+	height: 560px;
+}
+
 /** Main Page Headers **/
 h2 {
 	color: #fff;
@@ -239,7 +290,6 @@ h2 {
 	margin: 0 0 45px;
 	font-size: 2.75em;
 }
-
 h2, .panel {
 	background: #f5911f;
 	/* gradient background */
@@ -653,10 +703,6 @@ tbody td {
 .table tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
 
 
-
-
-
-
 /*** Media Queries ***/
 
 /* Desktop styles */
@@ -690,6 +736,24 @@ tbody td {
 	nav > ul.nav > li {
 		left: -50px;
 	}
+
+	/* Jumbotron Images */
+	.jumbotron[name="infloor_heat"] {
+		background-size: cover;
+	}
+	.jumbotron[name="thermal_mass"] {
+ 		background-position: 0 30%;
+		background-size: 105%;
+	}
+	.jumbotron[name="snow_melt"] {
+		background-size: cover;
+	}
+	.jumbotron[name="fire_safety_systems"] {
+		background-size: cover;
+	}
+	.jumbotron[name="pool_heating"] {
+		height: 400px;
+	}
 }
 
 /* Small Screens */
@@ -712,6 +776,33 @@ tbody td {
 	}
 
 	h2 { padding-left: 45px; padding-right: 45px; }
+
+	/* Jumbotron Images */
+	.jumbotron[name="default"] {
+		background-position: 24% 100%;
+		height: 528px;
+	}
+	.jumbotron[name="infloor_heat"] {
+		background-size: cover;
+	}
+	.jumbotron[name="thermal_mass"] {
+ 		background-position: 23% 30%;
+		background-size: cover;
+	}
+	.jumbotron[name="snow_melt"] {
+		background-size: 109%;
+		background-position: 0 0;
+		height: 479px;
+		background-repeat: no-repeat;
+	}
+	.jumbotron[name="fire_safety_systems"] {
+		background-size: cover;
+		background-position: 100% 0;
+	}
+	.jumbotron[name="pool_heating"] {
+		height: 420px;
+	}
+
 
 	#partners { padding-left: 45px; padding-right: 45px; }
 }
@@ -812,6 +903,48 @@ tbody td {
 		text-decoration: none;
 		background: #ccc;
 	}
+
+	/** Jumbotron Images **/
+	.jumbotron { background-position: center center; }
+	.jumbotron[name="default"] {
+		background-image: url(../images/display_images/mobile/playing_family.jpg);
+		background-position: 35% top;
+		height: 488px;
+	}
+	.jumbotron[name="infloor_heat"] {
+		background-image: url(../images/display_images/mobile/happy_family.jpg);
+		background-size: auto;
+		height: 526px;
+	}
+	.jumbotron[name="thermal_mass"] {
+ 		background-image: url(../images/display_images/mobile/family_livingroom.jpg);
+		background-size: auto;
+		height: 489px;
+	}
+	.jumbotron[name="snow_melt"] {
+ 		background-image: url(../images/display_images/mobile/radiant_driveway.jpg);
+		background-size: auto;
+		background-position: 69% 0;
+		height: 451px;
+	}
+	.jumbotron[name="fire_safety_systems"] {
+ 		background-image: url(../images/display_images/mobile/fire_sprinkler.jpg);
+		height: 333px;
+		background-position: 85% 0;
+	}
+	.jumbotron[name="pool_heating"] {
+ 		background-image: url(../images/display_images/mobile/kids_pool.jpg);
+		background-position: 61% 0;
+		height: 400px;
+	}
+	.jumbotron[name="cost_examples"] {
+		background-image: url(../images/display_images/mobile/child_drawing.jpg);
+		height: 524px;
+	}
+
+
+
+
 
 	.panel { padding: 30px; }
 

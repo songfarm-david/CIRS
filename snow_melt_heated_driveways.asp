@@ -3,8 +3,7 @@
     <!--#include file="includes/navigation.asp"-->
 
     <!-- Jumbotron -->
-    <div class="jumbotron full-width"
-    style="background-image: url(../images/display_images/radiant_driveway.jpg);background-position:0% 100%;height:600px;"></div>
+    <div class="jumbotron full-width" name="snow_melt"></div>
 
     <!-- Main content -->
     <main role="main">

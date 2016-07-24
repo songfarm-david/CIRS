@@ -3,7 +3,7 @@
     <!--#include file="includes/navigation.asp"-->
 
     <!-- Jumbotron -->
-    <div class="jumbotron full-width" style="background-image:url(../images/display_images/family_livingroom.jpg);background-position:0;height:600px;"></div>
+    <div class="jumbotron full-width" name="thermal_mass"></div>
 
     <!-- Main content -->
     <main role="main">

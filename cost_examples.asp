@@ -23,7 +23,7 @@
     <!--#include file="includes/navigation.asp"-->
 
     <!-- Jumbotron -->
-    <div class="jumbotron full-width" style="background-image: url(../images/display_images/child_drawing.jpg); background-position:0 63%; height:560px;"></div>
+    <div class="jumbotron full-width" name="cost_examples"></div>
 
     <!-- Main Content -->
     <main role="main">

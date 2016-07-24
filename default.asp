@@ -26,7 +26,7 @@
     	<!--#include file="includes/navigation.asp"-->
 
 			<!-- Jumbotron -->
-      <div class="jumbotron full-width" style="background-image:url(../images/display_images/playing_family.jpg);background-position: 0 58%; height:620px;">
+      <div class="jumbotron full-width" name="default">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-6">

@@ -3,7 +3,7 @@
     <!--#include file="includes/navigation.asp"-->
 
 		<!-- Jumbotron -->
-		<div class="jumbotron full-width" style="background-image: url(../images/display_images/happy_family.jpg); height:700px;">
+		<div class="jumbotron full-width" name="infloor_heat">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-5">

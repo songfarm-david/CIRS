@@ -3,8 +3,7 @@
     <!--#include file="includes/navigation.asp"-->
 
     <!-- Jumbotron -->
-    <div class="jumbotron full-width"
-    style="background-image: url(../images/display_images/kids_pool.jpg); background-position: 0 10%; height:500px;"></div>
+    <div class="jumbotron full-width" name="pool_heating"></div>
 
     <!-- Main content -->
     <main role="main">

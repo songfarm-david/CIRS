@@ -3,8 +3,7 @@
     <!--#include file="includes/navigation.asp"-->
 
     <!-- Jumbotron -->
-    <div class="jumbotron full-width"
-    style="background-image: url(../images/display_images/fire_sprinkler.jpg); background-position: 0 10%; height:500px;"></div>
+    <div class="jumbotron full-width" name="fire_safety_systems"></div>
 
     <!-- Main content -->
     <main role="main">
