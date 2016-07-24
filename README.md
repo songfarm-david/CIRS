@@ -20,3 +20,6 @@ I have included a XML sitemap as per the [Sitemap 0.90 Protocol](http://www.site
 
 ### Compatibility
 infloorheat.ca is compatible with all major browsers including IE9 and above.
+
+### Extensibility
+A placeholder for a 'Careers' page exists to advertise employment opportunites.

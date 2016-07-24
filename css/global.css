@@ -239,7 +239,7 @@ nav ul.dropdown-menu > li > a:hover:before {
 	color: #f5911f;
 }
 .jumbotron .panel a {
-	color: #f5911f;
+	/*color: #f5911f;*/
 	font-weight: bold;
 }
 /** Jumbotron Captions **/
@@ -318,7 +318,6 @@ h2, .panel {
 	background: -o-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
 	background: -ms-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
 	background: linear-gradient(135deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
-
 	background-position-x: 0;
 }
 
@@ -326,8 +325,10 @@ h2, .panel {
 .panel { padding: 50px; margin-bottom: 45px;}
 .panel-body {
 	background-color: #fff;
-	background-color: rgba(255, 255, 255, 0.95);
 	padding: 0 15px;
+}
+.panel-body > h3 {
+	padding-top: 15px;
 }
 
 figure, .panel,
@@ -458,6 +459,7 @@ article#testimonial blockquote:after {
 	list-style: none;
 	list-style-position: inside;
 }
+.complimentary > ul > li a { text-decoration: none; }
 .complimentary > ul > li:last-child { margin-bottom: 0;  }
 .complimentary > ul > li > ul {
 	font-size: .85em;
@@ -492,7 +494,7 @@ div.wrapper > footer ul > li {
 }
 div.wrapper > footer a {
 	color: inherit;
-	/*font-weight: bold;*/
+	text-decoration: none;
 }
 div.wrapper > footer a:hover,
 div.wrapper > footer a:focus {
