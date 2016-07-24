@@ -6,11 +6,11 @@
 		<div class="jumbotron full-width" name="infloor_heat">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 col-md-5">
+					<div class="col-xs-12 col-sm-6 col-md-5">
 						<div class="panel panel-body">
 							<p class="h1">Hydronic Radiant Floor Heating</p>
 							<p>
-								Long ago, the Romans used radiant floor heating in their bathhouses. For centuries, the Koreans heated their royal palaces and traditional homes in this manner. Today, radiant heating technology has been improved and can be used in all or part of our homes.
+								<span>Long ago,</span> the Romans used radiant floor heating in their bathhouses. For centuries, the Koreans heated their royal palaces and traditional homes in this manner. Today, radiant heating technology has been improved and can be used in all or part of our homes.
 							</p>
 						</div>
 					</div>

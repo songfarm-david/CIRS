@@ -29,11 +29,11 @@
       <div class="jumbotron full-width" name="default">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-6">
-							<div class="panel" style="position:absolute;top:80px;left:-20px;display:none;">
-								<p class="h1">In-Floor Radiant Heat</p>
+						<div class="col-xs-12 col-sm-6">
+							<div class="panel">
+								<p class="h1">In-Floor Radiant&nbsp;Heat</p>
 								<p>
-									Warm your home with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
+									<span>Warm your home</span> with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
 								</p>
 							</div>
 						</div>
