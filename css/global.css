@@ -514,7 +514,7 @@ div.wrapper > footer a:focus {
 }
 
 /*** Costs Table ***/
-section[aria-labelledby="#cost_examples"] {
+section[aria-labelledby="cost_examples"] {
 	padding: 25px 15px;
 	height: 485px;
 	position: relative;
@@ -529,14 +529,14 @@ section[aria-labelledby="#cost_examples"] {
 	background: linear-gradient(to right, rgb(222, 57, 31) 0%, rgba(244, 121, 35, 0.98) 20%, rgba(239,184,5,0.91) 50%, rgba(251,236,187,0.44) 75%, rgba(255,255,255,0.35) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47923', endColorstr='#70ffffff',GradientType=0 );
 }
-section[aria-labelledby="#cost_examples"] h3 {
+section[aria-labelledby="cost_examples"] h3 {
 	position: relative;
 	top: -142px;
 	padding: 30px 135px;
 	margin: 0 -15px -120px;
 	font-size: 2.75em;
 }
-section[aria-labelledby="#cost_examples"] > div {
+section[aria-labelledby="cost_examples"] > div {
 	/*border: 2px solid blue;*/
 	margin-top: -35px;
 	padding: 0 15px;
@@ -559,8 +559,7 @@ table.table {
 .table > thead > tr > th:nth-child(3) { color: #9168ae; }
 .table > thead > tr > th:nth-child(4) { color: #c3cd2e; }
 
-/** Table Head */
-/* chrome background for thead and tbody */
+/** Table Head **/
 .table thead tr th {
 	text-align: center;
 	padding: 30px 8px;
@@ -572,12 +571,13 @@ table.table {
 	border-top-right-radius: 15px;
 	border: 2px solid #ccc;
 	border-bottom: 5px ridge #fff;
+	/* chrome background */
 	background: rgb(235,235,235);
 	background: -moz-linear-gradient(top, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
 	background: -webkit-linear-gradient(top, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
 	background: linear-gradient(to bottom, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
 }
-/* bold accents */
+/* bold accents in Headings */
 .table > thead > tr > th > span { font-family: 'museo_sans900'; }
 
 /** Table Body **/
@@ -599,6 +599,12 @@ tbody td {
 	padding: 15px 20px;
 	font-size: 1.15em;
 	padding-bottom: 150px;
+	font-weight: 600;
+}
+.table tbody tr td > span {
+	font-weight: lighter;
+	font-size: 0.9em;
+	font-style: italic;
 }
 .table tbody > tr > td,
 .table tfoot > tr > td {
@@ -606,6 +612,11 @@ tbody td {
 	border-bottom-right-radius: 15px;
 }
 
+
+/** Table Footer **/
+.table tfoot {
+	position: relative;
+}
 /* footer cells */
 .table tfoot > tr > td {
 	position: relative;
@@ -616,29 +627,33 @@ tbody td {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-/** footer base colors and colored images **/
-tfoot td:nth-child(1){ background-image: url(../images/orange_base.png); color: #f37821; }
-tfoot td:nth-child(2){ background-image: url(../images/teal_base.png); color: #29b9c1; }
-tfoot td:nth-child(3){ background-image: url(../images/lavender_base.png); color: #9168ae; }
-tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
-
 /* price tag */
-.table tfoot > tr > td > span:first-of-type {
+.table tfoot td > p{
 	font-family: 'museo_sans900';
-	font-size: 1.3em;
+	font-size: 1.35em;
 	border-radius: 6px;
 	padding: 8px 15px;
 	position: relative; top: -50px;
 	display: inline-block;
-	box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.3);
 	background: #eee;
 	background: -moz-linear-gradient(left,  #dddddd 0%, #ffffff 52%, #d5d5d5 100%);
 	background: -webkit-linear-gradient(left,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
 	background: linear-gradient(to right,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
 }
 /* price tag secondary text */
-.table tfoot td > span:first-of-type > span { font-size: 0.5em; display: block; font-family: 'museo_sans700'; }
+.table tfoot td > p > span {
+	font-size: 0.65em; display: block; font-family: 'museo_sans700';
+}
+
+/** footer base colors and colored images **/
+.table tfoot td:nth-child(1){ background-image: url(../images/orange_base.png); color: #f37821; }
+.table tfoot td:nth-child(2){ background-image: url(../images/teal_base.png); color: #29b9c1; }
+.table tfoot td:nth-child(3){ background-image: url(../images/lavender_base.png); color: #9168ae; }
+.table tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
+
+
+
 
 
 

@@ -15,6 +15,8 @@
 		<!--#include file="includes/browser_detect.asp"-->
 	</head>
 	<body>
+		<!-- For document outline -->
+		<h1 class="hidden">Canadian In-Floor Radiant Solutions</h1>
 
 		<div class="wrapper container">
 
@@ -48,9 +50,9 @@
         <p>
           <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
         </p>
-        <section role="region" aria-labelledby="#cost_examples" class="full-width">
+        <section role="region" aria-labelledby="cost_examples" class="full-width">
           <h3 id="cost_examples" class="">Cost Examples</h3>
-            <table class="table">
+            <table role="table" class="table">
               <!-- Create columns for styling -->
               <colgroup>
                 <col>
@@ -58,59 +60,54 @@
                 <col>
                 <col>
               </colgroup>
-              <thead >
+              <thead role="rowgroup">
                 <tr>
                   <th>
-                    <span>Basement Floor</span>
-                    <br>of Existing Home<br>
-                    <!-- <span>(288 sq/ft)</span> -->
+                    <span>Basement Floor</span> <br>of Existing Home
                   </th>
                   <th>
-                    <span>Full Basement</span>
-                    <br>of New Home<br>
-                    <!-- <span>(1500 sq/ft)</span> -->
+                    <span>Full Basement</span> <br>of New Home
                   </th>
                   <th>
-                    <span>Entire New Home</span>
-                    <br>incl. Basement<br>
-                    <!-- <span>(4000 sq/ft)</span> -->
+                    <span>Entire New Home</span> <br>incl. Basement
                 </th>
                   <th>
-                    <span>Main Floor</span>
-                    <br>of Existing Home
-                    <!-- <span></span> -->
+                    <span>Main Floor</span> <br>of Existing Home
                   </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody role="rowgroup">
                 <tr>
                   <td>
                     Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
+										<br><span>(288 sq/ft)</span>
                   </td>
                   <td>
                     Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
+										<br><span>(1500 sq/ft)</span>
                   </td>
                   <td>
                     Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
+										<br><span>(4000 sq/ft)</span>
                   </td>
                   <td>
                     Install tubing between joists with reflective foil barrier.
                   </td>
                 </tr>
               </tbody>
-              <tfoot>
+              <tfoot role="rowgroup">
                 <tr class="text-center">
                   <td>
-                    <span>$8000.00<br> <span>($28.00 per sq/ft)</span></span> <span></span>
+                    <p>$8000.00<br> <span>($28.00 per sq/ft)</span></p>
                   </td>
                   <td>
-                    <span>$8800.00<br> <span>($5.86 per sq/ft)</span></span> <span></span>
+                  	<p>$8800.00<br> <span>($5.86 per sq/ft)</span></p>
                   </td>
                   <td>
-                    <span>$54,000.00<br> <span>($13.50 per sq/ft)</span></span><span></span>
+                    <p>$54,000.00<br> <span>($13.50 per sq/ft)</span></p>
                   </td>
                   <td>
-                    <span>$10.00-$20.00<br> <span>(per sq/ft)</span></span><span></span>
+                    <p>$10.00-$20.00<br> <span>(per sq/ft)</span></p>
                   </td>
                 </tr>
               </tfoot>
