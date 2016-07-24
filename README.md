@@ -17,3 +17,6 @@ Find copies all scripts, css stylesheets and xml sitemaps minified for productio
 
 ### Sitemap
 I have included a XML sitemap as per the [Sitemap 0.90 Protocol](http://www.sitemaps.org/)
+
+### Compatibility
+infloorheat.ca is compatible with all major browsers including IE9 and above.
