@@ -1,136 +1,56 @@
 (function(){
 
-	/*** Navigation ***/
-	/*
-	* Handles navigation behavior including hover and focus states
-	* as well as the inclusion of ARIA states and properties
-	*/
-	var dropdownTrigger, firstDropdownMenu, secondDropdownMenu;
-	var timer_one, timer_two;
-	var nav = document.getElementById("nav-primary");
-	// jumbotron
-	var navSibling = nav.nextElementSibling;
-	// get the first li in the top-level unordered list
-	dropdownTrigger = $("ul#navbar > li.dropdown > a")[0];
-	dropdownTriggerSibling = $("ul#navbar > li.dropdown + li > a")[0];
-	// get the first dropdown unordered list
-	firstDropdownMenu = $("#navbar-xs")[0];
-	// get the second dropdown unordered list
-	secondDropdownMenu = $("#navbar-xs > li > ul.dropdown-menu")[0];
+	/*** Desktop Navigation ***/
 
-	// set ARIA attributes on both dropdowns
-	var dropdownArray = [firstDropdownMenu,secondDropdownMenu];
-	dropdownArray.forEach(function(el, i){
-		el.setAttribute("aria-haspopup","true");
-		el.setAttribute("aria-expanded","false");
+	var firstDropdown = $("#navbar-xs");
+	var secondDropdown = $("#navbar-xs-submenu");
+	// first dropdown, first li:
+	var subTrigger = $("ul#navbar-xs > li:nth-child(1) > a");
+	var subTriggerSibling = $("ul#navbar-xs > li:nth-child(2) > a");
+
+	var dropdownsArray = $.makeArray(firstDropdown,secondDropdown);
+
+	$.each(dropdownsArray, function(i, dropdown){
+		$(dropdown).attr("aria-haspopup","true").attr("aria-expanded","false");
 	});
 
-	var subDropdownTrigger = $("li.dropdown-submenu > a")[0];
-	var subDropdownTriggerSibling = $("ul.dropdown-menu > li.dropdown-submenu + li > a")[0];
-
-	function toggleARIAProps(el) {
-		if (el.getAttribute("aria-expanded") == "false") {
-			/* NOTE: IE9 does not support classList */
-			if (!el.classList) {
-				el.className = el.className + " open";
-			} else {
-				el.classList.add("open");
-			}
-			el.setAttribute("aria-expanded","true");
-		} else {
-			if (!el.classList) {
-				el.className = el.className.replace(/\b open/g, "");
-			} else {
-				el.classList.remove("open");
-			}
-			el.setAttribute("aria-expanded","false");
-		}
+	function toggleARIAProps(elem) {
+		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
 	}
 
-	/**
-	* Delay the closing/hiding of Dropdown menus
-	*/
-	function delayMenu() {
-		// access the menu item
-		var theMenu = this.nextElementSibling
-		if (this.firstElementChild) {
-			theMenu.style.left = 0;
-			timer_one = setTimeout(function() {
-				toggleARIAProps(theMenu);
-				theMenu.style.left = "-9999px";
-			}, 850);
-		} else {
-			secondDropdownMenu.style.display = "block";
-			timer_two = setTimeout(function() {
-				toggleARIAProps(theMenu);
-				secondDropdownMenu.style.display = "";
-			}, 850);
+	// on top-level dropdown trigger
+	$("li.dropdown").on("mouseover mouseout focusin focusout", function() {
+		toggleARIAProps($(this).children().last());
+	});
+
+	$("li.dropdown").on("mouseout", function(){
+
+	});
+
+	// on second-level dropdown trigger
+	$("li.dropdown-submenu").on("mouseover mouseout focusin focusout", function() {
+		toggleARIAProps($(this).children().last());
+	});
+
+	// first dropdown first list item hover
+	$(subTrigger).focusin(
+		function() {
+			$(firstDropdown).css("left","0px");
+	}).focusout(
+		function() {
+	$(subTriggerSibling).focus();
+	});
+
+	// on second list item focus
+	$("ul#navbar > li:nth-child(2) a").focus(
+		function() {
+			// move the dropdown out of view
+			$(firstDropdown).css("left","");
 		}
-	}
+	);
 
-	// on focus - main menu dropdown trigger
-	// show dropdown menu
-	dropdownTrigger.addEventListener("focus", function() {
-		firstDropdownMenu.style.left = "0px";
-		toggleARIAProps(firstDropdownMenu);
-	});
 
-	// on focus - main menu, second list item.
-	// hide dropdown menu
-	dropdownTriggerSibling.addEventListener("focus", function() {
-		firstDropdownMenu.style.left = "";
-		toggleARIAProps(firstDropdownMenu);
-	});
 
-	// on focus dropdown menu first li
-	subDropdownTrigger.addEventListener("focus", function(){
-		toggleARIAProps(secondDropdownMenu);
-	});
-
-	// on blur dropdown menu first li
-	// put focus on SECOND item instantly
-	subDropdownTrigger.addEventListener("blur", function(){
-		toggleARIAProps(secondDropdownMenu);
-		subDropdownTriggerSibling.focus();
-	});
-
-	// on MOUSEOVER, main dropdown trigger
-	// show dropdown menu
-	dropdownTrigger.addEventListener("mouseover", function() {
-		toggleARIAProps(firstDropdownMenu);
-		firstDropdownMenu.style.left = "0px";
-	});
-	// on mouseout, hide the dropdown menu
-	dropdownTrigger.addEventListener("mouseout", function() {
-		toggleARIAProps(firstDropdownMenu);
-		firstDropdownMenu.style.left = "";
-	});
-
-	// on mouseover - SUB dropdown menu
-	// show the submenu
-	subDropdownTrigger.addEventListener("mouseover", function() {
-		toggleARIAProps(secondDropdownMenu);
-	})
-	subDropdownTrigger.addEventListener("mouseout", function() {
-		toggleARIAProps(secondDropdownMenu);
-	})
-
-	dropdownTrigger.addEventListener("mouseout", delayMenu, false);
-	subDropdownTrigger.addEventListener("mouseout",delayMenu, false);
-
-	// clear the timer intervals (closing/hiding behavior) on elements mouseover
-	firstDropdownMenu.addEventListener("mouseover", function() {clearTimeout(timer_one);})
-	secondDropdownMenu.addEventListener("mouseover", function() {clearTimeout(timer_two);})
-
-	// on jumbotron mouseover, close/hide dropdown
-	navSibling.addEventListener("mouseover", function() {
-		timer = setTimeout(function() {
-			toggleARIAProps(firstDropdownMenu);
-			firstDropdownMenu.style.left = "-9999px";
-		}, 500);
-	}, true);
-
-	/** end of navigation **/
 
 	/*** Mobile Navigation ***/
 

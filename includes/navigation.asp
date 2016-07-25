@@ -18,7 +18,7 @@
 						<li class="dropdown-submenu dropdown-toggle">
 							<a href="infloor_heat.asp">In-Floor Heat</a>
 							<!-- Inaccessible Sub-Menu -->
-							<ul class="dropdown-menu">
+							<ul class="dropdown-menu" id="navbar-xs-submenu">
 								<li><a href="infloor_heat.asp#design">Design</a></li>
 								<li><a href="infloor_heat.asp#system_components">System Components</a></li>
 								<li><a href="infloor_heat.asp#installation">Installation</a></li>
@@ -29,7 +29,7 @@
 								<li><a href="infloor_heat.asp#cautions_and_solutions">Cautions and Solutions</a></li>
 							</ul>
 						</li>
-						<li><a href="thermal_mass.asp" tabindex="0">Thermal Mass</a></li>
+						<li><a href="thermal_mass.asp">Thermal Mass</a></li>
 						<li><a href="snow_melt_heated_driveways.asp">Snow Melt &amp; Heated Driveways</a></li>
 						<li><a href="fire_safety_systems.asp">Fire Safety Systems</a></li>
 						<li><a href="pool_heating.asp">Pool Heating</a></li>
