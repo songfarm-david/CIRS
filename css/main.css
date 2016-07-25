@@ -18,6 +18,7 @@ July, 2016
 	background-size: contain;
 }
 
+#nav-primary > a { top: -292px; right: 15px; }
 nav {
 	/* use main navigation bg here */
 	background: transparent url(../images/bg_nav_main.png) no-repeat;
@@ -29,16 +30,81 @@ nav {
 }
 nav > ul.navbar-nav {	top: 8px; }
 nav > ul.navbar-nav > li { left: 0; }
-
 /* make 'Call Us' button originate from the right */
-nav > a.call-us {
-	transform-origin: 100%;
-}
-#nav-primary > a { top: -292px; right: 15px; }
+nav > a.call-us {	transform-origin: 100%; }
 nav > a.call-us:hover { transform-origin: 100%; }
-
 nav .navbar-header { display: none; }
 
+/** Testimonials **/
+#testimonial { margin-top: 30px; margin-bottom: 60px; }
+#testimonial h3 {
+	margin: 0; padding: 0 0 15px;
+	display: none;
+}
+#testimonial .carousel {
+	padding: 0 90px; margin: 0 -15px;
+}
+#testimonial article.item {
+	margin: 30px 0;
+}
+#testimonial blockquote {
+	border-left: none; /* remove default border */
+	position: relative;
+	margin: 0;
+	font-family: 'Italianno', serif;
+}
+#testimonial blockquote p {
+	text-indent: 75px;
+	font-family: 'Italianno', serif;
+	font-size: 2.25em; line-height: 1.25;
+}
+blockquote footer {
+	font-size: 1.5em;
+	text-indent: 60px;
+}
+blockquote footer:before {
+	color: #f5911f;
+	font-weight: bold;
+}
+article#testimonial blockquote:before,
+article#testimonial blockquote:after {
+	color: #f5911f;
+	font-size: 8em;
+	position: absolute;
+	line-height: 1;
+}
+article#testimonial blockquote:before{
+	content: open-quote;
+	top: 0;
+}
+article#testimonial blockquote:after {
+	content: close-quote;
+	bottom: 15px; right: 45px;
+	line-height: 0.25;
+}
+#testimonial a.carousel-control {
+	background: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 10%;
+	color: #c8c8c8;
+}
+#testimonial a.carousel-control:hover {
+	color: #8c8c8c;
+}
+/* hide carousel-indicators by default - show with JS */
+#testimonial ol.carousel-indicators {
+	position: relative;
+	top: -21px;
+	z-index: 100;
+	display: none;
+}
+#testimonial ol.carousel-indicators li,
+#testimonial ol.carousel-indicators li.active {
+	height: 18px; width: 18px;
+	border: 2px solid #c8c8c8;
+	margin: 5px;
+}
+#testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
 
 /** Medium Screens **/
 @media (min-width: 992px) and (max-width: 1199px) {

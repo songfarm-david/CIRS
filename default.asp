@@ -122,6 +122,12 @@
 											</blockquote>
 										</article>
 									</div>
+									<!-- Indicators -->
+									<ol class="carousel-indicators">
+										<li data-target="#testimonials" data-slide-to="0" class="active"></li>
+										<li data-target="#testimonials" data-slide-to="1" class=""></li>
+										<li data-target="#testimonials" data-slide-to="2" class=""></li>
+									</ol>
 									<!-- Manual Controls -->
 									<section id="carousel-controls">
 										<div aria-controls="carousel" aria-label="carousel controls">

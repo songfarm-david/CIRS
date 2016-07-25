@@ -49,6 +49,8 @@
 		carousel.firstElementChild.className = "carousel-inner";
 		// display the carousel controls container
 		document.getElementById("carousel-controls").style.display = "block";
+		// dislay the carousel-indicators
+		$(".carousel-indicators").css("display","block");
 	}
 
 	/**
