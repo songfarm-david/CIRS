@@ -11,21 +11,21 @@
 							<ul>
 								<li>Services
 									<ul>
-										<li><a href="infloor_heat.asp">Infloor Heat</a></li>
-										<li><a href="thermal_mass.asp">Thermal Mass</a></li>
-										<li><a href="snow_melt_heated_driveways.asp">Snow Melt &amp; Heated Driveways</a></li>
-										<li><a href="fire_safety_systems.asp">Fire Safety Systems</a></li>
-										<li><a href="pool_heating.asp">Pool Heating</a></li>
-										<li><a href="cost_examples.asp">Cost Examples</a></li>
+										<li><a href="infloor_heat.php">Infloor Heat</a></li>
+										<li><a href="thermal_mass.php">Thermal Mass</a></li>
+										<li><a href="snow_melt_heated_driveways.php">Snow Melt &amp; Heated Driveways</a></li>
+										<li><a href="fire_safety_systems.php">Fire Safety Systems</a></li>
+										<li><a href="pool_heating.php">Pool Heating</a></li>
+										<li><a href="cost_examples.php">Cost Examples</a></li>
 									</ul>
 								</li>
 								<li>Company
 									<ul>
-										<li><a href="default.asp">Home</a></li>
-										<li><a href="about_us.asp">About Us</a></li>
-										<li><a href="contact_us.asp">Contact Us</a></li>
-										<!-- <li><a href="careers.asp">Careers</a></li> -->
-										<li><a href="sitemap.asp">Site Map</a></li>
+										<li><a href="index.php">Home</a></li>
+										<li><a href="about_us.php">About Us</a></li>
+										<li><a href="contact_us.php">Contact Us</a></li>
+										<!-- <li><a href="careers.php">Careers</a></li> -->
+										<li><a href="sitemap.php">Site Map</a></li>
 									</ul>
 								</li>
 							</ul>

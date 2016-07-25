@@ -12,7 +12,7 @@
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
 		<link rel="stylesheet" href="css/table.css" media="screen">
-		<!--#include file="includes/browser_detect.asp"-->
+		<?php include("includes/browser_detect.php"); ?>
 	</head>
 	<body>
 		<!-- For document outline -->

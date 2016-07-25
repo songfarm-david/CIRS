@@ -12,7 +12,7 @@
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
 		<link rel="stylesheet" href="css/main.css" media="screen">
-		<!--#include file="includes/browser_detect.asp"-->
+		<?php include("includes/browser_detect.php"); ?>
 	</head>
 	<body>
 
@@ -49,13 +49,13 @@
 						<div class="col-md-6 col-lg-7">
 							<h3>What is Radiant In-Floor Heating?</h3>
 							<p>
-								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.asp">In Floor Heating Page</a> for a brief overview.
+								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.php">In Floor Heating Page</a> for a brief overview.
 							</p>
 							<p>
-								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.asp">Heated Driveways</a>.
+								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.php">Heated Driveways</a>.
 							</p>
 							<p>
-								To get a sense of what In-Floor Heating may cost, please visit our <a href="cost_examples.asp">What Does It Cost?</a> page.
+								To get a sense of what In-Floor Heating may cost, please visit our <a href="cost_examples.php">What Does It Cost?</a> page.
 							</p>
 							<p class="call-us">
 			          <b>For a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
@@ -155,11 +155,11 @@
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
-							<li><a href="default.asp">Home</a></li>
-							<li><a href="about_us.asp">About Us</a></li>
-							<li><a href="contact_us.asp">Contact Us</a></li>
-							<!-- <li><a href="careers.asp">Careers</a></li> -->
-							<li><a href="sitemap.asp">Site Map</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="about_us.php">About Us</a></li>
+							<li><a href="contact_us.php">Contact Us</a></li>
+							<!-- <li><a href="careers.php">Careers</a></li> -->
+							<li><a href="sitemap.php">Site Map</a></li>
 						</ul>
 					</div>
 				</div>

@@ -1,20 +1,24 @@
-		<nav class="navbar" id="nav-primary">
+		<nav role="navigation" id="nav-primary" class="full-width" aria-labelledby="nav-header">
+			<h2 id="nav-header" class="sr-only">Main Navigation</h2>
 			<!-- Call Us Button -->
-			<a href="tel:9055922141" class="call-us">
-				<span class="glyphicon glyphicon-earphone"></span>&nbsp;Call Us:&nbsp;<b>905-592-2141</b>
+			<a href="#" class="call-us"><!-- tel:9055381661 -->
+				<span class="glyphicon glyphicon-earphone"></span>&nbsp;Call Us:&nbsp;<b>905-538-1661</b>
 			</a>
 			<div class="navbar-header">
-				<h1 class="sr-only">Navigation</h1>
-				<a href="index.php" class="navbar-brand">
-					<img src="images/cirsLogo_iconOnly.jpg" alt="Home: Canadian In-Floor Radiant Solutions" title="Home">
+				<a href="index.php" class="navbar-brand" title="Home">
+					<img src="images/CIRSicon.png" alt="Link to Canadian In-Floor Radiant Solutions Home Page" title="Home">
 				</a>
 			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li class="dropdown">
-					<a href="infloor_heat.php" class="dropdown-toggle">Radiant Solutions <span class="caret"></span></a>
-					<ul class="dropdown-menu">
-						<li class="dropdown-submenu"><a href="infloor_heat.php" class="dropdown-toggle">In-Floor Heat</a>
-							<ul class="dropdown-menu">
+			<ul class="nav navbar-nav" id="navbar">
+				<li class="dropdown dropdown-toggle">
+					<a href="infloor_heat.php">
+						Radiant Solutions <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" id="navbar-xs">
+						<li class="dropdown-submenu dropdown-toggle">
+							<a href="infloor_heat.php">In-Floor Heat</a>
+							<!-- Inaccessible Sub-Menu -->
+							<ul class="dropdown-menu" id="navbar-xs-submenu">
 								<li><a href="infloor_heat.php#design">Design</a></li>
 								<li><a href="infloor_heat.php#system_components">System Components</a></li>
 								<li><a href="infloor_heat.php#installation">Installation</a></li>
