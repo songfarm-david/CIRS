@@ -3,31 +3,22 @@
     <?php include('includes/navigation.php'); ?>
 
     <!-- Jumbotron -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="jumbotron" style="background-image:url(../images/display_images/family_livingroom.jpg);background-position:0;height:600px;">
-        </div>
-      </div>
-    </div>
+    <div class="jumbotron full-width" name="thermal_mass"></div>
 
     <!-- Main content -->
-    <div class="container">
+    <main role="main">
 	    <section>
-		    <h1>Thermal Mass</h1>
-        <figure class="pull-right figure-float-right">
-          <img src="images/demos/heated_bathroomfloor.jpg" alt="Radiant-heated bathroom floor">
-          <figcaption>
-          </figcaption>
+		    <h2 class="full-width">Thermal Mass</h2>
+        <figure role="presentation" class="pull-right figure-float-right hidden-xs">
+          <img src="images/demos/heated_bathroomfloor.jpg" alt="A women standing barefoot on a radiant-heated bathroom floor">
         </figure>
-        <!-- TODO: add header -->
-        <!-- <h2>Header Here</h2> -->
         <p>
 			    Studies have shown for years that having a thermal mass to retain and release heat is the most effective and efficient way to heat an area. To achieve this in your home, tubing is attached to the wooden floors and then a gypsum based concrete of 1 &half;" is poured over the tubing. Once this cures, the finished floor can be installed directly over top. The theory is that when the radiant in-floor heating system is on, tubes carrying hot water begins to heat the concrete rather than just releasing heat into the air. The concrete (thermal mass) then starts to radiate its' heat very evenly and for a long period of time. If the room has the right exposure the sun can help heat the mass, even in the winter. Floors often are still warm 12 hours after the system has been turned off. This system is especially effective in the basement. Radiant tubing is attached to the rebar and then the concrete floor is poured making the entire basement a thermal mass. In the summer the night air cools the floor. This energy is then released during the day to assist the home's A/C operation.
 		    </p>
-        <figure class="pull-left figure-float-left">
-          <img src="images/demos/flooring.jpg" alt="">
-          <figcaption>
-            Many options for finished-floor covering are conducive to radiant heat.
+        <figure role="figure" class="pull-left figure-float-left hidden-xs" aria-describedby="figure-1" data-pop-out="true">
+          <img src="images/demos/flooring.jpg" alt="An illustration of various finished-floor coverings laid on top of a concrete encased radiant heat tubing system">
+          <figcaption id="figure-1">
+            Various finished-floor coverings are conducive to radiant heat including tile, wood and carpet.
             <footer>Courtest: Uponor</footer>
           </figcaption>
         </figure>
@@ -40,13 +31,16 @@
 		    <p>
 			    The return on investment of having a thermal mass is 13.3% &ndash; this does not take into effect the added comfort level.
 		    </p>
-		    <footer>
-			    <!-- NOTE: the could be formatted more effectively perhaps -->
-			    <p class="small">
+		    <div>
+          <p role="note" class="small">
 				    The ROI Calculation is based on 1,000 square feet of floors with utility bill savings in both summer and winter.
 			    </p>
-		    </footer>
+        </div>
 	    </section>
-    </div>
+    </main>
 
+<<<<<<< HEAD:thermal_mass.php
 <?php include('includes/footer.php'); ?>
+=======
+    <!--#include file="includes/footer.asp"-->
+>>>>>>> finalStyles:thermal_mass.asp

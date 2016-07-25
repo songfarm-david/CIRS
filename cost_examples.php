@@ -1,19 +1,38 @@
+<<<<<<< HEAD:cost_examples.php
 <?php include('includes/header.php'); ?>
+=======
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<!-- IE Edge Meta tag -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario.">
+		<title>In-Floor Heating systems designed, installed by expert infloor heat contractor in Ontario</title>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Author CSS -->
+		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
+		<link rel="stylesheet" href="css/table.css" media="screen">
+		<!--#include file="includes/browser_detect.asp"-->
+	</head>
+	<body>
+		<!-- For document outline -->
+		<h1 class="hidden">Canadian In-Floor Radiant Solutions</h1>
+
+		<div class="wrapper container">
+>>>>>>> finalStyles:cost_examples.asp
 
     <?php include('includes/navigation.php'); ?>
 
     <!-- Jumbotron -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="jumbotron" style="background-image: url(../images/display_images/child_drawing.jpg); background-position:0 63%; height:560px;">
-        </div>
-      </div>
-    </div>
+    <div class="jumbotron full-width" name="cost_examples"></div>
 
     <!-- Main Content -->
-    <div class="container">
+    <main role="main">
 	    <section>
-		    <h1>What Does Radiant In-Floor Heating Cost?</h1>
+		    <h2 class="full-width">What Does Radiant In-Floor Heating Cost?</h2>
 		    <p>
 			    One of the factors affecting the cost of an in-floor radiant heating installation is the method that will be used to heat the hot water.
 		    </p>
@@ -35,73 +54,77 @@
         <p>
           <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
         </p>
-        <div class="container-fluid">
-          <article id="cost_examples">
-            <div class="panel panel-body">
-              <h2>Cost Examples</h2>
-              <!-- NOTE: this should be contained in a table -->
-              <div class="container-fluid">
-                <table class="table">
-                  <!-- Create columns for styling -->
-                  <colgroup>
-                    <col></col>
-                    <col></col>
-                    <col></col>
-                  </colgroup>
-                  <thead class="text-center">
-                    <tr>
-                      <th>
-                        Basement Floor of Existing Home<br> <span>(288 sq/ft)</span>
-                      </th>
-                      <th>
-                        Full Basement during New Home Construction<br> <span>(1500 sq/ft)</span>
-                      </th>
-                      <th>
-                        Entire New Home including Basement<br> <span>(4000 sq/ft)</span>
-                      </th>
-                      <th>
-                        Underfloor Heating on Main Floor of Existing Home
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
-                      </td>
-                      <td>
-                        Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
-                      </td>
-                      <td>
-                        Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
-                      </td>
-                      <td>
-                        Install tubing between joists with reflective foil barrier.
-                      </td>
-                    </tr>
-                  </tbody>
-                  <tfoot>
-                    <tr class="text-center">
-                      <td>
-                        $8000.00<br> <span>($28.00 per sq/ft)</span>
-                      </td>
-                      <td>
-                        $8800.00<br> <span>($5.86 per sq/ft)</span>
-                      </td>
-                      <td>
-                        $54,000.00<br> <span>($13.50 per sq/ft)</span>
-                      </td>
-                      <td>
-                        $10.00-$20.00 per sq/ft
-                      </td>
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-            </div><!-- end of panel-body -->
-          </article>
-        </div>
+        <section role="region" aria-labelledby="cost_examples" class="full-width">
+          <h3 id="cost_examples" class="">Cost Examples</h3>
+            <table role="table" class="table">
+              <!-- Create columns for styling -->
+              <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+              </colgroup>
+              <thead role="rowgroup">
+                <tr>
+                  <th>
+                    <span>Basement Floor</span> <br>of Existing Home
+                  </th>
+                  <th>
+                    <span>Full Basement</span> <br>of New Home
+                  </th>
+                  <th>
+                    <span>Entire New Home</span> <br>incl. Basement
+                </th>
+                  <th>
+                    <span>Main Floor</span> <br>of Existing Home
+                  </th>
+                </tr>
+              </thead>
+              <tbody role="rowgroup">
+                <tr>
+                  <td>
+                    Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
+										<br><span>(288 sq/ft)</span>
+                  </td>
+                  <td>
+                    Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
+										<br><span>(1500 sq/ft)</span>
+                  </td>
+                  <td>
+                    Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
+										<br><span>(4000 sq/ft)</span>
+                  </td>
+                  <td>
+                    Install tubing between joists with reflective foil barrier.
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot role="rowgroup">
+                <tr class="text-center">
+                  <td>
+                    <p>$8000.00<br> <span>($28.00 per sq/ft)</span></p>
+                  </td>
+                  <td>
+                  	<p>$8800.00<br> <span>($5.86 per sq/ft)</span></p>
+                  </td>
+                  <td>
+                    <p>$54,000.00<br> <span>($13.50 per sq/ft)</span></p>
+                  </td>
+                  <td>
+                    <p>$10.00-$20.00<br> <span>(per sq/ft)</span></p>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          <div role="note">
+            <small>*Listed prices are approximations</small>
+          </div>
+        </section>
 	    </section>
-    </div>
+    </main>
 
+<<<<<<< HEAD:cost_examples.php
 <?php include('includes/footer.php'); ?>
+=======
+    <!--#include file="includes/footer.asp"-->
+>>>>>>> finalStyles:cost_examples.asp

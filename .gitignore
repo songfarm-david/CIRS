@@ -9,3 +9,5 @@ bin/
 
 # Ignore all old and unused images
 images/old_unused/
+
+sandbox*

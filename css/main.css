@@ -1,80 +1,172 @@
 /***
-Main Styles for index.php
+Main Styles for default.asp
 ==============================
 Author: David Gaskin
 July, 2016
 ***/
 
-/* Logo Banner*/
-/*body.container > div.container-fluid {
-	padding: 0;
-}*/
-header#main-header {
-	height: 315px; /* NOTE: header height is currently variable! */
-	background: #f1f1f1 url(../images/cirsLogo_lowRes_white.jpg) center 50% no-repeat;
+#main-header {
+	height: 315px;
+	background: #f1f1f1;
+	background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 52%, #e5e5e5 100%);
+	background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
+	background-image: url(../images/cirsLogo.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: contain;
-	background-size: 81%;
-	/* IE does not support // NOTE: do not rely on this property in production */
-	background-blend-mode: multiply;
 }
 
-section#main-content p.call-us {
-	margin: 45px 0 0;
-}
-
-/* Primary Nav */
-nav#nav-primary {
-	margin-bottom: 0;
-	background: none;
-	padding: 0;
-}
-nav#nav-primary ul {
-	width: 100%;
-	text-align: center;
-	border-top: 3px solid #fff;
+#nav-primary > a { top: -292px; right: 15px; }
+nav {
+	/* use main navigation bg here */
+	background: transparent url(../images/bg_nav_main.png) no-repeat;
+	border-top: 3px solid white;
+	width: auto; left: 0;
+	/* reverse box shadow on top */
 	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
+	margin-bottom: -58px; /* to account for extra bg area */
 }
-#nav-primary ul li {
-	float: none;
-	display: inline-block;
-	*display: inline; /* for <=IE7 */
-}
-#nav-primary li > a {
-	width: 100%;
-	display: inline-block;
-	color: #545456;
-	/* for <=IE7 */
-	*display: inline;
-}
-/* remove Icon (home link) */
-#nav-primary div.navbar-header {
+nav > ul.navbar-nav {	top: 8px; }
+nav > ul.navbar-nav > li { left: 0; }
+/* make 'Call Us' button originate from the right */
+nav > a.call-us {	transform-origin: 100%; }
+nav > a.call-us:hover { transform-origin: 100%; }
+nav .navbar-header { display: none; }
+
+/** Testimonials **/
+#testimonial { margin-top: 30px; margin-bottom: 60px; }
+#testimonial h3 {
+	margin: 0; padding: 0 0 15px;
 	display: none;
 }
-/* position call us button */
-#nav-primary > a {
-	top: -315px; right: 20px;
+#testimonial .carousel {
+	padding: 0 90px; margin: 0 -15px;
 }
-/* reset to default position: target only 'cost examples' li dropdown menu */
-nav#nav-primary li.dropdown > a[href^="cost_examples"] + ul.dropdown-menu {
-	left: 0; right: auto;
+#testimonial article.item {
+	margin: 30px 0;
+}
+#testimonial blockquote {
+	border-left: none; /* remove default border */
+	position: relative;
+	margin: 0;
+	font-family: 'Italianno', serif;
+}
+#testimonial blockquote p {
+	text-indent: 75px;
+	font-family: 'Italianno', serif;
+	font-size: 2.25em; line-height: 1.25;
+}
+blockquote footer {
+	font-size: 1.5em;
+	text-indent: 60px;
+}
+blockquote footer:before {
+	color: #f5911f;
+	font-weight: bold;
+}
+article#testimonial blockquote:before,
+article#testimonial blockquote:after {
+	color: #f5911f;
+	font-size: 8em;
+	position: absolute;
+	line-height: 1;
+}
+article#testimonial blockquote:before{
+	content: open-quote;
+	top: 0;
+}
+article#testimonial blockquote:after {
+	content: close-quote;
+	bottom: 15px; right: 45px;
+	line-height: 0.25;
+}
+#testimonial a.carousel-control {
+	background: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 10%;
+	color: #c8c8c8;
+}
+#testimonial a.carousel-control:hover {
+	color: #8c8c8c;
+}
+/* hide carousel-indicators by default - show with JS */
+#testimonial ol.carousel-indicators {
+	position: relative;
+	top: -21px;
+	z-index: 100;
+	display: none;
+}
+#testimonial ol.carousel-indicators li,
+#testimonial ol.carousel-indicators li.active {
+	height: 18px; width: 18px;
+	border: 2px solid #c8c8c8;
+	margin: 5px;
+}
+#testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
+
+/** Medium Screens **/
+@media (min-width: 992px) and (max-width: 1199px) {
+	nav {
+		width: 970px;
+		background-size: 970px 96px;
+	}
 }
 
-/** Partners Footer */
-section#partners {
-	border: 10px solid #f5911f;
-	background: #fff;
-	padding-bottom: 15px;
-	/* make this only for smaller screen sizes */
-	/*overflow-x: scroll; */
+/** Small screens **/
+@media (min-width: 768px) and (max-width: 991px){
+	nav {
+		width: 750px;
+		background-size: 750px 84px;
+	}
+	nav > ul.navbar-nav {
+		top: 4px;
+	}
 }
-section#partners > .container { width: 100%; }
-section#partners h2 {
-	border-bottom: 3px dotted #ccc;
-	/*margin-left: 1em; margin-right: 1em;*/
-	padding: 15px 0 0;
-}
-#partners > div a {
-	display: table-cell;
-	width: 25%; /* fixes weird centering behavior */
-	text-align: center;
+
+/** XS Screens and below **/
+@media (max-width: 767px) {
+	header#main-header {
+		height: 124px;
+		box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.5);
+		position: relative;
+		background-size: 98.5%, 100%; /* approx. */
+		background-position: -15px center, 0 0;
+	}
+	nav, nav.full-width {
+		background-image: none;
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+		/*margin-bottom: -120px; */
+		/* to remove height of 120px high nav */
+	}
+	#nav-primary > a {
+		display: none;
+
+		top: -114px;
+		color: #f5911f;
+
+		/** pre-animation */
+		/*width: 50px;
+		white-space: nowrap;
+		overflow-x: hidden;*/
+
+		/** after animations **/
+		/*width: 260px;
+		background: #f4e4d1;
+		border-color: #f5911f;
+		box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+		transform-origin: top right;
+		transform: scale(1.1);*/
+
+	}
+	nav button.navbar-toggle { top: -66px; }
+	nav a.call-us { top: 0; }
+
+	/* dropdown menu */
+	#navbar { top: 0; }
+
+	/*.jumbotron { margin-top: -24px; }*/
 }

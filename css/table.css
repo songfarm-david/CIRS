@@ -1,0 +1,18 @@
+/** Special stylesheet just for page 'What Does it Cost?' **/
+
+@font-face {
+font-family: 'museo_sans700';
+src: url('../fonts/museo_sans/museosans-700-webfont.eot');
+src: url('../fonts/museo_sans/museosans-700-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo_sans/museosans-700-webfont.woff') format('woff'),
+		 url('../fonts/museo_sans/museosans-700-webfont.ttf') format('truetype'),
+		 url('../fonts/museo_sans/museosans-700-webfont.svg#museo_sans300') format('svg');
+}
+@font-face {
+font-family: 'museo_sans900';
+src: url('../fonts/museo_sans/museosans-900-webfont.eot');
+src: url('../fonts/museo_sans/museosans-900-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/museo_sans/museosans-900-webfont.woff') format('woff'),
+		 url('../fonts/museo_sans/museosans-900-webfont.ttf') format('truetype'),
+		 url('../fonts/museo_sans/museosans-900-webfont.svg#museo_sans300') format('svg');
+}

@@ -1,0 +1,16 @@
+/** Stylesheet: lte IE9 **/
+
+/* Main Site Banner */
+#main-header {
+	filter: none;
+	background: #f1f1f1;
+	background-image: url(../images/cirsLogo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* Support for background gradients */
+/*.gradient,*/
+section > h1,
+#testimonial h2 { filter: none; }
