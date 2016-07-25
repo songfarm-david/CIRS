@@ -612,7 +612,7 @@ tbody td {
 	padding: 15px 20px;
 	font-size: 1.15em;
 	padding-bottom: 150px;
-	font-weight: 600;
+	/*font-weight: 600;*/
 }
 .table tbody tr td > span {
 	font-weight: lighter;
