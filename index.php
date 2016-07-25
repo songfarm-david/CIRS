@@ -18,16 +18,12 @@
 
 		<div class="wrapper container">
 
-<<<<<<< HEAD:index.php
-    <?php include('includes/navigation.php'); ?>
-=======
 			<!-- Logo Banner -->
 			<header role="banner" id="main-header" class="full-width">
 				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 			</header>
->>>>>>> finalStyles:default.asp
 
-    	<!--#include file="includes/navigation.asp"-->
+			<?php include('includes/navigation.php'); ?>
 
 			<!-- Jumbotron -->
       <div class="jumbotron full-width" name="default">
@@ -187,9 +183,5 @@
 		<script src="scripts/infloor.js"></script>
 		<script src="scripts/carousel.js"></script>
 
-<<<<<<< HEAD:index.php
-		<?php include('includes/footer.php'); ?>
-=======
 	</body>
 </html>
->>>>>>> finalStyles:default.asp

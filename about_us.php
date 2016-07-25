@@ -82,9 +82,6 @@
         </article>
       </section>
 
-<<<<<<< HEAD:about_us.php
-<?php include('includes/footer.php'); ?>
-=======
       <!-- Partners aside -->
       <aside role="complementary" id="partners" class="full-width">
         <h3>Partners</h3>
@@ -99,5 +96,4 @@
 
     </main>
 
-    <!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:about_us.asp
+    <?php include('includes/footer.php'); ?>

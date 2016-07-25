@@ -24,8 +24,4 @@
 	    </section>
     </main>
 
-<<<<<<< HEAD:snow_melt_heated_driveways.php
-<?php include('includes/footer.php'); ?>
-=======
-    <!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:snow_melt_heated_driveways.asp
+    <?php include('includes/footer.php'); ?>

@@ -2,23 +2,12 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->
-<<<<<<< HEAD:includes/footer.php
-						<!-- NOTE: consider ARIA roles for footer nav -->
-						<!-- NOTE: secondary nav needs citation -->
-						<ul class="nav navbar-nav">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="about_us.php">About Us</a></li>
-							<li><a href="contact_us.php">Contact</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Site Map</a></li>
-=======
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
 							<li><a href="default.asp">Home</a></li>
 							<li><a href="about_us.asp">About Us</a></li>
 							<li><a href="contact_us.asp">Contact Us</a></li>
 							<!-- <li><a href="careers.asp">Careers</a></li> -->
 							<li><a href="sitemap.asp">Site Map</a></li>
->>>>>>> finalStyles:includes/footer.asp
 						</ul>
 					</div>
 				</div>

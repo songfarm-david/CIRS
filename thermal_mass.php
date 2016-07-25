@@ -39,8 +39,4 @@
 	    </section>
     </main>
 
-<<<<<<< HEAD:thermal_mass.php
-<?php include('includes/footer.php'); ?>
-=======
-    <!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:thermal_mass.asp
+    <?php include('includes/footer.php'); ?>

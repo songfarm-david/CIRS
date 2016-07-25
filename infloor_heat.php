@@ -145,81 +145,8 @@
 									<p>Dry or "Plate" system: Tubing is attached to the underside of the subfloor, also known as a belowdeck or joist space dry system. In cold weather climates, tubing should be attached with aluminum transfer plates and both well insulated for improved performance. Without the insulation, the warmth will disperse into the basement. It is also possible to have an abovedeck dry system, where heat transfer plates are supported by sleepers.</p>
 								</li>
 							</ol>
-<<<<<<< HEAD:infloor_heat.php
-						</li>
-						<li>
-							<p>Dry or "Plate" system: Tubing is attached to the underside of the subfloor, also known as a belowdeck or joist space dry system. In cold weather climates, tubing should be attached with aluminum transfer plates and both well insulated for improved performance. Without the insulation, the warmth will disperse into the basement. It is also possible to have an abovedeck dry system, where heat transfer plates are supported by sleepers.</p>
-						</li>
-					</ol></div>
-				</section>
-				<section>
-					<h2 id="costs">Costs</h2>
-					<p>
-						An approximate cost of an installed hydronic radiant floor heating system can range from $1000 per approximately 100 square feet. This cost can be more or less depending on specific heating requirements and energy efficiency results. In addition to the heating system, a mechanical ventilation system is required in the house. <em>Please see our <a href="cost_examples.php">Cost Examples</a> page for more info.</em>
-					</p>
-				</section>
-				<section>
-					<h2 id="maintenance_and_repairs">Maintenance and Repairs</h2>
-					<p>
-						It is recommended that annual maintenance be done on mechanical equipment such as the pumps, hot water heater, controls etc. If there was a problem or failure, it is commonly found in these mechanical parts. Annual contracts are available through Canadian In-floor.
-					</p>
-					<p>
-						To avoid unnecessary repair work, all equipment must be used and maintained in the manner in which it was designed and installed. Homeowners disconnecting controls or moving pumps can find themselves requiring repairs and possibly voiding their warranty.
-					</p>
-				</section>
-				<section>
-					<h2 id="lifespan_and_warranty">Lifespan &amp; Warranty</h2>
-					<figure class="pull-right figure-float-right">
-						<img src="images/demos/pex.jpg" alt="">
-						<figcaption>
-							Uponor PEX-a tubing is flexible, durable, and has been used in plumbing systems for more than 20 years.
-							<footer>Courtesy: Uponor</footer>
-						</figcaption>
-					</figure>
-					<p>
-						Canadian In-Floors’ installations are covered by a <strong>manufacturers warranty of 25 years</strong> though PEX pipes set in the floor are expected to last more than 50 years (some test results indicate life expectancies of 200-300 years).
-					</p>
-					<p>
-						There are two types of warranties: a Manufacturer’s Warranty and an Installation Warranty.
-					</p>
-					<p>
-						Most manufactures’ warranty policies are strongly dependant on certified and qualified contractors completing the installation. Canadian In-floor is a level 2 certified company, therefore the Uponor warranty is 25 years on the tubing, compression fittings, and manifolds. There is no difference in warranty between new construction and renovations. Installation warranty varies on the heating contractor and their warranty policies. There may be a difference in warranty between new home construction and renovations by the heating contractor.
-					</p>
-				</section>
-				<section>
-					<div class="panel panel-body"><h2 id="benefits">Benefits</h2>
-					<dl>
-						<dt>Comfort</dt>
-						<dd>
-							Radiant floor heating provides even, comfortable, warmth as there is less air movement with this type of system. There are no drafts with this type of heating, unless it is through the building envelope. The thermal mass (concrete floor) evens out the temperature fluctuations. The floor is warm to the touch.
-						</dd>
-						<dt>Energy-Efficiency</dt>
-						<dd>
-							Many manufacturers claim that radiant floor heating is more economical to operate because the temperature setting may be set to 20&deg;C (68&deg;F) rather than the usual 21-22&deg;C (70-72&deg;F) as required by other types of systems. The warmest air is at the floor where it is desired (and not at the ceiling) and there is reduced heat loss through the ceiling and walls.
-							Zoning a variety of rooms with the options for different temperatures has the potential to reduce energy consumption.
-						</dd>
-						<dt>Energy Source Compatibility</dt>
-						<dd>
-							Since radiant floor heating has a low operating temperature, a wide range of sources can be used to heat the water–a ground-source heat pump, a condensing or non-condensing boiler, solar or even district heating.
-						</dd>
-						<dt>Quietness</dt>
-						<dd>
-							The system is quiet because a properly-sized circulator pump, used to slowly move the water, is almost inaudible. The loudest sound in the system is usually the gas or oil burner.
-						</dd>
-						<dt>Cleanliness</dt>
-						<dd>
-							Unlike conventional forced-air furnaces, radiant floor heating has no ducts or radiators to contribute to dust collection or movement. Note: duct work is required for the mechanical ventilation system or air conditioning.
-							For residents with allergies, the reduction in dust movement may be beneficial.
-						</dd>
-						<dt>Room Function</dt>
-						<dd>
-							Hydronic radiant floor heating is virtually an invisible system. Without baseboard heaters, forced air registers etc, furniture layout is not restricted by the heating system. Bathrooms or special use areas with hard floor finishes are well suited to this type of heating.
-						</dd>
-					</dl></div>
-=======
 						</div>
 					</div>
->>>>>>> finalStyles:infloor_heat.asp
 				</section>
 					<section>
 						<h3 id="costs">Costs</h3>
@@ -308,8 +235,4 @@
 				</section>
 		</main>
 
-<<<<<<< HEAD:infloor_heat.php
-<?php include('includes/footer.php'); ?>
-=======
-		<!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:infloor_heat.asp
+    <?php include('includes/footer.php'); ?>

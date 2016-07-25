@@ -30,11 +30,6 @@
           </div>
         </div>
 	    </section>
-<<<<<<< HEAD:contact_us.php
-    </div>
-<?php include('includes/footer.php'); ?>
-=======
     </main>
 
-    <!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:contact_us.asp
+    <?php include('includes/footer.php'); ?>

@@ -37,8 +37,4 @@
 	    </section>
     </main>
 
-<<<<<<< HEAD:fire_safety_systems.php
-<?php include('includes/footer.php'); ?>
-=======
-    <!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:fire_safety_systems.asp
+    <?php include('includes/footer.php'); ?>

@@ -1,6 +1,3 @@
-<<<<<<< HEAD:cost_examples.php
-<?php include('includes/header.php'); ?>
-=======
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -22,7 +19,6 @@
 		<h1 class="hidden">Canadian In-Floor Radiant Solutions</h1>
 
 		<div class="wrapper container">
->>>>>>> finalStyles:cost_examples.asp
 
     <?php include('includes/navigation.php'); ?>
 
@@ -123,8 +119,4 @@
 	    </section>
     </main>
 
-<<<<<<< HEAD:cost_examples.php
 <?php include('includes/footer.php'); ?>
-=======
-    <!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:cost_examples.asp

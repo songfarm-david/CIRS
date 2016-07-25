@@ -21,8 +21,4 @@
       </section>
     </main>
 
-<<<<<<< HEAD:pool_heating.php
-<?php include('includes/footer.php'); ?>
-=======
-    <!--#include file="includes/footer.asp"-->
->>>>>>> finalStyles:pool_heating.asp
+    <?php include('includes/footer.php'); ?>
