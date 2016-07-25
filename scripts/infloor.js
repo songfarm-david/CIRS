@@ -80,7 +80,6 @@
 	/** end of Nav **/
 
 
-
 	/*** Mobile Navigation ***/
 
 	var isMenu;
@@ -143,14 +142,8 @@
 		}
 	});
 
-	/**
-	* Animate text fade in
-	*/
-	// $(wrapper).on("show.bs.collapse", function(){
-	// 	// animate text fade in here
-	// });
-
 	/** end of Mobile Nav **/
+
 
 	/*** Img Pop-Out ***/
 
@@ -158,7 +151,7 @@
 	var modal = document.createElement("div");
 	modal.className = "modal fade";
 	modal.innerHTML =
-	"<div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\"></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div></div></div>";
+	"<div role=\"presentation\" class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\"></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" tabindex=\"0\">Close</button></div></div></div>";
 	// get handles to Modal Header, Body and Footer
 	var modalHeader = modal.firstElementChild.firstElementChild.firstElementChild;
 	var modalBody = modal.firstElementChild.firstElementChild.firstElementChild.nextElementSibling;
@@ -209,11 +202,13 @@
 				var footerBtn = modalFooter.firstElementChild;
 				modalFooter.insertBefore(imgText, footerBtn);
 
-				/* optional: add extra width to account for styled padding */
-				// modal.firstElementChild.style.width = imgWidth + 60 + "px";
-
 				// fire the modal
 				$(modal).modal();
+				$(modal).on('shown.bs.modal', function () {
+					// give focus to the close button
+					var modalCloseBtn = modal.getElementsByTagName("button")[1];
+				  modalCloseBtn.focus()
+				})
 
 			}, false); // End of: addEventListener
 		}

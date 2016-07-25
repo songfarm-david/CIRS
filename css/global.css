@@ -487,6 +487,10 @@ div.wrapper > footer a:focus {
 	color: white;
 	border-color: #f4e4d1;
 }
+.modal .modal-footer .btn-default:focus {
+	background-color: #f4e4d1;
+	outline-color: #f5911f;
+}
 
 /*** Partners aside ***/
 #partners {
