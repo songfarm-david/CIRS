@@ -2,14 +2,20 @@
 
 	/*** Desktop Navigation ***/
 
+	// dropdown triggers
+	var triggerDropdown = $("li.dropdown");
+	var subTriggerDropdown = $("li.dropdown-submenu");
+	// dropdown menus
 	var firstDropdown = $("#navbar-xs");
 	var secondDropdown = $("#navbar-xs-submenu");
-	// first dropdown, first li:
+	// first dropdown, first li
 	var subTrigger = $("ul#navbar-xs > li:nth-child(1) > a");
+	// first dropdown, first li sibling
 	var subTriggerSibling = $("ul#navbar-xs > li:nth-child(2) > a");
 
 	var dropdownsArray = $.makeArray(firstDropdown,secondDropdown);
-
+	var timeout;
+	// add initial ARIA properties
 	$.each(dropdownsArray, function(i, dropdown){
 		$(dropdown).attr("aria-haspopup","true").attr("aria-expanded","false");
 	});
@@ -18,37 +24,60 @@
 		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
 	}
 
-	// on top-level dropdown trigger
-	$("li.dropdown").on("mouseover mouseout focusin focusout", function() {
-		toggleARIAProps($(this).children().last());
+	$(triggerDropdown).on("focusin focusout", function() {
+		toggleARIAProps(firstDropdown);
 	});
 
-	$("li.dropdown").on("mouseout", function(){
-
-	});
-
-	// on second-level dropdown trigger
-	$("li.dropdown-submenu").on("mouseover mouseout focusin focusout", function() {
-		toggleARIAProps($(this).children().last());
-	});
-
-	// first dropdown first list item hover
-	$(subTrigger).focusin(
-		function() {
+	$(triggerDropdown).mouseover(function() {
+			toggleARIAProps(firstDropdown);
 			$(firstDropdown).css("left","0px");
-	}).focusout(
-		function() {
-	$(subTriggerSibling).focus();
-	});
+		})
+		.mouseout(function() {
+			toggleARIAProps(firstDropdown);
 
-	// on second list item focus
-	$("ul#navbar > li:nth-child(2) a").focus(
-		function() {
-			// move the dropdown out of view
-			$(firstDropdown).css("left","");
+			timeout = setTimeout(function(){
+				$(firstDropdown).css("left","-9999px");
+			}, 1000);
+
 		}
 	);
 
+	// on first menu hover, clear timeout
+	$(firstDropdown).mouseover(function() {	clearTimeout(timeout); });
+
+	// on second-level dropdown trigger
+	$(subTriggerDropdown).on("focusin focusout", function() {
+		toggleARIAProps(secondDropdown);
+	});
+
+	$(subTriggerDropdown).mouseover(function() {
+			toggleARIAProps(secondDropdown);
+			$(secondDropdown).css("display","block");
+		}
+	)
+	.mouseout(function() {
+			toggleARIAProps(secondDropdown);
+
+			setTimeout(function(){
+				$(secondDropdown).css("display","");
+			}, 1000);
+
+		}
+	)
+
+	// first dropdown first list item hover
+	$(subTrigger).focusin(function() {
+		$(firstDropdown).css("left","0px");
+	})
+	// on focus out, trigger sibling focus
+	.focusout(function() {
+		$(subTriggerSibling).focus();
+	});
+
+	// on second list item focus, hide dropdown
+	$("ul#navbar > li:nth-child(2) a").focus(function() {	$(firstDropdown).css("left",""); });
+
+	/** end of Nav **/
 
 
 
