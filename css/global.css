@@ -220,6 +220,7 @@ nav ul.dropdown-menu > li > a:hover:before {
 	padding: 8px 0;
 }
 #navbar-xs.navbar-collapse > ul > li > a { padding-left: 20px; }
+#navbar-xs a:hover { text-decoration: none; }
 #navbar-xs.navbar-collapse > ul > li:not(:last-child) {
 	border-bottom: 1px solid #ddd;
 }
