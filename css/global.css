@@ -532,8 +532,8 @@ div.wrapper > footer a:focus {
 
 /*** Costs Table ***/
 section[aria-labelledby="cost_examples"] {
-	padding: 25px 15px;
-	height: 485px;
+	padding: 25px 0;
+	height: auto;
 	position: relative;
 	margin-top: 152px;
 	margin-bottom: 140px;
@@ -545,6 +545,9 @@ section[aria-labelledby="cost_examples"] {
 	background: -webkit-linear-gradient(top,  rgb(222, 57, 31) 0%, rgba(230, 150, 3, 0.98) 7.5%, rgba(239,184,5,0.91) 15%, rgba(251,236,187,0.44) 55%, rgba(255,255,255,0.35) 100%);
 	background: linear-gradient(to right, rgb(222, 57, 31) 0%, rgba(244, 121, 35, 0.98) 20%, rgba(239,184,5,0.91) 50%, rgba(251,236,187,0.44) 75%, rgba(255,255,255,0.35) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47923', endColorstr='#70ffffff',GradientType=0 );
+	background-size: 100% 65%;
+	background-position: left top;
+	background-repeat: no-repeat;
 }
 section[aria-labelledby="cost_examples"] h3 {
 	position: relative;
@@ -552,13 +555,6 @@ section[aria-labelledby="cost_examples"] h3 {
 	padding: 30px 135px;
 	margin: 0 -15px -120px;
 	font-size: 2.75em;
-}
-section[aria-labelledby="cost_examples"] > div {
-	/*border: 2px solid blue;*/
-	margin-top: -35px;
-	padding: 0 15px;
-	font-style: italic;
-	text-align: right;
 }
 
 /* Global table styles */
@@ -568,6 +564,7 @@ table.table {
 	border-spacing: 10px 0;
 	position: relative;
 	z-index: 1000;
+	min-width: 1140px;
 }
 
 /* column colors */
@@ -629,7 +626,6 @@ tbody td {
 	border-bottom-right-radius: 15px;
 }
 
-
 /** Table Footer **/
 .table tfoot {
 	position: relative;
@@ -645,7 +641,7 @@ tbody td {
 	background-size: cover;
 }
 /* price tag */
-.table tfoot td > p{
+.table tfoot tr:first-child td > p{
 	font-family: 'museo_sans900';
 	font-size: 1.35em;
 	border-radius: 6px;
@@ -659,8 +655,23 @@ tbody td {
 	background: linear-gradient(to right,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
 }
 /* price tag secondary text */
-.table tfoot td > p > span {
+.table tfoot > tr:first-child td p > span {
 	font-size: 0.65em; display: block; font-family: 'museo_sans700';
+}
+/* disclaimer */
+.table tfoot > tr:last-child {
+	position: absolute;
+	bottom: -15px; right: 0;
+}
+.table tfoot > tr:last-child > td {
+	position: static;
+	width: 100%;
+	background: none;
+	color: #5b5b5b;
+	height: auto;
+	font-size: 0.85em;
+	font-style: italic;
+	text-align: right;
 }
 
 /** footer base colors and colored images **/
@@ -791,6 +802,8 @@ tbody td {
 	}
 
 	#partners { padding-left: 45px; padding-right: 45px; }
+
+	section[aria-labelledby="cost_examples"] h3 { padding-left: 45px; padding-right: 45px; }
 }
 
 /** XS Screens and below **/
@@ -897,8 +910,6 @@ tbody td {
 		background: #ccc;
 	}
 
-
-
 	/** Jumbotron Captions **/
 	.jumbotron[name="default"] .panel,
 	.jumbotron[name="infloor_heat"] .panel {
@@ -964,10 +975,6 @@ tbody td {
 		height: 524px;
 	}
 
-
-
-
-
 	.panel { padding: 30px; }
 
 	/* stack footer list items */
@@ -995,6 +1002,8 @@ tbody td {
 		text-align: center;
 	}
 	#partners div a { margin: 0 auto 15px; }
+
+	section[aria-labelledby="cost_examples"] h3 { padding-left: 15px; padding-right: 15px; }
 
 	.complimentary > ul {
 		margin: 0;
