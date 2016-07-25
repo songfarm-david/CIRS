@@ -1,6 +1,6 @@
-<!--#include file="includes/header.asp"-->
+<?php include('includes/header.php'); ?>
 
-    <!--#include file="includes/navigation.asp"-->
+    <?php include('includes/navigation.php'); ?>
 
 		<main role="main">
 			<section aria-labelledby="sitemap">
@@ -35,4 +35,4 @@
 			</section>
 		</main>
 
-		<!--#include file="includes/footer.asp"-->
+		<?php include('includes/footer.php'); ?>
