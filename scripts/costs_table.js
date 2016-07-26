@@ -1,5 +1,3 @@
-(function() {
-	// NOTE: the above self-calling function would be unnecessary here ..
 
 	// create an array of table columns i.e: <col> tags
 	var columns = $(".table colgroup > col").toArray();
@@ -54,5 +52,3 @@
 
 	// initialize first panel
 	rotatePanel();
-
-})();

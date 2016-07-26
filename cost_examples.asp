@@ -166,9 +166,16 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- Custom Javascripts -->
 		<script src="scripts/infloor.js"></script>
-		<!-- do a javascript query here:
-			if screen size is xs-mode, load the table script
-		-->
-		<script src="scripts/costs_table.js"></script>
+		<script type="text/javascript">
+		$(window).on("load resize", function() {
+			// if mobile screens
+			if (window.innerWidth <= 767) {
+				if ( $.getScript("scripts/costs_table.js") ) {
+					// turn off window events
+					$(window).off("load resize");
+				};
+			}
+		});
+		</script>
 	</body>
 </html>
