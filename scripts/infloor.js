@@ -142,6 +142,30 @@
 		}
 	});
 
+
+	/** Animate Call Us button */
+	var animationComplete = false;
+	$("nav > a.call-us").on("click", function(e){
+
+		// if animation has run, trigger natural event
+		if (animationComplete) {
+			animationComplete = false;
+			return true;
+		}
+
+		e.preventDefault();
+		$(this).find("span").css("color","#f5911f");
+		$(this).addClass("full-length")
+		.animate({
+			width:"264px",
+		}, 600, function(){
+			animationComplete = true;
+			$(e.target).trigger("click");
+		});
+
+	});
+
+
 	/** end of Mobile Nav **/
 
 

@@ -1,7 +1,7 @@
 		<nav role="navigation" id="nav-primary" class="full-width" aria-labelledby="nav-header">
 			<h2 id="nav-header" class="sr-only">Main Navigation</h2>
 			<!-- Call Us Button -->
-			<a href="#" class="call-us"><!-- tel:9055381661 -->
+			<a href="tel:9055381661" class="call-us">
 				<span class="glyphicon glyphicon-earphone"></span>&nbsp;Call Us:&nbsp;<b>905-538-1661</b>
 			</a>
 			<div class="navbar-header">

@@ -531,8 +531,6 @@ div.wrapper > footer a:focus {
 }
 
 
-
-
 /*** Media Queries ***/
 
 /* Desktop styles */
@@ -683,21 +681,32 @@ div.wrapper > footer a:focus {
 		z-index: 1000;
 	}
 	nav .nav { top: 99999px;}
-	nav > a.call-us {	right: 10px; top: 10px;	display: none;}
-	nav > a.call-us:hover {
-		cursor: default;
-		transform: none;
-		box-shadow: none;
-		border-color: #bbb;
-		color: inherit;
+	/* call us button */
+	/* phone only icon */
+	nav > a.call-us {
+		top: 8px; right: 15px;
+		padding: 6px;
+		border: 2px solid #aaa;
+		width: 50px;
+		white-space: nowrap;
+		overflow-x: hidden;
+		transform-origin: top right;
+		text-decoration: none;
 	}
-	nav > a.call-us,
-	.navbar-toggle {
-		transition: box-shadow 150ms,
-			transform 100ms ease-in,
-			border-color 150ms,
-			border-width 150ms,
-			background 150ms;
+	nav > a.call-us span { color: #aaa; left: 6px; padding-right: 14px; }
+
+	/* full length phone icon */
+	nav > a.call-us.full-length {
+		outline: none;
+		color: #f5911f;
+		border: 2px solid #f5911f;
+		background: #f4e4d1;
+		box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.25);
+		font-weight: bold;
+	}
+	nav > a.call-us.full-length:hover {
+		border-color: #f5911f;
+		box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.25);
 	}
 
 	#nav-primary #navbar ul li a { background: #fff; }
@@ -712,11 +721,18 @@ div.wrapper > footer a:focus {
 
 	/* hamburger icon */
 	.navbar-toggle {
-		top: 54px; z-index: 10000;
+		top: 58px; z-index: 10000;
 		height: 45px; width: 50px;
 		border: 2px solid #aaa;
 	}
-	.navbar-toggle:hover { cursor: default; }
+	nav > a.call-us:hover,
+	.navbar-toggle:hover {
+		cursor: default;
+		transform: none;
+		box-shadow: none;
+		transition: none;
+		border-color: #aaa;
+	}
 	.navbar-toggle .icon-bar {
 		background: #aaa;
 		width: 28px; height: 3px;
