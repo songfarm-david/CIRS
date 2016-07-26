@@ -171,13 +171,14 @@ tbody td {
 .table tfoot td:nth-child(3){ background-image: url(../images/lavender_base.png); color: #9168ae; }
 .table tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
 
+div > button { display: none; position: absolute; }
 
 /** XS Screens and below **/
 @media (max-width: 767px) {
 
 	section[aria-labelledby="cost_examples"] { margin-bottom: 50px; }
 	section[aria-labelledby="cost_examples"] > h3 { padding: 30px;}
-	section[aria-labelledby="cost_examples"] > h3 + div { overflow: hidden; }
+	section[aria-labelledby="cost_examples"] > h3 + div { overflow: hidden; position: relative; }
 	table.table {
 		min-width: 0;
 		table-layout: auto;
@@ -191,10 +192,12 @@ tbody td {
 		min-height: 68px
 	}
 	.table tbody > tr > td {
-		min-height: 402px;
+		min-height: 360px;
+		height: auto;
 		display: block;
 		font-size: 1.5em;
 		padding: 15px 30px;
+		padding-bottom: 150px;
 	}
 	.table tfoot > tr > td {
 		min-height: 85px;
@@ -207,10 +210,36 @@ tbody td {
 		display: none;
 	}
 
+	.table tfoot > tr:last-child { position: static; }
+	.table tfoot > tr:last-child > td { display: inherit; }
+
+	/* control buttons */
 	div > button {
-		position: absolute;
-		top: 25%;
+		display: block;
+		top: 200px;
+		background: rgba(0, 0, 0, 0.12);
+		border: none;
+		padding: 45px 25px;
+		font-size: 1.75em;
+		color: rgba(0, 0, 0, 0.34);
+		transition: background 250ms, color 250ms;
+		outline: none;
+		z-index: 10000;
 	}
-	div > button:first-of-type { left: 15px;}
-	div > button:last-of-type { right: 15px; }
+	div > button:active {
+		background: #f5911f;
+		color: white;
+	}
+	div > button:first-of-type {
+		left: -35px;
+		padding-left: 50px;
+		border-top-right-radius: 100px;
+		border-bottom-right-radius: 100px;
+	}
+	div > button:last-of-type {
+		right: -35px;
+		padding-right: 50px;
+		border-top-left-radius: 100px;
+		border-bottom-left-radius: 100px;
+	}
 }
