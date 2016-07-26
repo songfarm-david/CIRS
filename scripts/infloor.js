@@ -133,18 +133,29 @@
 			if (!isMenu) {
 				createMobileMenu();
 			}
-			// remove any hover event listeners
+			reset = false;
 		}
 		if (window.innerWidth > 768) {
 			if (isMenu) {
 				revertMobileMenu();
 			}
+			if (reset) {
+				return false;
+			} else {
+				$("nav > a.call-us").removeClass("full-length");
+				$("nav > a.call-us")[0].style.width = "";
+				reset = true
+			}
 		}
 	});
 
 
-	/** Animate Call Us button */
+	/*** Animate Call Us button ***/
+
+	// marker for phone animation complete */
 	var animationComplete = false;
+	/* reset marker for phone icon state */
+	var reset = false;
 	$("nav > a.call-us").on("click", function(e){
 
 		// if animation has run, trigger natural event
@@ -154,7 +165,7 @@
 		}
 
 		e.preventDefault();
-		$(this).find("span").css("color","#f5911f");
+		// $(this).find("span").css("color","#f5911f");
 		$(this).addClass("full-length")
 		.animate({
 			width:"264px",
@@ -164,7 +175,6 @@
 		});
 
 	});
-
 
 	/** end of Mobile Nav **/
 
