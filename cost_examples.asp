@@ -51,7 +51,7 @@
 	          <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
 	        </p>
 	        <section role="region" aria-labelledby="cost_examples" class="full-width">
-	          <h3 id="cost_examples" class="">Cost Examples</h3>
+	          <h3 id="cost_examples" class="container-fluid full-width">Cost Examples</h3>
 	          <div>
 
 							<!-- Panel toggles -->
@@ -65,7 +65,6 @@
 							</button>
 
 							<table role="table" class="table" id="cost_examples_table">
-	              <!-- Create columns for styling -->
 	              <colgroup>
 	                <col class="current">
 	                <col>
@@ -122,7 +121,6 @@
 	                    <p>$10.00-$20.00<br> <span>(per sq/ft)</span></p>
 	                  </td>
 	                </tr>
-									<!-- disclaimer cell -->
 									<tr>
 										<td>
 											<p>*Listed prices are approximations</p>
@@ -130,12 +128,13 @@
 									</tr>
 	              </tfoot>
 	            </table>
+
 						</div>
 	        </section>
 		    </section>
 	    </main>
 
-			<footer id="footer" class="full-width">
+			<footer id="footer" class="container-fluid full-width">
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->

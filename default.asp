@@ -150,7 +150,7 @@
 			</main>
 
 			<!-- Footer -->
-			<footer id="footer" class="full-width">
+			<footer id="footer" class="container-fluid full-width">
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->

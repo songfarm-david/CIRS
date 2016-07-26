@@ -41,7 +41,7 @@ section[aria-labelledby="cost_examples"] h3 {
 	position: relative;
 	top: -142px;
 	padding: 30px 135px;
-	margin: 0 -15px -120px;
+	margin: 0 0 -120px;
 	font-size: 2.75em;
 }
 /* allow table to scroll horizontally */
@@ -177,7 +177,7 @@ div > button { display: none; position: absolute; }
 @media (max-width: 767px) {
 
 	section[aria-labelledby="cost_examples"] { margin-bottom: 50px; }
-	section[aria-labelledby="cost_examples"] > h3 { padding: 30px;}
+	section[aria-labelledby="cost_examples"] > h3 { padding: 30px 15px;}
 	section[aria-labelledby="cost_examples"] > h3 + div { overflow: hidden; position: relative; }
 	table.table {
 		min-width: 0;
