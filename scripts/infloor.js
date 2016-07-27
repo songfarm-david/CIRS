@@ -3,8 +3,8 @@
 	/*** Desktop Navigation ***/
 
 	// dropdown triggers
-	var triggerDropdown = $("li.dropdown");
-	var subTriggerDropdown = $("li.dropdown-submenu");
+	var triggerDropdown = $("li.dropdown > a");
+	var subTriggerDropdown = $("li.dropdown-submenu > a");
 	// dropdown menus
 	var firstDropdown = $("#navbar-xs");
 	var secondDropdown = $("#navbar-xs-submenu");
@@ -21,6 +21,7 @@
 	});
 
 	function toggleARIAProps(elem) {
+		var elem = elem[0];
 		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
 	}
 
@@ -28,22 +29,29 @@
 		toggleARIAProps(firstDropdown);
 	});
 
-	$(triggerDropdown).mouseover(function() {
+	$(triggerDropdown).mouseover(function(e) {
 			toggleARIAProps(firstDropdown);
 			$(firstDropdown).css("left","0px");
 		})
 		.mouseout(function() {
-			toggleARIAProps(firstDropdown);
-
 			timeout = setTimeout(function(){
 				$(firstDropdown).css("left","-9999px");
+				toggleARIAProps(firstDropdown);
 			}, 1000);
-
 		}
 	);
 
 	// on first menu hover, clear timeout
-	$(firstDropdown).mouseover(function() {	clearTimeout(timeout); });
+	$(firstDropdown)
+	.mouseover(function() {
+		clearTimeout(timeout);
+	})
+	.mouseout(function(){
+		timeout = setTimeout(function(){
+			$(firstDropdown).css("left","-9999px");
+			toggleARIAProps(firstDropdown);
+		}, 1000);
+	});
 
 	// on second-level dropdown trigger
 	$(subTriggerDropdown).on("focusin focusout", function() {
@@ -56,12 +64,10 @@
 		}
 	)
 	.mouseout(function() {
-			toggleARIAProps(secondDropdown);
-
 			setTimeout(function(){
 				$(secondDropdown).css("display","");
+					toggleARIAProps(secondDropdown);
 			}, 1000);
-
 		}
 	)
 
