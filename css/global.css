@@ -152,7 +152,6 @@ nav > a.call-us:hover {
 	transform-origin: center;
 }
 nav > a.call-us span {
-	position: relative;
 	top: 5px;
 	padding-right: 6px;
 	color: #f5911f;
@@ -662,17 +661,16 @@ div.wrapper > footer a:focus {
 		padding: 0 15px;
 	}
 	.full-width { margin-left: -15px; margin-right: -15px; }
-	h2 { padding: 20px 15px; }
+	section > h2 { padding: 20px 15px; }
 
 	nav { margin-bottom: 0; }
 	nav.full-width {
-		margin-top: 0;
 		left: 0;
-		height: 120px;
+		margin-top: 0;
 		background: #f1f1f1;
-		background: -moz-linear-gradient(left,  rgba(221,221,221,1) 0%, rgba(255,255,255,1) 50%, rgba(221,221,221,1) 100%);
-		background: -webkit-linear-gradient(left,  rgba(221,221,221,1) 0%,rgba(255,255,255,1) 50%,rgba(221,221,221,1) 100%);
-		background: linear-gradient(to right,  rgba(221,221,221,1) 0%,rgba(255,255,255,1) 50%,rgba(221,221,221,1) 100%);
+		background: -moz-linear-gradient(left, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 50%, rgba(221,221,221,1) 100%);
+		background: -webkit-linear-gradient(left, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 50%,rgba(221,221,221,1) 100%);
+		background: linear-gradient(to right, rgba(221,221,221,1) 0%,rgba(255,255,255,1) 50%,rgba(221,221,221,1) 100%);
 		box-shadow: 0px -1px 5px 3px rgba(0, 0, 0, 0.5);
 	}
 	nav .navbar-header {
@@ -680,8 +678,9 @@ div.wrapper > footer a:focus {
 		transform: scale(1.15);
 		z-index: 1000;
 	}
-	nav .nav { top: 99999px;}
-	/* call us button */
+	nav .nav { top: 99999px; }
+
+	/** Call Us **/
 	/* phone only icon */
 	nav > a.call-us {
 		top: 8px; right: 15px;
@@ -694,7 +693,6 @@ div.wrapper > footer a:focus {
 		text-decoration: none;
 	}
 	nav > a.call-us span { color: #aaa; left: 6px; padding-right: 14px; }
-
 	/* full length phone icon */
 	nav > a.call-us.full-length {
 		outline: none;
@@ -709,16 +707,6 @@ div.wrapper > footer a:focus {
 		border-color: #f5911f;
 		box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.25);
 	}
-
-	#nav-primary #navbar ul li a { background: #fff; }
-	#nav-primary ul:hover,
-	#nav-primary li:hover,
-	#nav-primary ul a,
-	#nav-primary ul a:hover {
-		color: #5b5b5b;
-		cursor: default;
-	}
-	nav > ul.nav > li a:hover { background: #fff; }
 
 	/* hamburger icon */
 	.navbar-toggle {
@@ -753,27 +741,43 @@ div.wrapper > footer a:focus {
 		background: #f5911f;
 	}
 
+	#nav-primary #navbar a:hover,
+	#nav-primary #navbar-xs a:hover {
+		color: #5b5b5b;
+		cursor: default;
+	}
+	/* first dropdown menu */
 	#navbar {
-		position: absolute;
-		left: 0; top: 120px;
-		background: white;
-		width: 100%;
-		text-align: left;
+		/* to offset visible ul on load */
 		left: -9999px;
+		position: absolute;
+		top: 124px;
+		text-align: left;
+		/* temp. Background Color */
+		background: #fff;
+		border-bottom: 1px solid #aaa;
+		box-shadow: 0px 20px 50px -25px rgb(118, 97, 67);
 	}
-	#navbar li {
-		display: block; width: 100%;
-		left: 0;
+	#navbar li { width: 100%;	border-top: 1px solid #e6e6e6; }
+	#navbar > li:first-child {
+		/* add gradient background to mimic a box-shadow */
 	}
-	#navbar > li:first-child { border-top: 1px solid #999; }
-	#navbar, #navbar-xs { margin-left: 0; background: white; }
+
+	#navbar, #navbar-xs { margin-left: 0; }
+
+	/* second dropdown menu */
+	#navbar-xs {
+		/* Background Color here:
+		background: ;
+		*/
+	}
 	#navbar-xs > li:nth-child(1n+2) { border-top: 1px solid #aaa; }
 	#navbar-xs > li > a {
 		display: block;
 		width: 100%;
 		padding: 10px 30px;
 	}
-	#navbar-xs a { background: #ddd;transition: background 250ms; }
+	#navbar-xs a { transition: background 250ms; }
 	#navbar-xs a:active {
 		text-decoration: none;
 		background: #ccc;
