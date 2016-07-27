@@ -62,7 +62,7 @@
 			        </p>
 						</div>
 						<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5">
-							<aside id="uponor" class="panel-body" >
+							<aside role="complementary" id="uponor" class="panel-body" >
 								<h3 class="sr-only">Uponor Accreditation</h3>
 								<a href="http://www.uponor.ca/" target="_blank"><img src="images/partners/uponor_logo_lg.jpg" alt="Uponor website" title="Uponor"></a>
 								<p>
@@ -150,7 +150,7 @@
 			</main>
 
 			<!-- Footer -->
-			<footer id="footer" class="full-width">
+			<footer id="footer" class="container-fluid full-width">
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- Secondary Site Nav -->

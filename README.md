@@ -23,3 +23,9 @@ infloorheat.ca is compatible with all major browsers including IE9 and above.
 
 ### Extensibility
 A placeholder for a 'Careers' page exists to advertise employment opportunites.
+
+### Links
+Verify that coded links are accurate for domain and server address.
+
+### Accessibility
+Accessibility has been observed throughout the entire site in conformance with WAI-ARIA guidelines with exception to mobile page views

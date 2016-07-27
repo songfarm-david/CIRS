@@ -3,9 +3,12 @@
 <!-- Legacy browser support -->
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
+	<noscript style="position: fixed; top: 0px; left: 0px; z-index: 300000; height: 100%; width: 100%; background-color: #FFFFFF; overflow: hidden;">
+			<p style="padding: 45px 75px; border: 5px ridge blue; display: block; width: 650px; margin: 4em auto; font-size: 1.5em; line-height: 1.44; overflow: hidden; text-align: center;">
+				<b>You have Javascript turned off.</b><br><br> Please enable JavaScript in your browser to continue viewing this site.
+			</p>
+	</noscript>
 	<script>Browser = {isIE:true,version:8};</script>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 <!--[if IE 9]>
 	<script>Browser = {isIE:true,version:9};</script>

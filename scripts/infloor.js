@@ -3,8 +3,8 @@
 	/*** Desktop Navigation ***/
 
 	// dropdown triggers
-	var triggerDropdown = $("li.dropdown");
-	var subTriggerDropdown = $("li.dropdown-submenu");
+	var triggerDropdown = $("li.dropdown > a");
+	var subTriggerDropdown = $("li.dropdown-submenu > a");
 	// dropdown menus
 	var firstDropdown = $("#navbar-xs");
 	var secondDropdown = $("#navbar-xs-submenu");
@@ -20,7 +20,48 @@
 		$(dropdown).attr("aria-haspopup","true").attr("aria-expanded","false");
 	});
 
+	/**
+	* Create function to attach mouse events to navigation elements
+	*/
+	function attachMouseEvents() {
+
+		$(triggerDropdown).mouseover(function(e) {
+				toggleARIAProps(firstDropdown);
+				$(firstDropdown).css("left","0px");
+			})
+			.mouseout(function() {
+				timeout = setTimeout(function(){
+					$(firstDropdown).css("left","-9999px");
+					toggleARIAProps(firstDropdown);
+				}, 1000);
+			}
+		);
+
+		// on first menu hover, clear timeout
+		$(firstDropdown).mouseover(function() {
+				clearTimeout(timeout);
+			})
+			.mouseout(function(){
+				timeout = setTimeout(function(){
+					$(firstDropdown).css("left","-9999px");
+					toggleARIAProps(firstDropdown);
+				}, 1000);
+		});
+
+		$(subTriggerDropdown).mouseover(function() {
+				toggleARIAProps(secondDropdown);
+				$(secondDropdown).css("display","block");
+			}).mouseout(function() {
+				setTimeout(function(){
+					$(secondDropdown).css("display","");
+					toggleARIAProps(secondDropdown);
+				}, 1000);
+			});
+
+	}
+
 	function toggleARIAProps(elem) {
+		var elem = elem[0];
 		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
 	}
 
@@ -28,57 +69,26 @@
 		toggleARIAProps(firstDropdown);
 	});
 
-	$(triggerDropdown).mouseover(function() {
-			toggleARIAProps(firstDropdown);
-			$(firstDropdown).css("left","0px");
-		})
-		.mouseout(function() {
-			toggleARIAProps(firstDropdown);
-
-			timeout = setTimeout(function(){
-				$(firstDropdown).css("left","-9999px");
-			}, 1000);
-
-		}
-	);
-
-	// on first menu hover, clear timeout
-	$(firstDropdown).mouseover(function() {	clearTimeout(timeout); });
-
 	// on second-level dropdown trigger
 	$(subTriggerDropdown).on("focusin focusout", function() {
 		toggleARIAProps(secondDropdown);
 	});
 
-	$(subTriggerDropdown).mouseover(function() {
-			toggleARIAProps(secondDropdown);
-			$(secondDropdown).css("display","block");
-		}
-	)
-	.mouseout(function() {
-			toggleARIAProps(secondDropdown);
-
-			setTimeout(function(){
-				$(secondDropdown).css("display","");
-			}, 1000);
-
-		}
-	)
-
 	// first dropdown first list item hover
 	$(subTrigger).focusin(function() {
 		$(firstDropdown).css("left","0px");
 	})
-	// on focus out, trigger sibling focus
-	.focusout(function() {
+		// on focus out, trigger sibling focus
+		.focusout(function() {
 		$(subTriggerSibling).focus();
 	});
 
 	// on second list item focus, hide dropdown
 	$("ul#navbar > li:nth-child(2) a").focus(function() {	$(firstDropdown).css("left",""); });
 
-	/** end of Nav **/
+	attachMouseEvents();
 
+	/** end of Nav **/
 
 
 	/*** Mobile Navigation ***/
@@ -102,7 +112,7 @@
 		$("#nav-primary").append(hamburger);
 		$("#navbar").css("left","0");
 		$("#navbar").addClass("collapse").removeClass("navbar-nav");
-		$("#navbar > li:first-child > a").attr("href","#").attr("data-toggle","collapse").attr("data-target","#navbar-xs");
+		// $("#navbar > li:first-child > a").attr("href","#").attr("data-toggle","collapse").attr("data-target","#navbar-xs");
 		$("#navbar-xs").addClass("collapse").removeClass("dropdown-menu");
 		isMenu = true;
 	}
@@ -115,12 +125,24 @@
 		isMenu = false;
 	}
 
+	function detachEvents() {
+		$(triggerDropdown, firstDropdown).off("mouseover mouseout");
+		// must declare separately .off for subTriggerDropdown
+		$(subTriggerDropdown).off("mouseout mouseover");
+	}
+
+	function attachEvents() {
+		$(triggerDropdown, firstDropdown).on("mouseover mouseout");
+	}
+
 	/**
 	* If screen is loaded on XS device size
 	*/
 	window.onload = function() {
 		if (window.innerWidth <= 768) {
 			createMobileMenu();
+			// clear all hover events
+			detachEvents();
 		}
 	}
 
@@ -134,23 +156,62 @@
 			if (!isMenu) {
 				createMobileMenu();
 			}
-			// remove any hover event listeners
+			// reset a.call-us phone icon styles/behavior */
+			isPhoneIcon = false;
+			// turn off hover events for nav dropdown menus
+			detachEvents();
 		}
 		if (window.innerWidth > 768) {
 			if (isMenu) {
 				revertMobileMenu();
 			}
+
+			attachMouseEvents();
+
+			if (isPhoneIcon) {
+				return false;
+			} else {
+				$("nav > a.call-us").removeClass("full-length");
+				$("nav > a.call-us")[0].style.width = "";
+				isPhoneIcon = true
+			}
 		}
 	});
 
-	/**
-	* Animate text fade in
-	*/
-	// $(wrapper).on("show.bs.collapse", function(){
-	// 	// animate text fade in here
-	// });
+	// create a span with a glyphicon
+	var plusIcon = "<span class=\"glyphicon glyphicon-chevron-down\" data-toggle=\"collapse\" data-target=\"#navbar-xs\"></span>";
+	// $("li > a > span.caret").after(plusIcon);
+	$(plusIcon).insertAfter($("#navbar > li:first-child"));
+
+
+	/*** Animate Call Us button ***/
+
+	// marker for phone animation complete */
+	var animationComplete = false;
+	/* reset marker for phone icon state */
+	var isPhoneIcon = false;
+	$("nav > a.call-us").on("click", function(e){
+
+		// if animation has run, trigger natural event
+		if (animationComplete) {
+			animationComplete = false;
+			return true;
+		}
+
+		e.preventDefault();
+		// $(this).find("span").css("color","#f5911f");
+		$(this).addClass("full-length")
+		.animate({
+			width:"264px",
+		}, 600, function(){
+			animationComplete = true;
+			$(e.target).trigger("click");
+		});
+
+	});
 
 	/** end of Mobile Nav **/
+
 
 	/*** Img Pop-Out ***/
 
@@ -158,7 +219,7 @@
 	var modal = document.createElement("div");
 	modal.className = "modal fade";
 	modal.innerHTML =
-	"<div class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\"></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button></div></div></div>";
+	"<div role=\"presentation\" class=\"modal-dialog\"><div class=\"modal-content\"><div class=\"modal-header\"><button type=\"button\" class=\"close\" data-dismiss=\"modal\">&times;</button></div><div class=\"modal-body\"></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\" tabindex=\"0\">Close</button></div></div></div>";
 	// get handles to Modal Header, Body and Footer
 	var modalHeader = modal.firstElementChild.firstElementChild.firstElementChild;
 	var modalBody = modal.firstElementChild.firstElementChild.firstElementChild.nextElementSibling;
@@ -209,11 +270,13 @@
 				var footerBtn = modalFooter.firstElementChild;
 				modalFooter.insertBefore(imgText, footerBtn);
 
-				/* optional: add extra width to account for styled padding */
-				// modal.firstElementChild.style.width = imgWidth + 60 + "px";
-
 				// fire the modal
 				$(modal).modal();
+				$(modal).on('shown.bs.modal', function () {
+					// give focus to the close button
+					var modalCloseBtn = modal.getElementsByTagName("button")[1];
+				  modalCloseBtn.focus()
+				})
 
 			}, false); // End of: addEventListener
 		}

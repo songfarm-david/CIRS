@@ -82,7 +82,7 @@
         </article>
       </section>
 
-      <!-- Partners aside -->
+      <!-- Partners -->
       <aside role="complementary" id="partners" class="full-width">
         <h3>Partners</h3>
         <div>
@@ -92,7 +92,7 @@
           <a href="https://www.facebook.com/beautifulheat/" rel="external" target="_blank"><img src="images/partners/logo-beautifulheat.gif" alt="Beautiful Heat website" title="Beautiful Heat Facebook Page"></a>
         </div>
       </aside>
-      <!-- end of Partners aside -->
+      <!-- end of Partners -->
 
     </main>
 
