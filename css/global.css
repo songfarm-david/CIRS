@@ -221,6 +221,9 @@ nav ul.dropdown-menu > li > a:hover:before {
 	border-bottom: 1px solid #ddd;
 }
 
+/* hide chevron down */
+#navbar li + span.glyphicon { display: none; }
+
 /** Jumbotron **/
 .jumbotron {
 	border-radius: 0 !important;
@@ -710,7 +713,7 @@ div.wrapper > footer a:focus {
 
 	/* hamburger icon */
 	.navbar-toggle {
-		top: 58px; z-index: 10000;
+		top: 60px; z-index: 10000;
 		height: 45px; width: 50px;
 		border: 2px solid #aaa;
 	}
@@ -741,11 +744,40 @@ div.wrapper > footer a:focus {
 		background: #f5911f;
 	}
 
+	#navbar li > a > span.caret { display: none; }
+	#navbar li + span.glyphicon {
+		position: absolute;
+		top: 13px; right: 15px;
+		font-size: 1.25em;
+		color: #aaa;
+		padding: 6px 8px;
+	}
+	#navbar li + span.glyphicon:active { color: #f5911f; }
+
+	#nav-primary #navbar a,
+	#nav-primary #navbar-xs a {
+		color: #5b5b5b;
+	}
+	#nav-primary #navbar a:visited,
+	#nav-primary #navbar-xs a:visited {
+		color: #5b5b5b;
+	}
 	#nav-primary #navbar a:hover,
 	#nav-primary #navbar-xs a:hover {
 		color: #5b5b5b;
 		cursor: default;
 	}
+	#nav-primary #navbar a:active,
+	#nav-primary #navbar-xs a:active {
+		color: #f5911f;
+	}
+
+	#navbar,
+	#navbar-xs {
+		/* remove default ul margin */
+		margin-left: 0;
+	}
+
 	/* first dropdown menu */
 	#navbar {
 		/* to offset visible ul on load */
@@ -754,7 +786,7 @@ div.wrapper > footer a:focus {
 		top: 124px;
 		text-align: left;
 		/* temp. Background Color */
-		background: #fff;
+		background: #eee;
 		border-bottom: 1px solid #aaa;
 		box-shadow: 0px 20px 50px -25px rgb(118, 97, 67);
 	}
@@ -762,25 +794,19 @@ div.wrapper > footer a:focus {
 	#navbar > li:first-child {
 		/* add gradient background to mimic a box-shadow */
 	}
+	#navbar > li:last-child { border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
 
-	#navbar, #navbar-xs { margin-left: 0; }
+
 
 	/* second dropdown menu */
 	#navbar-xs {
-		/* Background Color here:
-		background: ;
-		*/
+		/* Background Color here: */
+		background: #ddd;
 	}
-	#navbar-xs > li:nth-child(1n+2) { border-top: 1px solid #aaa; }
+	/*#navbar-xs > li:nth-child(1n+2) { border-top: 1px solid #aaa; }*/
 	#navbar-xs > li > a {
 		display: block;
-		width: 100%;
-		padding: 10px 30px;
-	}
-	#navbar-xs a { transition: background 250ms; }
-	#navbar-xs a:active {
-		text-decoration: none;
-		background: #ccc;
+		padding: 10px 0 10px 35px;
 	}
 
 	/** Jumbotron Captions **/

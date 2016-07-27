@@ -112,7 +112,7 @@
 		$("#nav-primary").append(hamburger);
 		$("#navbar").css("left","0");
 		$("#navbar").addClass("collapse").removeClass("navbar-nav");
-		$("#navbar > li:first-child > a").attr("href","#").attr("data-toggle","collapse").attr("data-target","#navbar-xs");
+		// $("#navbar > li:first-child > a").attr("href","#").attr("data-toggle","collapse").attr("data-target","#navbar-xs");
 		$("#navbar-xs").addClass("collapse").removeClass("dropdown-menu");
 		isMenu = true;
 	}
@@ -177,6 +177,11 @@
 			}
 		}
 	});
+
+	// create a span with a glyphicon
+	var plusIcon = "<span class=\"glyphicon glyphicon-chevron-down\" data-toggle=\"collapse\" data-target=\"#navbar-xs\"></span>";
+	// $("li > a > span.caret").after(plusIcon);
+	$(plusIcon).insertAfter($("#navbar > li:first-child"));
 
 
 	/*** Animate Call Us button ***/
