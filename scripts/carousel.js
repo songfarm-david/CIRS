@@ -4,12 +4,10 @@
 	// NOTE: Browser is global variable
 		// if using less than IE9
 		if (Browser.isIE && Browser.version < 9) {
-			// console.log(Browser.version);
 			return false;
 		}
 		// if IE9
 		else if (Browser.isIE && Browser.version == 9) {
-			// console.log(Browser.version);
 			// load fallback script
 			$.getScript("scripts/BSCarousel_IE.js");
 			return false;

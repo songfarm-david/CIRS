@@ -1,7 +1,6 @@
-	﻿    <footer id="footer" class="full-width">
+	﻿    <footer id="footer" class="container-fluid full-width">
 				<div class="row">
-					<div class="col-xs-12">
-						<!-- Secondary Site Nav -->
+					<div>
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
 							<li><a href="index.php">Home</a></li>
 							<li><a href="about_us.php">About Us</a></li>
@@ -12,7 +11,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-12 text-center">
+					<div class="text-center">
 						<p>
 							&copy; 2016 Canadian In-Floor Radiant&nbsp;Solutions
 						</p>

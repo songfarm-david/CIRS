@@ -9,8 +9,8 @@
     <main role="main">
 	    <section>
 		    <h2 class="full-width">Snow Melt &amp; Heated Driveways</h2>
-        <figure role="figure" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-1" data-pop-out="true">
-          <img src="images/demos/snow_melt_detail.jpg" alt="An illustration of Uponor PEX-a tubing encased in asphalt for residential snow melt" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
+        <figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-1" data-pop-out="true">
+          <img src="images/demos/snow_melt_detail.jpg" alt="" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
           <figcaption id="figure-1">
             <footer>Photo: facilitymanagement.com</footer>
           </figcaption>

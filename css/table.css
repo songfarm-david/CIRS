@@ -16,3 +16,230 @@ src: url('../fonts/museo_sans/museosans-900-webfont.eot?#iefix') format('embedde
 		 url('../fonts/museo_sans/museosans-900-webfont.ttf') format('truetype'),
 		 url('../fonts/museo_sans/museosans-900-webfont.svg#museo_sans300') format('svg');
 }
+
+
+/*** Costs Table ***/
+section[aria-labelledby="cost_examples"] {
+	padding: 25px 0;
+	height: auto;
+	position: relative;
+	margin-top: 152px;
+	margin-bottom: 140px;
+	border-bottom: none; border-radius: 0;
+	/* remove panel box shadow */
+	box-shadow: none;
+	/* fire background */
+	background: -moz-linear-gradient(top,  rgb(222, 57, 31) 0%, rgba(230, 150, 3, 0.98) 7.5%, rgba(239,184,5,0.91) 15%, rgba(251,236,187,0.44) 55%, rgba(255,255,255,0.35) 100%);
+	background: -webkit-linear-gradient(top,  rgb(222, 57, 31) 0%, rgba(230, 150, 3, 0.98) 7.5%, rgba(239,184,5,0.91) 15%, rgba(251,236,187,0.44) 55%, rgba(255,255,255,0.35) 100%);
+	background: linear-gradient(to right, rgb(222, 57, 31) 0%, rgba(244, 121, 35, 0.98) 20%, rgba(239,184,5,0.91) 50%, rgba(251,236,187,0.44) 75%, rgba(255,255,255,0.35) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47923', endColorstr='#70ffffff',GradientType=0 );
+	background-size: 100% 65%;
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+section[aria-labelledby="cost_examples"] h3 {
+	position: relative;
+	top: -142px;
+	padding: 30px 135px;
+	margin: 0 0 -120px;
+	font-size: 2.75em;
+}
+/* allow table to scroll horizontally */
+section[aria-labelledby="cost_examples"] > h3 + div {
+	overflow-x: auto;
+}
+
+/* Global table styles */
+table.table {
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 10px 0;
+	position: relative;
+	z-index: 1000;
+	min-width: 1140px;
+}
+
+/* column colors */
+.table > thead > tr > th:nth-child(1) { color: #f37821; }
+.table > thead > tr > th:nth-child(2) { color: #29b9c1; }
+.table > thead > tr > th:nth-child(3) { color: #9168ae; }
+.table > thead > tr > th:nth-child(4) { color: #c3cd2e; }
+
+/** Table Head **/
+.table thead tr th {
+	text-align: center;
+	padding: 30px 8px;
+	font-size: 1.5em;
+	line-height: 1.2;
+	vertical-align: top;
+	font-weight: normal;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border: 2px solid #ccc;
+	border-bottom: 5px ridge #fff;
+	/* chrome background */
+	background: rgb(235,235,235);
+	background: -moz-linear-gradient(top, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
+	background: linear-gradient(to bottom, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
+}
+/* bold accents in Headings */
+.table > thead > tr > th > span { font-family: 'museo_sans900'; }
+
+/** Table Body **/
+tbody tr {
+	font-size: 0.85em;
+	background: rgb(235,235,235);
+	background: -moz-linear-gradient(top,  rgba(214,214,214,1) 0%, rgba(255,255,255,1) 50%, rgba(200,200,200,1) 85%);
+	background: -webkit-linear-gradient(top,  rgba(214,214,214,1) 0%,rgba(255,255,255,1) 50%,rgba(200,200,200,1) 85%);
+	background: linear-gradient(to bottom,  rgba(214,214,214,1) 0%,rgba(255,255,255,1) 50%,rgba(200,200,200,1) 85%);
+}
+tbody td {
+	border: 2px solid #ccc;
+	border-top: none;
+}
+/* table body cells */
+.table tbody tr td{
+	text-align: center;
+	vertical-align: middle;
+	padding: 15px 20px;
+	font-size: 1.15em;
+	padding-bottom: 150px;
+}
+.table tbody tr td > span {
+	font-weight: lighter;
+	font-size: 0.9em;
+	font-style: italic;
+}
+.table tbody > tr > td,
+.table tfoot > tr > td {
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+/** Table Footer **/
+.table tfoot {
+	position: relative;
+}
+/* footer cells */
+.table tfoot > tr > td {
+	position: relative;
+	top: -85px;
+	border-top: none;
+	height: 50px;
+	box-shadow: 0px 75px 45px -25px rgba(0, 0, 0, 0.5);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* price tag */
+.table tfoot tr:first-child td > p{
+	font-family: 'museo_sans900';
+	font-size: 1.35em;
+	border-radius: 6px;
+	padding: 8px 15px;
+	position: relative; top: -50px;
+	display: inline-block;
+	box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.3);
+	background: #eee;
+	background: -moz-linear-gradient(left,  #dddddd 0%, #ffffff 52%, #d5d5d5 100%);
+	background: -webkit-linear-gradient(left,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
+	background: linear-gradient(to right,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
+}
+/* price tag secondary text */
+.table tfoot > tr:first-child td p > span {
+	font-size: 0.65em; display: block; font-family: 'museo_sans700';
+}
+/* disclaimer */
+.table tfoot > tr:last-child {
+	position: absolute;
+	bottom: -15px; right: 0;
+}
+.table tfoot > tr:last-child > td {
+	position: static;
+	width: 100%;
+	background: none;
+	color: #5b5b5b;
+	height: auto;
+	font-size: 0.85em;
+	font-style: italic;
+	text-align: right;
+}
+
+/** footer base colors and colored images **/
+.table tfoot td:nth-child(1){ background-image: url(../images/orange_base.png); color: #f37821; }
+.table tfoot td:nth-child(2){ background-image: url(../images/teal_base.png); color: #29b9c1; }
+.table tfoot td:nth-child(3){ background-image: url(../images/lavender_base.png); color: #9168ae; }
+.table tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
+
+div > button { display: none; position: absolute; }
+
+/** XS Screens and below **/
+@media (max-width: 767px) {
+
+	section[aria-labelledby="cost_examples"] { margin-bottom: 50px; }
+	section[aria-labelledby="cost_examples"] > h3 { padding: 30px 15px;}
+	section[aria-labelledby="cost_examples"] > h3 + div { overflow: hidden; position: relative; }
+	table.table {
+		min-width: 0;
+		table-layout: auto;
+		min-width: 320px;
+		/*width: auto;
+		max-width: 420px;*/
+		width: 320px;
+		margin: 0 auto;
+	}
+	.table thead > tr > th {
+		min-height: 68px
+	}
+	.table tbody > tr > td {
+		min-height: 360px;
+		height: auto;
+		display: block;
+		font-size: 1.5em;
+		padding: 15px 30px;
+		padding-bottom: 150px;
+	}
+	.table tfoot > tr > td {
+		min-height: 85px;
+	}
+
+	/* hide all table columns that don't have .current class */
+	.table thead th:not(.current),
+	.table tbody td:not(.current),
+	.table tfoot td:not(.current) {
+		display: none;
+	}
+
+	.table tfoot > tr:last-child { position: static; }
+	.table tfoot > tr:last-child > td { display: inherit; }
+
+	/* control buttons */
+	div > button {
+		display: block;
+		top: 200px;
+		background: rgba(0, 0, 0, 0.12);
+		border: none;
+		padding: 45px 25px;
+		font-size: 1.75em;
+		color: rgba(0, 0, 0, 0.34);
+		transition: background 250ms, color 250ms;
+		outline: none;
+		z-index: 10000;
+	}
+	div > button:active {
+		background: #f5911f;
+		color: white;
+	}
+	div > button:first-of-type {
+		left: -35px;
+		padding-left: 50px;
+		border-top-right-radius: 100px;
+		border-bottom-right-radius: 100px;
+	}
+	div > button:last-of-type {
+		right: -35px;
+		padding-right: 50px;
+		border-top-left-radius: 100px;
+		border-bottom-left-radius: 100px;
+	}
+}
