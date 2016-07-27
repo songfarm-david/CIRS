@@ -20,6 +20,46 @@
 		$(dropdown).attr("aria-haspopup","true").attr("aria-expanded","false");
 	});
 
+	/**
+	* Create function to attach mouse events to navigation elements
+	*/
+	function attachMouseEvents() {
+
+		$(triggerDropdown).mouseover(function(e) {
+				toggleARIAProps(firstDropdown);
+				$(firstDropdown).css("left","0px");
+			})
+			.mouseout(function() {
+				timeout = setTimeout(function(){
+					$(firstDropdown).css("left","-9999px");
+					toggleARIAProps(firstDropdown);
+				}, 1000);
+			}
+		);
+
+		// on first menu hover, clear timeout
+		$(firstDropdown).mouseover(function() {
+				clearTimeout(timeout);
+			})
+			.mouseout(function(){
+				timeout = setTimeout(function(){
+					$(firstDropdown).css("left","-9999px");
+					toggleARIAProps(firstDropdown);
+				}, 1000);
+		});
+
+		$(subTriggerDropdown).mouseover(function() {
+				toggleARIAProps(secondDropdown);
+				$(secondDropdown).css("display","block");
+			}).mouseout(function() {
+				setTimeout(function(){
+					$(secondDropdown).css("display","");
+					toggleARIAProps(secondDropdown);
+				}, 1000);
+			});
+
+	}
+
 	function toggleARIAProps(elem) {
 		var elem = elem[0];
 		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
@@ -29,59 +69,24 @@
 		toggleARIAProps(firstDropdown);
 	});
 
-	$(triggerDropdown).mouseover(function(e) {
-			toggleARIAProps(firstDropdown);
-			$(firstDropdown).css("left","0px");
-		})
-		.mouseout(function() {
-			timeout = setTimeout(function(){
-				$(firstDropdown).css("left","-9999px");
-				toggleARIAProps(firstDropdown);
-			}, 1000);
-		}
-	);
-
-	// on first menu hover, clear timeout
-	$(firstDropdown)
-	.mouseover(function() {
-		clearTimeout(timeout);
-	})
-	.mouseout(function(){
-		timeout = setTimeout(function(){
-			$(firstDropdown).css("left","-9999px");
-			toggleARIAProps(firstDropdown);
-		}, 1000);
-	});
-
 	// on second-level dropdown trigger
 	$(subTriggerDropdown).on("focusin focusout", function() {
 		toggleARIAProps(secondDropdown);
 	});
 
-	$(subTriggerDropdown).mouseover(function() {
-			toggleARIAProps(secondDropdown);
-			$(secondDropdown).css("display","block");
-		}
-	)
-	.mouseout(function() {
-			setTimeout(function(){
-				$(secondDropdown).css("display","");
-					toggleARIAProps(secondDropdown);
-			}, 1000);
-		}
-	)
-
 	// first dropdown first list item hover
 	$(subTrigger).focusin(function() {
 		$(firstDropdown).css("left","0px");
 	})
-	// on focus out, trigger sibling focus
-	.focusout(function() {
+		// on focus out, trigger sibling focus
+		.focusout(function() {
 		$(subTriggerSibling).focus();
 	});
 
 	// on second list item focus, hide dropdown
 	$("ul#navbar > li:nth-child(2) a").focus(function() {	$(firstDropdown).css("left",""); });
+
+	attachMouseEvents();
 
 	/** end of Nav **/
 
@@ -120,12 +125,24 @@
 		isMenu = false;
 	}
 
+	function detachEvents() {
+		$(triggerDropdown, firstDropdown).off("mouseover mouseout");
+		// must declare separately .off for subTriggerDropdown
+		$(subTriggerDropdown).off("mouseout mouseover");
+	}
+
+	function attachEvents() {
+		$(triggerDropdown, firstDropdown).on("mouseover mouseout");
+	}
+
 	/**
 	* If screen is loaded on XS device size
 	*/
 	window.onload = function() {
 		if (window.innerWidth <= 768) {
 			createMobileMenu();
+			// clear all hover events
+			detachEvents();
 		}
 	}
 
@@ -139,18 +156,24 @@
 			if (!isMenu) {
 				createMobileMenu();
 			}
-			reset = false;
+			// reset a.call-us phone icon styles/behavior */
+			isPhoneIcon = false;
+			// turn off hover events for nav dropdown menus
+			detachEvents();
 		}
 		if (window.innerWidth > 768) {
 			if (isMenu) {
 				revertMobileMenu();
 			}
-			if (reset) {
+
+			attachMouseEvents();
+
+			if (isPhoneIcon) {
 				return false;
 			} else {
 				$("nav > a.call-us").removeClass("full-length");
 				$("nav > a.call-us")[0].style.width = "";
-				reset = true
+				isPhoneIcon = true
 			}
 		}
 	});
@@ -161,7 +184,7 @@
 	// marker for phone animation complete */
 	var animationComplete = false;
 	/* reset marker for phone icon state */
-	var reset = false;
+	var isPhoneIcon = false;
 	$("nav > a.call-us").on("click", function(e){
 
 		// if animation has run, trigger natural event
