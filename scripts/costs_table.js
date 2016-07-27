@@ -1,3 +1,6 @@
+/***
+* Script: Costs Examples Table (mobile screen size only)
+**/
 
 	// create an array of table columns i.e: <col> tags
 	var columns = $(".table colgroup > col").toArray();
