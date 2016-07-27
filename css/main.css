@@ -5,6 +5,9 @@ Author: David Gaskin
 July, 2016
 ***/
 
+/*** Import Fonts ***/
+@import 'https://fonts.googleapis.com/css?family=Italianno';
+
 #main-header {
 	height: 315px;
 	background: #f1f1f1;
