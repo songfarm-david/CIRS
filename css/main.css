@@ -136,8 +136,8 @@ article#testimonial blockquote:after {
 		height: 124px;
 		box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.5);
 		position: relative;
-		background-size: 102% 127%, 100% 100%;
-		background-position: -25px center, 0 0;
+		background-size: 98.5%, 100% 100%;
+		background-position: -15px center, 0 0;
 	}
 	nav, nav.full-width {
 		background-image: none;
@@ -166,4 +166,11 @@ article#testimonial blockquote:after {
 		text-indent: 0;
 	}
 
+}
+
+@media (max-width: 430px) {
+	header#main-header {
+		background-size: 98.5% 110%, cover;
+		background-position: -20px center, center center;
+	}
 }
