@@ -136,8 +136,8 @@ article#testimonial blockquote:after {
 		height: 124px;
 		box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.5);
 		position: relative;
-		background-size: 98.5%, 100%;
-		background-position: -15px center, 0 0;
+		background-size: 102% 127%, 100% 100%;
+		background-position: -25px center, 0 0;
 	}
 	nav, nav.full-width {
 		background-image: none;
@@ -149,6 +149,13 @@ article#testimonial blockquote:after {
 	#nav-primary > a.call-us {	top: -114px; }
 	/* hamburger icon */
 	nav button.navbar-toggle { top: -66px; }
+
+	nav a.call-us,
+	nav button.navbar-toggle {
+		background: rgba(241,241,241,0.7);
+		z-index: 1000;
+	}
+
 	/* dropdown menu */
 	#navbar { top: 0; }
 
