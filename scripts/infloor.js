@@ -126,6 +126,10 @@
 	/*** Mobile Navigation ***/
 
 	var isMenu;
+	// reset marker for phone icon state
+	var isPhoneIcon = false;
+	// marker for phone animation complete
+	var animationComplete = false;
 	// create the hamburger menu
 	var hamburger = document.createElement("button");
 	hamburger.setAttribute("type","button");
@@ -140,13 +144,42 @@
 		hamburger.appendChild(iconBar);
 	}
 
+	function animatePhone(evt, element) {
+
+		// if animation has run, trigger natural event
+		if (animationComplete) {
+			animationComplete = false;
+			return true;
+		}
+
+		evt.preventDefault();
+		$(element).addClass("full-length")
+		.animate({
+			width:"270px",
+		}, 600, function(){
+			animationComplete = true;
+			console.log("animated");
+			$(element).css("width","auto");
+			$(evt.target).trigger("click");
+		});
+
+	}
+
 	function createMobileMenu() {
+
+		/*** Animate Call Us button ***/
+		$("nav > a.call-us").on("click", function(evt){
+			// console.log(e);
+			animatePhone( evt, $(this) );
+		});
+
 		$("#nav-primary").append(hamburger);
 		$("#navbar").css("left","0");
 		$("#navbar").addClass("collapse").removeClass("navbar-nav");
 		// $("#navbar > li:first-child > a").attr("href","#").attr("data-toggle","collapse").attr("data-target","#navbar-xs");
 		$("#navbar-xs").addClass("collapse").removeClass("dropdown-menu");
 		isMenu = true;
+
 	}
 
 	function revertMobileMenu() {
@@ -155,6 +188,9 @@
 		$("#navbar > li:first-child > a").attr("href","infloor_heat.asp").removeAttr("data-toggle").removeAttr("data-target");
 		$("#navbar-xs").removeClass("collapse").addClass("dropdown-menu");
 		isMenu = false;
+		// turn off animation
+		$("nav > a.call-us").off("click");
+
 	}
 
 	/**
@@ -176,6 +212,7 @@
 	$(window).resize(function() {
 		if (window.innerWidth <= 767) {
 			if (!isMenu) {
+				console.log("not is menu");
 				createMobileMenu();
 			}
 			// reset a.call-us phone icon styles/behavior */
@@ -195,7 +232,8 @@
 			} else {
 				$("nav > a.call-us").removeClass("full-length");
 				$("nav > a.call-us")[0].style.width = "";
-				isPhoneIcon = true
+				isPhoneIcon = true;
+				$("nav > a.call-us").stop();
 			}
 
 		}
@@ -206,36 +244,9 @@
 	// $("li > a > span.caret").after(plusIcon);
 	$(plusIcon).insertAfter($("#navbar > li:first-child"));
 
-	$("#navbar > li.dropdown + span").on("click", function() {
+	$("#navbar > li.dropdown + span").on("click", function(e) {
 		e.stopPropagation();
 	})
-
-	/*** Animate Call Us button ***/
-
-	// marker for phone animation complete */
-	var animationComplete = false;
-	/* reset marker for phone icon state */
-	var isPhoneIcon = false;
-	$("nav > a.call-us").on("click", function(e){
-
-		// if animation has run, trigger natural event
-		if (animationComplete) {
-			animationComplete = false;
-			return true;
-		}
-
-		e.preventDefault();
-		// $(this).find("span").css("color","#f5911f");
-		$(this).addClass("full-length")
-		.animate({
-			width:"270px",
-		}, 600, function(){
-			animationComplete = true;
-			$(this).css("width","auto");
-			$(e.target).trigger("click");
-		})
-
-	});
 
 	/** end of Mobile Nav **/
 
