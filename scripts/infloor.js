@@ -139,7 +139,7 @@
 	* If screen is loaded on XS device size
 	*/
 	window.onload = function() {
-		if (window.innerWidth <= 768) {
+		if (window.innerWidth <= 767) {
 			createMobileMenu();
 			// clear all hover events
 			detachEvents();
