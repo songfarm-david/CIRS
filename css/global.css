@@ -452,7 +452,8 @@ div.wrapper > footer a:focus {
 }
 .modal-content { border-radius: 12px; }
 .modal-dialog {
-	margin-top: 90px; /** NOTE: make this a recurring middle distance **/
+	/*margin-top: 90px; */
+	/** NOTE: make this a recurring middle distance **/
 }
 .modal-header {
 	text-transform: capitalize;
@@ -469,6 +470,7 @@ div.wrapper > footer a:focus {
 }
 .modal-body img {
 	width: 100%;
+	max-height: 500px;
 }
 .modal-footer {
 	font-family: 'museo_sans300', sans-serif;
