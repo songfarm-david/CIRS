@@ -222,6 +222,7 @@ nav ul.dropdown-menu > li > a:hover:before {
 
 /* hide chevron down */
 #navbar li + span.glyphicon { display: none; }
+#navbar li > a > span.caret { display: inline-block; }
 
 /** Jumbotron **/
 .jumbotron {
