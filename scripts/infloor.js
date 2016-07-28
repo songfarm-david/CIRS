@@ -183,6 +183,9 @@
 	// $("li > a > span.caret").after(plusIcon);
 	$(plusIcon).insertAfter($("#navbar > li:first-child"));
 
+	$("#navbar > li.dropdown + span").on("click", function() {
+		e.stopPropagation();
+	})
 
 	/*** Animate Call Us button ***/
 
