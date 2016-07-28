@@ -26,7 +26,7 @@
 		<!--[if IE 9]>
 			<script>Browser = {isIE:true,version:9};
 			if (window.location.href == "http://www.infloorheat.ca/notice_ie.php") {
-				window.location.replace("http://www.infloorheat.ca/default.php");
+				window.location.replace("http://www.infloorheat.ca/index.php");
 			}
 			</script>
 		<![endif]-->
