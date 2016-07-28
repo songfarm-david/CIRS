@@ -65,6 +65,14 @@
 		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
 	}
 
+
+	$(triggerDropdown).on({"touchstart" : function(e) {
+			e.preventDefault();
+			toggleARIAProps(firstDropdown);
+			$(firstDropdown).css("left","0px");
+		}
+	})
+
 	$(triggerDropdown).on("focusin focusout", function() {
 		toggleARIAProps(firstDropdown);
 	});
@@ -205,11 +213,12 @@
 		// $(this).find("span").css("color","#f5911f");
 		$(this).addClass("full-length")
 		.animate({
-			width:"264px",
+			width:"270px",
 		}, 600, function(){
 			animationComplete = true;
+			$(this).css("width","auto");
 			$(e.target).trigger("click");
-		});
+		})
 
 	});
 
