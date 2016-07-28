@@ -222,7 +222,10 @@ nav ul.dropdown-menu > li > a:hover:before {
 
 /* hide chevron down */
 #navbar li + span.glyphicon { display: none; }
-#navbar li > a > span.caret { display: inline-block; }
+#navbar li > a > span.caret {
+	/* correct iPad glitch occuring on caret */
+	border-top: 2px solid;
+}
 
 /** Jumbotron **/
 .jumbotron {
@@ -779,35 +782,38 @@ div.wrapper > footer a:focus {
 
 	#navbar,
 	#navbar-xs {
-		/* remove default ul margin */
 		margin-left: 0;
+		background: #fff;
 	}
+
+	#navbar li,
+	#navbar-xs li { margin: 2px; }
+
+	#navbar-xs > li:first-child { border-top: 2px solid white; }
 
 	/* first dropdown menu */
 	#navbar {
-		/* to offset visible ul on load */
 		left: -9999px;
-		position: absolute;
-		top: 124px;
+		position: absolute;	top: 124px;
 		text-align: left;
-		/* temp. Background Color */
-		background: #eee;
 		border-bottom: 1px solid #aaa;
 		box-shadow: 0px 20px 50px -25px rgb(118, 97, 67);
 	}
-	#navbar li { width: 100%;	border-top: 1px solid #e6e6e6; }
-	#navbar > li:first-child {
-		/* add gradient background to mimic a box-shadow */
+	#navbar > li {
+		width: 100%;
+		border-top: 1px solid #e6e6e6;
+		background: rgb(221,221,221);
+		background: -moz-linear-gradient(top,  rgba(221,221,221,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 70%, rgba(221,221,221,1) 100%);
+		background: -webkit-linear-gradient(top,  rgba(221,221,221,1) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 70%,rgba(221,221,221,1) 100%);
+		background: linear-gradient(to bottom,  rgba(221,221,221,1) 0%,rgba(255,255,255,1) 30%,rgba(255,255,255,1) 70%,rgba(221,221,221,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#dddddd',GradientType=0 );
 	}
-	#navbar > li:last-child { border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
-
-
+	#navbar > li:first-child { margin-bottom: 0; }
+	#navbar > li:last-child { margin-top: 0; }
 
 	/* second dropdown menu */
-	#navbar-xs {
-		/* Background Color here: */
-		background: #ddd;
-	}
+	#navbar-xs > li {	background: #ddd; }
+
 	/*#navbar-xs > li:nth-child(1n+2) { border-top: 1px solid #aaa; }*/
 	#navbar-xs > li > a {
 		display: block;

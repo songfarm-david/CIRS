@@ -23,7 +23,7 @@
 	/**
 	* Create function to attach mouse events to navigation elements
 	*/
-	function attachMouseEvents() {
+	function attachEvents() {
 
 		$(triggerDropdown).mouseover(function(e) {
 				toggleARIAProps(firstDropdown);
@@ -58,20 +58,44 @@
 				}, 1000);
 			});
 
+		// iPad touch event
+		$(triggerDropdown).on(
+			{"touchstart" : function(e) {
+				e.preventDefault();
+				$(firstDropdown).css("left","0px");
+			}
+		});
+
+		// prevent second dropdown menu from displaying
+		$(subTriggerDropdown).on(
+			{"touchstart" : function(e) {
+				$(this).unbind();
+				$("#navbar-xs-submenu").css("display","none");
+				$(this).click();
+			}
+		});
+
+		// give touch links focus (for more enjoyable experience)
+		$("a, figure").on(
+			{"touchstart" : function() {
+			$(this).focus();
+			}
+		});
+
+	}
+
+	function detachEvents() {
+		$(triggerDropdown, firstDropdown).off("mouseover mouseout");
+		// must declare separately .off for subTriggerDropdown
+		$(subTriggerDropdown).off("mouseout mouseover");
+		// turn off iPad touch event
+		$(triggerDropdown).off("touchstart");
 	}
 
 	function toggleARIAProps(elem) {
 		var elem = elem[0];
 		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
 	}
-
-
-	$(triggerDropdown).on({"touchstart" : function(e) {
-			e.preventDefault();
-			toggleARIAProps(firstDropdown);
-			$(firstDropdown).css("left","0px");
-		}
-	})
 
 	$(triggerDropdown).on("focusin focusout", function() {
 		toggleARIAProps(firstDropdown);
@@ -94,7 +118,7 @@
 	// on second list item focus, hide dropdown
 	$("ul#navbar > li:nth-child(2) a").focus(function() {	$(firstDropdown).css("left",""); });
 
-	attachMouseEvents();
+	attachEvents();
 
 	/** end of Nav **/
 
@@ -133,16 +157,6 @@
 		isMenu = false;
 	}
 
-	function detachEvents() {
-		$(triggerDropdown, firstDropdown).off("mouseover mouseout");
-		// must declare separately .off for subTriggerDropdown
-		$(subTriggerDropdown).off("mouseout mouseover");
-	}
-
-	function attachEvents() {
-		$(triggerDropdown, firstDropdown).on("mouseover mouseout");
-	}
-
 	/**
 	* If screen is loaded on XS device size
 	*/
@@ -174,7 +188,7 @@
 				revertMobileMenu();
 			}
 
-			attachMouseEvents();
+			attachEvents();
 
 			if (isPhoneIcon) {
 				return false;
@@ -183,6 +197,7 @@
 				$("nav > a.call-us")[0].style.width = "";
 				isPhoneIcon = true
 			}
+
 		}
 	});
 
