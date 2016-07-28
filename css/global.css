@@ -750,6 +750,7 @@ div.wrapper > footer a:focus {
 		font-size: 1.25em;
 		color: #aaa;
 		padding: 6px 8px;
+		display: block;
 	}
 	#navbar li + span.glyphicon:active { color: #f5911f; }
 

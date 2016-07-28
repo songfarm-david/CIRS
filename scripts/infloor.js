@@ -161,7 +161,7 @@
 			// turn off hover events for nav dropdown menus
 			detachEvents();
 		}
-		if (window.innerWidth > 768) {
+		if (window.innerWidth >= 768) {
 			if (isMenu) {
 				revertMobileMenu();
 			}
