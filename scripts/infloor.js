@@ -245,7 +245,8 @@
 	$(plusIcon).insertAfter($("#navbar > li:first-child"));
 
 	$("#navbar > li.dropdown + span").on("click", function(e) {
-		e.stopPropagation();
+		console.log("click");
+		// e.stopPropagation();
 	})
 
 	/** end of Mobile Nav **/
