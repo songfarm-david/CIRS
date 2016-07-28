@@ -1,6 +1,6 @@
-<?php include('includes/header.php'); ?>
+<!-- #include file="includes/header.asp" -->
 
-    <?php include('includes/navigation.php'); ?>
+    <!-- #include file="includes/navigation.asp" -->
 
     <!-- Jumbotron -->
     <div class="jumbotron full-width" name="fire_safety_systems"></div>
@@ -37,4 +37,4 @@
 	    </section>
     </main>
 
-    <?php include('includes/footer.php'); ?>
+    <!-- #include file="includes/footer.asp" -->

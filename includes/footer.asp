@@ -2,11 +2,11 @@
 				<div class="row">
 					<div>
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="about_us.php">About Us</a></li>
-							<li><a href="contact_us.php">Contact Us</a></li>
-							<!-- <li><a href="careers.php">Careers</a></li> -->
-							<li><a href="sitemap.php">Site Map</a></li>
+							<li><a href="default.asp">Home</a></li>
+							<li><a href="about_us.asp">About Us</a></li>
+							<li><a href="contact_us.asp">Contact Us</a></li>
+							<!-- <li><a href="careers.asp">Careers</a></li> -->
+							<li><a href="sitemap.asp">Site Map</a></li>
 						</ul>
 					</div>
 				</div>

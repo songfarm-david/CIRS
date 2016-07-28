@@ -12,7 +12,7 @@
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
 		<link rel="stylesheet" href="css/table.css" media="screen">
-		<?php include("includes/browser_detect.php"); ?>
+		<!-- #include file="includes/browser_detect.asp" -->
 	</head>
 	<body>
 		<!-- For document outline -->
@@ -20,7 +20,7 @@
 
 		<div class="wrapper container">
 
-    <?php include('includes/navigation.php'); ?>
+    <!-- #include file="includes/navigation.asp" -->
 
 	    <!-- Jumbotron -->
 	    <div class="jumbotron full-width" name="cost_examples"></div>
@@ -139,11 +139,11 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="about_us.php">About Us</a></li>
-							<li><a href="contact_us.php">Contact Us</a></li>
-							<!-- <li><a href="careers.php">Careers</a></li> -->
-							<li><a href="sitemap.php">Site Map</a></li>
+							<li><a href="default.asp">Home</a></li>
+							<li><a href="about_us.asp">About Us</a></li>
+							<li><a href="contact_us.asp">Contact Us</a></li>
+							<!-- <li><a href="careers.asp">Careers</a></li> -->
+							<li><a href="sitemap.asp">Site Map</a></li>
 						</ul>
 					</div>
 				</div>

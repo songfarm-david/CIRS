@@ -1,6 +1,6 @@
-<?php include('includes/header.php'); ?>
+<!-- #include file="includes/header.asp" -->
 
-    <?php include('includes/navigation.php'); ?>
+    <!-- #include file="includes/navigation.asp" -->
 
 		<!-- Jumbotron -->
 		<div class="jumbotron full-width" name="infloor_heat">
@@ -151,7 +151,7 @@
 					<section>
 						<h3 id="costs">Costs</h3>
 						<p>
-							An approximate cost of an installed hydronic radiant floor heating system can range from $1000 per approximately 100 square feet. This cost can be more or less depending on specific heating requirements and energy efficiency results. In addition to the heating system, a mechanical ventilation system is required in the house. <em>Please see our <a href="cost_examples.php">Cost Examples</a> page for more info.</em>
+							An approximate cost of an installed hydronic radiant floor heating system can range from $1000 per approximately 100 square feet. This cost can be more or less depending on specific heating requirements and energy efficiency results. In addition to the heating system, a mechanical ventilation system is required in the house. <em>Please see our <a href="cost_examples.asp">Cost Examples</a> page for more info.</em>
 						</p>
 					</section>
 					<section>
@@ -235,4 +235,4 @@
 				</section>
 		</main>
 
-    <?php include('includes/footer.php'); ?>
+    <!-- #include file="includes/footer.asp" -->
