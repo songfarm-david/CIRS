@@ -701,7 +701,8 @@ div.wrapper > footer a:focus {
 		text-decoration: none;
 	}
 	nav > a.call-us span { color: #aaa; left: 6px; padding-right: 14px; }
-	/* full length phone icon */
+
+	/* class for when phone icon is fully animated */
 	nav > a.call-us.full-length {
 		outline: none;
 		color: #f5911f;
@@ -717,28 +718,37 @@ div.wrapper > footer a:focus {
 		border-color: #f5911f;
 		box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.25);
 	}
+	/* to defeat previous hover styles */
+	nav > a.call-us:hover { border-color: #aaa; }
 
-	/* hamburger icon */
+	/* on click, make phone icon orange */
+	nav > a.call-us:active > span { color: #f5911f; }
+
+	/** hamburger icon **/
 	.navbar-toggle {
 		top: 60px; z-index: 10000;
-		height: 45px; width: 50px;
-		border: 2px solid #aaa;
+		height: 50px; width: 56px;
 	}
+	.navbar-toggle .icon-bar {
+		background: #aaa;
+		width: 36px; height: 4px;
+		margin-bottom: 6px;
+		transition: background 250ms;
+		box-shadow: 0px 1px 1px 1px rgba(30, 30, 30, 0.5);
+	}
+	.navbar-toggle[aria-expanded="true"] .icon-bar {
+		background: #f5911f;
+		box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+	}
+	.navbar-toggle .icon-bar:last-child { margin-bottom: 0; }
+
 	nav > a.call-us:hover,
 	.navbar-toggle:hover {
 		cursor: default;
 		transform: none;
 		box-shadow: none;
 		transition: none;
-		border-color: #aaa;
 	}
-	.navbar-toggle .icon-bar {
-		background: #aaa;
-		width: 28px; height: 3px;
-		margin-bottom: 5px;
-		transition: background 250ms;
-	}
-	.navbar-toggle .icon-bar:last-child { margin-bottom: 0; }
 	.navbar-toggle:active, nav > a.call-us:active {
 		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 		border-color: #f5911f;
@@ -801,11 +811,12 @@ div.wrapper > footer a:focus {
 		position: absolute;
 		top: 13px; right: 15px;
 		font-size: 1.25em;
-		color: #aaa;
+		color: #f5911f;
 		padding: 6px 8px;
 		display: block;
 	}
-	#navbar li + span.glyphicon:active { color: #f5911f; }
+	#navbar li + span.glyphicon[aria-expanded="true"] { color: #a1a1a1; }
+	/*#navbar li + span.glyphicon[aria-expanded="false"]:active { color: #f5911f; }*/
 
 	/** Jumbotron Captions **/
 	.jumbotron[name="default"] .panel,
