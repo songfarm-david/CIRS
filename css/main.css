@@ -143,8 +143,7 @@ article#testimonial blockquote:after {
 		box-shadow: none;
 	}
 	/* position the call us button */
-	#nav-primary > a.call-us {
-		top: -177px; }
+	#nav-primary > a.call-us { top: -177px; }
 
 	/* hamburger icon */
 	nav button.navbar-toggle {
@@ -154,7 +153,6 @@ article#testimonial blockquote:after {
 
 	/* dropdown menu */
 	#navbar { top: 0; }
-
 
 	.jumbotron[name="default"] { height: 564px; padding: 30px 0 0; }
 	.jumbotron[name="default"] .panel {
@@ -169,4 +167,8 @@ article#testimonial blockquote:after {
 		text-indent: 0;
 	}
 
+}
+
+@media (max-width: 570px) {
+	header#main-header { background-size: 114%; }
 }
