@@ -8,7 +8,12 @@
 				<b>You have Javascript turned off.</b><br><br> Please enable JavaScript in your browser to continue viewing this site.
 			</p>
 	</noscript>
-	<script>Browser = {isIE:true,version:8};</script>
+	<script>
+	Browser = {isIE:true,version:8};
+	if (Browser.isIE) {
+		window.location.replace('http://cirs.songfarm.ca/notice_ie.asp');
+	}
+	</script>
 <![endif]-->
 <!--[if IE 9]>
 	<script>Browser = {isIE:true,version:9};</script>
