@@ -144,33 +144,48 @@
 		hamburger.appendChild(iconBar);
 	}
 
-	function animatePhone(evt, element) {
-
+	function animatePhone(e) {
 		// if animation has run, trigger natural event
 		if (animationComplete) {
+			// alert("event triggered");
 			animationComplete = false;
+			$(e.currentTarget).data("expanded","true");
 			return true;
 		}
 
-		evt.preventDefault();
-		$(element).addClass("full-length")
+		e.preventDefault();
+		$(e.currentTarget).addClass("full-length")
 		.animate({
 			width:"270px",
 		}, 600, function(){
 			animationComplete = true;
-			console.log("animated");
-			$(element).css("width","auto");
-			$(evt.target).trigger("click");
+			$(e.currentTarget).css("width","auto");
+			$(e.target).trigger("click");
 		});
 
 	}
 
+	function deAnimatePhone(e) {
+		$(e.currentTarget).animate({
+			width : "50px"
+		}, 600, function() {
+			$(e.currentTarget).removeClass("full-length");
+			animationComplete = false;
+			$(e.currentTarget).data("expanded","false")
+		});
+	}
+
 	function createMobileMenu() {
 
-		/*** Animate Call Us button ***/
-		$("nav > a.call-us").on("click", function(evt){
-			// console.log(e);
-			animatePhone( evt, $(this) );
+		$("nav > a.call-us").on("click", function(e) {
+
+			if ($(this).data("expanded") == "true") {
+				e.preventDefault();
+				deAnimatePhone(e);
+			} else {
+				animatePhone(e);
+			}
+
 		});
 
 		$("#nav-primary").append(hamburger);
@@ -183,12 +198,14 @@
 	}
 
 	function revertMobileMenu() {
+
 		$("#nav-primary > button").remove();
 		$("#navbar").addClass("navbar-nav").removeClass("collapse");
 		$("#navbar > li:first-child > a").attr("href","infloor_heat.asp").removeAttr("data-toggle").removeAttr("data-target");
 		$("#navbar-xs").removeClass("collapse").addClass("dropdown-menu");
 		isMenu = false;
-		// turn off animation
+
+		// turn off click events for phone animation
 		$("nav > a.call-us").off("click");
 
 	}
@@ -245,8 +262,13 @@
 	$(plusIcon).insertAfter($("#navbar > li:first-child"));
 
 	$("#navbar > li.dropdown + span").on("click", function(e) {
-		console.log("click");
-		// e.stopPropagation();
+		if ($(this).attr("aria-expanded") == "true") {
+			$(this).removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
+
+		} else {
+			$(this).removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
+
+		}
 	})
 
 	/** end of Mobile Nav **/
