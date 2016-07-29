@@ -84,7 +84,7 @@ table.table {
 	background: linear-gradient(to bottom, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(214,214,214,1) 100%);
 }
 /* bold accents in Headings */
-.table > thead > tr > th > span { font-family: 'museo_sans900'; }
+.table > thead > tr > th > span { font-family: 'museo_sans900', Arial, sans-serif; }
 
 /** Table Body **/
 tbody tr {
@@ -133,7 +133,7 @@ tbody td {
 }
 /* price tag */
 .table tfoot tr:first-child td > p{
-	font-family: 'museo_sans900';
+	font-family: 'museo_sans900', Arial, sans-serif;
 	font-size: 1.35em;
 	border-radius: 6px;
 	padding: 8px 15px;
@@ -147,7 +147,7 @@ tbody td {
 }
 /* price tag secondary text */
 .table tfoot > tr:first-child td p > span {
-	font-size: 0.65em; display: block; font-family: 'museo_sans700';
+	font-size: 0.65em; display: block; font-family: 'museo_sans700', Arial, sans-serif;
 }
 /* disclaimer */
 .table tfoot > tr:last-child {

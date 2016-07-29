@@ -14,7 +14,6 @@ Date: July 2016
 */
 
 
-
 /* Cursive Font */
 @font-face {
 font-family: 'Aramisi';
@@ -49,7 +48,7 @@ display: block;
 /*** Global Styles ***/
 body {
 	background: #ffffff;
-	font-family: museo_sans300, sans-serif;
+	font-family: 'museo_sans300', Arial, sans-serif;
 	font-size: 1.9em;
 	line-height: 1.75;
 }
@@ -63,7 +62,7 @@ a {	text-decoration: underline; }
 
 h1,h2,h3,h4,
 div.wrapper > footer {
-	font-family: 'Aramisi', serif;
+	font-family: 'Aramisi', 'Times New Roman', serif;
 	color: #f5911f;
 	font-size: 2.25em;
 }
@@ -105,7 +104,7 @@ nav a {
 	text-decoration: none;
 }
 nav > ul {
-	font-family: 'Aramisi', serif;
+	font-family: 'Aramisi', 'Times New Roman', serif;
 	font-size: 1.35em;
 	width: 100%;
 	text-align: center;
@@ -241,7 +240,7 @@ nav ul.dropdown-menu > li > a:hover:before {
 	padding: 15px;
 }
 .jumbotron .panel p.h1 {
-	font-family: 'Aramisi', serif;
+	font-family: 'Aramisi', 'Times New Roman', serif;
 	color: #f5911f;
 }
 .jumbotron .panel a {
@@ -345,7 +344,7 @@ aside#uponor, .complimentary,
 
 /** Figure Styles **/
 figure figcaption {
-	font-family: 'Lucida Sans Unicode', sans-serif;
+	font-family: 'Lucida Sans Unicode', Helvetica, sans-serif;
 	font-size: 0.75em; line-height: 1.25;
 	margin-top: 10px;
 	color: #444;
@@ -404,7 +403,7 @@ aside#uponor,
 	margin: 10px 45px;
 }
 .complimentary > ul > li {
-	font-family: 'Aramisi', serif;
+	font-family: 'Aramisi', 'Times New Roman', serif;
 	list-style: none;
 	list-style-position: inside;
 }
@@ -453,7 +452,7 @@ div.wrapper > footer a:focus {
 
 /*** Modal Pop-Out ***/
 .modal {
-	font-family: 'Aramisi', cursive;
+	font-family: 'Aramisi', 'Times New Roman', serif;
 	font-size: 2em;
 	line-height: 1.25;
 }
@@ -480,7 +479,7 @@ div.wrapper > footer a:focus {
 	max-height: 450px;
 }
 .modal-footer {
-	font-family: 'museo_sans300', sans-serif;
+	font-family: 'museo_sans300', Arial, sans-serif;
 	border-top-color: #f5911f;
 	font-size: 0.45em;
 	text-align: left;

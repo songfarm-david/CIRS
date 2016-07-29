@@ -5,6 +5,9 @@ Author: David Gaskin
 July, 2016
 ***/
 
+/*** Import Fonts ***/
+@import 'https://fonts.googleapis.com/css?family=Italianno';
+
 #main-header {
 	height: 315px;
 	background: #f1f1f1;
@@ -31,6 +34,7 @@ nav {
 }
 nav > ul.navbar-nav {	top: 8px; }
 nav > ul.navbar-nav > li { left: 0; }
+
 /* make 'Call Us' button originate from the right */
 nav > a.call-us {	transform-origin: 100%; }
 nav > a.call-us:hover { transform-origin: 100%; }
@@ -52,11 +56,11 @@ nav .navbar-header { display: none; }
 	border-left: none; /* remove default border */
 	position: relative;
 	margin: 0;
-	font-family: 'Italianno', serif;
+	font-family: 'Italianno', 'Aramisi', 'Times New Roman', serif;
 }
 #testimonial blockquote p {
 	text-indent: 75px;
-	font-family: 'Italianno', serif;
+	font-family: 'Italianno', 'Aramisi', 'Times New Roman', serif;
 	font-size: 2.25em; line-height: 1.25;
 }
 blockquote footer {
