@@ -1,31 +1,24 @@
-#ASPBuild
+# Canadian In-Floor Radiant Solutions : README
 
-This branch implements the *.asp* extension.
+David Gaskin - July 2016
 
-The maintains consistency against the original website and allows for server-side includes that will be implemented for including common layout elements.
+## ASP Server Language
+Website was built using classic ASP to minimize complications between source file crossover on existing server. The option to reframe website using updated ASP is open.
 
-Lastly, the choice to develop with the classic *.asp* extension instead of the new *.aspx* extension was made consciously, again to maintain consistency with the original version of the website.
+## Browser Compatibility and Graceful Degradation
+Website is compatible with all current browsers including IE9 and above (users of IE8 and earlier will receive a warning to upgrade). Website is also able to function without JavaScript (not including mobile devices).
 
+## Responsive Design
+Website follows a responsive design and has been optimized to work on mobile devices (iPad, iPhone)
 
-## Site Build
+## Future Extensibility
+A placeholder for a 'Careers' page has been placed into the code to allow for addition of a careers page.
 
-### Server-side Language
-This site was built in classic ASP. There is also a version of the website built with the updated ASP.NET Version 4.
+## Web Accessibility
+WAI-ARIA specifications have been observed within a reasonable margin to allow for use of Screen Readers and Assistive Technologies.
 
-### Minimized files
-Find copies all scripts, css stylesheets and xml sitemaps minified for production use.
+## Component Files Minimized
+All component files have been minimized and all main display images have been resized to optimize load speed.
 
-### Sitemap
-I have included a XML sitemap as per the [Sitemap 0.90 Protocol](http://www.sitemaps.org/)
-
-### Compatibility
-infloorheat.ca is compatible with all major browsers including IE9 and above.
-
-### Extensibility
-A placeholder for a 'Careers' page exists to advertise employment opportunites.
-
-### Links
-Verify that coded links are accurate for domain and server address.
-
-### Accessibility
-Accessibility has been observed throughout the entire site in conformance with WAI-ARIA guidelines with exception to mobile page views
+## Sitemap
+An XML sitemap as per the [Sitemap 0.90 Protocol](http://www.sitemaps.org/) has been included in the build to help optimize Search Engine crawling.
