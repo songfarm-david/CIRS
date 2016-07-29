@@ -171,7 +171,7 @@ tbody td {
 .table tfoot td:nth-child(3){ background-image: url(../images/lavender_base.png); color: #9168ae; }
 .table tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
 
-div > button { display: none; position: absolute; }
+section[aria-labelledby="cost_examples"] > button { display: none; position: absolute; }
 
 /** XS Screens and below **/
 @media (max-width: 767px) {
@@ -214,7 +214,7 @@ div > button { display: none; position: absolute; }
 	.table tfoot > tr:last-child > td { display: inherit; }
 
 	/* control buttons */
-	div > button {
+	section[aria-labelledby="cost_examples"] > button {
 		display: block;
 		top: 200px;
 		background: rgba(0, 0, 0, 0.12);
@@ -226,17 +226,17 @@ div > button { display: none; position: absolute; }
 		outline: none;
 		z-index: 10000;
 	}
-	div > button:active {
+	section[aria-labelledby="cost_examples"] > button:active {
 		background: #f5911f;
 		color: white;
 	}
-	div > button:first-of-type {
+	section[aria-labelledby="cost_examples"] > button:first-of-type {
 		left: -35px;
 		padding-left: 50px;
 		border-top-right-radius: 100px;
 		border-bottom-right-radius: 100px;
 	}
-	div > button:last-of-type {
+	section[aria-labelledby="cost_examples"] > button:last-of-type {
 		right: -35px;
 		padding-right: 50px;
 		border-top-left-radius: 100px;
