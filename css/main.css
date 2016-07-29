@@ -107,9 +107,9 @@ article#testimonial blockquote:after {
 }
 #testimonial ol.carousel-indicators li,
 #testimonial ol.carousel-indicators li.active {
-	height: 18px; width: 18px;
+	height: 20px; width: 20px;
 	border: 2px solid #c8c8c8;
-	margin: 5px;
+	margin: 10px; padding: 9px;
 }
 #testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
 
