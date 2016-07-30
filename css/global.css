@@ -558,7 +558,7 @@ div.wrapper > footer a:focus {
 	nav > ul.nav > li {	left: -85px; /* offset the list items to the left */ }
 
 	.jumbotron[name="default"] .panel {
-		top: 60px;
+		top: 0;
 	}
 }
 
