@@ -15,7 +15,7 @@ July, 2016
 	background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
 	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
-	background-image: url(../images/cirsLogo.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background-image: url(../images/cirsLogo_r.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
