@@ -131,13 +131,13 @@
 									<!-- Manual Controls -->
 									<section id="carousel-controls">
 										<div aria-controls="carousel" aria-label="carousel controls">
-											<a href="#testimonials" role="button" class="carousel-control left" data-slide="prev" aria-label="previous">
+											<a href="#testimonials" role="button" class="carousel-control left" data-slide="prev" aria-label="previous testimonial">
 												<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-												<span class="sr-only">Previous</span>
+												<span class="sr-only">Previous testimonial</span>
 											</a>
-											<a href="#testimonials" role="button" class="carousel-control right" data-slide="next" aria-label="next">
+											<a href="#testimonials" role="button" class="carousel-control right" data-slide="next" aria-label="next testimonial">
 												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-												<span class="sr-only">Next</span>
+												<span class="sr-only">Next testimonial</span>
 											</a>
 										</div>
 									</section>

@@ -49,8 +49,15 @@ nav .navbar-header { display: none; }
 #testimonial .carousel {
 	padding: 0 90px; margin: 0 -15px;
 }
+div.carousel-inner { min-height: 441px; display: table; }
 #testimonial article.item {
 	margin: 30px 0;
+	display: none;
+}
+#testimonial article.item.active {
+	display: table-cell;
+	/*border: 1px solid black;*/
+	vertical-align: middle;
 }
 #testimonial blockquote {
 	border-left: none; /* remove default border */
