@@ -17,17 +17,33 @@
 	/*
 	* Handles the initialization of ARIA states and properties
 	* Handles the toggling and updating of ARIA properties during carousel cycling
-
-	// TODO: fix horizontal align - use z-index
-	// add "quotes"
-	// add focus to proper elements
-
 	*/
-
 	// get handle to the carousel
 	var carousel = document.getElementById("testimonials");
 	// get all testimonials
 	var testimonials = carousel.firstElementChild.children;
+	// dynamically give carousel control a elements a tabindex of -1
+	var aCtrls = document.getElementById("carousel-controls").getElementsByTagName("a");
+	for (var i = 0; i < aCtrls.length; i++) {
+		aCtrls[i].setAttribute("tabindex","-1");
+	}
+
+	// on click/focus carousel control, give focus to span element
+	$("#carousel-controls a").on('click', function(e) {
+		e.target.focus();
+	});
+
+	$("#carousel-controls a > span").on("keypress", function(e) {
+		if (e.keyCode == 13 || e.keyCode == 32) {
+			this.parentElement.click();
+			this.focus();
+		}
+	});
+	$(".carousel-indicators li").on("keypress", function(e) {
+		if (e.keyCode == 13 || e.keyCode == 32) {
+			this.click();
+		}
+	})
 
 	/**
 	* Initialize ARIA properties and select random active testimonial
@@ -95,7 +111,11 @@
 	,	wrap: false	// cycle once then stop
 	});
 
+
+
 	// Initialize ARIA and Carousel
 	ARIAInit();
+
+
 
 })();

@@ -122,25 +122,28 @@
 											</blockquote>
 										</article>
 									</div>
-									<!-- Indicators -->
-									<ol class="carousel-indicators">
-										<li data-target="#testimonials" data-slide-to="0" class="active"></li>
-										<li data-target="#testimonials" data-slide-to="1" class=""></li>
-										<li data-target="#testimonials" data-slide-to="2" class=""></li>
-									</ol>
+
 									<!-- Manual Controls -->
 									<section id="carousel-controls">
 										<div aria-controls="carousel" aria-label="carousel controls">
-											<a href="#testimonials" role="button" class="carousel-control left" data-slide="prev" aria-label="previous testimonial">
-												<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-												<span class="sr-only">Previous testimonial</span>
+											<a href="#testimonials" class="carousel-control left" data-slide="prev">
+												<span role="button" class="glyphicon glyphicon-chevron-left" aria-hidden="true" aria-labelledby="carousel-control-left" tabindex="0"></span>
+												<span class="sr-only" id="carousel-control-left">Previous testimonial</span>
 											</a>
-											<a href="#testimonials" role="button" class="carousel-control right" data-slide="next" aria-label="next testimonial">
-												<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-												<span class="sr-only">Next testimonial</span>
+											<a href="#testimonials" class="carousel-control right" data-slide="next">
+												<span role="button" class="glyphicon glyphicon-chevron-right" aria-hidden="true" aria-labelledby="carousel-control-right" tabindex="0"></span>
+												<span class="sr-only" id="carousel-control-right">Next testimonial</span>
 											</a>
 										</div>
 									</section>
+
+									<!-- Indicators -->
+									<ol class="carousel-indicators">
+										<li data-target="#testimonials" data-slide-to="0" tabindex="0" aria-label="indicator: testimonial 1" class="active"></li>
+										<li data-target="#testimonials" data-slide-to="1" tabindex="0" aria-label="indicator: testimonial 2" class=""></li>
+										<li data-target="#testimonials" data-slide-to="2" tabindex="0" aria-label="indicator: testimonial 3" class=""></li>
+									</ol>
+
 								</div>
 							</div>
 						</div>

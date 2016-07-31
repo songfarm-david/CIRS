@@ -49,7 +49,7 @@ nav .navbar-header { display: none; }
 #testimonial .carousel {
 	padding: 0 90px; margin: 0 -15px;
 }
-div.carousel-inner { min-height: 441px; }
+div.carousel-inner { height: 441px; }
 #testimonial article.item {
 	margin: 30px 0;
 }
@@ -76,33 +76,55 @@ blockquote footer:before {
 	color: #f5911f;
 	font-weight: bold;
 }
-article#testimonial blockquote:before,
-article#testimonial blockquote:after {
+#testimonial blockquote:before,
+#testimonial blockquote:after {
 	color: #f5911f;
 	font-size: 8em;
 	position: absolute;
 	line-height: 1;
 }
-article#testimonial blockquote:before{
+#testimonial blockquote:before{
 	content: open-quote;
 	top: 0;
 }
-article#testimonial blockquote:after {
+#testimonial blockquote:after {
 	content: close-quote;
 	bottom: 15px; right: 45px;
 	line-height: 0.25;
 }
 /* hide the prev + next buttons naturally */
-#carousel-controls { display: none }
-#testimonial a.carousel-control {
+#carousel-controls {
+	display: none
+}
+#carousel-controls a.carousel-control {
 	background: #fff;
 	background-color: rgba(255, 255, 255, 0.5);
 	width: 10%;
 	color: #c8c8c8;
 }
-#testimonial a.carousel-control:hover {
+#carousel-controls a.carousel-control:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+}
+#carousel-controls a.carousel-control > span {
+	padding: 10px;
+	height: 85px; width: 85px;
+	margin: 0;
+	line-height: inherit;
+	transition: transform 250ms;
+}
+#carousel-controls a.carousel-control.left > span { left: auto; right: 0;  }
+#carousel-controls a.carousel-control.right > span { left: 0 }
+#carousel-controls a.carousel-control:hover,
+#carousel-controls a.carousel-control:focus {
 	color: #8c8c8c;
 }
+/*#carousel-controls a:focus,*/
+#carousel-controls a > span:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+	color: #676060;
+	transform: scale(1.15);
+}
+
 /* hide carousel-indicators by default - show with JS */
 #testimonial ol.carousel-indicators {
 	position: relative;
@@ -117,8 +139,10 @@ article#testimonial blockquote:after {
 	height: 20px; width: 20px;
 	border: 2px solid #c8c8c8;
 	margin: 10px; padding: 9px;
+	transition: transform 250ms;
 }
 #testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
+#testimonial ol.carousel-indicators li:focus { transform: scale(1.5); }
 
 /** Medium Screens **/
 @media (min-width: 992px) and (max-width: 1199px) {
