@@ -17,71 +17,83 @@
 	/*
 	* Handles the initialization of ARIA states and properties
 	* Handles the toggling and updating of ARIA properties during carousel cycling
+
+	// TODO: fix horizontal align - use z-index
+	// add "quotes"
+	// add focus to proper elements
+
 	*/
+
 	// get handle to the carousel
 	var carousel = document.getElementById("testimonials");
 	// get all testimonials
 	var testimonials = carousel.firstElementChild.children;
-	// generate random number between 0 and length of testimonials
-	var randomNumber = getRandomArbitrary(0,testimonials.length);
 
 	/**
 	* Initialize ARIA properties and select random active testimonial
 	*/
 	function ARIAInit() {
-		// loop through first children of carousel
-		for (var i = 0; i < testimonials.length; i++) {
-			// match random number to index
-			if (i == randomNumber) {
-				// add class active to elements' class list
-				testimonials[i].classList.add("active");
-				// apply aria-hidden="false", aria-live="polite"
-				testimonials[i].setAttribute("aria-hidden","false");
-				testimonials[i].setAttribute("aria-live","polite");
-			} else {
-				// apply aria-hidden="true"
-				testimonials[i].setAttribute("aria-hidden","true");
-			}
-		} // end of loop
-		// add class carousel-inner to testimonials container
+
+		// add class 'carousel-inner' to testimonials container + make display table
 		carousel.firstElementChild.className = "carousel-inner";
+		carousel.firstElementChild.style.display = "table";
 		// display the carousel controls container
 		document.getElementById("carousel-controls").style.display = "block";
 		// dislay the carousel-indicators
 		$(".carousel-indicators").css("display","block");
+
+		// loop through first children of carousel
+		for (var i = 0; i < testimonials.length; i++) {
+
+			// add active class to first item
+			if (i == 0) {
+				// init active testimonial
+				testimonials[i].classList.add("active");
+				testimonials[i].setAttribute("aria-live","polite");
+				testimonials[i].setAttribute("aria-hidden","false");
+			} else {
+				// hide other testimonials
+				testimonials[i].setAttribute("aria-hidden","true");
+				testimonials[i].style.display = "none";
+			}
+
+		} // end of loop
+
 	}
 
-	/**
-	* Update ARIA properties on active slide
-	* NOTE: failed to detect bs events with pure Javascript
-	*/
-	$("#testimonials").on("slide.bs.carousel", function(e){
-		// set next targets' ARIA properties
-		e.relatedTarget.setAttribute("aria-hidden","false");
-		e.relatedTarget.setAttribute("aria-live","polite");
-		// loop through testimonials
+	/* when the slide instance finishes */
+	$("#testimonials").on("slid.bs.carousel", function(e) {
+
 		for (var i = 0; i < testimonials.length; i++) {
-			if (testimonials[i].className	.indexOf("active") > -1) {
+			// for the item that previously had the class of active
+			if (testimonials[i].className.indexOf("active") > -1) {
+				testimonials[i].setAttribute("aria-hidden","false");
+				testimonials[i].setAttribute("aria-live","polite");
+				$(testimonials[i])
+				.css({
+						"display"	:	"table-cell"
+					,	"opacity" : "0.35"
+					,	"left"		: "200%"
+				}).animate({
+					"opacity" : 1
+				,	"left" : 0
+				}, 1000);
+			} else {
+				testimonials[i].style.display = "none";
 				testimonials[i].setAttribute("aria-hidden","true");
 				testimonials[i].removeAttribute("aria-live");
 			}
 		}
-	});
+
+	})
 
 	/**
 	* Set carousel slide cycle time
 	*/
 	$(".carousel").carousel({
-		interval: 8000
-		// wrap: false // property determines if carousel stops at end of cycle
+		interval: 5000
+	,	wrap: false	// cycle once then stop
 	});
-
-	/*
-	* Generate a random number between min (inclusive) and max (exclusive)
-	*/
-	function getRandomArbitrary(min, max) {
-		return Math.floor(Math.random() * (max - min) + min);
-	}
 
 	// Initialize ARIA and Carousel
 	ARIAInit();

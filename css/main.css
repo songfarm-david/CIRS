@@ -49,14 +49,12 @@ nav .navbar-header { display: none; }
 #testimonial .carousel {
 	padding: 0 90px; margin: 0 -15px;
 }
-div.carousel-inner { min-height: 441px; display: table; }
+div.carousel-inner { min-height: 441px; }
 #testimonial article.item {
 	margin: 30px 0;
-	display: none;
 }
-#testimonial article.item.active {
+#testimonial article.item.active, #testimonial article.item.next {
 	display: table-cell;
-	/*border: 1px solid black;*/
 	vertical-align: middle;
 }
 #testimonial blockquote {
@@ -94,6 +92,8 @@ article#testimonial blockquote:after {
 	bottom: 15px; right: 45px;
 	line-height: 0.25;
 }
+/* hide the prev + next buttons naturally */
+#carousel-controls { display: none }
 #testimonial a.carousel-control {
 	background: #fff;
 	background-color: rgba(255, 255, 255, 0.5);
