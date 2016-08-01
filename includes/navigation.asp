@@ -11,7 +11,7 @@
 			</div>
 			<ul class="nav navbar-nav" id="navbar">
 				<li class="dropdown dropdown-toggle">
-					<a href="infloor_heat.asp">
+					<a href="infloor_heat.asp" tabindex="0">
 						Radiant Solutions <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" id="navbar-xs">
