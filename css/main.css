@@ -48,14 +48,11 @@ nav .navbar-header { display: none; }
 }
 #testimonial .carousel {
 	padding: 0 90px; margin: 0 -15px;
+	position: relative;
 }
-div.carousel-inner { height: 441px; }
 #testimonial article.item {
 	margin: 30px 0;
-}
-#testimonial article.item.active, #testimonial article.item.next {
-	display: table-cell;
-	vertical-align: middle;
+	position: relative;
 }
 #testimonial blockquote {
 	border-left: none; /* remove default border */
@@ -112,18 +109,16 @@ blockquote footer:before {
 	line-height: inherit;
 	transition: transform 250ms;
 }
-#carousel-controls a.carousel-control.left > span { left: auto; right: 0;  }
-#carousel-controls a.carousel-control.right > span { left: 0 }
-#carousel-controls a.carousel-control:hover,
-#carousel-controls a.carousel-control:focus {
-	color: #8c8c8c;
+#carousel-controls a.carousel-control > span:hover,
+#carousel-controls a.carousel-control > span:focus {
+	transform: scale(1.5);
 }
-/*#carousel-controls a:focus,*/
 #carousel-controls a > span:focus {
 	outline: auto 5px -webkit-focus-ring-color;
 	color: #676060;
-	transform: scale(1.15);
 }
+#carousel-controls a.carousel-control.left > span { left: 0; }
+#carousel-controls a.carousel-control.right > span { right: 0; }
 
 /* hide carousel-indicators by default - show with JS */
 #testimonial ol.carousel-indicators {
@@ -142,7 +137,7 @@ blockquote footer:before {
 	transition: transform 250ms;
 }
 #testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
-#testimonial ol.carousel-indicators li:focus { transform: scale(1.5); }
+#testimonial ol.carousel-indicators li:focus { transform: scale(1.75); }
 
 /** Medium Screens **/
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -196,10 +191,10 @@ blockquote footer:before {
 	}
 
 	#testimonial .carousel {
-		padding: 0 30px;
+		padding: 0 40px;
 	}
 	#testimonial blockquote p {
-		text-indent: 0;
+		text-indent: 45px;
 	}
 
 }

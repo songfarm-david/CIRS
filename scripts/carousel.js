@@ -22,45 +22,24 @@
 	var carousel = document.getElementById("testimonials");
 	// get all testimonials
 	var testimonials = carousel.firstElementChild.children;
-	// dynamically give carousel control a elements a tabindex of -1
+	// prevent carousel control <a> elements from receiving focus
 	var aCtrls = document.getElementById("carousel-controls").getElementsByTagName("a");
 	for (var i = 0; i < aCtrls.length; i++) {
 		aCtrls[i].setAttribute("tabindex","-1");
 	}
 
-	// on click/focus carousel control, give focus to span element
-	$("#carousel-controls a").on('click', function(e) {
-		e.target.focus();
-	});
-
-	$("#carousel-controls a > span").on("keypress", function(e) {
-		if (e.keyCode == 13 || e.keyCode == 32) {
-			this.parentElement.click();
-			this.focus();
-		}
-	});
-	$(".carousel-indicators li").on("keypress", function(e) {
-		if (e.keyCode == 13 || e.keyCode == 32) {
-			this.click();
-		}
-	})
-
 	/**
 	* Initialize ARIA properties and select random active testimonial
 	*/
 	function ARIAInit() {
-
-		// add class 'carousel-inner' to testimonials container + make display table
+		// add class 'carousel-inner' to testimonials container
 		carousel.firstElementChild.className = "carousel-inner";
-		carousel.firstElementChild.style.display = "table";
-		// display the carousel controls container
+		// display hidden control elements
 		document.getElementById("carousel-controls").style.display = "block";
-		// dislay the carousel-indicators
 		$(".carousel-indicators").css("display","block");
 
 		// loop through first children of carousel
 		for (var i = 0; i < testimonials.length; i++) {
-
 			// add active class to first item
 			if (i == 0) {
 				// init active testimonial
@@ -70,52 +49,66 @@
 			} else {
 				// hide other testimonials
 				testimonials[i].setAttribute("aria-hidden","true");
-				testimonials[i].style.display = "none";
 			}
-
 		} // end of loop
-
 	}
 
-	/* when the slide instance finishes */
-	$("#testimonials").on("slid.bs.carousel", function(e) {
-
-		for (var i = 0; i < testimonials.length; i++) {
-			// for the item that previously had the class of active
-			if (testimonials[i].className.indexOf("active") > -1) {
-				testimonials[i].setAttribute("aria-hidden","false");
-				testimonials[i].setAttribute("aria-live","polite");
-				$(testimonials[i])
-				.css({
-						"display"	:	"table-cell"
-					,	"opacity" : "0.35"
-					,	"left"		: "200%"
-				}).animate({
-					"opacity" : 1
-				,	"left" : 0
-				}, 1000);
+	// on click/focus carousel control, give focus to span element
+	$("#carousel-controls a").click(
+		function(e) {
+			if (e.target.localName == "a") {
+				e.target.firstElementChild.focus();
 			} else {
-				testimonials[i].style.display = "none";
-				testimonials[i].setAttribute("aria-hidden","true");
-				testimonials[i].removeAttribute("aria-live");
+				return false;
 			}
 		}
+	);
 
-	})
+	/* keyboard & accessibility events */
+	$("#carousel-controls a > span").keydown(
+		function(e) {
+			if (e.keyCode == 13 || e.keyCode == 32) {
+				this.parentElement.click();
+				this.focus();
+			}
+		}
+	).click(
+		function(e) {
+			this.parentElement.click();
+			this.focus();
+		}
+	);
+
+	$(".carousel-indicators li").on("keypress", function(e) {
+		if (e.keyCode == 13 || e.keyCode == 32) {
+			this.click();
+		}
+	});
+
+	/* Bootstrap event - on slide change start */
+	$("#testimonials").on("slide.bs.carousel", function(e) {
+		for (var i = 0; i < testimonials.length; i++) {
+			if (testimonials[i] == e.relatedTarget) {
+				e.relatedTarget.setAttribute("aria-hidden","false");
+				e.relatedTarget.setAttribute("aria-live","polite");
+				e.relatedTarget.style.display = "block";
+			} else {
+				testimonials[i].setAttribute("aria-hidden","true");
+				testimonials[i].removeAttribute("aria-live");
+				testimonials[i].style.display = "none";
+			}
+		}
+	});
 
 	/**
-	* Set carousel slide cycle time
+	* Bootstrap carousel object and controls
 	*/
 	$(".carousel").carousel({
 		interval: 5000
-	,	wrap: false	// cycle once then stop
+	,			wrap: false
 	});
-
-
 
 	// Initialize ARIA and Carousel
 	ARIAInit();
-
-
 
 })();
