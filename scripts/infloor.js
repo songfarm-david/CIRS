@@ -2,8 +2,8 @@
 
 	/*** Desktop Navigation ***/
 
-	// TODO: create an onchange handler for dropdowns to control ARIA properties
 	// TODO: create keyboard events for moving laterally to the subdropdown menu
+	// TODO: create an onchange handler for dropdowns to control ARIA properties
 
 	// first dropdown trigger
 	var trigger = $("li.dropdown > a");
@@ -106,23 +106,16 @@
 		$(subTriggerSibling).focus();
 	}
 
-	/* subTrigger control events */
-	$(subTrigger).focusin(
-		function() {
-			$(firstDropdown).css("left","0px");
-		}
-	).focusout(
-		siblingFocus
-	).keyup(
+	/* top level ul, first list item a.k.a main trigger */
+	$("#navbar > li.dropdown > a").keyup(
 		function(e) {
-			if (e.keyCode == 9 && !e.shiftKey) {
-				eventDisabled = false;
+			if (e.shiftKey && e.keyCode == 9) {
 				$(subTrigger).on("focusout", siblingFocus);
 			}
 		}
 	);
 
-	// on second list item focus (What Does It Cost?), hide dropdown
+	/* top level ul, second list item */
 	$("ul#navbar > li:nth-child(2) a").focus(
 		function() {
 			$(firstDropdown).css("left","");
@@ -140,29 +133,84 @@
 		}
 	);
 
-	/** Keyboard events **/
-
-	$(subTriggerSibling).keyup(
+	/* subTrigger control events */
+	$(subTrigger).focusin(
+		function() {
+			$(firstDropdown).css("left","0px");
+		}
+	).focusout(
+		siblingFocus
+	).keyup(
 		function(e) {
-			if (e.shiftKey && e.keyCode == 9) {
-				// disable focusout event on subTrigger
-				$(subTrigger).off("focusout");
-				eventDisabled = true;
+			if (e.keyCode == 9 && !e.shiftKey) {
+				eventDisabled = false;
+				$(subTrigger).on("focusout", siblingFocus);
+			}
+			if (e.keyCode == 39) { // arrow right
+				$(subTrigger).off("focusout", siblingFocus);
+				$(document.getElementById("navbar-xs-submenu")).css(
+					{ // make second dropdown submenu visible
+						"left" : "99%", "display" : "block"
+					}
+				);
+				// focus second dropdown, first list item anchor tag
+				document.getElementById("navbar-xs-submenu")
+					.firstElementChild.firstElementChild.focus();
+			}
+			// if last key up was left arrow or shift + tab
+			if (e.keyCode == 37 || e.shiftKey && e.keyCode == 9) {
+				$(subTrigger).off("focusout", siblingFocus);
 			}
 		}
 	).keydown(
 		function(e) {
-			// if arrow right key event
-			if (e.keyCode == 39) {
-				$(subTrigger).off("focusout");
-				$( document.getElementById("navbar-xs-submenu") ).css(
-					{
-						"left" : "99%", "display" : "block"
-					}
-				).focus();
+			if (e.keyCode == 9 && !e.shiftKey) {
+				$(document.getElementById("navbar-xs-submenu"))
+				.css({ // hide second dropdown submenu
+					"left" : "", "display" : ""
+				});
 			}
 		}
 	);
+
+	/* first dropdown, second list item */
+	$(subTriggerSibling).keydown(
+		function(e) {
+			// if arrow right key event
+			if (e.shiftKey && e.keyCode == 9) {
+				$(subTrigger).off("focusout", siblingFocus);
+			}
+		}
+	);
+
+	/* second dropdown, first child */
+	$("#navbar-xs-submenu li:first-child a").keydown(
+		function(e) {
+			// var closeDropdown = false;
+			if (e.keyCode == 37) { // arrow left
+				subTrigger.focus();
+				$(document.getElementById("navbar-xs-submenu")).css(
+					{ // hide second dropdown submenu
+						"left" : "", "display" : ""
+					}
+				);
+			}
+		}
+	);
+
+	/* second dropdown, last child */
+	$("#navbar-xs-submenu li:last-child").first().keydown(
+		function(e) {
+			if (e.keyCode == 9) {
+				$(document.getElementById("navbar-xs-submenu")).css(
+					{
+						"left" : "", "display" : ""
+					}
+				);
+				$("#navbar-xs > li:nth-child(1) a").focus();
+			}
+		}
+	)
 
 	attachEvents();
 
