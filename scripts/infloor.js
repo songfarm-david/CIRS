@@ -2,9 +2,6 @@
 
 	/*** Desktop Navigation ***/
 
-	// TODO: create keyboard events for moving laterally to the subdropdown menu
-	// TODO: create an onchange handler for dropdowns to control ARIA properties
-
 	// first dropdown trigger
 	var trigger = $("li.dropdown > a");
 	// sub-menu trigger
@@ -15,8 +12,7 @@
 	var secondDropdown = $("#navbar-xs-submenu");
 
 	var dropdownsArray = $.makeArray(firstDropdown,secondDropdown);
-	var timeout;
-	var eventDisabled = false;
+	var timeout; var eventDisabled = false;
 
 	// add initial ARIA properties
 	$.each(dropdownsArray, function(i, dropdown) {
@@ -112,6 +108,16 @@
 			if (e.shiftKey && e.keyCode == 9) {
 				$(subTrigger).on("focusout", siblingFocus);
 			}
+			if (e.keyCode == 9 && !e.shiftKey) {
+				toggleARIAProps(firstDropdown);
+			}
+		}
+	).keydown(
+		function(e) {
+			if (e.shiftKey && e.keyCode == 9) {
+				toggleARIAProps(firstDropdown);
+				$(firstDropdown).css("left","");
+			}
 		}
 	);
 
@@ -119,16 +125,20 @@
 	$("ul#navbar > li:nth-child(2) a").focus(
 		function() {
 			$(firstDropdown).css("left","");
-			toggleARIAProps(firstDropdown);
 		}
 	).keydown(
 		function(e) {
 		// if shiftKey + altKey
 		if (e.shiftKey && e.keyCode == 9) {
-				// put focus on last list item on firstDropdown menu
-				// show dropdown menu
 				$(firstDropdown).last().focus();
 				$(firstDropdown).css("left","0px");
+				toggleARIAProps(firstDropdown)
+			}
+		}
+	).keyup(
+		function(e) {
+			if (e.keyCode == 9 && !e.shiftKey) {
+				toggleARIAProps(firstDropdown)
 			}
 		}
 	);
@@ -138,21 +148,19 @@
 		function() {
 			$(firstDropdown).css("left","0px");
 		}
-	).focusout(
-		siblingFocus
 	).keyup(
 		function(e) {
 			if (e.keyCode == 9 && !e.shiftKey) {
 				eventDisabled = false;
 				$(subTrigger).on("focusout", siblingFocus);
+				toggleARIAProps(secondDropdown);
 			}
 			if (e.keyCode == 39) { // arrow right
 				$(subTrigger).off("focusout", siblingFocus);
-				$(document.getElementById("navbar-xs-submenu")).css(
-					{ // make second dropdown submenu visible
+				$(document.getElementById("navbar-xs-submenu"))
+					.css({ // make second dropdown submenu visible
 						"left" : "99%", "display" : "block"
-					}
-				);
+					});
 				// focus second dropdown, first list item anchor tag
 				document.getElementById("navbar-xs-submenu")
 					.firstElementChild.firstElementChild.focus();
@@ -160,15 +168,19 @@
 			// if last key up was left arrow or shift + tab
 			if (e.keyCode == 37 || e.shiftKey && e.keyCode == 9) {
 				$(subTrigger).off("focusout", siblingFocus);
+				if ( $(secondDropdown).attr("aria-expanded") == "false" ) {
+					toggleARIAProps(secondDropdown);
+				}
 			}
 		}
 	).keydown(
 		function(e) {
-			if (e.keyCode == 9 && !e.shiftKey) {
+			if (e.keyCode == 9 && !e.shiftKey || e.shiftKey && e.keyCode == 9) {
 				$(document.getElementById("navbar-xs-submenu"))
 				.css({ // hide second dropdown submenu
 					"left" : "", "display" : ""
 				});
+				toggleARIAProps(secondDropdown);
 			}
 		}
 	);
@@ -189,11 +201,10 @@
 			// var closeDropdown = false;
 			if (e.keyCode == 37) { // arrow left
 				subTrigger.focus();
-				$(document.getElementById("navbar-xs-submenu")).css(
-					{ // hide second dropdown submenu
+				$(document.getElementById("navbar-xs-submenu"))
+					.css({ // hide second dropdown submenu
 						"left" : "", "display" : ""
-					}
-				);
+					});
 			}
 		}
 	);
@@ -208,6 +219,7 @@
 					}
 				);
 				$("#navbar-xs > li:nth-child(1) a").focus();
+				toggleARIAProps(secondDropdown);
 			}
 		}
 	)
