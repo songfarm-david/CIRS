@@ -2,6 +2,9 @@
 
 	/*** Desktop Navigation ***/
 
+	// TODO: create an onchange handler for dropdowns to control ARIA properties
+	// TODO: create keyboard events for moving laterally to the subdropdown menu
+
 	// first dropdown trigger
 	var trigger = $("li.dropdown > a");
 	// sub-menu trigger
@@ -11,9 +14,10 @@
 	var firstDropdown = $("#navbar-xs");
 	var secondDropdown = $("#navbar-xs-submenu");
 
-
 	var dropdownsArray = $.makeArray(firstDropdown,secondDropdown);
 	var timeout;
+	var eventDisabled = false;
+
 	// add initial ARIA properties
 	$.each(dropdownsArray, function(i, dropdown) {
 		$(dropdown).attr("aria-haspopup","true").attr("aria-expanded","false");
@@ -95,47 +99,70 @@
 		( $(elem).attr("aria-expanded") === "false" ) ? $(elem).attr("aria-expanded","true") : $(elem).attr("aria-expanded","false");
 	}
 
-	$(trigger).on("focusin", function() {
-		// NOTE: need a better way to handle the first dropdown attributes
-		toggleARIAProps(firstDropdown);
-	});
-
-	// on second-level dropdown trigger
-	$(subTrigger).on("focusin focusout", function(e) {
-		toggleARIAProps(secondDropdown);
-	});
-
-	// first dropdown first list item hover
-	$(subTrigger).focusin(function() {
-		$(firstDropdown).css("left","0px");
-	}).focusout(function() { // on focus out, trigger sibling focus
+	/**
+	* Function for manually putting focus on the next logical list item
+	*/
+	function siblingFocus() {
 		$(subTriggerSibling).focus();
-	});
+	}
 
-	$(subTriggerSibling).keyup(function(e) {
-
-		if (e.shiftKey && e.keyCode == 9) {
-			console.log("turned off focusout");
-			$(subTrigger).off();
+	/* subTrigger control events */
+	$(subTrigger).focusin(
+		function() {
+			$(firstDropdown).css("left","0px");
 		}
-	});
-
-	$(subTrigger).keydown(function(e) {
-		if (e.shiftKey && e.keyCode == 9) {
-			console.log("got keycode");
-			$("li.dropdown").focus();
+	).focusout(
+		siblingFocus
+	).keyup(
+		function(e) {
+			if (e.keyCode == 9 && !e.shiftKey) {
+				eventDisabled = false;
+				$(subTrigger).on("focusout", siblingFocus);
+			}
 		}
-	});
+	);
 
-	// on second list item focus, hide dropdown
-	$("ul#navbar > li:nth-child(2) a").focus(function() {
-		$(firstDropdown).css("left","");
-		toggleARIAProps(firstDropdown);
-	});
+	// on second list item focus (What Does It Cost?), hide dropdown
+	$("ul#navbar > li:nth-child(2) a").focus(
+		function() {
+			$(firstDropdown).css("left","");
+			toggleARIAProps(firstDropdown);
+		}
+	).keydown(
+		function(e) {
+		// if shiftKey + altKey
+		if (e.shiftKey && e.keyCode == 9) {
+				// put focus on last list item on firstDropdown menu
+				// show dropdown menu
+				$(firstDropdown).last().focus();
+				$(firstDropdown).css("left","0px");
+			}
+		}
+	);
 
-	// on back-focus to last item of first dropdown, show dropdown again
+	/** Keyboard events **/
 
-	// on first item back-focus, go back to top level first list item
+	$(subTriggerSibling).keyup(
+		function(e) {
+			if (e.shiftKey && e.keyCode == 9) {
+				// disable focusout event on subTrigger
+				$(subTrigger).off("focusout");
+				eventDisabled = true;
+			}
+		}
+	).keydown(
+		function(e) {
+			// if arrow right key event
+			if (e.keyCode == 39) {
+				$(subTrigger).off("focusout");
+				$( document.getElementById("navbar-xs-submenu") ).css(
+					{
+						"left" : "99%", "display" : "block"
+					}
+				).focus();
+			}
+		}
+	);
 
 	attachEvents();
 
