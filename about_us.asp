@@ -4,31 +4,31 @@
 
     <main role="main">
       <section>
-  	    <h2 class="full-width">About Us</h2>
+  	    <h1 class="full-width">About Us</h1>
         <article>
     	    <div class="row">
             <div class="col-xs-12">
-      		    <h4>
+      		    <h3>
       			    Who we are
-      		    </h4>
-              <figure role="presentation" class="pull-right figure-float-right hidden-xs" style="width:45%;">
+      		    </h3>
+              <figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-hidden="true" style="width:45%;">
                 <img src="images/demos/readinggirl.jpg" alt="">
                 <figcaption>
-                  <footer>Photo: yahoo.com</footer>
+                  <footer aria-hidden="true">Photo: yahoo.com</footer>
                 </figcaption>
               </figure>
       		    <p>
       			    We are an Ontario-based Radiant heating company.
       		    </p>
-      		    <h4>
+      		    <h3>
       			    What we do
-      		    </h4>
+      		    </h3>
       		    <p>
       			    We install, maintain radiant heating systems in homes, offices, and industrial facilities.
       		    </p>
-      		    <h4>
+      		    <h3>
       			    Our Radiant tubing is:
-      		    </h4>
+      		    </h3>
     			    <ul>
     				    <li>
     					    embedded in concrete for basements and exteriors
@@ -40,9 +40,9 @@
     					    install between joists for already completed projects.
     				    </li>
     			    </ul>
-      		    <h4>
+      		    <h3>
       			    Radiant Heating can be used in:
-      		    </h4>
+      		    </h3>
     			    <ul>
     				    <li>
     					    whole home comfort with individual zoning
@@ -57,9 +57,9 @@
     					    sprinkler systems
     				    </li>
     			    </ul>
-      		    <h4>
+      		    <h3>
       			    Did you know...
-      		    </h4>
+      		    </h3>
     			    <ul>
     				    <li>
     					    Our boilers area as high as 98% efficient.
@@ -83,8 +83,8 @@
       </section>
 
       <!-- Partners -->
-      <aside role="complementary" id="partners" class="full-width">
-        <h3>Partners</h3>
+      <aside role="complementary" aria-labelledby="heading-partners" id="partners" class="full-width">
+        <h3 id="heading-partners">Partners</h3>
         <div>
           <a href="http://www.ultimatecomfort.ca/" rel="external" target="_blank"><img src="images/partners/logo-canadianhydronics.gif" alt="Canadian Hydronics Council website" title="Canadian Hydronics Council"></a>
           <a href="http://www.burlingtonchamber.com/" rel="external" target="_blank"><img src="images/partners/logo-burlingtonchamber.gif" alt="Burlington Chamber of Commerce website" title="Burlington Chamber of Commerce"></a>

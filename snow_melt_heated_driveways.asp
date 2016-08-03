@@ -8,10 +8,10 @@
     <!-- Main content -->
     <main role="main">
 	    <section>
-		    <h2 class="full-width">Snow Melt &amp; Heated Driveways</h2>
-        <figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-1" data-pop-out="true">
+		    <h1 class="full-width">Snow Melt &amp; Heated Driveways</h1>
+        <figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-hidden="true" data-pop-out="true">
           <img src="images/demos/snow_melt_detail.jpg" alt="" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
-          <figcaption id="figure-1">
+          <figcaption>
             <footer>Photo: facilitymanagement.com</footer>
           </figcaption>
         </figure>

@@ -37,7 +37,7 @@ section[aria-labelledby="cost_examples"] {
 	background-position: left top;
 	background-repeat: no-repeat;
 }
-section[aria-labelledby="cost_examples"] h3 {
+section[aria-labelledby="cost_examples"] h2 {
 	position: relative;
 	top: -142px;
 	padding: 30px 135px;
@@ -45,7 +45,7 @@ section[aria-labelledby="cost_examples"] h3 {
 	font-size: 2.75em;
 }
 /* allow table to scroll horizontally */
-section[aria-labelledby="cost_examples"] > h3 + div {
+section[aria-labelledby="cost_examples"] > h2 + div {
 	overflow-x: auto;
 }
 
@@ -132,7 +132,7 @@ tbody td {
 	background-size: cover;
 }
 /* price tag */
-.table tfoot tr:first-child td > p{
+.table tfoot tr:first-child td > p span.bold-text {
 	font-family: 'museo_sans900', Arial, sans-serif;
 	font-size: 1.35em;
 	border-radius: 6px;
@@ -146,7 +146,7 @@ tbody td {
 	background: linear-gradient(to right,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
 }
 /* price tag secondary text */
-.table tfoot > tr:first-child td p > span {
+.table tfoot > tr:first-child td p > span.bold-text > span.sub-text {
 	font-size: 0.65em; display: block; font-family: 'museo_sans700', Arial, sans-serif;
 }
 /* disclaimer */
@@ -177,8 +177,8 @@ section[aria-labelledby="cost_examples"] > button { display: none; position: abs
 @media (max-width: 767px) {
 
 	section[aria-labelledby="cost_examples"] { margin-bottom: 50px; }
-	section[aria-labelledby="cost_examples"] > h3 { padding: 30px 15px;}
-	section[aria-labelledby="cost_examples"] > h3 + div { overflow: hidden; position: relative; }
+	section[aria-labelledby="cost_examples"] > h2 { padding: 30px 15px;}
+	section[aria-labelledby="cost_examples"] > h2 + div { overflow: hidden; position: relative; }
 	table.table {
 		min-width: 0;
 		table-layout: auto;

@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario.">
-		<title>In-Floor Heating systems designed, installed by expert infloor heat contractor in Ontario</title>
+		<title>In-Floor Heating systems designed and installed by expert infloor heat contractor in Ontario</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
@@ -26,14 +26,14 @@
 			<!-- #include file="includes/navigation.asp" -->
 
 			<!-- Jumbotron -->
-      <div class="jumbotron full-width" name="default">
+      <div role="region" aria-label="introduction" class="jumbotron full-width" name="default">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6">
 							<div class="panel">
 								<p class="h1">In-Floor Radiant&nbsp;Heat</p>
 								<p>
-									<span>Warm your home</span> with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
+									<span>Warm your home</span> with a highly-efficient, draft, dust and allergy-free radiant heating system. If you're building a new home or renovating an existing one and you're in the Niagara, Hamilton/Burlington, Greater Toronto Area or in cottage country in Ontario, <a href="tel:9055381661">talk to us</a> about the possibility of installing a radiant heating system.
 								</p>
 							</div>
 						</div>
@@ -44,10 +44,10 @@
 			<!-- Main Content -->
 			<main role="main">
 				<section id="main-content">
-					<h2 class="full-width">Radiant Heating Systems for Your Home</h2>
+					<h1 class="full-width">Radiant Heating Systems for Your Home</h1>
 					<div class="row">
 						<div class="col-md-6 col-lg-7">
-							<h3>What is Radiant In-Floor Heating?</h3>
+							<h2>What is Radiant In-Floor Heating?</h2>
 							<p>
 								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.asp">In Floor Heating Page</a> for a brief overview.
 							</p>
@@ -84,15 +84,15 @@
 					<section role="region" id="testimonial" class="full-width" aria-labelledby="header-testimonials">
 						<div class="panel">
 							<div class="panel-body">
-								<h3 id="header-testimonials">Testimonials</h3>
-								<div id="testimonials" class="carousel slide" data-ride="carousel">
+								<h4 id="header-testimonials">Testimonials</h4>
+								<div id="testimonials" class="carousel slide" data-ride="carousel" aria-live="polite">
 									<!-- Div w/ empty class is for JavaScript carousel script -->
 									<div class="">
 										<article class="item testimonial">
-											<h4 class="sr-only">Testimonial: James Dickinson, Cochren Homes</h4>
+											<h5 class="sr-only">Testimonial</h5>
 											<blockquote cite="http://www.cochrenhomes.com">
 												<p>
-													Walter and his staff have gone above and beyond the call of duty and made every customer happy. Every question and concern is promptly and professionally answered. We recommend Canadian In-floor to anyone who wishes to have a radiant heat system.
+													Walter and his staff have gone above and beyond the call of duty and made every customer happy. Every question and concern is promptly and professionally answered. We recommend Canadian In-Floor to anyone who wishes to have a radiant heat system.
 												</p>
 												<footer>
 													James Dickinson, <cite>Cochren Homes</cite>
@@ -100,7 +100,7 @@
 											</blockquote>
 										</article>
 										<article class="item testimonial">
-											<h4 class="sr-only">Testimonial: Angelo Puglisi, Terracon Underground Ltd.</h4>
+											<h5 class="sr-only">Testimonial</h5>
 											<blockquote>
 												<p>
 													Canadian In-Floor provides a professional package with full shop drawings, installation and service.
@@ -111,39 +111,36 @@
 											</blockquote>
 										</article>
 										<article class="item testimonial">
-											<h4 class="sr-only">Testimonial: Marie Fallon, customer</h4>
+											<h5 class="sr-only">Testimonial</h5>
 											<blockquote>
 												<p>
-													We Love our heated floors.  If you are planning a renovation you should absolutely consider radiant heating.  We highly recommend Canadian In-floor heating; they are very professional and have a knowledgeable crew working for them. Canadian In-floor heating stands behind their product and services 110 percent.  After our extensive renovations, Walter and his crew is on our recommend list.
+													We Love our heated floors.  If you are planning a renovation you should absolutely consider radiant heating.  We highly recommend Canadian In-Floor heating; they are very professional and have a knowledgeable crew working for them. Canadian In-Floor heating stands behind their product and services 110 percent.  After our extensive renovations, Walter and his crew is on our recommend list.
 												</p>
 												<footer>
-													Marie Fallon
+													Marie Fallon, customer
 												</footer>
 											</blockquote>
 										</article>
 									</div>
-
 									<!-- Manual Controls -->
 									<section id="carousel-controls">
 										<div aria-controls="carousel" aria-label="carousel controls">
 											<a href="#testimonials" class="carousel-control left" data-slide="prev">
-												<span role="button" class="glyphicon glyphicon-chevron-left" aria-hidden="true" aria-labelledby="carousel-control-left" tabindex="0"></span>
-												<span class="sr-only" id="carousel-control-left">Previous testimonial</span>
+												<span role="button" class="glyphicon glyphicon-chevron-left" aria-label="previous testimonial" tabindex="0"></span>
+												<!-- <span class="sr-only" id="carousel-control-left">Previous testimonial</span> -->
 											</a>
 											<a href="#testimonials" class="carousel-control right" data-slide="next">
-												<span role="button" class="glyphicon glyphicon-chevron-right" aria-hidden="true" aria-labelledby="carousel-control-right" tabindex="0"></span>
-												<span class="sr-only" id="carousel-control-right">Next testimonial</span>
+												<span role="button" class="glyphicon glyphicon-chevron-right" aria-label="next testimonial" tabindex="0"></span>
+												<!-- <span class="sr-only" id="carousel-control-right">Next testimonial</span> -->
 											</a>
 										</div>
 									</section>
-
 									<!-- Indicators -->
 									<ol class="carousel-indicators">
-										<li data-target="#testimonials" data-slide-to="0" tabindex="0" aria-label="indicator: testimonial 1" class="active"></li>
-										<li data-target="#testimonials" data-slide-to="1" tabindex="0" aria-label="indicator: testimonial 2" class=""></li>
-										<li data-target="#testimonials" data-slide-to="2" tabindex="0" aria-label="indicator: testimonial 3" class=""></li>
+										<li role="button" data-target="#testimonials" data-slide-to="0" tabindex="0" aria-label="testimonial 1" class="active"></li>
+										<li role="button" data-target="#testimonials" data-slide-to="1" tabindex="0" aria-label="testimonial 2" class=""></li>
+										<li role="button" data-target="#testimonials" data-slide-to="2" tabindex="0" aria-label="testimonial 3" class=""></li>
 									</ol>
-
 								</div>
 							</div>
 						</div>

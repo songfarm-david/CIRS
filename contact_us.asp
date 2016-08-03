@@ -4,11 +4,11 @@
 
     <main role="main">
 	    <section role="region" aria-label="Contact Us">
-		    <h2 class="full-width">Contact Us</h2>
+		    <h1 class="full-width">Contact Us</h1>
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
             <div class="text-center complimentary">
-              <h3 class="hidden-xs">Canadian In-Floor Radiant&nbsp;Solutions</h3>
+              <h2 class="hidden-xs">Canadian In-Floor Radiant&nbsp;Solutions</h2>
               <p>
                 <b>We are located in Burlington, Ontario.</b>
               </p>

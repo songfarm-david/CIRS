@@ -2,9 +2,9 @@
 
     <!-- #include file="includes/navigation.asp" -->
 
-		<main role="main">
-			<section aria-labelledby="sitemap">
-				<h2 id="sitemap" class="full-width">Canadian In-Floor Radiant Solutions Sitemap</h2>
+		<!-- <main role="main"> -->
+			<section>
+				<h1 class="full-width">Canadian In-Floor Radiant Solutions Sitemap</h1>
 				<div class="row">
 					<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 						<div class="complimentary">
@@ -33,6 +33,6 @@
 					</div>
 				</div>
 			</section>
-		</main>
+		<!-- </main> -->
 
 		<!-- #include file="includes/footer.asp" -->

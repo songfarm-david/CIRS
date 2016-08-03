@@ -44,7 +44,6 @@
 			if (i == 0) {
 				// init active testimonial
 				testimonials[i].classList.add("active");
-				testimonials[i].setAttribute("aria-live","polite");
 				testimonials[i].setAttribute("aria-hidden","false");
 			} else {
 				// hide other testimonials
@@ -104,7 +103,7 @@
 	* Bootstrap carousel object and controls
 	*/
 	$(".carousel").carousel({
-		interval: 5000
+		interval: 8000
 	,			wrap: false
 	});
 
