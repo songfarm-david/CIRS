@@ -23,13 +23,13 @@
           </figcaption>
         </figure>
 		    <p>
-			    We use premium Uponor <span aria-hidden="true">PEX-a</span><span class="sr-only">Pecks A</span> tubing in all fire safety system installations. Without soldered joints it’s extremely durable and virtually leak-proof.
+			    We use premium <span aria-hidden="true">Uponor PEX-a</span><span class="sr-only">Oopanor Pecks</span> tubing in all fire safety system installations. Without soldered joints it’s extremely durable and virtually leak-proof.
 		    </p>
 		    <p>
 			    Sprinklers work quickly and put out most fires in seconds, even before the fire department arrives, and can significantly reduce damage.
 		    </p>
 		    <p>
-			    Uponor AquaSAFE&trade; Systems are very reliable. The tubing used is backed by a 25-year limited warranty when installed by an Uponor-trained professional. Sprinklers respond to heat not smoke, and draw water from your main cold water line and the odds of a malfunction are just one in 16 million.
+			    <span aria-hidden="true">Uponor AquaSAFE&trade;</span><span class="sr-only">Oopa-nor aqua-safe&trade;</span> Systems are very reliable. The tubing used is backed by a 25-year limited warranty when installed by an <span aria-hidden="true">Uponor</span><span class="sr-only">Oopanor</span>-trained professional. Sprinklers respond to heat not smoke, and draw water from your main cold water line and the odds of a malfunction are just one in 16 million.
 		    </p>
 		    <p>
 			    While smoke detectors alone increase survival rates by 50%, adding sprinklers increases that to an incredible 97%.

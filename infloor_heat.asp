@@ -24,9 +24,9 @@
 				<h1 class="full-width">In-Floor Heat</h1>
 				<section>
 					<h2>What is Radiant Floor Heating?</h2>
-					<figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-2" aria-hidden="true" data-pop-out="true">
+					<figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-hidden="true" data-pop-out="true">
 						<img src="images/demos/radiant-heat-vs-forced-air.jpg" alt="" title="Radiant heat versus forced air">
-						<figcaption id="figure-2">
+						<figcaption>
 							<footer>Photo: warmboard.com</footer>
 						</figcaption>
 					</figure>
@@ -47,9 +47,9 @@
 					</p>
 					<div class="row">
 						<div class="col-sm-5">
-							<figure role="presentation" class="pull-left hidden-xs" aria-describedby="figure-1" aria-hidden="true" data-pop-out="true" style="width:100%;">
+							<figure role="presentation" class="pull-left hidden-xs" aria-hidden="true" data-pop-out="true" style="width:100%;">
 								<img src="images/demos/closed_loop.jpg" alt="" title="Closed-loop system">
-								<figcaption id="figure-1">
+								<figcaption>
 									Figure 1. Closed-loop radiant heating system.
 									<footer>Photo: ecohydronics.com.au</footer>
 								</figcaption>
@@ -75,9 +75,9 @@
 					</div>
 				</section>
 				<section>
-					<figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-describedby="figure-3" aria-hidden="true" data-pop-out="true">
+					<figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-hidden="true" data-pop-out="true">
 						<img src="images/demos/radiantheat_house.jpg" alt="">
-						<figcaption id="figure-3">
+						<figcaption>
 							Figure 3. Hydronic radiant floor heating laid throughout a home. Note: Pipes are not visible when installation is completed.
 							<footer>Courtesy: Uponer</footer>
 						</figcaption>
@@ -168,7 +168,7 @@
 						<h2 id="lifespan_and_warranty">Lifespan &amp; Warranty</h2>
 						<figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-hidden="true" data-pop-out="true">
 							<img src="images/demos/pex.jpg" alt="">
-							<figcaption id="figure-5">
+							<figcaption>
 								Uponor PEX-A tubing is flexible, durable, and has been used in plumbing systems for more than 20 years.
 								<footer>Courtesy: Uponor</footer>
 							</figcaption>
@@ -180,7 +180,7 @@
 							There are two types of warranties: a Manufacturer’s Warranty and an Installation Warranty.
 						</p>
 						<p>
-							Most manufactures’ warranty policies are strongly dependant on certified and qualified contractors completing the installation. Canadian In-Floor is a level 2 certified company, therefore the Uponor warranty is 25 years on the tubing, compression fittings, and manifolds. There is no difference in warranty between new construction and renovations. Installation warranty varies on the heating contractor and their warranty policies. There may be a difference in warranty between new home construction and renovations by the heating contractor.
+							Most manufactures’ warranty policies are strongly dependant on certified and qualified contractors completing the installation. Canadian In-Floor is a level 2 certified company, therefore the <span aria-hidden="true">Uponor</span><span class="sr-only">Oopa-nor</span> warranty is 25 years on the tubing, compression fittings, and manifolds. There is no difference in warranty between new construction and renovations. Installation warranty varies on the heating contractor and their warranty policies. There may be a difference in warranty between new home construction and renovations by the heating contractor.
 						</p>
 					</section>
 					<section>
