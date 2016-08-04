@@ -40,7 +40,7 @@
 
 		var timeout = setTimeout(function() {
 			runCarousel();
-		}, 30000);
+		}, 60000);
 
 	}
 
@@ -90,7 +90,7 @@
 	function runCarousel() {
 		//Bootstrap carousel object and controls
 		$(".carousel").carousel({
-			interval : 30000
+			interval : 20000
 			,wrap : false
 		});
 	}

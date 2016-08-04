@@ -48,10 +48,10 @@
 						<div class="col-md-6 col-lg-7">
 							<h2>What is Radiant In-Floor Heating?</h2>
 							<p>
-								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.asp">In Floor Heating Page</a> for a brief overview.
+								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.asp">In-Floor Heating Page</a> for a brief overview.
 							</p>
 							<p>
-								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.asp">Heated Driveways</a>.
+								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.asp">Heated Driveways.</a>
 							</p>
 							<p>
 								To get a sense of what In-Floor Heating may cost, please visit our <a href="cost_examples.asp">What Does It Cost?</a> page.
@@ -87,7 +87,7 @@
 								<div id="testimonials" class="carousel slide">
 									<!-- Div w/ empty class is for JavaScript carousel script -->
 									<div class="" aria-live="polite">
-										<article class="item testimonial">
+										<article class="item testimonial active">
 											<h5 class="sr-only">Testimonial #1</h5>
 											<blockquote cite="http://www.cochrenhomes.com">
 												<p>
