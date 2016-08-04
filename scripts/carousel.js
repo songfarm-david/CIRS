@@ -38,18 +38,10 @@
 		document.getElementById("carousel-controls").style.display = "block";
 		$(".carousel-indicators").css("display","block");
 
-		// loop through first children of carousel
-		for (var i = 0; i < testimonials.length; i++) {
-			// add active class to first item
-			if (i == 0) {
-				// init active testimonial
-				testimonials[i].classList.add("active");
-				testimonials[i].setAttribute("aria-hidden","false");
-			} else {
-				// hide other testimonials
-				testimonials[i].setAttribute("aria-hidden","true");
-			}
-		} // end of loop
+		var timeout = setTimeout(function() {
+			runCarousel();
+		}, 30000);
+
 	}
 
 	// on click/focus carousel control, give focus to span element
@@ -88,24 +80,20 @@
 	$("#testimonials").on("slide.bs.carousel", function(e) {
 		for (var i = 0; i < testimonials.length; i++) {
 			if (testimonials[i] == e.relatedTarget) {
-				e.relatedTarget.setAttribute("aria-hidden","false");
-				e.relatedTarget.setAttribute("aria-live","polite");
 				e.relatedTarget.style.display = "block";
 			} else {
-				testimonials[i].setAttribute("aria-hidden","true");
-				testimonials[i].removeAttribute("aria-live");
 				testimonials[i].style.display = "none";
 			}
 		}
 	});
 
-	/**
-	* Bootstrap carousel object and controls
-	*/
-	$(".carousel").carousel({
-		interval: 8000
-	,			wrap: false
-	});
+	function runCarousel() {
+		//Bootstrap carousel object and controls
+		$(".carousel").carousel({
+			interval : 30000
+			,wrap : false
+		});
+	}
 
 	// Initialize ARIA and Carousel
 	ARIAInit();

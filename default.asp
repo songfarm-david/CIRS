@@ -23,7 +23,6 @@
 				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 			</header>
 
-			<!-- #include file="includes/navigation.asp" -->
 
 			<!-- Jumbotron -->
       <div role="region" aria-label="introduction" class="jumbotron full-width" name="default">
@@ -63,7 +62,7 @@
 						</div>
 						<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0 col-lg-5">
 							<aside role="complementary" id="uponor" class="panel-body" >
-								<h3 class="sr-only">Uponor Accreditation</h3>
+								<h3 class="sr-only">Oopanor Accreditation</h3>
 								<a href="http://www.uponor.ca/" target="_blank"><img src="images/partners/uponor_logo_lg.jpg" alt="Uponor website" title="Uponor"></a>
 								<p>
 									<b>The world leader in radiant materials has accredited us with Level 2 Certification.</b>
@@ -71,8 +70,8 @@
 								<p>
 									This special qualification entitles you to a <strong><em>25 Year Manufacturer's Warranty</em></strong> on systems we install
 								</p>
-								<footer aria-label="Partners">
-									<a href="http://www.uponor.ca/" target="_blank"><img src="images/partners/uponor_sm.gif" alt="Uponor website"></a>
+								<footer>
+									<a href="http://www.uponor.ca/" target="_blank" aria-hidden="true"><img src="images/partners/uponor_sm.gif" alt="Uponor website"></a>
 									<a href="http://www.viessmann.ca/" target="_blank"><img src="images/partners/viessmann_sm.gif" alt="Viessmann website"></a>
 									<a href="http://www.seisco.com/" target="_blank"><img src="images/partners/seisco_sm.gif" alt="Seisco website"></a>
 								</footer>
@@ -85,11 +84,11 @@
 						<div class="panel">
 							<div class="panel-body">
 								<h4 id="header-testimonials">Testimonials</h4>
-								<div id="testimonials" class="carousel slide" data-ride="carousel" aria-live="polite">
+								<div id="testimonials" class="carousel slide">
 									<!-- Div w/ empty class is for JavaScript carousel script -->
-									<div class="">
+									<div class="" aria-live="polite">
 										<article class="item testimonial">
-											<h5 class="sr-only">Testimonial</h5>
+											<h5 class="sr-only">Testimonial #1</h5>
 											<blockquote cite="http://www.cochrenhomes.com">
 												<p>
 													Walter and his staff have gone above and beyond the call of duty and made every customer happy. Every question and concern is promptly and professionally answered. We recommend Canadian In-Floor to anyone who wishes to have a radiant heat system.
@@ -100,7 +99,7 @@
 											</blockquote>
 										</article>
 										<article class="item testimonial">
-											<h5 class="sr-only">Testimonial</h5>
+											<h5 class="sr-only">Testimonial #2</h5>
 											<blockquote>
 												<p>
 													Canadian In-Floor provides a professional package with full shop drawings, installation and service.
@@ -111,7 +110,7 @@
 											</blockquote>
 										</article>
 										<article class="item testimonial">
-											<h5 class="sr-only">Testimonial</h5>
+											<h5 class="sr-only">Testimonial #3</h5>
 											<blockquote>
 												<p>
 													We Love our heated floors.  If you are planning a renovation you should absolutely consider radiant heating.  We highly recommend Canadian In-Floor heating; they are very professional and have a knowledgeable crew working for them. Canadian In-Floor heating stands behind their product and services 110 percent.  After our extensive renovations, Walter and his crew is on our recommend list.
@@ -127,11 +126,9 @@
 										<div aria-controls="carousel" aria-label="carousel controls">
 											<a href="#testimonials" class="carousel-control left" data-slide="prev">
 												<span role="button" class="glyphicon glyphicon-chevron-left" aria-label="previous testimonial" tabindex="0"></span>
-												<!-- <span class="sr-only" id="carousel-control-left">Previous testimonial</span> -->
 											</a>
 											<a href="#testimonials" class="carousel-control right" data-slide="next">
 												<span role="button" class="glyphicon glyphicon-chevron-right" aria-label="next testimonial" tabindex="0"></span>
-												<!-- <span class="sr-only" id="carousel-control-right">Next testimonial</span> -->
 											</a>
 										</div>
 									</section>
