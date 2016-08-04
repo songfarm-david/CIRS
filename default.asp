@@ -23,6 +23,7 @@
 				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 			</header>
 
+			<!-- #include file="includes/navigation.asp" -->
 
 			<!-- Jumbotron -->
       <div role="region" aria-label="introduction" class="jumbotron full-width" name="default">
