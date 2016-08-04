@@ -53,13 +53,6 @@
 
 					<!-- Begin Cost Examples table -->
 	        <section role="region" aria-labelledby="cost_examples" class="full-width">
-						<!-- Panel toggles -->
-						<!-- <button role="button" type="button" name="previous" aria-controls="cost_examples_table">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-						</button>
-						<button role="button" type="button" name="next" aria-controls="cost_examples_table">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-						</button> -->
 	          <h2 id="cost_examples" class="container-fluid full-width" aria-hidden="true">Cost Examples</h2>
 	          <div>
 							<table role="table" class="table" id="cost_examples_table">
