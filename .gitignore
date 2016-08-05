@@ -12,6 +12,7 @@ obj/
 *.user
 *.sln
 app.config
+.gitignore
 
 # Ignore all old and unused images
 images/old_unused/

@@ -6,12 +6,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario.">
-		<title>In-Floor Heating systems designed, installed by expert infloor heat contractor in Ontario</title>
+		<title>What does In-Floor Heating cost?</title>
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
-		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
-		<link rel="stylesheet" href="css/table.css" media="screen">
+		<link rel="stylesheet" href="css/global.min.css" media="screen" title="Global Styles">
+		<link rel="stylesheet" href="css/table.min.css" media="screen">
 		<!-- #include file="includes/browser_detect.asp" -->
 	</head>
 	<body>
@@ -28,15 +28,15 @@
 	    <!-- Main Content -->
 	    <main role="main">
 		    <section>
-			    <h2 class="full-width">What Does Radiant In-Floor Heating Cost?</h2>
+			    <h1 class="full-width">What Does Radiant In-Floor Heating Cost?</h1>
 			    <p>
 				    One of the factors affecting the cost of an in-floor radiant heating installation is the method that will be used to heat the hot water.
 			    </p>
 			    <p>
-				    On small-to-medium sized residential projects we are often able to use your existing hot water heater. We install a unit called a "radiant X-Block" (X-Block). This pumps hot water from your water heater, through a heat exchanger, to heat your floor. The water in the floor does not come in contact with the rest of your hot water. The cost of the X-Block and installation is approximately $3000.00.
+				    On small-to-medium sized residential projects we are often able to use your existing hot water heater. We install a unit called a "radiant X-Block" <span aria-hidden="true">(X-Block).</span> This pumps hot water from your water heater, through a heat exchanger, to heat your floor. The water in the floor does not come in contact with the rest of your hot water. The cost of the X-Block and installation is approximately <span aria-hidden="true">$3000.00.</span><span class="sr-only">Three-thousand dollars</span>
 			    </p>
 			    <p>
-				    With a larger project, a full boiler system must be installed that can heat your radiant, domestic hot water, pool, driveway, etc. A boiler room build will typically cost approximately $13,000.00.
+				    With a larger project, a full boiler system must be installed that can heat your radiant domestic hot water, pool, driveway, etc. A boiler room build will typically cost approximately <span aria-hidden="true">$13,000.00.</span><span class="sr-only">Thirteen-thousand dollars</span>
 			    </p>
 			    <p>
 				    When a gypsum pour is required, there are some minimum costs involved that ultimately make the per square foot costs somewhat higher on smaller projects.
@@ -52,86 +52,104 @@
 	        </p>
 
 					<!-- Begin Cost Examples table -->
-	        <section role="region" aria-labelledby="cost_examples" class="full-width">
-
-						<!-- Panel toggles -->
-						<button role="button" type="button" name="previous" aria-controls="cost_examples_table">
-							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</button>
-						<button role="button" type="button" name="next" aria-controls="cost_examples_table">
-							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</button>
-
-	          <h3 id="cost_examples" class="container-fluid full-width">Cost Examples</h3>
-	          <div>
-
-							<table role="table" class="table" id="cost_examples_table">
-	              <colgroup>
-	                <col class="current">
-	                <col>
-	                <col>
-	                <col>
-	              </colgroup>
-	              <thead role="rowgroup">
+	        <section class="full-width" name="table-section">
+	          <h2 id="cost_examples" class="container-fluid full-width">Cost Examples</h2>
+	          <div><!-- div for overflow styling bug fix -->
+							<table role="table" class="table">
+								<caption class="sr-only">Cost Examples Table</caption>
+                <col class="current">
+                <col>
+                <col>
+                <col>
+	              <thead>
 	                <tr>
-	                  <th>
+	                  <th role="columnheader" scope="col" aria-owns="body1 foot1">
 	                    <span>Basement Floor</span> <br>of Existing Home
 	                  </th>
-	                  <th>
+	                  <th role="columnheader" scope="col" aria-owns="body2 foot2">
 	                    <span>Full Basement</span> <br>of New Home
 	                  </th>
-	                  <th>
-	                    <span>Entire New Home</span> <br>incl. Basement
+	                  <th role="columnheader" scope="col" aria-owns="body3 foot3">
+	                    <span>Entire New Home</span> <br><span aria-hidden="true" style="font-family:inherit;">incl.</span><span class="sr-only">including</span> Basement
 	                	</th>
-	                  <th>
+	                  <th role="columnheader" scope="col" aria-owns="body4 foot4">
 	                    <span>Main Floor</span> <br>of Existing Home
 	                  </th>
 	                </tr>
 	              </thead>
-	              <tbody role="rowgroup">
+	              <tbody>
 	                <tr>
-	                  <td>
-	                    Tubing fastened to floor, pour 1 ½” gypsum concrete to cover, install radiant X-Block (X-Block).
-											<br><span>(288 sq/ft)</span>
+	                  <td id="body1">
+	                    Tubing fastened to floor, pour <span aria-hidden="true">1 ½”</span><span class="sr-only">One and a half inch</span> gypsum concrete to cover, install radiant X-Block.
+											<br>
+											<span>
+												(<span aria-hidden="true">288 sq/ft</span><span class="sr-only">Example size: two-hundred and eighty-eight square feet</span>)
+											</span>
 	                  </td>
-	                  <td>
+	                  <td id="body2">
 	                    Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
-											<br><span>(1500 sq/ft)</span>
+											<br>
+											<span>
+												(<span aria-hidden="true">1500 sq/ft</span><span class="sr-only">Example size: fifteen-hundred square feet</span>)
+											</span>
 	                  </td>
-	                  <td>
+	                  <td id="body3">
 	                    Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
-											<br><span>(4000 sq/ft)</span>
+											<br>
+											<span>
+												(<span aria-hidden="true">4000 sq/ft</span><span class="sr-only">Example size: four-thousand square feet</span>)
+											</span>
 	                  </td>
-	                  <td>
+	                  <td id="body4">
 	                    Install tubing between joists with reflective foil barrier.
 	                  </td>
 	                </tr>
 	              </tbody>
-	              <tfoot role="rowgroup">
+	              <tfoot>
 	                <tr class="text-center">
-	                  <td>
-	                    <p>$8000.00<br> <span>($28.00 per sq/ft)</span></p>
+	                  <td id="foot1">
+											<span class="bold-text">
+												<span aria-hidden="true">$8000.00</span>
+												<span class="sr-only">Approximate cost: eight-thousand dollars</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">$28.00 per sq/ft</span><span class="sr-only">or twenty-eight dollars per square foot</span>)
+												</span>
+											</span>
 	                  </td>
-	                  <td>
-	                  	<p>$8800.00<br> <span>($5.86 per sq/ft)</span></p>
+	                  <td id="foot2">
+											<span class="bold-text">
+												<span aria-hidden="true">$8800.00</span>
+												<span class="sr-only">Approximate cost: eight-thousand, eight-hundred dollars</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">$5.86 per sq/ft</span><span class="sr-only">or five-dollars, eighty-six cents per square foot</span>)
+												</span>
+											</span>
 	                  </td>
-	                  <td>
-	                    <p>$54,000.00<br> <span>($13.50 per sq/ft)</span></p>
+	                  <td id="foot3">
+											<span class="bold-text">
+												<span aria-hidden="true">$54,000.00</span>
+												<span class="sr-only">Approximate cost: fifty-four thousands dollars</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">$13.50 per sq/ft</span><span class="sr-only">or thirteen-dollars, fifty cents per square foot</span>)
+												</span>
+											</span>
 	                  </td>
-	                  <td>
-	                    <p>$10.00-$20.00<br> <span>(per sq/ft)</span></p>
+	                  <td id="foot4">
+											<span class="bold-text">
+												<span aria-hidden="true">$10.00-$20.00</span>
+												<span class="sr-only">Approximate cost: ten-to-twenty dollars per square foot</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">per sq/ft</span>)
+												</span>
+											</span>
 	                  </td>
 	                </tr>
-									<tr>
-										<td>
-											<p>*Listed prices are approximations</p>
-										</td>
-									</tr>
 	              </tfoot>
 	            </table>
-
 						</div>
 	        </section>
 		    </section>
@@ -144,7 +162,6 @@
 							<li><a href="default.asp">Home</a></li>
 							<li><a href="about_us.asp">About Us</a></li>
 							<li><a href="contact_us.asp">Contact Us</a></li>
-							<!-- <li><a href="careers.asp">Careers</a></li> -->
 							<li><a href="sitemap.asp">Site Map</a></li>
 						</ul>
 					</div>
@@ -166,12 +183,12 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- Custom Javascripts -->
-		<script src="scripts/infloor.js"></script>
+		<script src="scripts/infloor.min.js"></script>
 		<script type="text/javascript">
 		$(window).on("load resize", function() {
 			// if mobile screens
 			if (window.innerWidth <= 767) {
-				if ( $.getScript("scripts/costs_table.js") ) {
+				if ( $.getScript("scripts/costs_table.min.js") ) {
 					// turn off window events
 					$(window).off("load resize");
 				};
