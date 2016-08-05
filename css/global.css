@@ -430,12 +430,12 @@ div.wrapper > footer p {
 	font-size: .85em;
 	margin-bottom: 25px;
 }
-div.wrapper > footer ol {
+div.wrapper > footer ul {
 	text-align: center;
 	width: 100%;
 	margin: 25px 0;
 }
-div.wrapper > footer ol > li {
+div.wrapper > footer ul > li {
 	display: inline-block;
 	line-height: 146px;
 	float: none;
@@ -620,7 +620,7 @@ div.wrapper > footer a:focus {
 		right: 25px; top: 20px;
 	}
 
-	h2 { padding-left: 45px; padding-right: 45px; }
+	h1 { padding-left: 45px; padding-right: 45px; }
 
 	/** Jumbotron Captions **/
 	.jumbotron[name="default"] .panel {
@@ -662,7 +662,7 @@ div.wrapper > footer a:focus {
 
 	#partners { padding-left: 45px; padding-right: 45px; }
 
-	section[aria-labelledby="cost_examples"] h3 { padding-left: 45px; padding-right: 45px; }
+	section[name="table-section"] h2 { padding-left: 45px; padding-right: 45px; }
 }
 
 /** XS Screens and below **/
@@ -671,7 +671,7 @@ div.wrapper > footer a:focus {
 		padding: 0 15px;
 	}
 	.full-width { margin-left: -15px; margin-right: -15px; }
-	section > h2 { padding: 20px 15px; }
+	section > h1 { padding: 20px 15px; }
 
 	nav { margin-bottom: 0; }
 	nav.full-width {
@@ -889,7 +889,7 @@ div.wrapper > footer a:focus {
 	.panel { padding: 30px; }
 
 	/* stack footer list items */
-	div.wrapper > footer ol > li {
+	div.wrapper > footer ul > li {
 		display: block;
 		padding: 6px 0;
 	}
@@ -914,7 +914,7 @@ div.wrapper > footer a:focus {
 	}
 	#partners div a { margin: 0 auto 15px; }
 
-	section[aria-labelledby="cost_examples"] h3 { padding-left: 15px; padding-right: 15px; }
+	section[name="table-section"] h2 { padding-left: 15px; padding-right: 15px; }
 
 	.complimentary > ul {
 		margin: 0;
