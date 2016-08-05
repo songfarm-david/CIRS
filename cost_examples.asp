@@ -187,12 +187,7 @@
 		<script type="text/javascript">
 		$(window).on("load resize", function() {
 			// if mobile screens
-			if (window.innerWidth <= 767) {
-				if ( $.getScript("scripts/costs_table.min.js") ) {
-					// turn off window events
-					$(window).off("load resize");
-				};
-			}
+			if (window.innerWidth <= 767) {$.getScript("scripts/costs_table.min.js")}
 		});
 		</script>
 	</body>
