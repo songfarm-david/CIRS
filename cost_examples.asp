@@ -10,8 +10,8 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
-		<link rel="stylesheet" href="css/global.css" media="screen" title="Global Styles">
-		<link rel="stylesheet" href="css/table.css" media="screen">
+		<link rel="stylesheet" href="css/global.min.css" media="screen" title="Global Styles">
+		<link rel="stylesheet" href="css/table.min.css" media="screen">
 		<!-- #include file="includes/browser_detect.asp" -->
 	</head>
 	<body>
@@ -183,12 +183,12 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- Custom Javascripts -->
-		<script src="scripts/infloor.js"></script>
+		<script src="scripts/infloor.min.js"></script>
 		<script type="text/javascript">
 		$(window).on("load resize", function() {
 			// if mobile screens
 			if (window.innerWidth <= 767) {
-				if ( $.getScript("scripts/costs_table.js") ) {
+				if ( $.getScript("scripts/costs_table.min.js") ) {
 					// turn off window events
 					$(window).off("load resize");
 				};
