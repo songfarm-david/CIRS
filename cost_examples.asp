@@ -53,15 +53,15 @@
 
 					<!-- Begin Cost Examples table -->
 	        <section class="full-width">
-	          <h2 id="cost_examples" class="container-fluid full-width" aria-hidden="true">Cost Examples</h2>
+	          <h2 id="cost_examples" class="container-fluid full-width">Cost Examples</h2>
 	          <div><!-- div for overflow styling bug fix -->
-							<table role="table" aria-labelledby="cost_examples" class="table">
-								<caption><span aria-hidden="true">*</span>Listed prices are approximations</caption>
+							<table role="table" class="table">
+								<caption>Cost Examples Table</caption>
                 <col class="current">
                 <col>
                 <col>
                 <col>
-	              <thead role="rowgroup">
+	              <thead>
 	                <tr>
 	                  <th role="columnheader" scope="col" aria-owns="body1 foot1">
 	                    <span>Basement Floor</span> <br>of Existing Home
@@ -77,27 +77,27 @@
 	                  </th>
 	                </tr>
 	              </thead>
-	              <tbody role="rowgroup">
+	              <tbody>
 	                <tr>
 	                  <td id="body1">
 	                    Tubing fastened to floor, pour <span aria-hidden="true">1 ½”</span><span class="sr-only">One and a half inch</span> gypsum concrete to cover, install radiant X-Block.
 											<br>
 											<span>
-												(<span aria-hidden="true">288 sq/ft</span><span class="sr-only">Two-hundred, eighty-eight square feet</span>)
+												(<span aria-hidden="true">288 sq/ft</span><span class="sr-only">Example size: two-hundred and eighty-eight square feet</span>)
 											</span>
 	                  </td>
 	                  <td id="body2">
 	                    Attach tubing to mesh, install X-Block, home builder pours concrete floor to cover.
 											<br>
 											<span>
-												(<span aria-hidden="true">1500 sq/ft</span><span class="sr-only">Fifteen-hundred square feet</span>)
+												(<span aria-hidden="true">1500 sq/ft</span><span class="sr-only">Example size: fifteen-hundred square feet</span>)
 											</span>
 	                  </td>
 	                  <td id="body3">
 	                    Fit entire home with radiant in-floor heating, independent thermostats in each room. Install 95.1% efficient wall mount gas-fired boiler with domestic hot water heating included.
 											<br>
 											<span>
-												(<span aria-hidden="true">4000 sq/ft</span><span class="sr-only">Four-thousand square feet</span>)
+												(<span aria-hidden="true">4000 sq/ft</span><span class="sr-only">Example size: four-thousand square feet</span>)
 											</span>
 	                  </td>
 	                  <td id="body4">
@@ -111,10 +111,10 @@
 	                    <!-- <p> -->
 												<span class="bold-text">
 													<span aria-hidden="true">$8000.00</span>
-													<span class="sr-only">Eight-thousand dollars</span>
+													<span class="sr-only">Approximate cost: eight-thousand dollars</span>
 													<br>
 													<span class="sub-text">
-														(<span aria-hidden="true">$28.00 per sq/ft</span><span class="sr-only">Twenty-eight dollars per square foot</span>)
+														(<span aria-hidden="true">$28.00 per sq/ft</span><span class="sr-only">or twenty-eight dollars per square foot</span>)
 													</span>
 												</span>
 											<!-- </p> -->
@@ -123,10 +123,10 @@
 	                  	<!-- <p> -->
 												<span class="bold-text">
 													<span aria-hidden="true">$8800.00</span>
-													<span class="sr-only">Eight-thousand, eight-hundred dollars</span>
+													<span class="sr-only">Approximate cost: eight-thousand, eight-hundred dollars</span>
 													<br>
 													<span class="sub-text">
-														(<span aria-hidden="true">$5.86 per sq/ft</span><span class="sr-only">Five-dollars, eighty-six cents per square foot</span>)
+														(<span aria-hidden="true">$5.86 per sq/ft</span><span class="sr-only">or five-dollars, eighty-six cents per square foot</span>)
 													</span>
 												</span>
 											<!-- </p> -->
@@ -135,10 +135,10 @@
 	                    <!-- <p> -->
 												<span class="bold-text">
 													<span aria-hidden="true">$54,000.00</span>
-													<span class="sr-only">Fifty-four thousands dollars</span>
+													<span class="sr-only">Approximate cost: fifty-four thousands dollars</span>
 													<br>
 													<span class="sub-text">
-														(<span aria-hidden="true">$13.50 per sq/ft</span><span class="sr-only">Thirteen-dollars, fifty cents per square foot</span>)
+														(<span aria-hidden="true">$13.50 per sq/ft</span><span class="sr-only">or thirteen-dollars, fifty cents per square foot</span>)
 													</span>
 												</span>
 											<!-- </p> -->
@@ -147,10 +147,10 @@
 	                    <!-- <p> -->
 												<span class="bold-text">
 													<span aria-hidden="true">$10.00-$20.00</span>
-													<span class="sr-only">Ten-to-twenty dollars</span>
+													<span class="sr-only">Approximate cost: ten-to-twenty dollars per square foot</span>
 													<br>
 													<span class="sub-text">
-														(<span aria-hidden="true">per sq/ft</span><span class="sr-only">per square foot</span>)
+														(<span aria-hidden="true">per sq/ft</span>)
 													</span>
 												</span>
 											<!-- </p> -->
