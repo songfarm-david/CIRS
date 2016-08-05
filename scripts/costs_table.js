@@ -3,12 +3,10 @@
 **/
 
 	// create an array of table columns i.e: <col> tags
-	var columns = $(".table colgroup > col").toArray();
+	var columns = $(".table col").toArray();
 
 	// get all the thead th's, tbody td's, tfoot td's (table components) and put them into an array
 	var tableComps = $(".table thead th, .table tbody td, .table tfoot td").toArray();
-	// pop off the last <td> in the table as it is discretionary and unrelated to functional presentation
-	tableComps.pop();
 
 	// set the starting index
 	for (var i = 0; i < columns.length; i++) {
@@ -34,8 +32,8 @@
 	buttons[1].setAttribute("name","next");
 	buttons[1].firstElementChild.className += " glyphicon-chevron-right";
 	// attach buttons to DOM
-	var parent = $('section[aria-labelledby="cost_examples"]');
-	var tableParent = document.getElementById("cost_examples_table").parentElement;
+	var parent = $('section[name="table-section"]');
+	var tableParent = $("table.table")[0].parentElement;
 	for (var i = 0; i < buttons.length; i++) {
 		parent[0].insertBefore(buttons[i],tableParent);
 	}
@@ -63,6 +61,7 @@
 			$(columns[index]).addClass("current");
 			rotatePanel();
 		});
+
 	}
 
 	// create a function that cycles through the length of the table and assigns the new index the class of current

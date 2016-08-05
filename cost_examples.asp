@@ -20,15 +20,15 @@
 
 		<div class="wrapper container">
 
-    <!-- include file="includes/navigation.asp" -->
+    <!-- #include file="includes/navigation.asp" -->
 
 	    <!-- Jumbotron -->
 	    <div class="jumbotron full-width" name="cost_examples"></div>
 
 	    <!-- Main Content -->
-	    <!-- <main role="main"> -->
-		    <!-- <section> -->
-			    <!-- <h1 class="full-width">What Does Radiant In-Floor Heating Cost?</h1>
+	    <main role="main">
+		    <section>
+			    <h1 class="full-width">What Does Radiant In-Floor Heating Cost?</h1>
 			    <p>
 				    One of the factors affecting the cost of an in-floor radiant heating installation is the method that will be used to heat the hot water.
 			    </p>
@@ -49,14 +49,14 @@
 			    </p>
 	        <p>
 	          <b>To request a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
-	        </p> -->
+	        </p>
 
 					<!-- Begin Cost Examples table -->
-	        <section class="full-width">
+	        <section class="full-width" name="table-section">
 	          <h2 id="cost_examples" class="container-fluid full-width">Cost Examples</h2>
 	          <div><!-- div for overflow styling bug fix -->
 							<table role="table" class="table">
-								<caption>Cost Examples Table</caption>
+								<caption class="sr-only">Cost Examples Table</caption>
                 <col class="current">
                 <col>
                 <col>
@@ -108,52 +108,44 @@
 	              <tfoot>
 	                <tr class="text-center">
 	                  <td id="foot1">
-	                    <!-- <p> -->
-												<span class="bold-text">
-													<span aria-hidden="true">$8000.00</span>
-													<span class="sr-only">Approximate cost: eight-thousand dollars</span>
-													<br>
-													<span class="sub-text">
-														(<span aria-hidden="true">$28.00 per sq/ft</span><span class="sr-only">or twenty-eight dollars per square foot</span>)
-													</span>
+											<span class="bold-text">
+												<span aria-hidden="true">$8000.00</span>
+												<span class="sr-only">Approximate cost: eight-thousand dollars</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">$28.00 per sq/ft</span><span class="sr-only">or twenty-eight dollars per square foot</span>)
 												</span>
-											<!-- </p> -->
+											</span>
 	                  </td>
 	                  <td id="foot2">
-	                  	<!-- <p> -->
-												<span class="bold-text">
-													<span aria-hidden="true">$8800.00</span>
-													<span class="sr-only">Approximate cost: eight-thousand, eight-hundred dollars</span>
-													<br>
-													<span class="sub-text">
-														(<span aria-hidden="true">$5.86 per sq/ft</span><span class="sr-only">or five-dollars, eighty-six cents per square foot</span>)
-													</span>
+											<span class="bold-text">
+												<span aria-hidden="true">$8800.00</span>
+												<span class="sr-only">Approximate cost: eight-thousand, eight-hundred dollars</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">$5.86 per sq/ft</span><span class="sr-only">or five-dollars, eighty-six cents per square foot</span>)
 												</span>
-											<!-- </p> -->
+											</span>
 	                  </td>
 	                  <td id="foot3">
-	                    <!-- <p> -->
-												<span class="bold-text">
-													<span aria-hidden="true">$54,000.00</span>
-													<span class="sr-only">Approximate cost: fifty-four thousands dollars</span>
-													<br>
-													<span class="sub-text">
-														(<span aria-hidden="true">$13.50 per sq/ft</span><span class="sr-only">or thirteen-dollars, fifty cents per square foot</span>)
-													</span>
+											<span class="bold-text">
+												<span aria-hidden="true">$54,000.00</span>
+												<span class="sr-only">Approximate cost: fifty-four thousands dollars</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">$13.50 per sq/ft</span><span class="sr-only">or thirteen-dollars, fifty cents per square foot</span>)
 												</span>
-											<!-- </p> -->
+											</span>
 	                  </td>
 	                  <td id="foot4">
-	                    <!-- <p> -->
-												<span class="bold-text">
-													<span aria-hidden="true">$10.00-$20.00</span>
-													<span class="sr-only">Approximate cost: ten-to-twenty dollars per square foot</span>
-													<br>
-													<span class="sub-text">
-														(<span aria-hidden="true">per sq/ft</span>)
-													</span>
+											<span class="bold-text">
+												<span aria-hidden="true">$10.00-$20.00</span>
+												<span class="sr-only">Approximate cost: ten-to-twenty dollars per square foot</span>
+												<br>
+												<span class="sub-text">
+													(<span aria-hidden="true">per sq/ft</span>)
 												</span>
-											<!-- </p> -->
+											</span>
 	                  </td>
 	                </tr>
 	              </tfoot>
