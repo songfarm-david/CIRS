@@ -183,12 +183,6 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<!-- Custom Javascripts -->
-		<script src="scripts/infloor.min.js"></script>
-		<script type="text/javascript">
-		$(window).on("load resize", function() {
-			// if mobile screens
-			if (window.innerWidth <= 767) {$.getScript("scripts/costs_table.min.js")}
-		});
-		</script>
+		<script src="scripts/cost_examples.min.js"></script>
 	</body>
 </html>
