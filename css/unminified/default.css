@@ -1,5 +1,5 @@
 /************************
-** Canadian In-Floor.ca
+** Canadian In-Floor.ca - Default.asp
 ==========================
 Author: David Gaskin
 Date: July 2016
@@ -13,7 +13,8 @@ Date: July 2016
 *
 */
 
-
+/*** Import Fonts ***/
+@import 'https://fonts.googleapis.com/css?family=Italianno';
 /* Cursive Font */
 @font-face {
 font-family: 'Aramisi';
@@ -66,8 +67,8 @@ div.wrapper > footer {
 	color: #f5911f;
 	font-size: 2.25em;
 }
-h3 { margin: 0 0 25px; }
-h4 { color: #000; font-size: 1.45em;}
+h2 { margin: 0 0 25px; }
+h3 { color: #000; font-size: 1.45em;}
 section > p:last-of-type,
 section > p:only-of-type,
 section ul li:last-child,
@@ -112,7 +113,7 @@ nav > ul {
 	top: 45px;
 }
 nav > ul.nav > li {
-	float: none;
+	float: none; /* this causes Chrome to mis-count list items */
 	display: inline-block;
 	position: relative;
 }
@@ -307,14 +308,14 @@ nav ul.dropdown-menu > li > a:hover:before {
 }
 
 /** Main Page Headers **/
-h2 {
+h1 {
 	color: #fff;
 	padding: 30px 135px;
 	margin: 0 0 45px;
 	font-size: 2.75em;
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b31800', endColorstr='#ffd745', GradientType=1 );
 }
-h2, .panel {
+h1, .panel {
 	background: #f5911f;
 	/* gradient background */
 	background: -moz-linear-gradient(-45deg, rgba(179,24,0,1) 0%, rgba(232,36,1,0.99) 9%, rgba(240,200,0,0.98) 32%, rgba(240,152,0,0.85) 55%, rgba(239,191,1,0.7) 74%, rgba(239,191,1,0.65) 95%, rgba(255,215,69,0.5) 100%);
@@ -332,7 +333,7 @@ h2, .panel {
 	background-color: #fff;
 	padding: 0 15px;
 }
-.panel-body > h3 {
+.panel-body > h2 {
 	padding-top: 15px;
 }
 
@@ -620,7 +621,7 @@ div.wrapper > footer a:focus {
 		right: 25px; top: 20px;
 	}
 
-	h2 { padding-left: 45px; padding-right: 45px; }
+	h1 { padding-left: 45px; padding-right: 45px; }
 
 	/** Jumbotron Captions **/
 	.jumbotron[name="default"] .panel {
@@ -662,7 +663,7 @@ div.wrapper > footer a:focus {
 
 	#partners { padding-left: 45px; padding-right: 45px; }
 
-	section[aria-labelledby="cost_examples"] h3 { padding-left: 45px; padding-right: 45px; }
+	section[name="table-section"] h2 { padding-left: 45px; padding-right: 45px; }
 }
 
 /** XS Screens and below **/
@@ -671,7 +672,7 @@ div.wrapper > footer a:focus {
 		padding: 0 15px;
 	}
 	.full-width { margin-left: -15px; margin-right: -15px; }
-	section > h2 { padding: 20px 15px; }
+	section > h1 { padding: 20px 15px; }
 
 	nav { margin-bottom: 0; }
 	nav.full-width {
@@ -914,9 +915,216 @@ div.wrapper > footer a:focus {
 	}
 	#partners div a { margin: 0 auto 15px; }
 
-	section[aria-labelledby="cost_examples"] h3 { padding-left: 15px; padding-right: 15px; }
+	section[name="table-section"] h2 { padding-left: 15px; padding-right: 15px; }
 
 	.complimentary > ul {
 		margin: 0;
 	}
+}
+
+/***
+Main Styles for default.asp
+==============================
+Author: David Gaskin
+July, 2016
+***/
+
+
+#main-header {
+	height: 315px;
+	background: #f1f1f1;
+	background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 52%, #e5e5e5 100%);
+	background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
+	background-image: url(../images/cirsLogo_r.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#main-header + nav + div.jumbotron p.h1 { margin-top: 0; }
+
+#nav-primary > a { top: -292px; right: 15px; }
+nav {
+	/* use main navigation bg here */
+	background: transparent url(../images/bg_nav_main.png) no-repeat;
+	border-top: 3px solid white;
+	width: auto; left: 0;
+	/* reverse box shadow on top */
+	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
+	margin-bottom: -58px;
+	/* to account for extra bg area */
+}
+nav > ul.navbar-nav {	top: 8px; }
+nav > ul.navbar-nav > li { left: 0; }
+
+/* make 'Call Us' button originate from the right */
+nav > a.call-us {	transform-origin: 100%; }
+nav > a.call-us:hover { transform-origin: 100%; }
+nav .navbar-header { display: none; }
+
+/** Testimonials **/
+#testimonial { margin-top: 30px; margin-bottom: 60px; }
+#testimonial h4 {
+	margin: 0; padding: 0 0 15px;
+	display: none;
+}
+#testimonial .carousel {
+	padding: 0 90px; margin: 0 -15px;
+	position: relative;
+}
+#testimonial article.item {
+	margin: 30px 0;
+	position: relative;
+}
+#testimonial blockquote {
+	border-left: none; /* remove default border */
+	position: relative;
+	margin: 0;
+	font-family: 'Italianno', 'Aramisi', 'Times New Roman', serif;
+}
+#testimonial blockquote p {
+	text-indent: 75px;
+	font-family: 'Italianno', 'Aramisi', 'Times New Roman', serif;
+	font-size: 2.25em; line-height: 1.25;
+}
+blockquote footer {
+	font-size: 1.5em;
+	text-indent: 60px;
+}
+blockquote footer:before {
+	color: #f5911f;
+	font-weight: bold;
+}
+#testimonial blockquote:before,
+#testimonial blockquote:after {
+	color: #f5911f;
+	font-size: 8em;
+	position: absolute;
+	line-height: 1;
+}
+#testimonial blockquote:before{
+	content: open-quote;
+	top: 0;
+}
+#testimonial blockquote:after {
+	content: close-quote;
+	bottom: 15px; right: 45px;
+	line-height: 0.25;
+}
+/* hide the prev + next buttons naturally */
+#carousel-controls {
+	display: none
+}
+#carousel-controls a.carousel-control {
+	background: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 10%;
+	color: #c8c8c8;
+}
+#carousel-controls a.carousel-control:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+}
+#carousel-controls a.carousel-control > span {
+	padding: 10px;
+	height: 85px; width: 85px;
+	margin: 0;
+	line-height: inherit;
+	transition: transform 250ms;
+}
+#carousel-controls a.carousel-control > span:hover,
+#carousel-controls a.carousel-control > span:focus {
+	transform: scale(1.5);
+}
+#carousel-controls a > span:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+	color: #676060;
+}
+#carousel-controls a.carousel-control.left > span { left: 0; }
+#carousel-controls a.carousel-control.right > span { right: 0; }
+
+/* hide carousel-indicators by default - show with JS */
+#testimonial ol.carousel-indicators {
+	position: relative;
+	top: -21px;
+	z-index: 100;
+	display: none;
+	left: 0; margin: 0;
+	width: 100%;
+}
+#testimonial ol.carousel-indicators li,
+#testimonial ol.carousel-indicators li.active {
+	height: 20px; width: 20px;
+	border: 2px solid #c8c8c8;
+	margin: 10px; padding: 9px;
+	transition: transform 250ms;
+}
+#testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
+#testimonial ol.carousel-indicators li:focus { transform: scale(1.75); }
+
+
+
+/** Medium Screens **/
+@media (min-width: 992px) and (max-width: 1199px) {
+	nav {
+		width: 970px;
+		background-size: 970px 96px;
+	}
+}
+
+/** Small screens **/
+@media (min-width: 768px) and (max-width: 991px){
+	nav {
+		width: 750px;
+		background-size: 750px 84px;
+	}
+	nav > ul.navbar-nav {
+		top: 4px;
+	}
+}
+
+/** XS Screens and below **/
+@media (max-width: 767px) {
+	header#main-header {
+		height: 185px;
+		box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.5);
+		position: relative;
+	}
+	nav { height: 0; }
+	nav, nav.full-width {
+		background-image: none;
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+	}
+	/* position the call us button */
+	#nav-primary > a.call-us { top: -177px; }
+
+	/* hamburger icon */
+	nav button.navbar-toggle {
+		position: absolute;
+		top: -60px; right: 0;
+	}
+
+	/* dropdown menu */
+	#navbar { top: 0; }
+
+	.jumbotron[name="default"] { height: 564px; padding: 30px 0 0; }
+	.jumbotron[name="default"] .panel {
+		position: relative;
+		top: 55px;
+	}
+
+	#testimonial .carousel {
+		padding: 0 40px;
+	}
+	#testimonial blockquote p {
+		text-indent: 45px;
+	}
+
+}
+
+@media (max-width: 570px) {
+	header#main-header { background-size: 114%; }
 }

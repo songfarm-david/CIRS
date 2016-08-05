@@ -19,7 +19,7 @@ src: url('../fonts/museo_sans/museosans-900-webfont.eot?#iefix') format('embedde
 
 
 /*** Costs Table ***/
-section[aria-labelledby="cost_examples"] {
+section[name="table-section"] {
 	padding: 25px 0;
 	height: auto;
 	position: relative;
@@ -37,7 +37,7 @@ section[aria-labelledby="cost_examples"] {
 	background-position: left top;
 	background-repeat: no-repeat;
 }
-section[aria-labelledby="cost_examples"] h3 {
+section[name="table-section"] h2 {
 	position: relative;
 	top: -142px;
 	padding: 30px 135px;
@@ -45,7 +45,7 @@ section[aria-labelledby="cost_examples"] h3 {
 	font-size: 2.75em;
 }
 /* allow table to scroll horizontally */
-section[aria-labelledby="cost_examples"] > h3 + div {
+section[name="table-section"] > div {
 	overflow-x: auto;
 }
 
@@ -132,7 +132,7 @@ tbody td {
 	background-size: cover;
 }
 /* price tag */
-.table tfoot tr:first-child td > p{
+.table tfoot tr:first-child td > span.bold-text {
 	font-family: 'museo_sans900', Arial, sans-serif;
 	font-size: 1.35em;
 	border-radius: 6px;
@@ -146,11 +146,11 @@ tbody td {
 	background: linear-gradient(to right,  #dddddd 0%,#ffffff 52%,#d5d5d5 100%);
 }
 /* price tag secondary text */
-.table tfoot > tr:first-child td p > span {
+.table tfoot > tr:first-child td > span.bold-text > span.sub-text {
 	font-size: 0.65em; display: block; font-family: 'museo_sans700', Arial, sans-serif;
 }
 /* disclaimer */
-.table tfoot > tr:last-child {
+/*.table tfoot > tr:last-child {
 	position: absolute;
 	bottom: -15px; right: 0;
 }
@@ -163,7 +163,7 @@ tbody td {
 	font-size: 0.85em;
 	font-style: italic;
 	text-align: right;
-}
+}*/
 
 /** footer base colors and colored images **/
 .table tfoot td:nth-child(1){ background-image: url(../images/orange_base.png); color: #f37821; }
@@ -171,14 +171,14 @@ tbody td {
 .table tfoot td:nth-child(3){ background-image: url(../images/lavender_base.png); color: #9168ae; }
 .table tfoot td:nth-child(4){ background-image: url(../images/yellowGreen_base.png); color: #c3cd2e; }
 
-section[aria-labelledby="cost_examples"] > button { display: none; position: absolute; }
+section[name="table-section"] > button { display: none; position: absolute; }
 
 /** XS Screens and below **/
 @media (max-width: 767px) {
 
-	section[aria-labelledby="cost_examples"] { margin-bottom: 50px; }
-	section[aria-labelledby="cost_examples"] > h3 { padding: 30px 15px;}
-	section[aria-labelledby="cost_examples"] > h3 + div { overflow: hidden; position: relative; }
+	section[name="table-section"] { margin-bottom: 50px; }
+	section[name="table-section"] > h2 { padding: 30px 15px;}
+	section[name="table-section"] > h2 + div { overflow: hidden; position: relative; }
 	table.table {
 		min-width: 0;
 		table-layout: auto;
@@ -210,11 +210,11 @@ section[aria-labelledby="cost_examples"] > button { display: none; position: abs
 		display: none;
 	}
 
-	.table tfoot > tr:last-child { position: static; }
-	.table tfoot > tr:last-child > td { display: inherit; }
+	/*.table tfoot > tr:last-child { position: static; }
+	.table tfoot > tr:last-child > td { display: inherit; }*/
 
 	/* control buttons */
-	section[aria-labelledby="cost_examples"] > button {
+	section[name="table-section"] > button {
 		display: block;
 		top: 200px;
 		background: rgba(0, 0, 0, 0.12);
@@ -226,17 +226,17 @@ section[aria-labelledby="cost_examples"] > button { display: none; position: abs
 		outline: none;
 		z-index: 10000;
 	}
-	section[aria-labelledby="cost_examples"] > button:active {
+	section[name="table-section"] > button:active {
 		background: #f5911f;
 		color: white;
 	}
-	section[aria-labelledby="cost_examples"] > button:first-of-type {
+	section[name="table-section"] > button:first-of-type {
 		left: -35px;
 		padding-left: 50px;
 		border-top-right-radius: 100px;
 		border-bottom-right-radius: 100px;
 	}
-	section[aria-labelledby="cost_examples"] > button:last-of-type {
+	section[name="table-section"] > button:last-of-type {
 		right: -35px;
 		padding-right: 50px;
 		border-top-left-radius: 100px;
