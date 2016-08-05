@@ -21,6 +21,8 @@ July, 2016
 	background-size: contain;
 }
 
+#main-header + nav + div.jumbotron p.h1 { margin-top: 0; }
+
 #nav-primary > a { top: -292px; right: 15px; }
 nav {
 	/* use main navigation bg here */
@@ -138,6 +140,8 @@ blockquote footer:before {
 }
 #testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
 #testimonial ol.carousel-indicators li:focus { transform: scale(1.75); }
+
+
 
 /** Medium Screens **/
 @media (min-width: 992px) and (max-width: 1199px) {

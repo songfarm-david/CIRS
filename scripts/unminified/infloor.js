@@ -335,7 +335,6 @@
 	$(window).resize(function() {
 		if (window.innerWidth <= 767) {
 			if (!isMenu) {
-				console.log("not is menu");
 				createMobileMenu();
 			}
 			// reset a.call-us phone icon styles/behavior */
