@@ -430,12 +430,12 @@ div.wrapper > footer p {
 	font-size: .85em;
 	margin-bottom: 25px;
 }
-div.wrapper > footer ul {
+div.wrapper > footer ol {
 	text-align: center;
 	width: 100%;
 	margin: 25px 0;
 }
-div.wrapper > footer ul > li {
+div.wrapper > footer ol > li {
 	display: inline-block;
 	line-height: 146px;
 	float: none;
@@ -889,7 +889,7 @@ div.wrapper > footer a:focus {
 	.panel { padding: 30px; }
 
 	/* stack footer list items */
-	div.wrapper > footer ul > li {
+	div.wrapper > footer ol > li {
 		display: block;
 		padding: 6px 0;
 	}
