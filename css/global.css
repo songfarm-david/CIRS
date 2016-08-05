@@ -112,7 +112,7 @@ nav > ul {
 	top: 45px;
 }
 nav > ul.nav > li {
-	float: none;
+	float: none; /* this causes Chrome to mis-count list items */
 	display: inline-block;
 	position: relative;
 }
