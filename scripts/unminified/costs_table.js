@@ -77,6 +77,13 @@
 		}
 	}
 
+	function loadScript() {
+		$.getScript("scripts/costs_table.js");
+		$(window).off('load resize', loadScript);
+	}
+
+	$(window).on("load resize", loadScript);
+
 	// initialize first panel
 	rotatePanel();
 	// initialize button events
