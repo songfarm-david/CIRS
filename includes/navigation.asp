@@ -17,7 +17,7 @@
 					<ul class="dropdown-menu" id="navbar-xs">
 						<li class="dropdown-submenu dropdown-toggle">
 							<a href="infloor_heat.asp">In-Floor Heat</a>
-							<ul class="dropdown-menu" id="navbar-xs-submenu">
+							<ul class="dropdown-menu" id="navbar-xs-submenu" aria-hidden="true">
 								<li><a href="infloor_heat.asp#design">Design</a></li>
 								<li><a href="infloor_heat.asp#system_components">System Components</a></li>
 								<li><a href="infloor_heat.asp#installation">Installation</a></li>
