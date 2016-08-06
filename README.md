@@ -16,14 +16,11 @@ Website is compatible with all current browsers including IE9 and above (users o
 ### Responsive Design
 Website follows a responsive design and has been optimized to work on mobile devices (iPad, iPhone)
 
-### Future Extensibility
-A placeholder for a 'Careers' page has been placed into the code to allow for addition of a careers page.
-
 ### Web Accessibility
-WAI-ARIA specifications have been observed within a reasonable margin to allow for use of Screen Readers and Assistive Technologies.
+WAI-ARIA specifications have been observed within a reasonable margin to allow for use of Screen Readers and Assistive Technologies. Tests were conducted using NVDA Assistive Technology.
 
 ### Component Files Minimized
-All component files have been minimized and all main display images have been resized to optimize load speed.
+All component CSS and JS files have been condensed, compressed and minimized as have all main display images been resized to optimize load speed.
 
 ### Sitemap
 An XML sitemap as per the [Sitemap 0.90 Protocol](http://www.sitemaps.org/) has been included in the build to help optimize Search Engine crawling.

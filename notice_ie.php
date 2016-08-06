@@ -26,15 +26,13 @@
 		<!--[if IE 9]>
 			<script>Browser = {isIE:true,version:9};
 			if (Browser.isIE) {
-				if (window.location.href == "http://cirs.songfarm.ca/notice_ie.asp") {
-					window.location.replace("http://cirs.songfarm.ca/default.asp");
+				if (window.location.href == "http://cirs.songfarm.ca/notice_ie.php") {
+					window.location.replace("http://cirs.songfarm.ca/index.php");
 				}
 			}
-
 			</script>
 		<![endif]-->
 	</head>
-
 	<body>
 		<div>
 			<h1>Please update your browser</h1>

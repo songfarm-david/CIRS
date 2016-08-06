@@ -7,61 +7,61 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/infloor_heat.asp</loc>
+		<loc>http://www.infloorheat.ca/infloor_heat.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/cost_examples.asp</loc>
+		<loc>http://www.infloorheat.ca/cost_examples.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/contact_us.asp</loc>
+		<loc>http://www.infloorheat.ca/contact_us.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/about_us.asp</loc>
+		<loc>http://www.infloorheat.ca/about_us.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/careers.asp</loc>
+		<loc>http://www.infloorheat.ca/careers.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/sitemap.asp</loc>
+		<loc>http://www.infloorheat.ca/sitemap.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/fire_safety_systems.asp</loc>
+		<loc>http://www.infloorheat.ca/fire_safety_systems.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/pool_heating.asp</loc>
+		<loc>http://www.infloorheat.ca/pool_heating.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/snow_melt_heated_driveways.asp</loc>
+		<loc>http://www.infloorheat.ca/snow_melt_heated_driveways.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/thermal_mass.asp</loc>
+		<loc>http://www.infloorheat.ca/thermal_mass.php</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.7</priority>
