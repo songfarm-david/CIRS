@@ -7,25 +7,25 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/infloor_heat.asp</loc>
+		<loc>http://www.infloorheat.ca/in-floor-heating.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/cost_examples.asp</loc>
+		<loc>http://www.infloorheat.ca/costs.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/contact_us.asp</loc>
+		<loc>http://www.infloorheat.ca/contact.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/about_us.asp</loc>
+		<loc>http://www.infloorheat.ca/about.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.8</priority>
@@ -43,25 +43,25 @@
 		<priority>0.5</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/fire_safety_systems.asp</loc>
+		<loc>http://www.infloorheat.ca/fire-safety-systems.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/pool_heating.asp</loc>
+		<loc>http://www.infloorheat.ca/pool-heating.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.6</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/snow_melt_heated_driveways.asp</loc>
+		<loc>http://www.infloorheat.ca/snow-melt-heated-driveways.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>http://www.infloorheat.ca/thermal_mass.asp</loc>
+		<loc>http://www.infloorheat.ca/thermal-mass.asp</loc>
 		<lastmod>2016-08-01</lastmod>
 		<changefreq>yearly</changefreq>
 		<priority>0.7</priority>

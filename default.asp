@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/default.min.css" media="screen" title="Global Styles">
-		<!-- #include file="includes/browser_detect.asp" -->
+		<!-- #include file="includes/browser-detect.asp" -->
 	</head>
 	<body>
 
@@ -48,13 +48,13 @@
 						<div class="col-md-6 col-lg-7">
 							<h2>What is Radiant In-Floor Heating?</h2>
 							<p>
-								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.asp">In-Floor Heating Page</a> for a brief overview.
+								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="in-floor-heating.asp">In-Floor Heating Page</a> for a brief overview.
 							</p>
 							<p>
-								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.asp">Heated Driveways.</a>
+								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow-melt-heated-driveways.asp">Heated Driveways.</a>
 							</p>
 							<p>
-								To get a sense of what In-Floor Heating may cost, please visit our <a href="cost_examples.asp">What Does It Cost?</a> page.
+								To get a sense of what In-Floor Heating may cost, please visit our <a href="costs.asp">What Does It Cost?</a> page.
 							</p>
 							<p class="call-us">
 			          <b>For a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
@@ -152,8 +152,8 @@
 					<div class="col-xs-12">
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
 							<li><a href="default.asp">Home</a></li>
-							<li><a href="about_us.asp">About Us</a></li>
-							<li><a href="contact_us.asp">Contact Us</a></li>
+							<li><a href="about.asp">About Us</a></li>
+							<li><a href="contact.asp">Contact Us</a></li>
 							<li><a href="sitemap.asp">Site Map</a></li>
 						</ul>
 					</div>

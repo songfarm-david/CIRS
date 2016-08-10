@@ -307,7 +307,7 @@
 
 		$("#nav-primary > button").remove();
 		$("#navbar").addClass("navbar-nav").removeClass("collapse");
-		$("#navbar > li:first-child > a").attr("href","infloor_heat.asp").removeAttr("data-toggle").removeAttr("data-target");
+		$("#navbar > li:first-child > a").attr("href","in-floor-heating.asp").removeAttr("data-toggle").removeAttr("data-target");
 		$("#navbar-xs").removeClass("collapse").addClass("dropdown-menu");
 		isMenu = false;
 

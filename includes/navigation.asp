@@ -11,30 +11,30 @@
 			</div>
 			<ul class="nav navbar-nav" id="navbar">
 				<li class="dropdown dropdown-toggle">
-					<a href="infloor_heat.asp">
+					<a href="in-floor-heating.asp">
 						Radiant Solutions <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu" id="navbar-xs">
 						<li class="dropdown-submenu dropdown-toggle">
-							<a href="infloor_heat.asp">In-Floor Heat</a>
+							<a href="in-floor-heating.asp">In-Floor Heat</a>
 							<ul class="dropdown-menu" id="navbar-xs-submenu" aria-hidden="true">
-								<li><a href="infloor_heat.asp#design">Design</a></li>
-								<li><a href="infloor_heat.asp#system_components">System Components</a></li>
-								<li><a href="infloor_heat.asp#installation">Installation</a></li>
-								<li><a href="infloor_heat.asp#costs">Costs</a></li>
-								<li><a href="infloor_heat.asp#maintenance_and_repairs">Maintenance &amp; Repairs</a></li>
-								<li><a href="infloor_heat.asp#lifespan_and_warranty">Lifespan &amp; Warranty</a></li>
-								<li><a href="infloor_heat.asp#benefits">Benefits</a></li>
-								<li><a href="infloor_heat.asp#cautions_and_solutions">Cautions and Solutions</a></li>
+								<li><a href="in-floor-heating.asp#design">Design</a></li>
+								<li><a href="in-floor-heating.asp#system_components">System Components</a></li>
+								<li><a href="in-floor-heating.asp#installation">Installation</a></li>
+								<li><a href="in-floor-heating.asp#costs">Costs</a></li>
+								<li><a href="in-floor-heating.asp#maintenance_and_repairs">Maintenance &amp; Repairs</a></li>
+								<li><a href="in-floor-heating.asp#lifespan_and_warranty">Lifespan &amp; Warranty</a></li>
+								<li><a href="in-floor-heating.asp#benefits">Benefits</a></li>
+								<li><a href="in-floor-heating.asp#cautions_and_solutions">Cautions and Solutions</a></li>
 							</ul>
 						</li>
-						<li><a href="thermal_mass.asp">Thermal Mass</a></li>
-						<li><a href="snow_melt_heated_driveways.asp">Snow Melt &amp; Heated Driveways</a></li>
-						<li><a href="fire_safety_systems.asp">Fire Safety Systems</a></li>
-						<li><a href="pool_heating.asp">Pool Heating</a></li>
+						<li><a href="thermal-mass.asp">Thermal Mass</a></li>
+						<li><a href="snow-melt-heated-driveways.asp">Snow Melt &amp; Heated Driveways</a></li>
+						<li><a href="fire-safety-systems.asp">Fire Safety Systems</a></li>
+						<li><a href="pool-heating.asp">Pool Heating</a></li>
 					</ul>
 				</li>
-				<li><a href="cost_examples.asp">What Does It Cost?</a></li>
-				<li><a href="about_us.asp">About Us</a></li>
+				<li><a href="costs.asp">What Does It Cost?</a></li>
+				<li><a href="about.asp">About Us</a></li>
 			</ul>
 		</nav>

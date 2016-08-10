@@ -26,7 +26,7 @@
 		<!--[if IE 9]>
 			<script>Browser = {isIE:true,version:9};
 			if (Browser.isIE) {
-				if (window.location.href == "http://cirs.songfarm.ca/notice_ie.asp") {
+				if (window.location.href == "http://cirs.songfarm.ca/notice-ie.asp") {
 					window.location.replace("http://cirs.songfarm.ca/default.asp");
 				}
 			}

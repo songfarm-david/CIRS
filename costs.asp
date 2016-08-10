@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/cost_examples.min.css" media="screen" title="Global Styles">
-		<!-- #include file="includes/browser_detect.asp" -->
+		<!-- #include file="includes/browser-detect.asp" -->
 	</head>
 	<body>
 		<!-- For document outline -->
@@ -159,8 +159,8 @@
 					<div class="col-xs-12">
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
 							<li><a href="default.asp">Home</a></li>
-							<li><a href="about_us.asp">About Us</a></li>
-							<li><a href="contact_us.asp">Contact Us</a></li>
+							<li><a href="about.asp">About Us</a></li>
+							<li><a href="contact.asp">Contact Us</a></li>
 							<li><a href="sitemap.asp">Site Map</a></li>
 						</ul>
 					</div>

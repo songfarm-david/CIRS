@@ -11,7 +11,7 @@
 	<script>
 	Browser = {isIE:true,version:8};
 	if (Browser.isIE) {
-		window.location.replace('http://cirs.songfarm.ca/notice_ie.asp');
+		window.location.replace('http://cirs.songfarm.ca/notice-ie.asp');
 	}
 	</script>
 <![endif]-->
