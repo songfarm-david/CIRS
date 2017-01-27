@@ -18,6 +18,7 @@
 	// build the buttons
 	var buttons = [];
 	for (var i = 0; i < 2; i++) {
+		// create generic button
 		var button = document.createElement("button");
 		button.setAttribute("type","button");
 		button.setAttribute("aria-hidden","true");
