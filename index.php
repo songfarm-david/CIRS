@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario.">
 		<title>In-Floor Heating systems designed and installed by expert infloor heat contractor in Ontario</title>
-		<link rel="canonical" href="http://cirs.songfarm.ca">
+		<!-- <link rel="canonical" href="http://cirs.songfarm.ca"> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/default.min.css" media="screen" title="Global Styles">
 		<?php include("includes/browser_detect.php"); ?>
