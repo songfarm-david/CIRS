@@ -1,7 +1,7 @@
 # Canadian In-Floor Radiant Solutions (CIRS): README
 David Gaskin - July 2016
 
-##Overview.
+## Overview
 A rebuild of an outdated website for the home and commercial heated-pad industry
 
 ### Browser Compatibility and Graceful Degradation
