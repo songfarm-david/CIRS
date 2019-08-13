@@ -2,29 +2,21 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<!-- IE Edge Meta tag -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario.">
 		<title>In-Floor Heating systems designed and installed by expert infloor heat contractor in Ontario</title>
-		<!-- Bootstrap CSS -->
+		<!-- <link rel="canonical" href="http://cirs.songfarm.ca"> -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<!-- Author CSS -->
 		<link rel="stylesheet" href="css/default.min.css" media="screen" title="Global Styles">
-		<!-- #include file="includes/browser_detect.asp" -->
+		<?php include("includes/browser_detect.php"); ?>
 	</head>
 	<body>
-
 		<div class="wrapper container">
-
-			<!-- Logo Banner -->
 			<header role="banner" id="main-header" class="full-width">
 				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 			</header>
-
-			<!-- #include file="includes/navigation.asp" -->
-
-			<!-- Jumbotron -->
+			<?php include("includes/navigation.php"); ?>
       <div role="region" aria-label="introduction" class="jumbotron full-width" name="default">
 				<div class="container">
 					<div class="row">
@@ -39,8 +31,6 @@
 					</div>
 				</div>
       </div>
-
-			<!-- Main Content -->
 			<main role="main">
 				<section id="main-content">
 					<h1 class="full-width">Radiant Heating Systems for Your Home</h1>
@@ -48,13 +38,13 @@
 						<div class="col-md-6 col-lg-7">
 							<h2>What is Radiant In-Floor Heating?</h2>
 							<p>
-								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.asp">In-Floor Heating Page</a> for a brief overview.
+								New to the concept of radiant heating systems? We invite you to take a few moments to visit our <a href="infloor_heat.php">In-Floor Heating Page</a> for a brief overview.
 							</p>
 							<p>
-								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.asp">Heated Driveways.</a>
+								Hydronic radiant heating systems are excellent for home heating but they can also be used to keep your driveway and walks clear of snow and ice in the winter. To learn more about these options check out our page on <a href="snow_melt_heated_driveways.php">Heated Driveways.</a>
 							</p>
 							<p>
-								To get a sense of what In-Floor Heating may cost, please visit our <a href="cost_examples.asp">What Does It Cost?</a> page.
+								To get a sense of what In-Floor Heating may cost, please visit our <a href="cost_examples.php">What Does It Cost?</a> page.
 							</p>
 							<p class="call-us">
 			          <b>For a free, no obligation quote call us at <a href="tel:9055381661">905-538-1661.</a></b>
@@ -78,8 +68,6 @@
 							</aside>
 						</div>
 					</div>
-
-					<!-- Testimonials Section -->
 					<section role="region" id="testimonial" class="full-width" aria-labelledby="header-testimonials">
 						<div class="panel">
 							<div class="panel-body">
@@ -121,7 +109,6 @@
 											</blockquote>
 										</article>
 									</div>
-									<!-- Manual Controls -->
 									<section id="carousel-controls">
 										<div aria-controls="carousel" aria-label="carousel controls">
 											<a href="#testimonials" class="carousel-control left" data-slide="prev">
@@ -132,7 +119,6 @@
 											</a>
 										</div>
 									</section>
-									<!-- Indicators -->
 									<ol class="carousel-indicators">
 										<li role="button" data-target="#testimonials" data-slide-to="0" tabindex="0" aria-label="testimonial 1" class="active"></li>
 										<li role="button" data-target="#testimonials" data-slide-to="1" tabindex="0" aria-label="testimonial 2" class=""></li>
@@ -142,19 +128,16 @@
 							</div>
 						</div>
 					</section>
-					<!-- end of testimonial -->
 				</section>
 			</main>
-
-			<!-- Footer -->
 			<footer id="footer" class="container-fluid full-width">
 				<div class="row">
 					<div class="col-xs-12">
 						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
-							<li><a href="default.asp">Home</a></li>
-							<li><a href="about_us.asp">About Us</a></li>
-							<li><a href="contact_us.asp">Contact Us</a></li>
-							<li><a href="sitemap.asp">Site Map</a></li>
+							<li><a href="index.php">Home</a></li>
+							<li><a href="about_us.php">About Us</a></li>
+							<li><a href="contact_us.php">Contact Us</a></li>
+							<li><a href="sitemap.php">Site Map</a></li>
 						</ul>
 					</div>
 				</div>
@@ -166,15 +149,9 @@
 					</div>
 				</div>
 			</footer>
-
-		<!-- end of Wrapper Container -->
 		</div>
-
-		<!-- jQuery Core V2.2.4 (Bootstrap Compatible)-->
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- Custom Javascripts -->
 		<script src="scripts/default.min.js"></script>
 	</body>
 </html>
