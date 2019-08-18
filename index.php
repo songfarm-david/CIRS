@@ -17,7 +17,7 @@
 				<h1 class="sr-only">Canadian In-Floor Radiant Solutions</h1>
 			</header>
 			<?php include("includes/navigation.php"); ?>
-      <div role="region" aria-label="introduction" class="jumbotron full-width" name="default">
+      <div role="region" aria-label="introduction" class="jumbotron full-width" 	 name="default">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6">

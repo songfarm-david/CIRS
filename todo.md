@@ -5,13 +5,8 @@
 * browser_detect.asp - line 14
 * Consider adding Header Expiry/Caching commands to static files and assets
 
-## Meta
-* Test and optimize page speed
-* Research robots.txt for sitemap (Sitemap: http://www.example.com/sitemap.xml) / (http://www.robotstxt.org)
-* SEO review
-* Microformatting what can be microformatted
-
-
+## Todo
+* re-minify production files, or setup a minification workflow if not wanting to do it manually
 
 ## 404 page
 Create a custom 404 page
@@ -22,6 +17,11 @@ Create a custom 404 page
 * Make sure the page is returning a status 404 so that it does not get indexed by Search Engines
 
 ## SEO
+* Test and optimize page speed
+* SEO review
+* Microformatting what can be microformatted
+
+### SEO Todo
 Conduct a SEO review of CIRS website. Try to add more definition to search terms.
 Also, consider microformats and creating a Rich Card for CIRS.
 * Every page has the same meta info

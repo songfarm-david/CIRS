@@ -44,7 +44,9 @@
 
 	}
 
-	// on click/focus carousel control, give focus to span element
+	/**
+	 * On click/focus carousel control (a tag), give focus to its inner span element
+	 */
 	$("#carousel-controls a").click(
 		function(e) {
 			if (e.target.localName == "a") {
@@ -55,7 +57,11 @@
 		}
 	);
 
-	/* keyboard & accessibility events */
+	/**
+	 * keyboard & accessibility events
+	 * Handles appropriate management of user events (click, focus) in
+	 * conjunction with parent <a> element
+	 */
 	$("#carousel-controls a > span").keydown(
 		function(e) {
 			if (e.keyCode == 13 || e.keyCode == 32) {
@@ -76,7 +82,10 @@
 		}
 	});
 
-	/* Bootstrap event - on slide change start */
+	/**
+	 * Bootstrap event - on slide change start
+	 * Handles display visibility of slides
+	 */
 	$("#testimonials").on("slide.bs.carousel", function(e) {
 		for (var i = 0; i < testimonials.length; i++) {
 			if (testimonials[i] == e.relatedTarget) {
@@ -90,8 +99,8 @@
 	function runCarousel() {
 		//Bootstrap carousel object and controls
 		$(".carousel").carousel({
-			interval : 20000
-			,wrap : false
+			interval : 20000,
+			wrap : false
 		});
 	}
 

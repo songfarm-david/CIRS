@@ -12,7 +12,8 @@
 	var secondDropdown = $("#navbar-xs-submenu");
 
 	var dropdownsArray = $.makeArray(firstDropdown,secondDropdown);
-	var timeout; var eventDisabled = false;
+	var timeout;
+	var eventDisabled = false;
 
 	// add initial ARIA properties
 	$.each(dropdownsArray, function(i, dropdown) {
@@ -20,7 +21,7 @@
 	});
 
 	/**
-	* Create function to attach mouse events to navigation elements
+	* Function to attach mouse events to navigation elements including dropdowns
 	*/
 	function attachEvents() {
 
@@ -50,7 +51,8 @@
 		$(subTrigger).mouseover(function() {
 				toggleARIAProps(secondDropdown);
 				$(secondDropdown).css("display","block");
-			}).mouseout(function() { // on mouseout, start timer then hide dropdown
+			}).mouseout(function() {
+				// on mouseout, start timer then hide dropdown
 				setTimeout(function() {
 					$(secondDropdown).css("display","");
 					toggleARIAProps(secondDropdown);
@@ -102,12 +104,17 @@
 		$(subTriggerSibling).focus();
 	}
 
-	/* top level ul, first list item a.k.a main trigger */
-	$("#navbar > li.dropdown > a").keyup(
+	/**
+	 * Control tab flow and dropdown menu behavior
+	 */
+	$("#navbar > li.dropdown > a")
+	.keyup(
 		function(e) {
+			// control moving focus to dropdown trigger
 			if (e.shiftKey && e.keyCode == 9) {
 				$(subTrigger).on("focusout", siblingFocus);
 			}
+			// and moving control out
 			if (e.keyCode == 9 && !e.shiftKey) {
 				toggleARIAProps(firstDropdown);
 			}

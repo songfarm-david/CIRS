@@ -27,11 +27,13 @@
 		button.insertBefore(span, null);
 		buttons[i] = button;
 	}
+
 	// define each buttons unique characteristics
 	buttons[0].setAttribute("name","previous");
 	buttons[0].firstElementChild.className += " glyphicon-chevron-left";
 	buttons[1].setAttribute("name","next");
 	buttons[1].firstElementChild.className += " glyphicon-chevron-right";
+
 	// attach buttons to DOM
 	var parent = $('section[name="table-section"]');
 	var tableParent = $("table.table")[0].parentElement;
@@ -39,29 +41,36 @@
 		parent[0].insertBefore(buttons[i],tableParent);
 	}
 
-	function initializeEvents() {
-		/* NOTE: use of '-1' to accomodate 0-index */
-		$("button[name=\"previous\"]").on("click", function() {
-			$(columns[index]).removeClass("current");
-			if (index == 0) {
-				index = columns.length - 1;
-			} else {
-				index--;
-			}
-			$(columns[index]).addClass("current");
-			rotatePanel();
-		});
+	/**
+	 * Sets up table functionality and scroll order
+	 */
+	function initializeTable() {
 
-		$("button[name=\"next\"]").on("click", function() {
-			$(columns[index]).removeClass("current");
-			if (index == (columns.length - 1) ) {
-				index = 0;
-			} else {
-				index++;
+		$("button[name=\"previous\"]")
+			.on("click", function() {
+				$(columns[index]).removeClass("current");
+				if (index == 0) {
+					index = columns.length - 1;
+				} else {
+					index--;
+				}
+				$(columns[index]).addClass("current");
+				rotatePanel();
 			}
-			$(columns[index]).addClass("current");
-			rotatePanel();
-		});
+		);
+
+		$("button[name=\"next\"]")
+			.on("click", function() {
+				$(columns[index]).removeClass("current");
+				if (index == (columns.length - 1) ) {
+					index = 0;
+				} else {
+					index++;
+				}
+				$(columns[index]).addClass("current");
+				rotatePanel();
+			}
+		);
 
 	}
 
@@ -88,4 +97,4 @@
 	// initialize first panel
 	rotatePanel();
 	// initialize button events
-	initializeEvents();
+	initializeTable();
