@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="In floor heating offers many benefits. Learn about hydronic infloor heat from experts serving Toronto and Southern Ontario.">
-		<title>What does In-Floor Heating cost?</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/cost_examples.min.css" media="screen" title="Global Styles">
-		<?php include("includes/browser_detect.php"); ?>
-	</head>
-	<body>
-		<h1 class="hidden">Canadian In-Floor Radiant Solutions</h1>
-		<div class="wrapper container">
+<?php
+$pageTitle = 'What does it cost?';
+?>
+<?php include("includes/header.php"); ?>
 	    <?php include("includes/navigation.php"); ?>
 	    <div class="jumbotron full-width" name="cost_examples"></div>
 	    <main role="main">
@@ -141,28 +130,7 @@
 	        </section>
 		    </section>
 	    </main>
-			<footer id="footer" class="container-fluid full-width">
-				<div class="row">
-					<div class="col-xs-12">
-						<ul class="nav navbar-nav" aria-label="Secondary Navigation">
-							<li><a href="index.php">Home</a></li>
-							<li><a href="about_us.php">About Us</a></li>
-							<li><a href="contact_us.php">Contact Us</a></li>
-							<li><a href="sitemap.php">Site Map</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 text-center">
-						<p>
-							&copy; 2016 Canadian In-Floor Radiant&nbsp;Solutions
-						</p>
-					</div>
-				</div>
-			</footer>
-		</div>
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script src="scripts/cost_examples.min.js"></script>
-	</body>
-</html>
+
+		 <?php $pageScript = '<script src="scripts/costs_table.min.js"></script>
+'; ?>
+<?php include("includes/footer.php"); ?>

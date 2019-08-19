@@ -1,3 +1,6 @@
+<?php
+$pageTitle = 'Sitemap';
+?>
 <?php include("includes/header.php"); ?>
   <?php include("includes/navigation.php"); ?>
 		<section>

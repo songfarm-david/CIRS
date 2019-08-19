@@ -1,3 +1,6 @@
+<?php
+$pageTitle = 'Thermal Mass';
+?>
 <?php include("includes/header.php"); ?>
   <?php include("includes/navigation.php"); ?>
   <div class="jumbotron full-width" name="thermal_mass"></div>

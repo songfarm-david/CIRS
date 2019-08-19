@@ -88,7 +88,7 @@
 	}
 
 	function loadScript() {
-		$.getScript("scripts/costs_table.js");
+		$.getScript("scripts/unminified/costs_table.js");
 		$(window).off('load resize', loadScript);
 	}
 

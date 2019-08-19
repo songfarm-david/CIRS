@@ -1,3 +1,6 @@
+<?php
+$pageTitle = 'Fire Safety Systems';
+?>
 <?php include("includes/header.php"); ?>
   <?php include("includes/navigation.php"); ?>
   <div class="jumbotron full-width" name="fire_safety_systems"></div>

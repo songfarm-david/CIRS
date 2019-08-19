@@ -7,6 +7,7 @@
 
 ## Todo
 * Project search: notice_ie.php
+* costs examples page breaks if both global styles and cost table styles are included together!
 * Examine script usage and structure.
 	* default.js is a combination of all scripts on the page. Review script usage and place script chunks into appropriate files (for reference, infloor.js contains scripts for some functionality, where default.js contains **all** scripts)
 	* examine all pages and footer to audit scripts being used

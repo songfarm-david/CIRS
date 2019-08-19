@@ -13,6 +13,8 @@
 			return false;
 		}
 
+		alert('blow')
+
 	/*** Carousel ***/
 	/*
 	* Handles the initialization of ARIA states and properties

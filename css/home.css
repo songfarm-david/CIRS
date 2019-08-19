@@ -1,0 +1,196 @@
+#main-header {
+	height: 315px;
+	background: #f1f1f1;
+	background: -moz-linear-gradient(top,  #dddddd 0%, #ffffff 52%, #e5e5e5 100%);
+	background: -webkit-linear-gradient(top,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background: linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#e5e5e5',GradientType=0 );
+	background-image: url(../images/cirsLogo_r.png), linear-gradient(to bottom,  #dddddd 0%,#ffffff 52%,#e5e5e5 100%);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#main-header + nav + div.jumbotron p.h1 { margin-top: 0; }
+
+#nav-primary > a { top: -292px; right: 15px; }
+nav {
+	/* use main navigation bg here */
+	background: transparent url(../images/bg_nav_main.png) no-repeat;
+	border-top: 3px solid white;
+	width: auto; left: 0;
+	/* reverse box shadow on top */
+	box-shadow: 0px -18px 25px -15px rgba(0, 0, 0, 0.5);
+	margin-bottom: -58px;
+	/* to account for extra bg area */
+}
+nav > ul.navbar-nav {	top: 8px; }
+nav > ul.navbar-nav > li { left: 0; }
+
+/* make 'Call Us' button originate from the right */
+nav > a.call-us {	transform-origin: 100%; }
+nav > a.call-us:hover { transform-origin: 100%; }
+nav .navbar-header { display: none; }
+
+/** Testimonials **/
+#testimonial { margin-top: 30px; margin-bottom: 60px; }
+#testimonial h4 {
+	margin: 0; padding: 0 0 15px;
+	display: none;
+}
+#testimonial .carousel {
+	padding: 0 90px; margin: 0 -15px;
+	position: relative;
+}
+#testimonial article.item {
+	margin: 30px 0;
+	position: relative;
+}
+#testimonial blockquote {
+	border-left: none; /* remove default border */
+	position: relative;
+	margin: 0;
+	font-family: 'Italianno', 'Aramisi', 'Times New Roman', serif;
+}
+#testimonial blockquote p {
+	text-indent: 75px;
+	font-family: 'Italianno', 'Aramisi', 'Times New Roman', serif;
+	font-size: 2.25em; line-height: 1.25;
+}
+blockquote footer {
+	font-size: 1.5em;
+	text-indent: 60px;
+}
+blockquote footer:before {
+	color: #f5911f;
+	font-weight: bold;
+}
+#testimonial blockquote:before,
+#testimonial blockquote:after {
+	color: #f5911f;
+	font-size: 8em;
+	position: absolute;
+	line-height: 1;
+}
+#testimonial blockquote:before{
+	content: open-quote;
+	top: 0;
+}
+#testimonial blockquote:after {
+	content: close-quote;
+	bottom: 15px; right: 45px;
+	line-height: 0.25;
+}
+/* hide the prev + next buttons naturally */
+#carousel-controls {
+	display: none
+}
+#carousel-controls a.carousel-control {
+	background: #fff;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 10%;
+	color: #c8c8c8;
+}
+#carousel-controls a.carousel-control:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+}
+#carousel-controls a.carousel-control > span {
+	padding: 10px;
+	height: 85px; width: 85px;
+	margin: 0;
+	line-height: inherit;
+	transition: transform 250ms;
+}
+#carousel-controls a.carousel-control > span:hover,
+#carousel-controls a.carousel-control > span:focus {
+	transform: scale(1.5);
+}
+#carousel-controls a > span:focus {
+	outline: auto 5px -webkit-focus-ring-color;
+	color: #676060;
+}
+#carousel-controls a.carousel-control.left > span { left: 0; }
+#carousel-controls a.carousel-control.right > span { right: 0; }
+
+/* hide carousel-indicators by default - show with JS */
+#testimonial ol.carousel-indicators {
+	position: relative;
+	top: -21px;
+	z-index: 100;
+	display: none;
+	left: 0; margin: 0;
+	width: 100%;
+}
+#testimonial ol.carousel-indicators li,
+#testimonial ol.carousel-indicators li.active {
+	height: 20px; width: 20px;
+	border: 2px solid #c8c8c8;
+	margin: 10px; padding: 9px;
+	transition: transform 250ms;
+}
+#testimonial ol.carousel-indicators li.active { background: #8c8c8c; }
+#testimonial ol.carousel-indicators li:focus { transform: scale(1.75); }
+
+/** Medium Screens **/
+@media (min-width: 992px) and (max-width: 1199px) {
+	nav {
+		width: 970px;
+		background-size: 970px 96px;
+	}
+}
+
+/** Small screens **/
+@media (min-width: 768px) and (max-width: 991px){
+	nav {
+		width: 750px;
+		background-size: 750px 84px;
+	}
+	nav > ul.navbar-nav {
+		top: 4px;
+	}
+}
+
+/** XS Screens and below **/
+@media (max-width: 767px) {
+	header#main-header {
+		height: 185px;
+		box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.5);
+		position: relative;
+	}
+	nav { height: 0; }
+	nav, nav.full-width {
+		background-image: none;
+		background-color: transparent;
+		border: none;
+		box-shadow: none;
+	}
+	/* position the call us button */
+	#nav-primary > a.call-us { top: -177px; }
+
+	/* hamburger icon */
+	nav button.navbar-toggle {
+		position: absolute;
+		top: -60px; right: 0;
+	}
+
+	/* dropdown menu */
+	#navbar { top: 0; }
+
+	.jumbotron[name="default"] { height: 564px; padding: 30px 0 0; }
+	.jumbotron[name="default"] .panel {
+		position: relative;
+		top: 55px;
+	}
+
+	#testimonial .carousel {
+		padding: 0 40px;
+	}
+	#testimonial blockquote p {
+		text-indent: 45px;
+	}
+
+}
+
+@media (max-width: 570px) {
+	header#main-header { background-size: 114%; }
+}

@@ -1,3 +1,6 @@
+<?php
+$pageTitle = 'Pool Heating Systems';
+?>
 <?php include("includes/header.php"); ?>
   <?php include("includes/navigation.php"); ?>
   <div class="jumbotron full-width" name="pool_heating"></div>
