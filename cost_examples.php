@@ -130,7 +130,4 @@ $pageTitle = 'What does it cost?';
 	        </section>
 		    </section>
 	    </main>
-
-		 <?php $pageScript = '<script src="scripts/costs_table.min.js"></script>
-'; ?>
 <?php include("includes/footer.php"); ?>
