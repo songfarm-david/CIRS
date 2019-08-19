@@ -1,3 +1,7 @@
+<?php
+$pageTitle = 'In-floor heat';
+?>
+
 <?php include("includes/header.php"); ?>
   <?php include("includes/navigation.php"); ?>
 	<div role="region" aria-label="introduction" class="jumbotron full-width" name="infloor_heat">

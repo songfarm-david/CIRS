@@ -1,3 +1,6 @@
+<?php
+$homeURL = 'https://cirs.peakwebsites.ca/';
+?>
 <script>var Browser = {isIE:false};</script>
 <!--[if lt IE 9]>
 	<noscript style="position: fixed; top: 0px; left: 0px; z-index: 300000; height: 100%; width: 100%; background-color: #FFFFFF; overflow: hidden;">
@@ -6,8 +9,12 @@
 			</p>
 	</noscript>
 	<script>
-	Browser = {isIE:true,version:8};
-	if (Browser.isIE) {	window.location.replace('http://cirs.songfarm.ca/notice_ie.php'); }
+		Browser = {
+			isIE: true,
+			version: 8
+		};
+		if (Browser.isIE) {
+			window.location.replace(<?php echo $homeURL . 'notice_ie.php'; ?>); }
 	</script>
 <![endif]-->
 <!--[if IE 9]>

@@ -1,3 +1,6 @@
+<?php
+$pageTitle = 'Snow Melt and Heated Driveways';
+?>
 <?php include("includes/header.php"); ?>
   <?php include("includes/navigation.php"); ?>
   <div class="jumbotron full-width" name="snow_melt"></div>

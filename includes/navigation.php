@@ -1,4 +1,4 @@
-<nav role="navigation" id="nav-primary" class="full-width">
+<nav id="nav-primary" class="full-width">
 	<h2 id="nav-header" class="hidden" aria-hidden="true">Main Navigation</h2>
 	<a href="tel:9055381661" class="call-us" data-expanded="false"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Call Us:&nbsp;<b>905-538-1661</b></a>
 	<div class="navbar-header">
