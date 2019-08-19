@@ -3,12 +3,12 @@
   <div class="jumbotron full-width" name="snow_melt"></div>
   <main role="main">
     <section>
-	    <h1 class="full-width">Snow Melt &amp; Heated Driveways</h1>
+      <h1 class="full-width">Snow Melt &amp; Heated Driveways</h1>
       <figure role="presentation" class="pull-right figure-float-right hidden-xs" aria-hidden="true" data-pop-out="true">
-        <img src="images/demos/snow_melt_detail.jpg" alt="" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
-        <figcaption>
-          <footer>Photo: facilitymanagement.com</footer>
-        </figcaption>
+         <img src="images/demos/snow_melt_detail.jpg" alt="" title="Snowmelt: Asphalt with Underslab and Edge Insulation">
+         <figcaption>
+         <footer>Photo: facilitymanagement.com</footer>
+         </figcaption>
       </figure>
 	    <p>
 		    Snow Melt and Heated Driveway systems, are a technological alternative to shoveling, salting, snow plowing, snow blowing and other snow removal methods.

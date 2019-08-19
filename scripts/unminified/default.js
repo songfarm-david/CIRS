@@ -376,15 +376,12 @@
 	$("#navbar > li.dropdown + span").on("click", function(e) {
 		if ($(this).attr("aria-expanded") == "true") {
 			$(this).removeClass("glyphicon-chevron-up").addClass("glyphicon-chevron-down");
-
 		} else {
 			$(this).removeClass("glyphicon-chevron-down").addClass("glyphicon-chevron-up");
-
 		}
 	})
 
 	/** end of Mobile Nav **/
-
 
 	/*** Img Pop-Out ***/
 
@@ -422,7 +419,7 @@
 				}
 
 				// if a title attribute exists,
-				// create a new text tode and populate with title of default
+				// create a new text node and populate with title of default
 				if (modalImg.title) {
 					imgTitle = document.createTextNode(modalImg.title);
 				} else {
@@ -467,8 +464,6 @@
 		modalBody.removeChild(modalImg);
 		modalFooter.removeChild(modalText);
 	});
-
-
 
 	/*** Detect IE Browser Version ***/
 	// NOTE: Browser is global variable

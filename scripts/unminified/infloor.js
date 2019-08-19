@@ -415,7 +415,7 @@
 				}
 
 				// if a title attribute exists,
-				// create a new text tode and populate with title of default
+				// create a new text node and populate with title of default
 				if (modalImg.title) {
 					imgTitle = document.createTextNode(modalImg.title);
 				} else {

@@ -6,7 +6,14 @@
 * Consider adding Header Expiry/Caching commands to static files and assets
 
 ## Todo
+* Project search: notice_ie.php
+* Examine script usage and structure.
+	* default.js is a combination of all scripts on the page. Review script usage and place script chunks into appropriate files (for reference, infloor.js contains scripts for some functionality, where default.js contains **all** scripts)
+	* examine all pages and footer to audit scripts being used
 * re-minify production files, or setup a minification workflow if not wanting to do it manually
+* add fallback for if no internet or jquery is disabled as, without these things, the page looks like shit
+* fix toggle of figures aria-hidden attribute; note this happens on multiple pages and should use a global script to manage this
+* review using title attrs for images. These are used in pop out modals.
 
 ## 404 page
 Create a custom 404 page

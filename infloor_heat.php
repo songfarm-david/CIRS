@@ -214,8 +214,8 @@
 					</div>
 				</div>
 			</section>
-      <section>
-			  <h2 id="cautions_and_solutions">Cautions and Solutions</h2>
+         <section>
+			        <h2 id="cautions_and_solutions">Cautions and Solutions</h2>
 				<p>
 					Due to thermal mass, the system is not designed to have the temperature frequently adjusted.
 				</p>
@@ -228,7 +228,7 @@
 				<p>
 					This is not a do-it-yourself project. It requires professional installation, maintenance and repair. Having professionals do the installation will allow you to have the best performance and warranty on the heating system.
 				</p>
-			</section>
+			 </section>
 		</section>
 	</main>
   <?php include("includes/footer.php"); ?>
